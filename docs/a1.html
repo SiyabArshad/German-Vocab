@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>German A1 Vocabulary Trainer</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f5f5f5;}
+header{background:#1f2937;color:#fff;padding:16px;text-align:center;}
+.container{padding:16px;max-width:1200px;margin:auto;}
+.controls{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px;}
+input,select{padding:8px;font-size:14px;}
+.stats{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:12px;font-size:14px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;}
+.card{background:#fff;padding:12px;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.1);}
+.word{font-size:16px;font-weight:700;}
+.meta{font-size:13px;color:#555;margin-top:4px;}
+.tag{display:inline-block;margin-top:6px;padding:2px 6px;font-size:12px;background:#e5e7eb;border-radius:4px;}
+</style>
+</head>
+<body>
+<header>
+<h2>German A1 Vocabulary Trainer (Stable + Expanded Final Set)</h2>
+</header>
+
+<div class="container">
+<div class="controls">
+<input id="search" placeholder="Search word..." />
+<select id="category">
+<option value="all">All</option>
+<option value="noun">Nouns</option>
+<option value="verb">Verbs</option>
+<option value="adjective">Adjectives</option>
+<option value="other">Other</option>
+</select>
+</div>
+
+<div class="stats">
+<div>Nouns: <span id="nounCount"></span></div>
+<div>Verbs: <span id="verbCount"></span></div>
+<div>Adjectives: <span id="adjCount"></span></div>
+<div>Other: <span id="otherCount"></span></div>
+<div>Total: <span id="totalCount"></span></div>
+</div>
+
+<div class="grid" id="grid"></div>
+</div>
+
+<script>
+function pairList(arr,type){return arr.map(v=>({w:v[0],e:v[1],c:type}));}
+
+const nouns = pairList([
+["der Mann","man"],["die Frau","woman"],["das Kind","child"],["die Familie","family"],["der Vater","father"],["die Mutter","mother"],["der Bruder","brother"],["die Schwester","sister"],["das Haus","house"],["die Wohnung","apartment"],["die Stadt","city"],["das Dorf","village"],["die Straße","street"],["der Weg","road"],["der Bahnhof","station"],["der Zug","train"],["das Auto","car"],["der Bus","bus"],["das Fahrrad","bicycle"],["der Flughafen","airport"],["das Hotel","hotel"],["das Restaurant","restaurant"],["die Schule","school"],["der Lehrer","teacher"],["der Schüler","student"],["die Arbeit","work"],["der Job","job"],["das Geld","money"],["die Zeit","time"],["der Tag","day"],["die Nacht","night"],["der Morgen","morning"],["der Abend","evening"],["die Woche","week"],["der Monat","month"],["das Jahr","year"],["das Essen","food"],["das Wasser","water"],["der Kaffee","coffee"],["der Tee","tea"],["das Brot","bread"],["das Fleisch","meat"],["der Fisch","fish"],["das Obst","fruit"],["das Gemüse","vegetables"],["der Apfel","apple"],["die Banane","banana"],["die Milch","milk"],["der Käse","cheese"],["das Ei","egg"],["der Zucker","sugar"],["das Salz","salt"],["die Butter","butter"],["der Computer","computer"],["das Telefon","phone"],["das Internet","internet"],["die Nachricht","message"],["das Wort","word"],["die Frage","question"],["die Antwort","answer"],["das Problem","problem"],["die Lösung","solution"],["der Körper","body"],["der Kopf","head"],["die Hand","hand"],["das Auge","eye"],["das Ohr","ear"],["der Mund","mouth"],["die Nase","nose"],["das Bein","leg"],["der Arm","arm"],["der Fuß","foot"],["der Arzt","doctor"],["das Krankenhaus","hospital"],["die Apotheke","pharmacy"],["die Polizei","police"],["der Markt","market"],["der Preis","price"],["die Uhr","clock"],["der Kalender","calendar"],["die Stadt","city"],["das Land","country"],["die Schule","school"],["der Beruf","profession"],["die Reise","trip"],["das Ziel","goal"],["die Chance","chance"],["der Plan","plan"],["die Gruppe","group"],["die Situation","situation"],["der Benutzer","user"],["die Anwendung","application"],["das Netzwerk","network"],["die Datenbank","database"],["die Verbindung","connection"],["der Speicher","storage"],["die Leistung","performance"],["die Sicherheit","security"],["die Einstellung","setting"],["das Gerät","device"],["die Software","software"],["die Hardware","hardware"],["der Zugriff","access"],["die Datei","file"],["der Ordner","folder"],["die Oberfläche","interface"],["der Bildschirm","screen"],["die Taste","button"],["die Maus","mouse"],["die Tastatur","keyboard"],["der Tisch","table"],["der Stuhl","chair"],["die Tür","door"],["das Fenster","window"],["der Garten","garden"],["die Lampe","lamp"],["der Schlüssel","key"],["das Buch","book"],["der Schrank","cabinet"],["die Tasche","bag"]
+],"noun");
+
+const verbs = pairList([
+["sein","to be"],["haben","to have"],["werden","to become"],["gehen","to go"],["kommen","to come"],["machen","to do"],["geben","to give"],["nehmen","to take"],["sehen","to see"],["hören","to hear"],["sprechen","to speak"],["lesen","to read"],["schreiben","to write"],["lernen","to learn"],["arbeiten","to work"],["spielen","to play"],["essen","to eat"],["trinken","to drink"],["kaufen","to buy"],["verkaufen","to sell"],["fahren","to drive"],["laufen","to run"],["wohnen","to live"],["schlafen","to sleep"],["aufstehen","to get up"],["fragen","to ask"],["antworten","to answer"],["denken","to think"],["wissen","to know"],["mögen","to like"],["lieben","to love"],["warten","to wait"],["bringen","to bring"],["finden","to find"],["verlieren","to lose"],["gewinnen","to win"],["öffnen","to open"],["schließen","to close"],["zeigen","to show"],["bezahlen","to pay"],["reisen","to travel"],["kochen","to cook"],["putzen","to clean"],["studieren","to study"],["erklären","to explain"],["besuchen","to visit"],["bleiben","to stay"],["beginnen","to begin"],["enden","to end"],["vergessen","to forget"],["erinnern","to remember"],["stellen","to place"],["setzen","to sit"],["stehen","to stand"],["ziehen","to pull"],["drücken","to push"],["bauen","to build"],["verstehen","to understand"],["glauben","to believe"],["hoffen","to hope"],["fühlen","to feel"],["suchen","to search"],["wählen","to choose"],["erreichen","to reach"],["organisieren","to organize"],["reservieren","to reserve"],["planen","to plan"],["diskutieren","to discuss"],["verbessern","to improve"],["erlauben","to allow"],["verbieten","to forbid"],["unterschreiben","to sign"],["bestellen","to order"],["liefern","to deliver"],["benutzen","to use"],["besitzen","to own"],["erwarten","to expect"],["verursachen","to cause"],["entdecken","to discover"],["schaffen","to manage"],["betrachten","to consider"],["kommunizieren","to communicate"],["koordinieren","to coordinate"],["integrieren","to integrate"],["vergleichen","to compare"],["entwickeln","to develop"],["reduzieren","to reduce"],["erhöhen","to increase"],["kontrollieren","to control"],["installieren","to install"],["konfigurieren","to configure"],["speichern","to save"],["laden","to load"],["löschen","to delete"],["aktualisieren","to update"],["synchronisieren","to sync"],["senden","to send"],["empfangen","to receive"],["prüfen","to check"],["validieren","to validate"],["optimieren","to optimize"],["starten","to start"],["stoppen","to stop"],["debuggen","to debug"],["protokollieren","to log"],["verbinden","to connect"],["analysieren","to analyze"],["reparieren","to repair"],["entscheiden","to decide"],["helfen","to help"],["sagen","to say"],["schauen","to look"],["klingeln","to ring"],["erzählen","to tell"],["fliegen","to fly"],["lachen","to laugh"],["weinen","to cry"]
+],"verb");
+
+const adjectives = pairList([
+["gut","good"],["schlecht","bad"],["groß","big"],["klein","small"],["neu","new"],["alt","old"],["jung","young"],["schnell","fast"],["langsam","slow"],["schön","beautiful"],["teuer","expensive"],["billig","cheap"],["leicht","easy"],["schwer","hard"],["warm","warm"],["kalt","cold"],["heiß","hot"],["hell","bright"],["dunkel","dark"],["freundlich","friendly"],["wichtig","important"],["sauber","clean"],["schmutzig","dirty"],["ruhig","quiet"],["laut","loud"],["gesund","healthy"],["krank","sick"],["frei","free"],["voll","full"],["leer","empty"],["richtig","correct"],["falsch","wrong"],["glücklich","happy"],["traurig","sad"],["stark","strong"],["schwach","weak"],["reich","rich"],["arm","poor"],["modern","modern"],["traditionell","traditional"],["gefährlich","dangerous"],["sicher","safe"],["interessant","interesting"],["langweilig","boring"],["möglich","possible"],["unmöglich","impossible"],["einfach","simple"],["kompliziert","complex"],["nützlich","useful"],["bereit","ready"],["müde","tired"],["hungrig","hungry"],["durstig","thirsty"],["leise","quiet"],["laut","loud"],["klar","clear"],["stabil","stable"],["instabil","unstable"],["digital","digital"],["analog","analog"],["effizient","efficient"],["flexibel","flexible"],["aktiv","active"],["passiv","passive"],["strategisch","strategic"],["praktisch","practical"],["logisch","logical"],["typisch","typical"],["plötzlich","sudden"],["wahrscheinlich","probable"],["unbedingt","necessary"],["sicherlich","certain"],["eventuell","possible"],["relativ","relative"],["schwierig","difficult"],["notwendig","necessary"],["unterschiedlich","different"],["ähnlich","similar"],["verfügbar","available"],["ausreichend","sufficient"],["frisch","fresh"],["trocken","dry"],["nass","wet"],["weich","soft"],["hart","hard"],["eng","tight"]
+],"adjective");
+
+const other = pairList([
+["und","and"],["oder","or"],["aber","but"],["nicht","not"],["sehr","very"],["auch","also"],["hier","here"],["dort","there"],["bitte","please"],["danke","thanks"],["weil","because"],["wenn","if"],["was","what"],["wer","who"],["wo","where"],["warum","why"],["jetzt","now"],["immer","always"],["nie","never"],["oft","often"],["selten","rarely"],["heute","today"],["morgen","tomorrow"],["gestern","yesterday"],["dann","then"],["später","later"],["sofort","immediately"],["wirklich","really"],["leider","unfortunately"],["deshalb","therefore"],["trotzdem","nevertheless"],["damit","so that"],["sobald","as soon as"],["solange","as long as"],["falls","in case"],["außerdem","besides"],["zuerst","first"],["danach","afterwards"],["vorher","before"],["schließlich","finally"],["genau","exactly"],["eigentlich","actually"],["doch","however"],["vielleicht","maybe"],["schon","already"],["noch","still"],["zusammen","together"],["allein","alone"],["darum","therefore"],["deswegen","because of that"],["sonst","otherwise"],["ebenfalls","also"],["mittlerweile","meanwhile"],["anschließend","after that"],["gleichzeitig","at the same time"],["kaum","hardly"],["besonders","especially"],["zumindest","at least"],["zusätzlich","additionally"],["insgesamt","overall"],["beispielsweise","for example"],["ungefähr","approximately"],["höchstens","at most"],["konsequent","consistently"],["effektiv","effectively"],["offiziell","officially"],["informell","informally"],["lokal","locally"],["global","globally"],["technisch","technically"],["politisch","politically"],["wirtschaftlich","economically"],["sozial","socially"],["somit","thus"],["daher","therefore"],["inzwischen","meanwhile"],["jeweils","respectively"],["nahezu","almost"],["bereits","already"],["jedoch","however"],["sogar","even"],["erst","only then"],["nur","only"],["eben","just"],["halt","simply"]
+],"other");
+
+function dedupe(arr){const map=new Map();for(const v of arr){const key=v.w+"|"+v.c;if(!map.has(key))map.set(key,v);}return [...map.values()];}
+
+let vocab = dedupe([...nouns,...verbs,...adjectives,...other]);
+
+const grid=document.getElementById('grid');
+const search=document.getElementById('search');
+const category=document.getElementById('category');
+
+function updateCounts(){
+  const c={noun:0,verb:0,adjective:0,other:0};
+  vocab.forEach(v=>c[v.c]++);
+  document.getElementById('nounCount').textContent=c.noun;
+  document.getElementById('verbCount').textContent=c.verb;
+  document.getElementById('adjCount').textContent=c.adjective;
+  document.getElementById('otherCount').textContent=c.other;
+  document.getElementById('totalCount').textContent=vocab.length;
+}
+
+function render(){
+  const q=search.value.toLowerCase();
+  const cat=category.value;
+  grid.innerHTML='';
+  vocab.filter(v=>(cat==='all'||v.c===cat)&&v.w.toLowerCase().includes(q))
+    .forEach(v=>{
+      const d=document.createElement('div');
+      d.className='card';
+      d.innerHTML=`<div class='word'>${v.w}</div><div class='meta'>${v.e}</div><span class='tag'>${v.c}</span>`;
+      grid.appendChild(d);
+    });
+}
+
+search.addEventListener('input',()=>{updateCounts();render();});
+category.addEventListener('change',()=>{updateCounts();render();});
+
+updateCounts();
+render();
+</script>
+</body>
+</html>

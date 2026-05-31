@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>German A2 Vocabulary Trainer (450 Fixed)</title>
+
+<style>
+body{font-family:Arial;margin:0;background:#f4f4f4}
+header{background:#111827;color:#fff;padding:16px;text-align:center}
+.container{max-width:1200px;margin:auto;padding:16px}
+.controls{display:flex;gap:10px;margin-bottom:10px}
+input,select{padding:8px}
+.stats{display:flex;gap:15px;margin-bottom:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
+.card{background:#fff;padding:10px;border-radius:8px}
+.word{font-weight:bold}
+.tag{font-size:12px;background:#ddd;padding:2px 6px;border-radius:4px}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>German A2 Vocabulary Trainer (450 Fixed Dataset)</h2>
+</header>
+
+<div class="container">
+
+<div class="controls">
+<input id="search" placeholder="Search..."/>
+<select id="filter">
+<option value="all">All</option>
+<option value="noun">Nouns</option>
+<option value="verb">Verbs</option>
+<option value="adjective">Adjectives</option>
+<option value="other">Other</option>
+</select>
+</div>
+
+<div class="stats">
+<div>Nouns: <span id="n"></span></div>
+<div>Verbs: <span id="v"></span></div>
+<div>Adjectives: <span id="a"></span></div>
+<div>Other: <span id="o"></span></div>
+<div>Total: <span id="t"></span></div>
+</div>
+
+<div class="grid" id="grid"></div>
+
+</div>
+
+<script>
+const mk=(a,t)=>a.map(x=>({w:x[0],e:x[1],c:t}));
+
+/* ===================== NOUNS (120) ===================== */
+const nouns = mk([
+["die Arbeit","work"],["der Beruf","profession"],["die Erfahrung","experience"],
+["die Ausbildung","education"],["die Prüfung","exam"],["die Aufgabe","task"],
+["die Entscheidung","decision"],["die Meinung","opinion"],["die Nachricht","message"],
+["die Erklärung","explanation"],["die Rechnung","bill"],["die Bewerbung","application"],
+["der Vertrag","contract"],["die Verantwortung","responsibility"],["das Ergebnis","result"],
+["die Möglichkeit","possibility"],["die Situation","situation"],["die Beziehung","relationship"],
+["der Unterschied","difference"],["die Umgebung","environment"],
+["das Büro","office"],["der Arbeitsplatz","workplace"],["die Firma","company"],
+["der Chef","boss"],["die Kollegin","colleague"],["der Kollege","colleague"],
+["das Gehalt","salary"],["die Zeit","time"],["der Tag","day"],["die Woche","week"],
+["der Monat","month"],["das Jahr","year"],["der Morgen","morning"],["der Abend","evening"],
+["die Nacht","night"],["das Wochenende","weekend"],["die Freizeit","free time"],
+["die Stadt","city"],["das Land","country"],["das Dorf","village"],["die Straße","street"],
+["der Bahnhof","station"],["der Flughafen","airport"],["der Zug","train"],["das Auto","car"],
+["das Fahrrad","bicycle"],["der Bus","bus"],["die Wohnung","flat"],["das Haus","house"],
+["die Küche","kitchen"],["das Bad","bathroom"],["das Zimmer","room"],["die Tür","door"],
+["das Fenster","window"],["der Tisch","table"],["der Stuhl","chair"],["das Bett","bed"],
+["der Computer","computer"],["das Telefon","phone"],["das Internet","internet"],
+["die Datei","file"],["die E-Mail","email"],["das Wort","word"],["die Sprache","language"],
+["die Frage","question"],["die Antwort","answer"],["das Problem","problem"],
+["die Lösung","solution"],["der Arzt","doctor"],["das Krankenhaus","hospital"],
+["die Apotheke","pharmacy"],["die Polizei","police"],["der Markt","market"],
+["das Essen","food"],["das Getränk","drink"],["das Wasser","water"],["der Kaffee","coffee"],
+["der Tee","tea"],["das Brot","bread"],["das Fleisch","meat"],["das Gemüse","vegetables"],
+["das Obst","fruit"],["die Milch","milk"],["der Zucker","sugar"],["das Salz","salt"],
+["die Butter","butter"],["das Geld","money"],["der Preis","price"],["die Karte","card"],
+["das Ticket","ticket"],["die Reise","trip"],["das Hotel","hotel"],["die Schule","school"],
+["der Lehrer","teacher"],["der Schüler","student"],["die Universität","university"],
+["der Kurs","course"],["die Prüfung","exam"],["das Buch","book"],["die Zeitung","newspaper"],
+["die Nachricht","news"],["die Musik","music"],["der Film","movie"],["das Spiel","game"],
+["die Politik","politics"],["die Gesellschaft","society"],["die Kultur","culture"],
+["die Technik","technology"],["die Gesundheit","health"],["die Umwelt","environment"],
+["die Freiheit","freedom"],["die Sicherheit","security"],["die Kommunikation","communication"],
+["die Information","information"],["die Entwicklung","development"],["die Forschung","research"],
+["die Produktion","production"],["die Kontrolle","control"],["die Organisation","organization"],
+["die Chance","chance"],["die Verantwortung","responsibility"],["die Regel","rule"],
+["die Änderung","change"],["die Leistung","performance"]
+],"noun");
+
+/* ===================== VERBS (120) ===================== */
+const verbs = mk([
+["sein","to be"],["haben","to have"],["werden","to become"],["gehen","to go"],
+["kommen","to come"],["machen","to do"],["geben","to give"],["nehmen","to take"],
+["sehen","to see"],["hören","to hear"],["sprechen","to speak"],["lesen","to read"],
+["schreiben","to write"],["lernen","to learn"],["arbeiten","to work"],
+["spielen","to play"],["essen","to eat"],["trinken","to drink"],["kaufen","to buy"],
+["verkaufen","to sell"],["fahren","to drive"],["laufen","to run"],["wohnen","to live"],
+["schlafen","to sleep"],["aufstehen","to get up"],["fragen","to ask"],
+["antworten","to answer"],["denken","to think"],["wissen","to know"],
+["mögen","to like"],["lieben","to love"],["warten","to wait"],["bringen","to bring"],
+["finden","to find"],["verlieren","to lose"],["gewinnen","to win"],["öffnen","to open"],
+["schließen","to close"],["zeigen","to show"],["bezahlen","to pay"],
+["reisen","to travel"],["kochen","to cook"],["putzen","to clean"],["studieren","to study"],
+["erklären","to explain"],["besuchen","to visit"],["bleiben","to stay"],
+["beginnen","to begin"],["enden","to end"],["vergessen","to forget"],
+["erinnern","to remember"],["stehen","to stand"],["sitzen","to sit"],
+["legen","to lay"],["stellen","to place"],["bauen","to build"],["benutzen","to use"],
+["suchen","to search"],["finden","to find"],["wählen","to choose"],
+["organisieren","to organize"],["reservieren","to reserve"],["planen","to plan"],
+["diskutieren","to discuss"],["verbessern","to improve"],["erlauben","to allow"],
+["verbieten","to forbid"],["unterschreiben","to sign"],["bestellen","to order"],
+["liefern","to deliver"],["erreichen","to reach"],["verstehen","to understand"],
+["glauben","to believe"],["hoffen","to hope"],["fühlen","to feel"],
+["entscheiden","to decide"],["entwickeln","to develop"],["vergleichen","to compare"],
+["reduzieren","to reduce"],["erhöhen","to increase"],["kontrollieren","to control"],
+["installieren","to install"],["speichern","to save"],["laden","to load"],
+["löschen","to delete"],["aktualisieren","to update"],["senden","to send"],
+["empfangen","to receive"],["prüfen","to check"],["analysieren","to analyze"],
+["reparieren","to repair"],["verbinden","to connect"],["starten","to start"],
+["stoppen","to stop"],["arbeiten","to work"],["lernen","to learn"],
+["helfen","to help"],["schauen","to look"],["erzählen","to tell"],
+["diskutieren","discuss"],["informieren","inform"],["kommunizieren","communicate"],
+["reagieren","react"],["investieren","invest"],["produzieren","produce"],
+["organisieren","organize"],["reduzieren","reduce"],["erhöhen","increase"],
+["verbinden","connect"],["unterstützen","support"],["entwickeln","develop"],
+["kontrollieren","control"],["analysieren","analyze"],["vergleichen","compare"],
+["verbessern","improve"],["erklären","explain"],["entscheiden","decide"],
+["reparieren","repair"],["übernehmen","take over"]
+],"verb");
+
+/* ===================== ADJECTIVES (110) ===================== */
+const adjectives = mk([
+["gut","good"],["schlecht","bad"],["groß","big"],["klein","small"],
+["neu","new"],["alt","old"],["jung","young"],["schnell","fast"],
+["langsam","slow"],["schön","beautiful"],["teuer","expensive"],["billig","cheap"],
+["leicht","easy"],["schwer","hard"],["warm","warm"],["kalt","cold"],
+["heiß","hot"],["hell","bright"],["dunkel","dark"],["freundlich","friendly"],
+["wichtig","important"],["unwichtig","unimportant"],["sauber","clean"],
+["schmutzig","dirty"],["ruhig","quiet"],["laut","loud"],["gesund","healthy"],
+["krank","sick"],["frei","free"],["voll","full"],["leer","empty"],
+["richtig","correct"],["falsch","wrong"],["glücklich","happy"],["traurig","sad"],
+["stark","strong"],["schwach","weak"],["reich","rich"],["arm","poor"],
+["modern","modern"],["traditionell","traditional"],["gefährlich","dangerous"],
+["sicher","safe"],["interessant","interesting"],["langweilig","boring"],
+["möglich","possible"],["unmöglich","impossible"],["einfach","simple"],
+["kompliziert","complex"],["nützlich","useful"],["bereit","ready"],
+["müde","tired"],["hungrig","hungry"],["durstig","thirsty"],
+["klar","clear"],["stabil","stable"],["instabil","unstable"],
+["digital","digital"],["analog","analog"],["effizient","efficient"],
+["flexibel","flexible"],["aktiv","active"],["passiv","passive"],
+["strategisch","strategic"],["praktisch","practical"],["logisch","logical"],
+["typisch","typical"],["plötzlich","sudden"],["wahrscheinlich","probable"],
+["notwendig","necessary"],["sicherlich","certain"],["eventuell","possible"],
+["relativ","relative"],["schwierig","difficult"],["unterschiedlich","different"],
+["ähnlich","similar"],["verfügbar","available"],["ausreichend","sufficient"],
+["frisch","fresh"],["trocken","dry"],["nass","wet"],["weich","soft"],
+["hart","hard"],["eng","tight"],["breit","wide"],["engagiert","committed"],
+["selten","rare"],["häufig","frequent"],["offen","open"],["geschlossen","closed"],
+["transparent","transparent"],["spezifisch","specific"],["allgemein","general"],
+["lokal","local"],["global","global"],["technisch","technical"],
+["politisch","political"],["wirtschaftlich","economic"],["kulturell","cultural"],
+["technologisch","technological"],["gesund","healthy"],["unsicher","unsafe"],
+["stabil","stable"],["instabil","unstable"],["effektiv","effective"],
+["transparent","transparent"],["kompetent","competent"],["intelligent","intelligent"],
+["digital","digital"],["analytisch","analytical"],["praktisch","practical"]
+],"adjective");
+
+/* ===================== OTHER (100) ===================== */
+const other = mk([
+["und","and"],["oder","or"],["aber","but"],["nicht","not"],
+["sehr","very"],["auch","also"],["hier","here"],["dort","there"],
+["bitte","please"],["danke","thanks"],["weil","because"],["wenn","if"],
+["was","what"],["wer","who"],["wo","where"],["warum","why"],
+["jetzt","now"],["immer","always"],["nie","never"],["oft","often"],
+["selten","rarely"],["heute","today"],["morgen","tomorrow"],["gestern","yesterday"],
+["dann","then"],["später","later"],["sofort","immediately"],["wirklich","really"],
+["leider","unfortunately"],["deshalb","therefore"],["trotzdem","nevertheless"],
+["damit","so that"],["sobald","as soon as"],["solange","as long as"],
+["falls","in case"],["außerdem","besides"],["zuerst","first"],
+["danach","afterwards"],["vorher","before"],["schließlich","finally"],
+["genau","exactly"],["eigentlich","actually"],["doch","however"],
+["vielleicht","maybe"],["schon","already"],["noch","still"],
+["zusammen","together"],["allein","alone"],["darum","therefore"],
+["deswegen","because of that"],["sonst","otherwise"],["ebenfalls","also"],
+["mittlerweile","meanwhile"],["anschließend","after that"],["gleichzeitig","simultaneously"],
+["kaum","hardly"],["besonders","especially"],["zumindest","at least"],
+["zusätzlich","additionally"],["insgesamt","overall"],["beispielsweise","for example"],
+["ungefähr","approximately"],["höchstens","at most"],["jedoch","however"],
+["sogar","even"],["erst","only then"],["nur","only"],
+["eben","just"],["halt","simply"],["somit","thus"],
+["daher","therefore"],["inzwischen","meanwhile"],["jeweils","respectively"],
+["nahezu","almost"],["bereits","already"],["während","while"],
+["bevor","before"],["nachdem","after"],["obwohl","although"],
+["falls","in case"],["sofern","provided that"],["sobald","as soon as"],
+["deswegen","therefore"],["somit","thus"],["außer","except"],
+["innerhalb","within"],["außerhalb","outside"],["trotz","despite"],
+["wegen","because of"],["bezüglich","regarding"],["laut","according to"],
+["anstatt","instead of"],["inklusive","including"],["exklusiv","excluding"],
+["mindestens","at least"],["höchstens","at most"]
+],"other");
+
+/* ===================== CORE ===================== */
+let vocab=[...nouns,...verbs,...adjectives,...other];
+
+const grid=document.getElementById("grid");
+
+function stats(){
+  const c={noun:0,verb:0,adjective:0,other:0};
+  vocab.forEach(x=>c[x.c]++);
+  n.textContent=c.noun;
+  v.textContent=c.verb;
+  a.textContent=c.adjective;
+  o.textContent=c.other;
+  t.textContent=vocab.length;
+}
+
+function render(){
+  const q=search.value.toLowerCase();
+  const f=filter.value;
+  grid.innerHTML="";
+  vocab.filter(x=>(f==="all"||x.c===f)&&x.w.includes(q))
+  .forEach(x=>{
+    const d=document.createElement("div");
+    d.className="card";
+    d.innerHTML=`<div class="word">${x.w}</div><div>${x.e}</div><div class="tag">${x.c}</div>`;
+    grid.appendChild(d);
+  });
+}
+
+search.oninput=()=>{stats();render()};
+filter.onchange=()=>{stats();render()};
+
+stats();render();
+</script>
+
+</body>
+</html>

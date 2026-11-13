@@ -1,129 +1,96 @@
-import React, { useState, useEffect } from 'react';
-import { Award, Zap, Volume2, ArrowRight, AlertTriangle } from 'lucide-react';
-import type { VocabularyItem } from '../data/vocabulary';
+import React, { useEffect, useState } from 'react';
+import { Award, Zap, Volume2, AlertTriangle, RotateCcw } from 'lucide-react';
+import type { VocabularyItem } from '../data/types';
+import { parseGermanWord, speakGerman } from '../utils/vocab';
+import { CardMeaning } from './CardMeaning';
 
 interface QuizModeProps {
   vocabList: VocabularyItem[];
   isReverse?: boolean;
+  onRemember?: (itemId: string) => void;
 }
 
-export const QuizMode: React.FC<QuizModeProps> = ({ vocabList, isReverse = false }) => {
-  const [question, setQuestion] = useState<VocabularyItem | null>(null);
-  const [options, setOptions] = useState<string[]>([]);
-  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
-  const [isAnswered, setIsAnswered] = useState(false);
+export const QuizMode: React.FC<QuizModeProps> = ({ vocabList, isReverse = false, onRemember }) => {
+  const [queue, setQueue] = useState<VocabularyItem[]>([]);
+  const [index, setIndex] = useState(0);
+  const [isFlipped, setIsFlipped] = useState(false);
   const [score, setScore] = useState(0);
   const [totalQuestions, setTotalQuestions] = useState(0);
   const [streak, setStreak] = useState(0);
   const [bestStreak, setBestStreak] = useState(0);
 
-  // Initialize first question
   useEffect(() => {
-    generateNewQuestion();
-  }, [vocabList, isReverse]);
-
-  const generateNewQuestion = () => {
-    if (vocabList.length < 4) {
-      setQuestion(null);
-      return;
-    }
-
-    // Pick random target word
-    const targetIndex = Math.floor(Math.random() * vocabList.length);
-    const targetWord = vocabList[targetIndex];
-
-    // Pick 3 random distractor translations
-    const distractors: string[] = [];
-
-    if (isReverse) {
-      // English -> German
-      const pool = vocabList.filter(item => item.w !== targetWord.w);
-      while (distractors.length < 3 && pool.length > 0) {
-        const idx = Math.floor(Math.random() * pool.length);
-        const chosen = pool.splice(idx, 1)[0].w;
-        if (!distractors.includes(chosen)) {
-          distractors.push(chosen);
-        }
-      }
-      const allOptions = [targetWord.w, ...distractors].sort(() => Math.random() - 0.5);
-      setQuestion(targetWord);
-      setOptions(allOptions);
-    } else {
-      // German -> English
-      const pool = vocabList.filter(item => item.e !== targetWord.e);
-      while (distractors.length < 3 && pool.length > 0) {
-        const idx = Math.floor(Math.random() * pool.length);
-        const chosen = pool.splice(idx, 1)[0].e;
-        if (!distractors.includes(chosen)) {
-          distractors.push(chosen);
-        }
-      }
-      const allOptions = [targetWord.e, ...distractors].sort(() => Math.random() - 0.5);
-      setQuestion(targetWord);
-      setOptions(allOptions);
-    }
-
-    setSelectedAnswer(null);
-    setIsAnswered(false);
-  };
-
-  const handleSelect = (option: string) => {
-    if (isAnswered || !question) return;
-
-    setSelectedAnswer(option);
-    setIsAnswered(true);
-    setTotalQuestions(prev => prev + 1);
-
-    const isCorrect = isReverse ? option === question.w : option === question.e;
-    if (isCorrect) {
-      setScore(prev => prev + 1);
-      const newStreak = streak + 1;
-      setStreak(newStreak);
-      if (newStreak > bestStreak) {
-        setBestStreak(newStreak);
-      }
-      // Speak German word on correct answer automatically!
-      speakGermanWord(question.w);
-    } else {
-      setStreak(0);
-    }
-  };
-
-  const speakGermanWord = (word: string) => {
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(word);
-      utterance.lang = 'de-DE';
-      const voices = window.speechSynthesis.getVoices();
-      const deVoice = voices.find(v => v.lang.toLowerCase().includes('de'));
-      if (deVoice) utterance.voice = deVoice;
-      window.speechSynthesis.speak(utterance);
-    }
-  };
-
-  const resetQuiz = () => {
+    const shuffled = [...vocabList].sort(() => Math.random() - 0.5);
+    setQueue(shuffled);
+    setIndex(0);
+    setIsFlipped(false);
     setScore(0);
     setTotalQuestions(0);
     setStreak(0);
-    setBestStreak(0);
-    generateNewQuestion();
-  };
+  }, [vocabList, isReverse]);
 
-  if (vocabList.length < 4) {
+  if (vocabList.length === 0) {
     return (
       <div className="empty-state">
         <AlertTriangle size={48} />
-        <h3>Insufficient vocabulary.</h3>
-        <p>A quiz requires at least 4 active vocabulary words. Please widen your search filters.</p>
+        <h3>No words in this topic.</h3>
+        <p>Pick a topic with at least one word to start a flashcard test.</p>
+      </div>
+    );
+  }
+
+  const question = queue[index];
+  const isCompleted = queue.length > 0 && index >= queue.length;
+
+  const markResult = (knewIt: boolean) => {
+    if (!question) return;
+    setTotalQuestions(prev => prev + 1);
+    if (knewIt) {
+      setScore(prev => prev + 1);
+      const nextStreak = streak + 1;
+      setStreak(nextStreak);
+      if (nextStreak > bestStreak) setBestStreak(nextStreak);
+      onRemember?.(question.id);
+      speakGerman(question.w);
+    } else {
+      setStreak(0);
+    }
+    setIsFlipped(false);
+    setTimeout(() => setIndex(prev => prev + 1), 180);
+  };
+
+  const resetQuiz = () => {
+    const shuffled = [...vocabList].sort(() => Math.random() - 0.5);
+    setQueue(shuffled);
+    setIndex(0);
+    setIsFlipped(false);
+    setScore(0);
+    setTotalQuestions(0);
+    setStreak(0);
+  };
+
+  if (isCompleted) {
+    const percent = totalQuestions ? Math.round((score / totalQuestions) * 100) : 0;
+    return (
+      <div className="quiz-container" style={{ textAlign: 'center' }}>
+        <Award size={48} style={{ color: 'var(--accent-success)', marginBottom: 12 }} />
+        <h2 style={{ fontFamily: 'Outfit', marginBottom: 8 }}>Test finished</h2>
+        <p style={{ color: 'var(--text-secondary)', marginBottom: 20 }}>
+          You remembered {score} of {totalQuestions} cards ({percent}%). Best streak: {bestStreak}.
+        </p>
+        <button className="quiz-next-btn" onClick={resetQuiz} style={{ display: 'inline-flex', gap: 8, alignItems: 'center' }}>
+          <RotateCcw size={16} /> Test this topic again
+        </button>
       </div>
     );
   }
 
   if (!question) return null;
 
+  const { article, rest, gender } = parseGermanWord(question.w, question.c);
+
   return (
     <div className="quiz-container">
-      {/* Score Header */}
       <div className="quiz-header">
         <div className="quiz-badge">
           <Award size={16} style={{ color: 'var(--accent-success)' }} />
@@ -135,88 +102,52 @@ export const QuizMode: React.FC<QuizModeProps> = ({ vocabList, isReverse = false
         </div>
       </div>
 
-      {/* Main Question Display */}
-      <div className="quiz-question-box">
-        <div className="quiz-label">
-          {isReverse ? 'Translate this word to German' : 'Translate this word to English'}
-        </div>
-        <div className="quiz-prompt" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px' }}>
-          {isReverse ? question.e : question.w}
-          {!isReverse && (
-            <button 
-              className="audio-btn" 
-              onClick={() => speakGermanWord(question.w)}
-              style={{ padding: '8px', verticalAlign: 'middle' }}
-              title="Listen pronunciation"
-            >
-              <Volume2 size={16} />
-            </button>
-          )}
-        </div>
-      </div>
+      <p className="deck-stats" style={{ textAlign: 'center', marginBottom: 12 }}>
+        Flashcard {index + 1} of {queue.length}
+      </p>
 
-      {/* Choices Grid */}
-      <div className="quiz-options">
-        {options.map((opt, i) => {
-          let btnClass = '';
-          const correctAns = isReverse ? question.w : question.e;
-          if (isAnswered) {
-            if (opt === correctAns) {
-              btnClass = 'correct';
-            } else if (opt === selectedAnswer) {
-              btnClass = 'incorrect';
-            }
-          }
-
-          return (
-            <button
-              key={i}
-              className={`quiz-opt-btn ${btnClass}`}
-              onClick={() => handleSelect(opt)}
-              disabled={isAnswered}
-            >
-              <span>{opt}</span>
-              {isAnswered && opt === correctAns && <Zap size={14} style={{ color: 'var(--accent-success)' }} />}
-            </button>
-          );
-        })}
-      </div>
-
-      {/* Feedback text */}
-      <div className="quiz-feedback-area">
-        {isAnswered && (
-          <>
-            <div className={`quiz-feedback ${selectedAnswer === (isReverse ? question.w : question.e) ? 'correct' : 'incorrect'}`}>
-              {selectedAnswer === (isReverse ? question.w : question.e) ? 'Richtig! 🎉' : `Falsch! Correct is: "${isReverse ? question.w : question.e}"`}
+      <div className="flashcard-main-wrapper tall quiz-card" onClick={() => setIsFlipped(!isFlipped)}>
+        <div className={`flashcard-main-inner ${isFlipped ? 'flipped' : ''}`}>
+          <div className={`flashcard-face front ${isReverse ? '' : (gender || '')}`}>
+            <div className="quiz-label">Flip the card when you have an answer</div>
+            <div className="card-body">
+              {isReverse ? (
+                <div className="english-word">{question.e}</div>
+              ) : (
+                <div className="german-word" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
+                  <span>
+                    {article && <span className={`gender-highlight ${gender}`}>{article} </span>}
+                    {rest}
+                  </span>
+                  <button className="audio-btn" onClick={(e) => { e.stopPropagation(); speakGerman(question.w); }} title="Listen">
+                    <Volume2 size={16} />
+                  </button>
+                </div>
+              )}
+              <span className="card-hint">Tap to see meaning and example sentence</span>
             </div>
-            <button className="quiz-next-btn" onClick={generateNewQuestion} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
-              Next Question
-              <ArrowRight size={16} />
-            </button>
-          </>
-        )}
+          </div>
+          <div className={`flashcard-face back ${isReverse ? (gender || '') : ''}`}>
+            <div className="card-body">
+              <CardMeaning item={question} showGermanWord={isReverse} />
+            </div>
+          </div>
+        </div>
       </div>
 
-      {totalQuestions > 0 && (
-        <button 
-          onClick={resetQuiz} 
-          style={{
-            background: 'none',
-            border: 'none',
-            color: 'var(--text-muted)',
-            fontSize: '0.8rem',
-            cursor: 'pointer',
-            marginTop: '20px',
-            textDecoration: 'underline',
-            display: 'block',
-            marginLeft: 'auto',
-            marginRight: 'auto'
-          }}
-        >
-          Reset Stats
+      <div className="flashcard-actions" style={{ marginTop: 20 }}>
+        <button className="action-btn needs-practice" onClick={() => markResult(false)} disabled={!isFlipped}>
+          I didn't know
         </button>
+        <button className="action-btn master" onClick={() => markResult(true)} disabled={!isFlipped}>
+          I knew it
+        </button>
+      </div>
+      {!isFlipped && (
+        <p className="card-hint">Flip the card first, then mark if you remembered it.</p>
       )}
     </div>
   );
 };
+
 export default QuizMode;

@@ -1,0 +1,1064 @@
+[
+  {
+    "id": "a1-a1-k0-1-hallo",
+    "w": "Hallo",
+    "e": "hello",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Hallo, wie geht es dir?"
+  },
+  {
+    "id": "a1-a1-k0-1-guten-morgen",
+    "w": "Guten Morgen",
+    "e": "good morning",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Guten Morgen! Hast du gut geschlafen?"
+  },
+  {
+    "id": "a1-a1-k0-1-guten-tag",
+    "w": "Guten Tag",
+    "e": "good day",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Guten Tag, mein Name ist Anna."
+  },
+  {
+    "id": "a1-a1-k0-1-guten-abend",
+    "w": "Guten Abend",
+    "e": "good evening",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Guten Abend, willkommen im Restaurant."
+  },
+  {
+    "id": "a1-a1-k0-1-gute-nacht",
+    "w": "Gute Nacht",
+    "e": "good night",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Gute Nacht und schlaf gut!"
+  },
+  {
+    "id": "a1-a1-k0-1-tschüss",
+    "w": "Tschüss",
+    "e": "bye",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Tschüss, bis morgen!"
+  },
+  {
+    "id": "a1-a1-k0-1-auf-wiedersehen",
+    "w": "Auf Wiedersehen",
+    "e": "goodbye",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Auf Wiedersehen und vielen Dank!"
+  },
+  {
+    "id": "a1-a1-k0-1-bitte",
+    "w": "Bitte",
+    "e": "please / you're welcome",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Einen Kaffee, bitte."
+  },
+  {
+    "id": "a1-a1-k0-1-danke",
+    "w": "Danke",
+    "e": "thank you",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Danke für deine Hilfe."
+  },
+  {
+    "id": "a1-a1-k0-1-entschuldigung",
+    "w": "Entschuldigung",
+    "e": "excuse me / sorry",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Entschuldigung, wo ist der Bahnhof?"
+  },
+  {
+    "id": "a1-a1-k0-1-ja",
+    "w": "Ja",
+    "e": "yes",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Ja, ich komme aus Berlin."
+  },
+  {
+    "id": "a1-a1-k0-1-nein",
+    "w": "Nein",
+    "e": "no",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Nein, ich habe keine Zeit."
+  },
+  {
+    "id": "a1-a1-k0-1-wie-geht-s",
+    "w": "Wie geht's?",
+    "e": "how are you?",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Hallo Lisa, wie geht's?"
+  },
+  {
+    "id": "a1-a1-k0-1-freut-mich",
+    "w": "Freut mich",
+    "e": "nice to meet you",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Freut mich, dich kennenzulernen."
+  },
+  {
+    "id": "a1-a1-k0-1-willkommen",
+    "w": "Willkommen",
+    "e": "welcome",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Willkommen in Deutschland!"
+  },
+  {
+    "id": "a1-a1-k0-1-ich-heiße",
+    "w": "Ich heiße",
+    "e": "my name is",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Ich heiße Omar und lerne Deutsch."
+  },
+  {
+    "id": "a1-a1-k0-1-der-name",
+    "w": "der Name",
+    "e": "name",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Mein Name steht auf der Liste."
+  },
+  {
+    "id": "a1-a1-k0-1-der-mann",
+    "w": "der Mann",
+    "e": "man",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Der Mann liest eine Zeitung."
+  },
+  {
+    "id": "a1-a1-k0-1-die-frau",
+    "w": "die Frau",
+    "e": "woman",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Die Frau trinkt Kaffee."
+  },
+  {
+    "id": "a1-a1-k0-1-das-kind",
+    "w": "das Kind",
+    "e": "child",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Das Kind spielt im Garten."
+  },
+  {
+    "id": "a1-a1-k0-1-der-freund",
+    "w": "der Freund",
+    "e": "friend (m)",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Mein Freund kommt aus Spanien."
+  },
+  {
+    "id": "a1-a1-k0-1-die-freundin",
+    "w": "die Freundin",
+    "e": "friend (f)",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Meine Freundin wohnt in Hamburg."
+  },
+  {
+    "id": "a1-a1-k0-1-die-familie",
+    "w": "die Familie",
+    "e": "family",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Meine Familie wohnt in München."
+  },
+  {
+    "id": "a1-a1-k0-1-der-vater",
+    "w": "der Vater",
+    "e": "father",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Mein Vater kocht am Wochenende."
+  },
+  {
+    "id": "a1-a1-k0-1-die-mutter",
+    "w": "die Mutter",
+    "e": "mother",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Meine Mutter arbeitet im Büro."
+  },
+  {
+    "id": "a1-a1-k0-1-die-eltern",
+    "w": "die Eltern",
+    "e": "parents",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Meine Eltern kommen am Sonntag."
+  },
+  {
+    "id": "a1-a1-k0-1-der-bruder",
+    "w": "der Bruder",
+    "e": "brother",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Mein Bruder spielt Fußball."
+  },
+  {
+    "id": "a1-a1-k0-1-die-schwester",
+    "w": "die Schwester",
+    "e": "sister",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Meine Schwester studiert in Berlin."
+  },
+  {
+    "id": "a1-a1-k0-1-deutschland",
+    "w": "Deutschland",
+    "e": "Germany",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Ich wohne in Deutschland."
+  },
+  {
+    "id": "a1-a1-k0-1-die-sprache",
+    "w": "die Sprache",
+    "e": "language",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Welche Sprache sprichst du?"
+  },
+  {
+    "id": "a1-a1-k0-1-deutsch",
+    "w": "deutsch",
+    "e": "German",
+    "c": "adjective",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Ich lerne die deutsche Sprache."
+  },
+  {
+    "id": "a1-a1-k0-1-woher",
+    "w": "woher",
+    "e": "where from",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-1",
+    "x": "Woher kommst du?"
+  },
+  {
+    "id": "a1-a1-k0-2-null",
+    "w": "null",
+    "e": "zero",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Die Hausnummer ist null eins."
+  },
+  {
+    "id": "a1-a1-k0-2-eins",
+    "w": "eins",
+    "e": "one",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Ich habe nur eins."
+  },
+  {
+    "id": "a1-a1-k0-2-zwei",
+    "w": "zwei",
+    "e": "two",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Wir sind zwei Geschwister."
+  },
+  {
+    "id": "a1-a1-k0-2-drei",
+    "w": "drei",
+    "e": "three",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Der Kurs dauert drei Monate."
+  },
+  {
+    "id": "a1-a1-k0-2-vier",
+    "w": "vier",
+    "e": "four",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Der Tisch hat vier Beine."
+  },
+  {
+    "id": "a1-a1-k0-2-fünf",
+    "w": "fünf",
+    "e": "five",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Ich arbeite fünf Tage die Woche."
+  },
+  {
+    "id": "a1-a1-k0-2-sechs",
+    "w": "sechs",
+    "e": "six",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Um sechs Uhr stehe ich auf."
+  },
+  {
+    "id": "a1-a1-k0-2-sieben",
+    "w": "sieben",
+    "e": "seven",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Die Woche hat sieben Tage."
+  },
+  {
+    "id": "a1-a1-k0-2-acht",
+    "w": "acht",
+    "e": "eight",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Das Kind ist acht Jahre alt."
+  },
+  {
+    "id": "a1-a1-k0-2-neun",
+    "w": "neun",
+    "e": "nine",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Der Zug fährt um neun."
+  },
+  {
+    "id": "a1-a1-k0-2-zehn",
+    "w": "zehn",
+    "e": "ten",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Zehn Euro, bitte."
+  },
+  {
+    "id": "a1-a1-k0-2-zwanzig",
+    "w": "zwanzig",
+    "e": "twenty",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Ich habe zwanzig Euro."
+  },
+  {
+    "id": "a1-a1-k0-2-hundert",
+    "w": "hundert",
+    "e": "hundred",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Das Buch hat hundert Seiten."
+  },
+  {
+    "id": "a1-a1-k0-2-heute",
+    "w": "heute",
+    "e": "today",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Heute lerne ich Vokabeln."
+  },
+  {
+    "id": "a1-a1-k0-2-gestern",
+    "w": "gestern",
+    "e": "yesterday",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Gestern war ich im Kino."
+  },
+  {
+    "id": "a1-a1-k0-2-morgen",
+    "w": "morgen",
+    "e": "tomorrow",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Morgen habe ich einen Termin."
+  },
+  {
+    "id": "a1-a1-k0-2-jetzt",
+    "w": "jetzt",
+    "e": "now",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Ich bin jetzt zu Hause."
+  },
+  {
+    "id": "a1-a1-k0-2-die-zeit",
+    "w": "die Zeit",
+    "e": "time",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Ich habe heute keine Zeit."
+  },
+  {
+    "id": "a1-a1-k0-2-die-uhr",
+    "w": "die Uhr",
+    "e": "clock / watch",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Die Uhr hängt an der Wand."
+  },
+  {
+    "id": "a1-a1-k0-2-der-tag",
+    "w": "der Tag",
+    "e": "day",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Heute ist ein schöner Tag."
+  },
+  {
+    "id": "a1-a1-k0-2-die-woche",
+    "w": "die Woche",
+    "e": "week",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Nächste Woche habe ich Urlaub."
+  },
+  {
+    "id": "a1-a1-k0-2-der-monat",
+    "w": "der Monat",
+    "e": "month",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Der Monat hat dreißig Tage."
+  },
+  {
+    "id": "a1-a1-k0-2-das-jahr",
+    "w": "das Jahr",
+    "e": "year",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Ich lerne seit einem Jahr Deutsch."
+  },
+  {
+    "id": "a1-a1-k0-2-der-montag",
+    "w": "der Montag",
+    "e": "Monday",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Am Montag beginnt die Arbeit."
+  },
+  {
+    "id": "a1-a1-k0-2-der-freitag",
+    "w": "der Freitag",
+    "e": "Friday",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Freitagabend treffen wir uns."
+  },
+  {
+    "id": "a1-a1-k0-2-der-sonntag",
+    "w": "der Sonntag",
+    "e": "Sunday",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Sonntag essen wir mit der Familie."
+  },
+  {
+    "id": "a1-a1-k0-2-das-wasser",
+    "w": "das Wasser",
+    "e": "water",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Ich trinke jeden Tag Wasser."
+  },
+  {
+    "id": "a1-a1-k0-2-der-kaffee",
+    "w": "der Kaffee",
+    "e": "coffee",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Morgens trinke ich Kaffee."
+  },
+  {
+    "id": "a1-a1-k0-2-das-brot",
+    "w": "das Brot",
+    "e": "bread",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Zum Frühstück esse ich Brot."
+  },
+  {
+    "id": "a1-a1-k0-2-die-wohnung",
+    "w": "die Wohnung",
+    "e": "apartment",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Meine Wohnung ist klein, aber hell."
+  },
+  {
+    "id": "a1-a1-k0-2-das-haus",
+    "w": "das Haus",
+    "e": "house",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Das Haus hat einen Garten."
+  },
+  {
+    "id": "a1-a1-k0-2-das-zimmer",
+    "w": "das Zimmer",
+    "e": "room",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Mein Zimmer ist oben."
+  },
+  {
+    "id": "a1-a1-k0-2-die-küche",
+    "w": "die Küche",
+    "e": "kitchen",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "In der Küche kochen wir."
+  },
+  {
+    "id": "a1-a1-k0-2-die-tür",
+    "w": "die Tür",
+    "e": "door",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Die Tür ist offen."
+  },
+  {
+    "id": "a1-a1-k0-2-die-stadt",
+    "w": "die Stadt",
+    "e": "city",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Berlin ist eine große Stadt."
+  },
+  {
+    "id": "a1-a1-k0-2-der-bahnhof",
+    "w": "der Bahnhof",
+    "e": "train station",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Der Zug fährt vom Bahnhof ab."
+  },
+  {
+    "id": "a1-a1-k0-2-der-bus",
+    "w": "der Bus",
+    "e": "bus",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Der Bus kommt in fünf Minuten."
+  },
+  {
+    "id": "a1-a1-k0-2-das-auto",
+    "w": "das Auto",
+    "e": "car",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Das Auto steht vor dem Haus."
+  },
+  {
+    "id": "a1-a1-k0-2-der-supermarkt",
+    "w": "der Supermarkt",
+    "e": "supermarket",
+    "c": "noun",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Im Supermarkt kaufe ich Brot."
+  },
+  {
+    "id": "a1-a1-k0-2-essen",
+    "w": "essen",
+    "e": "to eat",
+    "c": "verb",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Wir essen um zwölf Uhr."
+  },
+  {
+    "id": "a1-a1-k0-2-trinken",
+    "w": "trinken",
+    "e": "to drink",
+    "c": "verb",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Ich trinke gern Wasser."
+  },
+  {
+    "id": "a1-a1-k0-2-kaufen",
+    "w": "kaufen",
+    "e": "to buy",
+    "c": "verb",
+    "l": "A1",
+    "t": "a1-k0-2",
+    "x": "Ich kaufe Brot im Supermarkt."
+  },
+  {
+    "id": "a1-a1-k0-3-sein",
+    "w": "sein",
+    "e": "to be",
+    "c": "verb",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Ich bin müde."
+  },
+  {
+    "id": "a1-a1-k0-3-haben",
+    "w": "haben",
+    "e": "to have",
+    "c": "verb",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Ich habe ein Buch."
+  },
+  {
+    "id": "a1-a1-k0-3-kommen",
+    "w": "kommen",
+    "e": "to come",
+    "c": "verb",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Kommst du um acht?"
+  },
+  {
+    "id": "a1-a1-k0-3-gehen",
+    "w": "gehen",
+    "e": "to go / walk",
+    "c": "verb",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Ich gehe zu Fuß zur Schule."
+  },
+  {
+    "id": "a1-a1-k0-3-fahren",
+    "w": "fahren",
+    "e": "to drive / go (by vehicle)",
+    "c": "verb",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Wir fahren mit dem Bus."
+  },
+  {
+    "id": "a1-a1-k0-3-machen",
+    "w": "machen",
+    "e": "to make / do",
+    "c": "verb",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Was machst du am Wochenende?"
+  },
+  {
+    "id": "a1-a1-k0-3-lernen",
+    "w": "lernen",
+    "e": "to learn / study",
+    "c": "verb",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Jeden Abend lerne ich Deutsch."
+  },
+  {
+    "id": "a1-a1-k0-3-sprechen",
+    "w": "sprechen",
+    "e": "to speak",
+    "c": "verb",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Sprichst du Deutsch?"
+  },
+  {
+    "id": "a1-a1-k0-3-verstehen",
+    "w": "verstehen",
+    "e": "to understand",
+    "c": "verb",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Ich verstehe die Frage."
+  },
+  {
+    "id": "a1-a1-k0-3-wohnen",
+    "w": "wohnen",
+    "e": "to live",
+    "c": "verb",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Ich wohne in Köln."
+  },
+  {
+    "id": "a1-a1-k0-3-arbeiten",
+    "w": "arbeiten",
+    "e": "to work",
+    "c": "verb",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Sie arbeitet in einem Büro."
+  },
+  {
+    "id": "a1-a1-k0-3-sehen",
+    "w": "sehen",
+    "e": "to see",
+    "c": "verb",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Ich sehe den Bus."
+  },
+  {
+    "id": "a1-a1-k0-3-hören",
+    "w": "hören",
+    "e": "to hear",
+    "c": "verb",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Hörst du die Musik?"
+  },
+  {
+    "id": "a1-a1-k0-3-lesen",
+    "w": "lesen",
+    "e": "to read",
+    "c": "verb",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Ich lese ein Buch."
+  },
+  {
+    "id": "a1-a1-k0-3-schreiben",
+    "w": "schreiben",
+    "e": "to write",
+    "c": "verb",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Schreib bitte deinen Namen."
+  },
+  {
+    "id": "a1-a1-k0-3-können",
+    "w": "können",
+    "e": "can / to be able to",
+    "c": "verb",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Ich kann ein bisschen Deutsch."
+  },
+  {
+    "id": "a1-a1-k0-3-müssen",
+    "w": "müssen",
+    "e": "must / to have to",
+    "c": "verb",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Ich muss um acht da sein."
+  },
+  {
+    "id": "a1-a1-k0-3-wollen",
+    "w": "wollen",
+    "e": "to want",
+    "c": "verb",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Ich will nach Hause."
+  },
+  {
+    "id": "a1-a1-k0-3-möchten",
+    "w": "möchten",
+    "e": "would like",
+    "c": "verb",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Ich möchte einen Kaffee, bitte."
+  },
+  {
+    "id": "a1-a1-k0-3-ich",
+    "w": "ich",
+    "e": "I",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Ich lerne Deutsch."
+  },
+  {
+    "id": "a1-a1-k0-3-du",
+    "w": "du",
+    "e": "you (informal)",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Kommst du mit?"
+  },
+  {
+    "id": "a1-a1-k0-3-er",
+    "w": "er",
+    "e": "he",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Er ist mein Bruder."
+  },
+  {
+    "id": "a1-a1-k0-3-sie",
+    "w": "sie",
+    "e": "she / they",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Sie wohnt in Berlin."
+  },
+  {
+    "id": "a1-a1-k0-3-wir",
+    "w": "wir",
+    "e": "we",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Wir gehen ins Kino."
+  },
+  {
+    "id": "a1-a1-k0-3-was",
+    "w": "was",
+    "e": "what",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Was machst du?"
+  },
+  {
+    "id": "a1-a1-k0-3-wer",
+    "w": "wer",
+    "e": "who",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Wer ist das?"
+  },
+  {
+    "id": "a1-a1-k0-3-wo",
+    "w": "wo",
+    "e": "where",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Wo ist der Bahnhof?"
+  },
+  {
+    "id": "a1-a1-k0-3-wann",
+    "w": "wann",
+    "e": "when",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Wann beginnt der Kurs?"
+  },
+  {
+    "id": "a1-a1-k0-3-wie",
+    "w": "wie",
+    "e": "how",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Wie heißt du?"
+  },
+  {
+    "id": "a1-a1-k0-3-warum",
+    "w": "warum",
+    "e": "why",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Warum lernst du Deutsch?"
+  },
+  {
+    "id": "a1-a1-k0-3-und",
+    "w": "und",
+    "e": "and",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Brot und Käse, bitte."
+  },
+  {
+    "id": "a1-a1-k0-3-oder",
+    "w": "oder",
+    "e": "or",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Tee oder Kaffee?"
+  },
+  {
+    "id": "a1-a1-k0-3-aber",
+    "w": "aber",
+    "e": "but",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Ich bin müde, aber ich lerne noch."
+  },
+  {
+    "id": "a1-a1-k0-3-nicht",
+    "w": "nicht",
+    "e": "not",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Ich verstehe das nicht."
+  },
+  {
+    "id": "a1-a1-k0-3-auch",
+    "w": "auch",
+    "e": "also",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Ich lerne auch Deutsch."
+  },
+  {
+    "id": "a1-a1-k0-3-sehr",
+    "w": "sehr",
+    "e": "very",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Das ist sehr gut."
+  },
+  {
+    "id": "a1-a1-k0-3-hier",
+    "w": "hier",
+    "e": "here",
+    "c": "other",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Ich warte hier auf dich."
+  },
+  {
+    "id": "a1-a1-k0-3-gut",
+    "w": "gut",
+    "e": "good",
+    "c": "adjective",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Das Essen ist gut."
+  },
+  {
+    "id": "a1-a1-k0-3-schlecht",
+    "w": "schlecht",
+    "e": "bad",
+    "c": "adjective",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Das Wetter ist schlecht."
+  },
+  {
+    "id": "a1-a1-k0-3-groß",
+    "w": "groß",
+    "e": "big",
+    "c": "adjective",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Berlin ist eine große Stadt."
+  },
+  {
+    "id": "a1-a1-k0-3-klein",
+    "w": "klein",
+    "e": "small",
+    "c": "adjective",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Meine Wohnung ist klein."
+  },
+  {
+    "id": "a1-a1-k0-3-neu",
+    "w": "neu",
+    "e": "new",
+    "c": "adjective",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Das ist ein neues Buch."
+  },
+  {
+    "id": "a1-a1-k0-3-alt",
+    "w": "alt",
+    "e": "old",
+    "c": "adjective",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Das Haus ist alt."
+  },
+  {
+    "id": "a1-a1-k0-3-schön",
+    "w": "schön",
+    "e": "beautiful / nice",
+    "c": "adjective",
+    "l": "A1",
+    "t": "a1-k0-3",
+    "x": "Das ist ein schönes Foto."
+  }
+]

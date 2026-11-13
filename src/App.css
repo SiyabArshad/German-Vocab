@@ -330,7 +330,7 @@
 /* --- Premium 3D Flip Card Component --- */
 .card-perspective {
   perspective: 1200px;
-  height: 160px;
+  height: 240px;
   cursor: pointer;
 }
 
@@ -434,10 +434,12 @@
 
 .german-word {
   font-family: 'Outfit', sans-serif;
-  font-size: 1.35rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 4px;
+  line-height: 1.3;
+  word-break: break-word;
 }
 
 /* Higlighting Noun Article on the Word itself */
@@ -519,6 +521,10 @@
   cursor: pointer;
 }
 
+.flashcard-main-wrapper.tall {
+  height: 380px;
+}
+
 .flashcard-main-inner {
   position: relative;
   width: 100%;
@@ -557,8 +563,10 @@
 }
 
 .flashcard-face .german-word {
-  font-size: 2.2rem;
+  font-size: clamp(1.15rem, 3.6vw, 2.1rem);
+  line-height: 1.25;
   margin-bottom: 8px;
+  word-break: break-word;
 }
 
 .flashcard-face .english-word {
@@ -602,6 +610,107 @@
 .action-btn.needs-practice:hover {
   background: rgba(239, 68, 68, 0.25);
   box-shadow: 0 0 15px rgba(239, 68, 68, 0.15);
+}
+
+.topic-section {
+  margin-bottom: 16px;
+}
+
+.topic-section-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.topic-tabs {
+  flex-wrap: wrap;
+  overflow: visible;
+  margin-bottom: 12px;
+}
+
+.category-tab.topic {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.category-tab.topic.active,
+.category-tab.all.active {
+  border-color: var(--accent-primary);
+  color: #c7d2fe;
+  background: rgba(99, 102, 241, 0.15);
+}
+
+.topic-count {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 999px;
+  padding: 2px 7px;
+}
+
+.topic-chip-mini {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.card-meaning {
+  width: 100%;
+}
+
+.card-meaning .english-word {
+  margin-bottom: 10px;
+}
+
+.example-block {
+  position: relative;
+  margin-top: 8px;
+  padding: 10px 36px 10px 12px;
+  border-radius: 10px;
+  background: rgba(99, 102, 241, 0.08);
+  border: 1px solid rgba(99, 102, 241, 0.18);
+  text-align: left;
+}
+
+.example-label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #a5b4fc;
+  margin-bottom: 4px;
+}
+
+.example-sentence {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.4;
+  color: var(--text-primary);
+  font-style: italic;
+}
+
+.example-audio {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 4px;
+}
+
+.card-meaning.compact .example-sentence {
+  font-size: 0.8rem;
+}
+
+.action-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.quiz-card {
+  max-width: 520px;
+  margin: 0 auto;
 }
 
 .action-btn.master {

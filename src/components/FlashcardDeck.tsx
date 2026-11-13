@@ -1,6 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { CheckCircle2, Volume2, Award, RotateCcw, AlertTriangle } from 'lucide-react';
-import type { VocabularyItem } from '../data/vocabulary';
+import type { VocabularyItem } from '../data/types';
+import { topicById } from '../data/topics';
+import { parseGermanWord, speakGerman } from '../utils/vocab';
+import { CardMeaning } from './CardMeaning';
 
 interface FlashcardDeckProps {
   vocabList: VocabularyItem[];
@@ -20,16 +23,19 @@ export const FlashcardDeck: React.FC<FlashcardDeckProps> = ({
   const [sessionMastered, setSessionMastered] = useState<string[]>([]);
   const [sessionPracticed, setSessionPracticed] = useState<string[]>([]);
 
-  // Filter out already mastered words or keep them?
-  // Spaced practice: Let's study all active filtered list, but let users see their status!
-  // To make it fun, we will study the active filtered list.
-  
+  useEffect(() => {
+    setCurrentIndex(0);
+    setIsFlipped(false);
+    setSessionMastered([]);
+    setSessionPracticed([]);
+  }, [vocabList, isReverse]);
+
   if (vocabList.length === 0) {
     return (
       <div className="empty-state">
         <AlertTriangle size={48} />
         <h3>No vocabulary matches the current search filters.</h3>
-        <p>Try resetting filters or search query to load words into the deck.</p>
+        <p>Try resetting filters or pick another topic to load words into the deck.</p>
       </div>
     );
   }
@@ -48,9 +54,7 @@ export const FlashcardDeck: React.FC<FlashcardDeckProps> = ({
         setSessionPracticed(prev => [...prev, currentItem.id]);
       }
     }
-    
     setIsFlipped(false);
-    // Smooth transition delay
     setTimeout(() => {
       setCurrentIndex(prev => prev + 1);
     }, 200);
@@ -63,44 +67,16 @@ export const FlashcardDeck: React.FC<FlashcardDeckProps> = ({
     setSessionPracticed([]);
   };
 
-  const speakGerman = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    if ('speechSynthesis' in window && currentItem) {
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(currentItem.w);
-      utterance.lang = 'de-DE';
-      const voices = window.speechSynthesis.getVoices();
-      const deVoice = voices.find(v => v.lang.toLowerCase().includes('de'));
-      if (deVoice) utterance.voice = deVoice;
-      window.speechSynthesis.speak(utterance);
-    }
-  };
-
-  const parseGermanWord = (word: string, category: string) => {
-    if (category === 'noun') {
-      const parts = word.split(' ');
-      if (parts.length > 1 && ['der', 'die', 'das'].includes(parts[0].toLowerCase())) {
-        return {
-          article: parts[0],
-          rest: parts.slice(1).join(' '),
-          gender: parts[0].toLowerCase() as 'der' | 'die' | 'das'
-        };
-      }
-    }
-    return { article: null, rest: word, gender: null };
-  };
-
   if (isCompleted) {
     return (
       <div className="quiz-container" style={{ textAlign: 'center', padding: '40px 24px' }}>
         <div style={{ display: 'inline-flex', padding: '16px', borderRadius: '50%', background: 'rgba(16, 185, 129, 0.15)', color: 'var(--accent-success)', marginBottom: '18px' }}>
           <Award size={48} />
         </div>
-        <h2 style={{ fontFamily: 'Outfit', fontSize: '1.8rem', marginBottom: '8px' }}>Deck Completed!</h2>
+        <h2 style={{ fontFamily: 'Outfit', fontSize: '1.8rem', marginBottom: '8px' }}>Topic completed!</h2>
         <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', marginBottom: '24px' }}>
-          Amazing work. You reviewed all {vocabList.length} vocabulary words in this deck.
+          You reviewed all {vocabList.length} words in this set. Remembered words stay marked for this topic.
         </p>
-
         <div className="stats-dashboard" style={{ marginBottom: '24px' }}>
           <div className="stat-box total" style={{ padding: '10px' }}>
             <div className="stat-val">{vocabList.length}</div>
@@ -108,43 +84,38 @@ export const FlashcardDeck: React.FC<FlashcardDeckProps> = ({
           </div>
           <div className="stat-box noun" style={{ padding: '10px' }}>
             <div className="stat-val" style={{ color: 'var(--accent-success)' }}>{sessionMastered.length}</div>
-            <div className="stat-lbl">Mastered</div>
+            <div className="stat-lbl">Remembered</div>
           </div>
           <div className="stat-box adjective" style={{ padding: '10px' }}>
             <div className="stat-val" style={{ color: '#f87171' }}>{sessionPracticed.length}</div>
             <div className="stat-lbl">Practice</div>
           </div>
         </div>
-
         <button className="quiz-next-btn" onClick={handleRestart} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
           <RotateCcw size={16} />
-          Restart Study Deck
+          Study this topic again
         </button>
       </div>
     );
   }
 
   const { article, rest, gender } = parseGermanWord(currentItem.w, currentItem.c);
+  const topicName = topicById.get(currentItem.t)?.name;
 
   return (
     <div className="flashcards-container">
       <div className="deck-stats">
         Card {currentIndex + 1} of {vocabList.length}
+        {topicName ? ` · ${topicName}` : ''}
       </div>
 
-      {/* 3D flip card card deck viewport */}
-      <div className="flashcard-main-wrapper" onClick={() => setIsFlipped(!isFlipped)}>
+      <div className="flashcard-main-wrapper tall" onClick={() => setIsFlipped(!isFlipped)}>
         <div className={`flashcard-main-inner ${isFlipped ? 'flipped' : ''}`}>
-          
-          {/* FRONT */}
-          <div className={`flashcard-face front ${isReverse ? '' : (gender || '')}`} style={{
-            borderColor: !isReverse && gender === 'der' ? 'rgba(59, 130, 246, 0.4)' : !isReverse && gender === 'die' ? 'rgba(236, 72, 153, 0.4)' : !isReverse && gender === 'das' ? 'rgba(16, 185, 129, 0.4)' : undefined
-          }}>
+          <div className={`flashcard-face front ${isReverse ? '' : (gender || '')}`}>
             <div className="card-header-row">
               <span className="level-badge">{currentItem.l}</span>
               <span className={`category-badge ${currentItem.c}`}>{currentItem.c}</span>
             </div>
-
             <div className="card-body">
               {isReverse ? (
                 <div className="english-word">{currentItem.e}</div>
@@ -154,71 +125,46 @@ export const FlashcardDeck: React.FC<FlashcardDeckProps> = ({
                   {rest}
                 </div>
               )}
-              <span className="card-hint">Click card to reveal translation</span>
+              <span className="card-hint">Click to see meaning and example</span>
             </div>
-
             <div className="card-footer-row">
               {isReverse ? (
                 <div style={{ width: '24px' }} />
               ) : (
-                <button className="audio-btn" onClick={speakGerman} title="Listen Pronunciation">
+                <button className="audio-btn" onClick={(e) => { e.stopPropagation(); speakGerman(currentItem.w); }} title="Listen pronunciation">
                   <Volume2 size={20} />
                 </button>
               )}
               {masteredIds.has(currentItem.id) && (
                 <span style={{ fontSize: '0.8rem', color: 'var(--accent-success)', display: 'flex', alignItems: 'center', gap: '4px' }}>
-                  <CheckCircle2 size={14} /> Mastered
+                  <CheckCircle2 size={14} /> Remembered
                 </span>
               )}
             </div>
           </div>
 
-          {/* BACK */}
-          <div className={`flashcard-face back ${isReverse ? (gender || '') : ''}`} style={{
-            borderColor: isReverse && gender === 'der' ? 'rgba(59, 130, 246, 0.4)' : isReverse && gender === 'die' ? 'rgba(236, 72, 153, 0.4)' : isReverse && gender === 'das' ? 'rgba(16, 185, 129, 0.4)' : undefined
-          }}>
+          <div className={`flashcard-face back ${isReverse ? (gender || '') : ''}`}>
             <div className="card-header-row">
               <span className="level-badge">{currentItem.l}</span>
               <span className={`category-badge ${currentItem.c}`}>{currentItem.c}</span>
             </div>
-
             <div className="card-body">
-              {isReverse ? (
-                <div className="german-word">
-                  {article && <span className={`gender-highlight ${gender}`} style={{ fontSize: '2rem' }}>{article} </span>}
-                  {rest}
-                </div>
-              ) : (
-                <div className="english-word">{currentItem.e}</div>
-              )}
-              <span className="card-hint">Click to flip card</span>
-            </div>
-
-            <div className="card-footer-row">
-              {isReverse ? (
-                <button className="audio-btn" onClick={speakGerman} title="Listen Pronunciation">
-                  <Volume2 size={20} />
-                </button>
-              ) : (
-                <div style={{ width: '24px' }} />
-              )}
-              <div style={{ width: '24px' }} />
+              <CardMeaning item={currentItem} showGermanWord={isReverse} />
             </div>
           </div>
-
         </div>
       </div>
 
-      {/* Swipe Actions buttons */}
       <div className="flashcard-actions">
         <button className="action-btn needs-practice" onClick={() => handleNext('practice')}>
-          Needs Practice
+          Still learning
         </button>
         <button className="action-btn master" onClick={() => handleNext('master')}>
-          Mark Mastered
+          I remember this
         </button>
       </div>
     </div>
   );
 };
+
 export default FlashcardDeck;

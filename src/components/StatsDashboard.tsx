@@ -3,14 +3,12 @@ import type { VocabularyItem } from '../data/vocabulary';
 
 interface StatsDashboardProps {
   filteredVocab: VocabularyItem[];
-  vocabLevel: 'A1' | 'A2' | 'Combined';
   masteredCount: number;
   totalCount: number;
 }
 
 export const StatsDashboard: React.FC<StatsDashboardProps> = ({
   filteredVocab,
-  vocabLevel,
   masteredCount,
   totalCount
 }) => {
@@ -35,7 +33,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
             Mastery Progress
           </div>
           <div className="progress-desc">
-            You mastered {masteredCount} out of {totalCount} words ({vocabLevel} vocabulary)
+            You mastered {masteredCount} out of {totalCount} words
           </div>
         </div>
         <div className="progress-bar-wrapper">

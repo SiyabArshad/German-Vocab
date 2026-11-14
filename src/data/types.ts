@@ -1,5 +1,5 @@
 export type VocabCategory = 'noun' | 'verb' | 'adjective' | 'other';
-export type VocabLevel = 'A1' | 'A2';
+export type VocabLevel = 'A1' | 'A2' | 'B1';
 
 export interface VocabularyItem {
   id: string;

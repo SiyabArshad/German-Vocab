@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Book, HelpCircle, Layers, Search, RotateCcw, Sparkles } from 'lucide-react';
-import { combinedVocabulary } from './data/vocabulary';
+import { b1Vocabulary } from './data/vocabulary';
 import { ALL_TOPICS } from './data/topics';
 import { StatsDashboard } from './components/StatsDashboard';
 import { VocabularyCard } from './components/VocabularyCard';
@@ -38,7 +38,7 @@ function App() {
     localStorage.setItem('german_mastered_ids', JSON.stringify(Array.from(masteredIds)));
   }, [masteredIds]);
 
-  const sourceVocab = combinedVocabulary;
+  const sourceVocab = b1Vocabulary;
   const visibleTopics = ALL_TOPICS;
 
   const topicCounts = useMemo(() => {
@@ -104,7 +104,7 @@ function App() {
             German Vocab Trainer
           </h1>
           <p className="app-subtitle">
-            Kapitel 0.1–0.3 common A1 words, then Kapitel 1–12 ({combinedVocabulary.length} words)
+            B1 vocabulary ({b1Vocabulary.length} words)
           </p>
         </header>
 

@@ -1,95 +1,170 @@
-import { useEffect, useMemo, useState } from 'react';
-import { Book, HelpCircle, Layers, Search, RotateCcw, Sparkles } from 'lucide-react';
-import { b1Vocabulary } from './data/vocabulary';
-import { ALL_TOPICS } from './data/topics';
+import React, { useEffect, useMemo, useState, useCallback } from 'react';
+import {
+  BookOpen,
+  HelpCircle,
+  Layers,
+  RotateCcw,
+  LogIn,
+  LogOut,
+  CheckCircle2,
+  GraduationCap
+} from 'lucide-react';
+import { levels, topicById } from './data/vocabData';
+import type { LevelKey, StudyMode, TopicData, VocabularyWord } from './data/types';
+import { useAuth } from './services/useAuth';
+import {
+  getLocalMasteredIds,
+  subscribeToCloudProgress,
+  syncWordRemembered,
+  recordQuizResult,
+  resetAllUserProgress,
+} from './services/progressService';
+import { AuthModal } from './components/AuthModal';
 import { StatsDashboard } from './components/StatsDashboard';
-import { VocabularyCard } from './components/VocabularyCard';
+import { TopicSelector } from './components/TopicSelector';
+import { TopicView } from './components/TopicView';
 import { FlashcardDeck } from './components/FlashcardDeck';
 import { QuizMode } from './components/QuizMode';
 import './App.css';
 
 function App() {
-  const [mode, setMode] = useState<'cards' | 'flashcards' | 'quiz'>('cards');
-  const [category, setCategory] = useState<'all' | 'noun' | 'verb' | 'adjective' | 'other'>('all');
-  const [topicId, setTopicId] = useState<string>('all');
-  const [search, setSearch] = useState('');
+  const { user, openAuthModal, logout, pendingWordId, clearPendingWord } = useAuth();
 
+  // Active level: Beginner (A1-A2) or Intermediate (B1-B2)
+  const [levelKey, setLevelKey] = useState<LevelKey>(() => {
+    const saved = localStorage.getItem('german_level_key');
+    return saved === 'b1_b2' ? 'b1_b2' : 'a1_a2';
+  });
+
+  const currentLevelInfo = levels[levelKey];
+
+  // Active topic inside the level
+  const [selectedTopicId, setSelectedTopicId] = useState<number | 'all'>(() => {
+    return currentLevelInfo.topics[0]?.id || 1;
+  });
+
+  // Study mode
+  const [mode, setMode] = useState<StudyMode>('cards');
+
+  // Translation direction
   const [isReverse, setIsReverse] = useState<boolean>(() => {
     return localStorage.getItem('german_vocab_reverse') === 'true';
   });
+
+  // Mastered words set
+  const [masteredIds, setMasteredIds] = useState<Set<string>>(() => getLocalMasteredIds());
+
+  // Save level and reverse direction preferences
+  useEffect(() => {
+    localStorage.setItem('german_level_key', levelKey);
+  }, [levelKey]);
 
   useEffect(() => {
     localStorage.setItem('german_vocab_reverse', String(isReverse));
   }, [isReverse]);
 
-  const [masteredIds, setMasteredIds] = useState<Set<string>>(() => {
-    const saved = localStorage.getItem('german_mastered_ids');
-    if (saved) {
-      try {
-        return new Set<string>(JSON.parse(saved));
-      } catch (e) {
-        console.error(e);
-      }
-    }
-    return new Set<string>();
-  });
-
+  // Subscribe to Firebase Firestore progress when user is logged in
   useEffect(() => {
-    localStorage.setItem('german_mastered_ids', JSON.stringify(Array.from(masteredIds)));
-  }, [masteredIds]);
+    if (!user) return;
 
-  const sourceVocab = b1Vocabulary;
-  const visibleTopics = ALL_TOPICS;
+    const unsubscribe = subscribeToCloudProgress(user.uid, (cloudMastered) => {
+      setMasteredIds(new Set(cloudMastered));
+    });
 
-  const topicCounts = useMemo(() => {
-    const counts = new Map<string, { total: number; mastered: number }>();
-    for (const item of sourceVocab) {
-      const current = counts.get(item.t) ?? { total: 0, mastered: 0 };
-      current.total += 1;
-      if (masteredIds.has(item.id)) current.mastered += 1;
-      counts.set(item.t, current);
-    }
-    return counts;
-  }, [sourceVocab, masteredIds]);
+    return () => unsubscribe();
+  }, [user]);
 
-  const filteredVocab = sourceVocab.filter(item => {
-    const matchesCategory = category === 'all' || item.c === category;
-    const matchesTopic = topicId === 'all' || item.t === topicId;
-    const query = search.trim().toLowerCase();
-    if (!query) return matchesCategory && matchesTopic;
-
-    const matchesGerman = item.w.toLowerCase().includes(query);
-    const matchesEnglish = item.e.toLowerCase().includes(query);
-    const matchesExample = item.x.toLowerCase().includes(query);
-    return matchesCategory && matchesTopic && (matchesGerman || matchesEnglish || matchesExample);
-  });
-
-  const totalInCurrentLevel = sourceVocab.length;
-  const masteredInCurrentLevel = sourceVocab.filter(item => masteredIds.has(item.id)).length;
-
-  const handleToggleMaster = (itemId: string, e?: React.MouseEvent) => {
+  // Toggle master status (requires auth)
+  const handleToggleMaster = useCallback(async (wordId: string, e?: React.MouseEvent) => {
     if (e) e.stopPropagation();
-    setMasteredIds(prev => {
-      const next = new Set(prev);
-      if (next.has(itemId)) next.delete(itemId);
-      else next.add(itemId);
-      return next;
-    });
-  };
 
-  const handleRemember = (itemId: string) => {
-    setMasteredIds(prev => {
-      if (prev.has(itemId)) return prev;
-      const next = new Set(prev);
-      next.add(itemId);
-      return next;
-    });
-  };
-
-  const handleResetProgress = () => {
-    if (window.confirm('Reset all remembered words for every topic?')) {
-      setMasteredIds(new Set<string>());
+    // If user is not signed in, prompt authentication first
+    if (!user) {
+      openAuthModal('Sign in to mark and sync remembered vocabulary!', wordId);
+      return;
     }
+
+    const isCurrentlyRemembered = masteredIds.has(wordId);
+    const updated = await syncWordRemembered(
+      user.uid,
+      wordId,
+      !isCurrentlyRemembered,
+      masteredIds
+    );
+    setMasteredIds(updated);
+  }, [user, masteredIds, openAuthModal]);
+
+  // Handle pending action after authentication
+  useEffect(() => {
+    if (user && pendingWordId) {
+      const targetId = pendingWordId;
+      clearPendingWord();
+      const timer = setTimeout(() => {
+        handleToggleMaster(targetId);
+      }, 0);
+      return () => clearTimeout(timer);
+    }
+  }, [user, pendingWordId, handleToggleMaster, clearPendingWord]);
+
+  // Switch level
+  const handleSelectLevel = (newLevel: LevelKey) => {
+    setLevelKey(newLevel);
+    setSelectedTopicId(levels[newLevel].topics[0]?.id || 'all');
+  };
+
+  // Get active topic
+  const activeTopic: TopicData | null = useMemo(() => {
+    if (selectedTopicId === 'all') return null;
+    return topicById.get(selectedTopicId) || currentLevelInfo.topics[0] || null;
+  }, [selectedTopicId, currentLevelInfo]);
+
+  // Words list for current selection (topic or whole level)
+  const activeVocabList: VocabularyWord[] = useMemo(() => {
+    if (activeTopic) return activeTopic.words;
+    return currentLevelInfo.words;
+  }, [activeTopic, currentLevelInfo]);
+
+  // Mastered count in active level
+  const masteredInCurrentLevel = useMemo(() => {
+    return currentLevelInfo.words.filter(w => masteredIds.has(w.id)).length;
+  }, [currentLevelInfo, masteredIds]);
+
+  // Mark a word as remembered (e.g. from Quiz or Flashcards)
+  const handleRememberWord = async (wordId: string) => {
+    if (!user) {
+      openAuthModal('Sign in to save your learning progress!', wordId);
+      return;
+    }
+    if (!masteredIds.has(wordId)) {
+      const updated = await syncWordRemembered(user.uid, wordId, true, masteredIds);
+      setMasteredIds(updated);
+    }
+  };
+
+  // Unmark a word if missed in retention test
+  const handleUnrememberWord = async (wordId: string) => {
+    if (masteredIds.has(wordId)) {
+      const updated = await syncWordRemembered(user ? user.uid : null, wordId, false, masteredIds);
+      setMasteredIds(updated);
+    }
+  };
+
+  // Record quiz test result
+  const handleRecordQuizResult = async (wordId: string, passed: boolean) => {
+    await recordQuizResult(user ? user.uid : null, wordId, passed);
+  };
+
+  // Reset all progress
+  const handleResetProgress = async () => {
+    if (window.confirm('Reset all remembered words? This will clear your progress across all topics.')) {
+      await resetAllUserProgress(user ? user.uid : null);
+      setMasteredIds(new Set());
+    }
+  };
+
+  const handleLogout = async () => {
+    await logout();
+    setMasteredIds(getLocalMasteredIds());
   };
 
   return (
@@ -97,168 +172,208 @@ function App() {
       <div className="glow-spot glow-spot-1" />
       <div className="glow-spot glow-spot-2" />
 
+      {/* Firebase Auth Modal */}
+      <AuthModal />
+
       <div className="app-container">
-        <header className="app-header">
-          <h1 className="app-title">
-            <Sparkles size={24} style={{ display: 'inline', marginRight: '8px', color: '#818cf8', verticalAlign: 'middle' }} />
-            German Vocab Trainer
-          </h1>
-          <p className="app-subtitle">
-            B1 vocabulary ({b1Vocabulary.length} words)
-          </p>
+        {/* App Top Navigation Bar */}
+        <header className="app-header-nav">
+          <div className="header-brand">
+            <div className="brand-icon-wrap">
+              <GraduationCap size={28} />
+            </div>
+            <div>
+              <h1 className="brand-title">DeutschPro Vocab</h1>
+              <p className="brand-tagline">
+                Master 2,425+ German words with topic structures & Perfekt tense
+              </p>
+            </div>
+          </div>
+
+          {/* User Account / Sync status */}
+          <div className="header-user-panel">
+            {user ? (
+              <div className="user-logged-box">
+                <div className="user-info-text">
+                  <span className="user-email-text">{user.email || 'Guest User'}</span>
+                  <span className="user-cloud-badge">
+                    <CheckCircle2 size={12} /> Cloud Synced
+                  </span>
+                </div>
+                <button
+                  type="button"
+                  className="user-logout-btn"
+                  onClick={handleLogout}
+                  title="Sign Out"
+                >
+                  <LogOut size={16} />
+                </button>
+              </div>
+            ) : (
+              <button
+                type="button"
+                className="header-auth-trigger"
+                onClick={() => openAuthModal('Sign in to sync your progress to Firebase Firestore!')}
+              >
+                <LogIn size={16} />
+                <span>Sign In / Register</span>
+              </button>
+            )}
+          </div>
         </header>
 
+        {/* Level Switcher (Beginner A1-A2 vs Intermediate B1-B2) */}
+        <div className="level-switcher-bar">
+          <div className="level-switcher-pills">
+            <button
+              type="button"
+              className={`level-pill-btn ${levelKey === 'a1_a2' ? 'active' : ''}`}
+              onClick={() => handleSelectLevel('a1_a2')}
+            >
+              <div className="level-pill-title">
+                <span className="level-badge-code">A1 – A2</span>
+                <span className="level-name">Beginner</span>
+              </div>
+              <span className="level-pill-count">
+                {levels.a1_a2.wordCount} words • 40 topics
+              </span>
+            </button>
+
+            <button
+              type="button"
+              className={`level-pill-btn ${levelKey === 'b1_b2' ? 'active' : ''}`}
+              onClick={() => handleSelectLevel('b1_b2')}
+            >
+              <div className="level-pill-title">
+                <span className="level-badge-code">B1 – B2</span>
+                <span className="level-name">Intermediate</span>
+              </div>
+              <span className="level-pill-count">
+                {levels.b1_b2.wordCount} words • 43 topics
+              </span>
+            </button>
+          </div>
+
+          {/* Translation Direction */}
+          <div className="direction-toggle">
+            <button
+              type="button"
+              className={`direction-btn ${!isReverse ? 'active' : ''}`}
+              onClick={() => setIsReverse(false)}
+              title="German to English"
+            >
+              DE ➔ EN
+            </button>
+            <button
+              type="button"
+              className={`direction-btn ${isReverse ? 'active' : ''}`}
+              onClick={() => setIsReverse(true)}
+              title="English to German"
+            >
+              EN ➔ DE
+            </button>
+          </div>
+        </div>
+
+        {/* Stats Dashboard */}
         <StatsDashboard
-          filteredVocab={filteredVocab}
+          currentLevel={currentLevelInfo}
+          currentTopic={activeTopic}
           masteredCount={masteredInCurrentLevel}
-          totalCount={totalInCurrentLevel}
+          totalCount={currentLevelInfo.wordCount}
+          onOpenAuth={() => openAuthModal()}
         />
 
+        {/* Study Mode Selector & Controls */}
         <div className="controls-panel">
           <div className="mode-selectors">
             <button
+              type="button"
               className={`mode-btn ${mode === 'cards' ? 'active' : ''}`}
               onClick={() => setMode('cards')}
             >
               <Layers size={18} />
-              Learn topic
+              <span>Learn by Topic</span>
             </button>
             <button
+              type="button"
               className={`mode-btn ${mode === 'flashcards' ? 'active' : ''}`}
               onClick={() => setMode('flashcards')}
             >
-              <Book size={18} />
-              Flashcards
+              <BookOpen size={18} />
+              <span>Flashcards</span>
             </button>
             <button
+              type="button"
               className={`mode-btn ${mode === 'quiz' ? 'active' : ''}`}
               onClick={() => setMode('quiz')}
             >
               <HelpCircle size={18} />
-              Test
+              <span>Test & Retention</span>
             </button>
 
             {masteredIds.size > 0 && (
               <button
-                className="mode-btn"
+                type="button"
+                className="mode-btn reset-btn"
                 onClick={handleResetProgress}
-                style={{ marginLeft: 'auto', border: '1px solid rgba(239, 68, 68, 0.2)', color: '#f87171' }}
               >
                 <RotateCcw size={14} />
-                Reset Progress
+                <span>Reset</span>
               </button>
             )}
           </div>
-
-          <div className="filter-row">
-            <div className="search-input-wrapper">
-              <Search />
-              <input
-                type="text"
-                className="search-input"
-                placeholder="Search German, English, or example sentence..."
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-              />
-            </div>
-
-            <div className="level-selector">
-              <button
-                className={`level-btn ${!isReverse ? 'active' : ''}`}
-                onClick={() => setIsReverse(false)}
-                title="German to English"
-              >
-                DE ➔ EN
-              </button>
-              <button
-                className={`level-btn ${isReverse ? 'active' : ''}`}
-                onClick={() => setIsReverse(true)}
-                title="English to German"
-              >
-                EN ➔ DE
-              </button>
-            </div>
-
-          </div>
         </div>
 
-        <div className="topic-section">
-          <div className="topic-section-label">Topics — pick one to learn and remember</div>
-          <div className="category-tabs topic-tabs">
-            <button
-              className={`category-tab all ${topicId === 'all' ? 'active' : ''}`}
-              onClick={() => setTopicId('all')}
-            >
-              All topics ({sourceVocab.length})
-            </button>
-            {visibleTopics.map(topic => {
-              const counts = topicCounts.get(topic.id);
-              const total = counts?.total ?? 0;
-              const mastered = counts?.mastered ?? 0;
-              if (total === 0) return null;
-              return (
-                <button
-                  key={topic.id}
-                  className={`category-tab topic ${topicId === topic.id ? 'active' : ''}`}
-                  onClick={() => setTopicId(topic.id)}
-                >
-                  <span>{topic.name}</span>
-                  <span className="topic-count">{mastered}/{total}</span>
-                </button>
-              );
-            })}
-          </div>
-        </div>
+        {/* Topic Selector */}
+        <TopicSelector
+          topics={currentLevelInfo.topics}
+          selectedTopicId={selectedTopicId}
+          onSelectTopic={(id) => setSelectedTopicId(id)}
+          masteredIds={masteredIds}
+        />
 
-        <div className="category-tabs">
-          {(['all', 'noun', 'verb', 'adjective', 'other'] as const).map(cat => (
-            <button
-              key={cat}
-              className={`category-tab ${cat} ${category === cat ? 'active' : ''}`}
-              onClick={() => setCategory(cat)}
-            >
-              {cat.toUpperCase()}
-            </button>
-          ))}
-        </div>
-
+        {/* Main Content Area */}
         <main className="main-content">
           {mode === 'cards' && (
-            <div className="cards-grid">
-              {filteredVocab.length > 0 ? (
-                filteredVocab.map(item => (
-                  <VocabularyCard
-                    key={item.id}
-                    item={item}
-                    isMastered={masteredIds.has(item.id)}
-                    onToggleMaster={(id, e) => handleToggleMaster(id, e)}
-                    isReverse={isReverse}
-                  />
-                ))
+            <>
+              {activeTopic ? (
+                <TopicView
+                  topic={activeTopic}
+                  masteredIds={masteredIds}
+                  onToggleMaster={handleToggleMaster}
+                  isReverse={isReverse}
+                  onOpenFlashcards={() => setMode('flashcards')}
+                  onOpenTest={() => setMode('quiz')}
+                />
               ) : (
-                <div className="empty-state">
-                  <Search size={40} />
-                  <h3>No matching vocabulary found.</h3>
-                  <p>Try clearing search or changing filters to display words.</p>
+                <div className="all-topics-view">
+                  <div className="all-topics-banner">
+                    <h2>All Topics in {currentLevelInfo.badge} ({currentLevelInfo.topics.length} Topics)</h2>
+                    <p>Select any topic above to explore its structured vocabulary by part of speech.</p>
+                  </div>
                 </div>
               )}
-            </div>
+            </>
           )}
 
           {mode === 'flashcards' && (
             <FlashcardDeck
-              vocabList={filteredVocab}
+              vocabList={activeVocabList}
               masteredIds={masteredIds}
-              onToggleMaster={(id) => handleToggleMaster(id)}
+              onToggleMaster={handleToggleMaster}
               isReverse={isReverse}
             />
           )}
 
           {mode === 'quiz' && (
             <QuizMode
-              vocabList={filteredVocab}
+              vocabList={activeVocabList}
+              masteredIds={masteredIds}
               isReverse={isReverse}
-              onRemember={handleRemember}
+              onRemember={handleRememberWord}
+              onUnremember={handleUnrememberWord}
+              onRecordResult={handleRecordQuizResult}
             />
           )}
         </main>

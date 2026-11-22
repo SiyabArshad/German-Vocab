@@ -1,69 +1,101 @@
-import { Award } from 'lucide-react';
-import type { VocabularyItem } from '../data/vocabulary';
+import React from 'react';
+import { BookOpen, Cloud } from 'lucide-react';
+import type { LevelInfo, TopicData } from '../data/types';
+import { useAuth } from '../services/useAuth';
 
 interface StatsDashboardProps {
-  filteredVocab: VocabularyItem[];
+  currentLevel: LevelInfo;
+  currentTopic: TopicData | null;
   masteredCount: number;
   totalCount: number;
+  onOpenAuth: () => void;
 }
 
 export const StatsDashboard: React.FC<StatsDashboardProps> = ({
-  filteredVocab,
+  currentLevel,
+  currentTopic,
   masteredCount,
-  totalCount
+  totalCount,
+  onOpenAuth,
 }) => {
-  const categoryCounts = filteredVocab.reduce(
-    (acc, curr) => {
-      acc[curr.c] = (acc[curr.c] || 0) + 1;
-      return acc;
-    },
-    { noun: 0, verb: 0, adjective: 0, other: 0 } as Record<VocabularyItem['c'], number>
-  );
-
-  const totalFiltered = filteredVocab.length;
-  const masterPercentage = totalCount > 0 ? Math.round((masteredCount / totalCount) * 100) : 0;
+  const { user } = useAuth();
+  const percentage = Math.round((masteredCount / (totalCount || 1)) * 100);
 
   return (
-    <div className="stats-section">
-      {/* Master Progress Bar */}
-      <div className="progress-panel">
-        <div className="progress-info">
-          <div className="progress-title">
-            <Award size={18} style={{ display: 'inline', marginRight: '6px', color: '#10b981', verticalAlign: 'text-bottom' }} />
-            Mastery Progress
-          </div>
-          <div className="progress-desc">
-            You mastered {masteredCount} out of {totalCount} words
-          </div>
+    <div className="stats-dashboard-grid">
+      {/* Card 1: Active Level & Progress */}
+      <div className="stats-card level-stat-card">
+        <div className="stat-card-header">
+          <span className="stat-badge-pill">{currentLevel.badge}</span>
+          <span className="stat-card-title">{currentLevel.label} Level</span>
         </div>
-        <div className="progress-bar-wrapper">
-          <div className="progress-bar-fill" style={{ width: `${masterPercentage}%` }} />
+        <div className="stat-number-row">
+          <span className="stat-big-number">{masteredCount}</span>
+          <span className="stat-divider">/</span>
+          <span className="stat-total-number">{totalCount} words</span>
         </div>
-        <div className="progress-percent">{masterPercentage}%</div>
+        <div className="stat-progress-bar-wrap">
+          <div className="stat-progress-bar-fill" style={{ width: `${percentage}%` }} />
+        </div>
+        <div className="stat-sub-info">
+          <span>{percentage}% of {currentLevel.badge} Mastered</span>
+          <span>{currentLevel.topicCount} Topics</span>
+        </div>
       </div>
 
-      {/* Grid Dashboard */}
-      <div className="stats-dashboard">
-        <div className="stat-box total">
-          <div className="stat-val">{totalFiltered}</div>
-          <div className="stat-lbl">Active Set</div>
+      {/* Card 2: Current Focus / Topic */}
+      <div className="stats-card topic-stat-card">
+        <div className="stat-card-header">
+          <span className="stat-icon-wrap">
+            <BookOpen size={16} />
+          </span>
+          <span className="stat-card-title">Current Focus</span>
         </div>
-        <div className="stat-box noun">
-          <div className="stat-val">{categoryCounts.noun}</div>
-          <div className="stat-lbl">Nouns</div>
+        {currentTopic ? (
+          <>
+            <h4 className="stat-topic-name">#{currentTopic.id} {currentTopic.topic}</h4>
+            <div className="stat-topic-breakdown">
+              <span>{currentTopic.words.length} words total</span>
+              <span>•</span>
+              <span>{currentTopic.nouns.length} N</span>
+              <span>•</span>
+              <span>{currentTopic.verbs.length} V</span>
+              <span>•</span>
+              <span>{currentTopic.adjectives.length} A</span>
+            </div>
+          </>
+        ) : (
+          <>
+            <h4 className="stat-topic-name">All {currentLevel.topicCount} Topics</h4>
+            <div className="stat-topic-breakdown">
+              <span>Browsing all vocabulary in {currentLevel.badge}</span>
+            </div>
+          </>
+        )}
+      </div>
+
+      {/* Card 3: Cloud Sync & Account */}
+      <div className="stats-card cloud-stat-card" onClick={!user ? onOpenAuth : undefined}>
+        <div className="stat-card-header">
+          <span className="stat-icon-wrap cloud">
+            <Cloud size={16} />
+          </span>
+          <span className="stat-card-title">Firebase Cloud Sync</span>
         </div>
-        <div className="stat-box verb">
-          <div className="stat-val">{categoryCounts.verb}</div>
-          <div className="stat-lbl">Verbs</div>
-        </div>
-        <div className="stat-box adjective">
-          <div className="stat-val">{categoryCounts.adjective}</div>
-          <div className="stat-lbl">Adjectives</div>
-        </div>
-        <div className="stat-box other">
-          <div className="stat-val">{categoryCounts.other}</div>
-          <div className="stat-lbl">Other</div>
-        </div>
+        {user ? (
+          <div className="cloud-status-user">
+            <div className="cloud-sync-active">
+              <span className="sync-pulse" />
+              <span>Real-time Synced</span>
+            </div>
+            <p className="cloud-user-email">{user.email || (user.isAnonymous ? 'Guest Account' : 'Logged In User')}</p>
+          </div>
+        ) : (
+          <div className="cloud-status-prompt">
+            <span className="cloud-prompt-btn">Sign in to sync progress</span>
+            <p className="cloud-prompt-hint">Save your learned words across devices</p>
+          </div>
+        )}
       </div>
     </div>
   );

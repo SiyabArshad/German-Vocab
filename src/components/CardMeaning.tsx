@@ -1,15 +1,15 @@
 import { Volume2 } from 'lucide-react';
-import type { VocabularyItem } from '../data/types';
+import type { VocabularyWord } from '../data/types';
 import { parseGermanWord, speakGerman } from '../utils/vocab';
 
 interface CardMeaningProps {
-  item: VocabularyItem;
+  item: VocabularyWord;
   showGermanWord?: boolean;
   compact?: boolean;
 }
 
 export function CardMeaning({ item, showGermanWord = false, compact = false }: CardMeaningProps) {
-  const { article, rest, gender } = parseGermanWord(item.w, item.c);
+  const { article, rest, gender } = parseGermanWord(item.de, item.pos);
 
   return (
     <div className={`card-meaning ${compact ? 'compact' : ''}`}>
@@ -19,22 +19,31 @@ export function CardMeaning({ item, showGermanWord = false, compact = false }: C
           {rest}
         </div>
       )}
-      <div className="english-word">{item.e}</div>
+      <div className="english-word">{item.en}</div>
       <div className="example-block">
         <div className="example-label">Beispielsatz</div>
-        <p className="example-sentence">{item.x}</p>
+        <p className="example-sentence">{item.sentence}</p>
         <button
           type="button"
           className="audio-btn example-audio"
           onClick={(e) => {
             e.stopPropagation();
-            speakGerman(item.x);
+            speakGerman(item.sentence);
           }}
           title="Listen to example"
         >
           <Volume2 size={14} />
         </button>
       </div>
+
+      {item.pos === 'verb' && item.perfekt && (
+        <div className="perfekt-block">
+          <div className="perfekt-label">Perfekt: <strong>{item.perfekt}</strong></div>
+          {item.sentence_perfekt && (
+            <p className="perfekt-sentence">{item.sentence_perfekt}</p>
+          )}
+        </div>
+      )}
     </div>
   );
 }

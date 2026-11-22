@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import { Volume2, Check } from 'lucide-react';
-import type { VocabularyItem } from '../data/types';
-import { topicById } from '../data/topics';
+import { Volume2, Check, Sparkles } from 'lucide-react';
+import type { VocabularyWord } from '../data/types';
 import { parseGermanWord, speakGerman } from '../utils/vocab';
-import { CardMeaning } from './CardMeaning';
 
 interface VocabularyCardProps {
-  item: VocabularyItem;
+  item: VocabularyWord;
   isMastered: boolean;
   onToggleMaster: (itemId: string, e: React.MouseEvent) => void;
   isReverse?: boolean;
@@ -19,65 +17,128 @@ export const VocabularyCard: React.FC<VocabularyCardProps> = ({
   isReverse = false
 }) => {
   const [isFlipped, setIsFlipped] = useState(false);
-  const { article, rest, gender } = parseGermanWord(item.w, item.c);
-  const topicName = topicById.get(item.t)?.name;
+  const { article, rest, gender } = parseGermanWord(item.de, item.pos);
 
   return (
-    <div className="card-perspective" onClick={() => setIsFlipped(!isFlipped)}>
-      <div className={`flip-card-inner ${isFlipped ? 'flipped' : ''}`}>
-        <div className={`card-face front ${isReverse ? '' : (gender || '')}`}>
-          <div className="card-header-row">
-            <span className="level-badge">{item.l}</span>
-            <span className={`category-badge ${item.c}`}>{item.c}</span>
-          </div>
+    <div
+      className={`vocab-card ${isMastered ? 'mastered' : ''} ${gender || ''}`}
+      onClick={() => setIsFlipped(!isFlipped)}
+    >
+      <div className="card-top-bar">
+        <div className="card-badge-group">
+          <span className={`pos-tag pos-${item.pos}`}>{item.pos}</span>
+          {gender && <span className={`gender-tag ${gender}`}>{gender}</span>}
+        </div>
 
-          <div className="card-body">
-            {isReverse ? (
-              <div className="english-word">{item.e}</div>
-            ) : (
-              <div className="german-word">
-                {article && <span className={`gender-highlight ${gender}`}>{article} </span>}
+        <button
+          type="button"
+          className={`master-btn ${isMastered ? 'is-mastered' : ''}`}
+          onClick={(e) => onToggleMaster(item.id, e)}
+          title={isMastered ? 'Remembered! Click to reset' : 'Mark as remembered'}
+          aria-label={isMastered ? 'Remembered' : 'Mark as remembered'}
+        >
+          <Check size={16} />
+          {isMastered && <span className="master-btn-label">Remembered</span>}
+        </button>
+      </div>
+
+      <div className="card-primary-content">
+        {isReverse ? (
+          <div className="word-heading">
+            <h3 className="word-text english-primary">{item.en}</h3>
+            <span className="word-subtext-hint">Click card to reveal German</span>
+          </div>
+        ) : (
+          <div className="word-heading">
+            <div className="german-word-row">
+              <h3 className="word-text german-primary">
+                {article && <span className={`article-prefix ${gender}`}>{article} </span>}
                 {rest}
-              </div>
-            )}
-            {topicName && <span className="topic-chip-mini">{topicName}</span>}
-          </div>
-
-          <div className="card-footer-row">
-            {!isReverse && (
-              <button className="audio-btn" onClick={(e) => { e.stopPropagation(); speakGerman(item.w); }} title="Listen pronunciation">
+              </h3>
+              <button
+                type="button"
+                className="inline-audio-btn"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  speakGerman(item.de);
+                }}
+                title="Listen to German pronunciation"
+              >
                 <Volume2 size={16} />
               </button>
-            )}
-            {isReverse && <div style={{ width: '28px' }} />}
-            <span className="card-hint">Click to flip</span>
+            </div>
+            <p className="word-translation-sub">{item.en}</p>
+          </div>
+        )}
+      </div>
+
+      {/* Examples & Verb details section */}
+      <div className="card-details-section">
+        <div className="sentence-box">
+          <div className="sentence-label-row">
+            <span className="sentence-label">Beispielsatz</span>
             <button
-              className={`audio-btn ${isMastered ? 'mastered' : ''}`}
-              onClick={(e) => onToggleMaster(item.id, e)}
-              style={{
-                background: isMastered ? 'rgba(16, 185, 129, 0.2)' : undefined,
-                borderColor: isMastered ? 'var(--accent-success)' : undefined,
-                color: isMastered ? 'var(--accent-success)' : undefined
+              type="button"
+              className="sentence-audio-btn"
+              onClick={(e) => {
+                e.stopPropagation();
+                speakGerman(item.sentence);
               }}
-              title={isMastered ? 'Remembered! Click to reset' : 'Mark as remembered'}
+              title="Listen to example sentence"
             >
-              <Check size={16} />
+              <Volume2 size={13} />
             </button>
           </div>
+          <p className="sentence-text">{item.sentence}</p>
         </div>
 
-        <div className={`card-face back ${isReverse ? (gender || '') : ''}`}>
-          <div className="card-header-row">
-            <span className="level-badge">{item.l}</span>
-            <span className={`category-badge ${item.c}`}>{item.c}</span>
+        {/* Verb Perfekt form & sentence */}
+        {item.pos === 'verb' && item.perfekt && (
+          <div className="perfekt-box">
+            <div className="perfekt-header">
+              <span className="perfekt-badge">Perfekt</span>
+              <span className="perfekt-form">{item.perfekt}</span>
+              <button
+                type="button"
+                className="sentence-audio-btn"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  speakGerman(item.perfekt || '');
+                }}
+                title="Listen to Perfekt form"
+              >
+                <Volume2 size={13} />
+              </button>
+            </div>
+            {item.sentence_perfekt && (
+              <div className="perfekt-sentence-row">
+                <p className="perfekt-sentence-text">{item.sentence_perfekt}</p>
+                <button
+                  type="button"
+                  className="sentence-audio-btn"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    speakGerman(item.sentence_perfekt || '');
+                  }}
+                  title="Listen to Perfekt example"
+                >
+                  <Volume2 size={13} />
+                </button>
+              </div>
+            )}
           </div>
-          <div className="card-body">
-            <CardMeaning item={item} showGermanWord={isReverse} compact />
-          </div>
-        </div>
+        )}
+      </div>
+
+      {/* Card footer */}
+      <div className="card-footer-mini">
+        <span className="topic-indicator">{item.topicName}</span>
+        {isMastered && (
+          <span className="mastered-pill">
+            <Sparkles size={12} /> Learned
+          </span>
+        )}
       </div>
     </div>
   );
 };
-
-export default VocabularyCard;

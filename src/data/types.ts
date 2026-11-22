@@ -1,18 +1,64 @@
-export type VocabCategory = 'noun' | 'verb' | 'adjective' | 'other';
-export type VocabLevel = 'A1' | 'A2';
+export type LevelKey = 'a1_a2' | 'b1_b2';
 
-export interface VocabularyItem {
+export type VocabCategory =
+  | 'noun'
+  | 'verb'
+  | 'adjective'
+  | 'adverb'
+  | 'phrase'
+  | 'connector'
+  | 'preposition'
+  | 'pronoun'
+  | 'other';
+
+export interface VocabularyWord {
   id: string;
-  w: string;
-  e: string;
-  c: VocabCategory;
-  l: VocabLevel;
-  t: string;
-  x: string;
+  topicId: number;
+  topicName: string;
+  level: LevelKey;
+  de: string;
+  pos: VocabCategory;
+  en: string;
+  sentence: string;
+  perfekt?: string;
+  sentence_perfekt?: string;
 }
 
-export interface TopicMeta {
-  id: string;
-  name: string;
-  level: VocabLevel;
+export interface TopicData {
+  id: number;
+  topic: string;
+  level: LevelKey;
+  words: VocabularyWord[];
+  nouns: VocabularyWord[];
+  verbs: VocabularyWord[];
+  adjectives: VocabularyWord[];
+  others: VocabularyWord[];
 }
+
+export interface LevelInfo {
+  key: LevelKey;
+  label: string;
+  badge: string;
+  sub: string;
+  description: string;
+  topics: TopicData[];
+  words: VocabularyWord[];
+  wordCount: number;
+  topicCount: number;
+}
+
+export interface WordReviewData {
+  remembered: boolean;
+  rememberedAt?: number;
+  reviewCount: number;
+  lastReviewedAt?: number;
+  correctCount?: number;
+  incorrectCount?: number;
+  retentionStreak?: number;
+}
+
+export type VocabularyItem = VocabularyWord;
+
+export type StudyMode = 'cards' | 'flashcards' | 'quiz';
+export type TestFilterMode = 'all' | 'remembered' | 'unlearned';
+export type CategoryFilter = 'all' | 'noun' | 'verb' | 'adjective' | 'other';

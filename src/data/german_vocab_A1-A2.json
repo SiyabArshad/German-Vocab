@@ -1,0 +1,6157 @@
+{
+  "level": "A1-A2",
+  "fields": {
+    "de": "German word (nouns with article)",
+    "pos": "part of speech",
+    "en": "English meaning",
+    "sentence": "German example sentence (for verbs: present tense with ich and du)",
+    "perfekt": "verbs only: Perfekt form (auxiliary + participle)",
+    "sentence_perfekt": "verbs only: example sentence in Perfekt"
+  },
+  "topics": [
+    {
+      "id": 1,
+      "topic": "Sich vorstellen",
+      "words": [
+        {
+          "de": "der Name",
+          "pos": "noun",
+          "en": "name",
+          "sentence": "Mein Name ist Anna."
+        },
+        {
+          "de": "der Vorname",
+          "pos": "noun",
+          "en": "first name",
+          "sentence": "Mein Vorname ist Ali."
+        },
+        {
+          "de": "der Nachname",
+          "pos": "noun",
+          "en": "last name",
+          "sentence": "Mein Nachname ist Müller."
+        },
+        {
+          "de": "das Alter",
+          "pos": "noun",
+          "en": "age",
+          "sentence": "Mein Alter ist 25 Jahre."
+        },
+        {
+          "de": "das Land",
+          "pos": "noun",
+          "en": "country",
+          "sentence": "Mein Land ist Indien."
+        },
+        {
+          "de": "die Sprache",
+          "pos": "noun",
+          "en": "language",
+          "sentence": "Ich spreche drei Sprachen."
+        },
+        {
+          "de": "der Beruf",
+          "pos": "noun",
+          "en": "profession",
+          "sentence": "Mein Beruf ist Lehrer."
+        },
+        {
+          "de": "heißen",
+          "pos": "verb",
+          "en": "to be called",
+          "sentence": "Ich heiße Anna, und du heißt Paul.",
+          "perfekt": "hat geheißen",
+          "sentence_perfekt": "Früher hat die Straße anders geheißen."
+        },
+        {
+          "de": "kommen aus",
+          "pos": "verb",
+          "en": "to come from",
+          "sentence": "Ich komme aus Indien, und du kommst aus Polen.",
+          "perfekt": "ist gekommen",
+          "sentence_perfekt": "Er ist aus Spanien gekommen."
+        },
+        {
+          "de": "wohnen",
+          "pos": "verb",
+          "en": "to live",
+          "sentence": "Ich wohne in Berlin, und du wohnst in Wien.",
+          "perfekt": "hat gewohnt",
+          "sentence_perfekt": "Früher habe ich auf dem Land gewohnt."
+        },
+        {
+          "de": "sprechen",
+          "pos": "verb",
+          "en": "to speak",
+          "sentence": "Ich spreche Deutsch, und du sprichst Englisch.",
+          "perfekt": "hat gesprochen",
+          "sentence_perfekt": "Ich habe mit dem Arzt gesprochen."
+        },
+        {
+          "de": "freundlich",
+          "pos": "adjective",
+          "en": "friendly",
+          "sentence": "Sie ist sehr freundlich."
+        },
+        {
+          "de": "verheiratet",
+          "pos": "adjective",
+          "en": "married",
+          "sentence": "Ich bin verheiratet."
+        },
+        {
+          "de": "ledig",
+          "pos": "adjective",
+          "en": "single",
+          "sentence": "Er ist noch ledig."
+        },
+        {
+          "de": "Freut mich!",
+          "pos": "phrase",
+          "en": "Nice to meet you!",
+          "sentence": "Hallo, ich bin Tom. – Freut mich!"
+        },
+        {
+          "de": "Wie geht's?",
+          "pos": "phrase",
+          "en": "How are you?",
+          "sentence": "Hallo Lisa, wie geht's?"
+        },
+        {
+          "de": "die Telefonnummer",
+          "pos": "noun",
+          "en": "phone number",
+          "sentence": "Meine Telefonnummer ist 0170 123456."
+        },
+        {
+          "de": "die Staatsangehörigkeit",
+          "pos": "noun",
+          "en": "nationality",
+          "sentence": "Meine Staatsangehörigkeit ist deutsch."
+        },
+        {
+          "de": "sich vorstellen",
+          "pos": "verb",
+          "en": "to introduce oneself",
+          "sentence": "Ich stelle mich vor, und du stellst dich auch vor.",
+          "perfekt": "hat sich vorgestellt",
+          "sentence_perfekt": "Er hat sich dem Chef vorgestellt."
+        },
+        {
+          "de": "buchstabieren",
+          "pos": "verb",
+          "en": "to spell",
+          "sentence": "Ich buchstabiere meinen Namen, und du buchstabierst deinen.",
+          "perfekt": "hat buchstabiert",
+          "sentence_perfekt": "Sie hat ihren Nachnamen buchstabiert."
+        },
+        {
+          "de": "geboren sein",
+          "pos": "verb",
+          "en": "to be born",
+          "sentence": "Ich bin 1998 geboren, und du bist 2001 geboren.",
+          "perfekt": "ist geboren worden",
+          "sentence_perfekt": "Meine Schwester ist in Hamburg geboren worden."
+        },
+        {
+          "de": "Hallo! / Guten Tag!",
+          "pos": "phrase",
+          "en": "Hello! / Good day!",
+          "sentence": "Guten Tag, Frau Weber!"
+        },
+        {
+          "de": "Auf Wiedersehen!",
+          "pos": "phrase",
+          "en": "Goodbye!",
+          "sentence": "Auf Wiedersehen, bis morgen!"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "topic": "Familie & Freunde",
+      "words": [
+        {
+          "de": "die Familie",
+          "pos": "noun",
+          "en": "family",
+          "sentence": "Meine Familie ist groß."
+        },
+        {
+          "de": "die Mutter",
+          "pos": "noun",
+          "en": "mother",
+          "sentence": "Meine Mutter kocht gern."
+        },
+        {
+          "de": "der Vater",
+          "pos": "noun",
+          "en": "father",
+          "sentence": "Mein Vater arbeitet bei Siemens."
+        },
+        {
+          "de": "der Bruder",
+          "pos": "noun",
+          "en": "brother",
+          "sentence": "Mein Bruder ist 18 Jahre alt."
+        },
+        {
+          "de": "die Schwester",
+          "pos": "noun",
+          "en": "sister",
+          "sentence": "Meine Schwester studiert Medizin."
+        },
+        {
+          "de": "die Eltern",
+          "pos": "noun",
+          "en": "parents",
+          "sentence": "Meine Eltern wohnen in Hamburg."
+        },
+        {
+          "de": "die Großeltern",
+          "pos": "noun",
+          "en": "grandparents",
+          "sentence": "Ich besuche meine Großeltern am Sonntag."
+        },
+        {
+          "de": "das Kind",
+          "pos": "noun",
+          "en": "child",
+          "sentence": "Sie haben zwei Kinder."
+        },
+        {
+          "de": "der Freund / die Freundin",
+          "pos": "noun",
+          "en": "friend / girlfriend",
+          "sentence": "Mein Freund heißt Paul."
+        },
+        {
+          "de": "der Nachbar",
+          "pos": "noun",
+          "en": "neighbour",
+          "sentence": "Der Nachbar ist sehr nett."
+        },
+        {
+          "de": "die Verwandten",
+          "pos": "noun",
+          "en": "relatives",
+          "sentence": "Meine Verwandten leben in Polen."
+        },
+        {
+          "de": "lieben",
+          "pos": "verb",
+          "en": "to love",
+          "sentence": "Ich liebe Musik, und du liebst Filme.",
+          "perfekt": "hat geliebt",
+          "sentence_perfekt": "Sie hat ihn immer geliebt."
+        },
+        {
+          "de": "sich treffen",
+          "pos": "verb",
+          "en": "to meet",
+          "sentence": "Ich treffe mich mit Freunden, und du triffst dich mit deiner Familie.",
+          "perfekt": "hat sich getroffen",
+          "sentence_perfekt": "Wir haben uns im Café getroffen."
+        },
+        {
+          "de": "jung",
+          "pos": "adjective",
+          "en": "young",
+          "sentence": "Meine Schwester ist jung."
+        },
+        {
+          "de": "alt",
+          "pos": "adjective",
+          "en": "old",
+          "sentence": "Mein Opa ist 80 Jahre alt."
+        },
+        {
+          "de": "zusammen",
+          "pos": "adverb",
+          "en": "together",
+          "sentence": "Wir essen zusammen."
+        },
+        {
+          "de": "der Sohn",
+          "pos": "noun",
+          "en": "son",
+          "sentence": "Mein Sohn ist fünf Jahre alt."
+        },
+        {
+          "de": "die Tochter",
+          "pos": "noun",
+          "en": "daughter",
+          "sentence": "Ihre Tochter geht in die Schule."
+        },
+        {
+          "de": "der Onkel",
+          "pos": "noun",
+          "en": "uncle",
+          "sentence": "Mein Onkel wohnt in Köln."
+        },
+        {
+          "de": "die Tante",
+          "pos": "noun",
+          "en": "aunt",
+          "sentence": "Meine Tante kocht sehr gut."
+        },
+        {
+          "de": "der Cousin / die Cousine",
+          "pos": "noun",
+          "en": "cousin",
+          "sentence": "Meine Cousine studiert in Wien."
+        },
+        {
+          "de": "der Opa / die Oma",
+          "pos": "noun",
+          "en": "grandpa / grandma",
+          "sentence": "Meine Oma backt gern Kuchen."
+        },
+        {
+          "de": "der Ehemann / die Ehefrau",
+          "pos": "noun",
+          "en": "husband / wife",
+          "sentence": "Ihr Ehemann arbeitet als Koch."
+        },
+        {
+          "de": "das Baby",
+          "pos": "noun",
+          "en": "baby",
+          "sentence": "Das Baby schläft schon."
+        },
+        {
+          "de": "heiraten",
+          "pos": "verb",
+          "en": "to marry",
+          "sentence": "Ich heirate im Sommer, und du heiratest im Herbst.",
+          "perfekt": "hat geheiratet",
+          "sentence_perfekt": "Meine Eltern haben 1995 geheiratet."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "topic": "Tagesablauf",
+      "words": [
+        {
+          "de": "der Tag",
+          "pos": "noun",
+          "en": "day",
+          "sentence": "Der Tag beginnt früh."
+        },
+        {
+          "de": "der Morgen",
+          "pos": "noun",
+          "en": "morning",
+          "sentence": "Am Morgen trinke ich Kaffee."
+        },
+        {
+          "de": "der Abend",
+          "pos": "noun",
+          "en": "evening",
+          "sentence": "Am Abend sehe ich fern."
+        },
+        {
+          "de": "das Frühstück",
+          "pos": "noun",
+          "en": "breakfast",
+          "sentence": "Das Frühstück ist um sieben Uhr."
+        },
+        {
+          "de": "aufstehen",
+          "pos": "verb",
+          "en": "to get up",
+          "sentence": "Ich stehe um 6 Uhr auf, und du stehst um 7 Uhr auf.",
+          "perfekt": "ist aufgestanden",
+          "sentence_perfekt": "Heute bin ich früh aufgestanden."
+        },
+        {
+          "de": "duschen",
+          "pos": "verb",
+          "en": "to shower",
+          "sentence": "Ich dusche am Morgen, und du duschst am Abend.",
+          "perfekt": "hat geduscht",
+          "sentence_perfekt": "Ich habe heute schon geduscht."
+        },
+        {
+          "de": "frühstücken",
+          "pos": "verb",
+          "en": "to have breakfast",
+          "sentence": "Ich frühstücke um 7 Uhr, und du frühstückst um 8 Uhr.",
+          "perfekt": "hat gefrühstückt",
+          "sentence_perfekt": "Wir haben auf dem Balkon gefrühstückt."
+        },
+        {
+          "de": "arbeiten",
+          "pos": "verb",
+          "en": "to work",
+          "sentence": "Ich arbeite im Büro, und du arbeitest zu Hause.",
+          "perfekt": "hat gearbeitet",
+          "sentence_perfekt": "Er hat gestern lange gearbeitet."
+        },
+        {
+          "de": "nach Hause kommen",
+          "pos": "verb",
+          "en": "to come home",
+          "sentence": "Ich komme um 17 Uhr nach Hause, und du kommst um 18 Uhr nach Hause.",
+          "perfekt": "ist nach Hause gekommen",
+          "sentence_perfekt": "Gestern bin ich spät nach Hause gekommen."
+        },
+        {
+          "de": "schlafen",
+          "pos": "verb",
+          "en": "to sleep",
+          "sentence": "Ich schlafe acht Stunden, und du schläfst nur sechs.",
+          "perfekt": "hat geschlafen",
+          "sentence_perfekt": "Ich habe gut geschlafen."
+        },
+        {
+          "de": "ins Bett gehen",
+          "pos": "verb",
+          "en": "to go to bed",
+          "sentence": "Ich gehe um 22 Uhr ins Bett, und du gehst um 23 Uhr ins Bett.",
+          "perfekt": "ist ins Bett gegangen",
+          "sentence_perfekt": "Gestern bin ich früh ins Bett gegangen."
+        },
+        {
+          "de": "immer",
+          "pos": "adverb",
+          "en": "always",
+          "sentence": "Ich stehe immer früh auf."
+        },
+        {
+          "de": "oft",
+          "pos": "adverb",
+          "en": "often",
+          "sentence": "Ich lerne oft am Abend."
+        },
+        {
+          "de": "manchmal",
+          "pos": "adverb",
+          "en": "sometimes",
+          "sentence": "Manchmal koche ich selbst."
+        },
+        {
+          "de": "nie",
+          "pos": "adverb",
+          "en": "never",
+          "sentence": "Ich trinke nie Alkohol."
+        },
+        {
+          "de": "dann",
+          "pos": "connector",
+          "en": "then",
+          "sentence": "Zuerst dusche ich, dann frühstücke ich."
+        },
+        {
+          "de": "der Mittag",
+          "pos": "noun",
+          "en": "noon",
+          "sentence": "Am Mittag esse ich eine Suppe."
+        },
+        {
+          "de": "die Nacht",
+          "pos": "noun",
+          "en": "night",
+          "sentence": "In der Nacht schlafe ich tief."
+        },
+        {
+          "de": "der Vormittag / der Nachmittag",
+          "pos": "noun",
+          "en": "morning / afternoon",
+          "sentence": "Am Nachmittag gehe ich spazieren."
+        },
+        {
+          "de": "der Wecker",
+          "pos": "noun",
+          "en": "alarm clock",
+          "sentence": "Mein Wecker klingelt um sechs Uhr."
+        },
+        {
+          "de": "sich waschen",
+          "pos": "verb",
+          "en": "to wash oneself",
+          "sentence": "Ich wasche mich am Morgen, und du wäschst dich am Abend.",
+          "perfekt": "hat sich gewaschen",
+          "sentence_perfekt": "Ich habe mich schnell gewaschen."
+        },
+        {
+          "de": "sich anziehen",
+          "pos": "verb",
+          "en": "to get dressed",
+          "sentence": "Ich ziehe mich an, und du ziehst dich auch an.",
+          "perfekt": "hat sich angezogen",
+          "sentence_perfekt": "Er hat sich warm angezogen."
+        },
+        {
+          "de": "Zähne putzen",
+          "pos": "verb",
+          "en": "to brush teeth",
+          "sentence": "Ich putze die Zähne, und du putzt die Zähne.",
+          "perfekt": "hat Zähne geputzt",
+          "sentence_perfekt": "Ich habe die Zähne geputzt."
+        },
+        {
+          "de": "aufwachen",
+          "pos": "verb",
+          "en": "to wake up",
+          "sentence": "Ich wache früh auf, und du wachst spät auf.",
+          "perfekt": "ist aufgewacht",
+          "sentence_perfekt": "Heute bin ich um fünf Uhr aufgewacht."
+        },
+        {
+          "de": "fernsehen",
+          "pos": "verb",
+          "en": "to watch TV",
+          "sentence": "Ich sehe abends fern, und du siehst nie fern.",
+          "perfekt": "hat ferngesehen",
+          "sentence_perfekt": "Wir haben gestern Abend ferngesehen."
+        },
+        {
+          "de": "normalerweise",
+          "pos": "adverb",
+          "en": "usually",
+          "sentence": "Normalerweise stehe ich um sieben Uhr auf."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "topic": "Uhrzeit & Termine",
+      "words": [
+        {
+          "de": "die Uhr",
+          "pos": "noun",
+          "en": "clock / o'clock",
+          "sentence": "Es ist drei Uhr."
+        },
+        {
+          "de": "die Stunde",
+          "pos": "noun",
+          "en": "hour",
+          "sentence": "Der Kurs dauert eine Stunde."
+        },
+        {
+          "de": "die Minute",
+          "pos": "noun",
+          "en": "minute",
+          "sentence": "Der Bus kommt in fünf Minuten."
+        },
+        {
+          "de": "der Termin",
+          "pos": "noun",
+          "en": "appointment",
+          "sentence": "Ich habe morgen einen Termin."
+        },
+        {
+          "de": "die Woche",
+          "pos": "noun",
+          "en": "week",
+          "sentence": "Nächste Woche habe ich Urlaub."
+        },
+        {
+          "de": "der Monat",
+          "pos": "noun",
+          "en": "month",
+          "sentence": "Der Monat hat 30 Tage."
+        },
+        {
+          "de": "das Datum",
+          "pos": "noun",
+          "en": "date",
+          "sentence": "Welches Datum ist heute?"
+        },
+        {
+          "de": "die Verspätung",
+          "pos": "noun",
+          "en": "delay",
+          "sentence": "Entschuldigung für die Verspätung."
+        },
+        {
+          "de": "pünktlich",
+          "pos": "adjective",
+          "en": "on time",
+          "sentence": "Bitte sei pünktlich!"
+        },
+        {
+          "de": "spät",
+          "pos": "adjective",
+          "en": "late",
+          "sentence": "Es ist schon spät."
+        },
+        {
+          "de": "früh",
+          "pos": "adjective",
+          "en": "early",
+          "sentence": "Ich bin heute früh dran."
+        },
+        {
+          "de": "verschieben",
+          "pos": "verb",
+          "en": "to postpone",
+          "sentence": "Ich verschiebe den Termin, und du verschiebst das Treffen.",
+          "perfekt": "hat verschoben",
+          "sentence_perfekt": "Wir haben die Besprechung verschoben."
+        },
+        {
+          "de": "absagen",
+          "pos": "verb",
+          "en": "to cancel",
+          "sentence": "Ich sage den Termin ab, und du sagst die Party ab.",
+          "perfekt": "hat abgesagt",
+          "sentence_perfekt": "Sie hat das Treffen abgesagt."
+        },
+        {
+          "de": "dauern",
+          "pos": "verb",
+          "en": "to last",
+          "sentence": "Bei mir dauert es lange, und bei dir dauert es nicht lange.",
+          "perfekt": "hat gedauert",
+          "sentence_perfekt": "Der Film hat zwei Stunden gedauert."
+        },
+        {
+          "de": "um",
+          "pos": "preposition",
+          "en": "at (time)",
+          "sentence": "Wir treffen uns um 18 Uhr."
+        },
+        {
+          "de": "gestern / heute / morgen",
+          "pos": "adverb",
+          "en": "yesterday / today / tomorrow",
+          "sentence": "Heute habe ich Zeit, morgen nicht."
+        },
+        {
+          "de": "die Sekunde",
+          "pos": "noun",
+          "en": "second",
+          "sentence": "Warte bitte eine Sekunde."
+        },
+        {
+          "de": "der Kalender",
+          "pos": "noun",
+          "en": "calendar",
+          "sentence": "Der Termin steht im Kalender."
+        },
+        {
+          "de": "der Montag",
+          "pos": "noun",
+          "en": "Monday",
+          "sentence": "Am Montag habe ich Deutschkurs."
+        },
+        {
+          "de": "halb",
+          "pos": "adverb",
+          "en": "half (to the next hour)",
+          "sentence": "Es ist halb acht."
+        },
+        {
+          "de": "Viertel nach / Viertel vor",
+          "pos": "phrase",
+          "en": "quarter past / quarter to",
+          "sentence": "Es ist Viertel nach drei."
+        },
+        {
+          "de": "von ... bis",
+          "pos": "phrase",
+          "en": "from ... to",
+          "sentence": "Der Kurs ist von neun bis zwölf Uhr."
+        },
+        {
+          "de": "anfangen",
+          "pos": "verb",
+          "en": "to begin",
+          "sentence": "Ich fange um acht an, und du fängst um neun an.",
+          "perfekt": "hat angefangen",
+          "sentence_perfekt": "Der Film hat schon angefangen."
+        },
+        {
+          "de": "warten",
+          "pos": "verb",
+          "en": "to wait",
+          "sentence": "Ich warte auf den Bus, und du wartest auf deinen Freund.",
+          "perfekt": "hat gewartet",
+          "sentence_perfekt": "Wir haben lange gewartet."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "topic": "Essen & Trinken",
+      "words": [
+        {
+          "de": "das Brot",
+          "pos": "noun",
+          "en": "bread",
+          "sentence": "Ich esse Brot mit Käse."
+        },
+        {
+          "de": "der Käse",
+          "pos": "noun",
+          "en": "cheese",
+          "sentence": "Der Käse schmeckt gut."
+        },
+        {
+          "de": "das Fleisch",
+          "pos": "noun",
+          "en": "meat",
+          "sentence": "Ich esse kein Fleisch."
+        },
+        {
+          "de": "das Gemüse",
+          "pos": "noun",
+          "en": "vegetables",
+          "sentence": "Gemüse ist gesund."
+        },
+        {
+          "de": "das Obst",
+          "pos": "noun",
+          "en": "fruit",
+          "sentence": "Ich esse jeden Tag Obst."
+        },
+        {
+          "de": "der Reis",
+          "pos": "noun",
+          "en": "rice",
+          "sentence": "Zum Mittagessen gibt es Reis."
+        },
+        {
+          "de": "das Wasser",
+          "pos": "noun",
+          "en": "water",
+          "sentence": "Ich trinke viel Wasser."
+        },
+        {
+          "de": "der Kaffee",
+          "pos": "noun",
+          "en": "coffee",
+          "sentence": "Möchtest du einen Kaffee?"
+        },
+        {
+          "de": "die Milch",
+          "pos": "noun",
+          "en": "milk",
+          "sentence": "Ich nehme Milch im Tee."
+        },
+        {
+          "de": "das Mittagessen",
+          "pos": "noun",
+          "en": "lunch",
+          "sentence": "Das Mittagessen ist um 12 Uhr."
+        },
+        {
+          "de": "essen",
+          "pos": "verb",
+          "en": "to eat",
+          "sentence": "Ich esse Reis, und du isst Brot.",
+          "perfekt": "hat gegessen",
+          "sentence_perfekt": "Wir haben zusammen zu Mittag gegessen."
+        },
+        {
+          "de": "trinken",
+          "pos": "verb",
+          "en": "to drink",
+          "sentence": "Ich trinke Wasser, und du trinkst Tee.",
+          "perfekt": "hat getrunken",
+          "sentence_perfekt": "Wir haben Kaffee getrunken."
+        },
+        {
+          "de": "kochen",
+          "pos": "verb",
+          "en": "to cook",
+          "sentence": "Ich koche Suppe, und du kochst Nudeln.",
+          "perfekt": "hat gekocht",
+          "sentence_perfekt": "Meine Mutter hat heute Fisch gekocht."
+        },
+        {
+          "de": "schmecken",
+          "pos": "verb",
+          "en": "to taste",
+          "sentence": "Die Suppe schmeckt mir, und schmeckt sie dir auch?",
+          "perfekt": "hat geschmeckt",
+          "sentence_perfekt": "Das Essen hat gut geschmeckt."
+        },
+        {
+          "de": "lecker",
+          "pos": "adjective",
+          "en": "tasty",
+          "sentence": "Der Kuchen ist lecker."
+        },
+        {
+          "de": "hungrig / durstig",
+          "pos": "adjective",
+          "en": "hungry / thirsty",
+          "sentence": "Ich bin hungrig und durstig."
+        },
+        {
+          "de": "gern",
+          "pos": "adverb",
+          "en": "gladly",
+          "sentence": "Ich esse gern Pizza."
+        },
+        {
+          "de": "das Ei",
+          "pos": "noun",
+          "en": "egg",
+          "sentence": "Ich esse ein Ei zum Frühstück."
+        },
+        {
+          "de": "die Butter",
+          "pos": "noun",
+          "en": "butter",
+          "sentence": "Die Butter liegt im Kühlschrank."
+        },
+        {
+          "de": "der Zucker",
+          "pos": "noun",
+          "en": "sugar",
+          "sentence": "Ich nehme keinen Zucker."
+        },
+        {
+          "de": "das Salz",
+          "pos": "noun",
+          "en": "salt",
+          "sentence": "Gib mir bitte das Salz."
+        },
+        {
+          "de": "die Suppe",
+          "pos": "noun",
+          "en": "soup",
+          "sentence": "Die Suppe ist heiß."
+        },
+        {
+          "de": "der Tee",
+          "pos": "noun",
+          "en": "tea",
+          "sentence": "Ich trinke gern grünen Tee."
+        },
+        {
+          "de": "der Saft",
+          "pos": "noun",
+          "en": "juice",
+          "sentence": "Ein Glas Orangensaft, bitte."
+        },
+        {
+          "de": "das Abendessen",
+          "pos": "noun",
+          "en": "dinner",
+          "sentence": "Das Abendessen ist um sieben Uhr."
+        },
+        {
+          "de": "backen",
+          "pos": "verb",
+          "en": "to bake",
+          "sentence": "Ich backe einen Kuchen, und du backst Brot.",
+          "perfekt": "hat gebacken",
+          "sentence_perfekt": "Sie hat Kekse gebacken."
+        },
+        {
+          "de": "mögen",
+          "pos": "verb",
+          "en": "to like",
+          "sentence": "Ich mag Pizza, und du magst Nudeln.",
+          "perfekt": "hat gemocht",
+          "sentence_perfekt": "Als Kind habe ich Gemüse nicht gemocht."
+        },
+        {
+          "de": "satt",
+          "pos": "adjective",
+          "en": "full (not hungry)",
+          "sentence": "Danke, ich bin satt."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "topic": "Einkaufen",
+      "words": [
+        {
+          "de": "der Supermarkt",
+          "pos": "noun",
+          "en": "supermarket",
+          "sentence": "Ich gehe zum Supermarkt."
+        },
+        {
+          "de": "das Geschäft",
+          "pos": "noun",
+          "en": "shop",
+          "sentence": "Das Geschäft öffnet um neun Uhr."
+        },
+        {
+          "de": "der Preis",
+          "pos": "noun",
+          "en": "price",
+          "sentence": "Der Preis ist zu hoch."
+        },
+        {
+          "de": "das Angebot",
+          "pos": "noun",
+          "en": "special offer",
+          "sentence": "Heute gibt es ein Angebot."
+        },
+        {
+          "de": "die Tüte",
+          "pos": "noun",
+          "en": "bag",
+          "sentence": "Brauchen Sie eine Tüte?"
+        },
+        {
+          "de": "die Kasse",
+          "pos": "noun",
+          "en": "checkout",
+          "sentence": "Bitte zahlen Sie an der Kasse."
+        },
+        {
+          "de": "die Quittung",
+          "pos": "noun",
+          "en": "receipt",
+          "sentence": "Kann ich die Quittung haben?"
+        },
+        {
+          "de": "kaufen",
+          "pos": "verb",
+          "en": "to buy",
+          "sentence": "Ich kaufe Brot, und du kaufst Milch.",
+          "perfekt": "hat gekauft",
+          "sentence_perfekt": "Ich habe ein neues Handy gekauft."
+        },
+        {
+          "de": "kosten",
+          "pos": "verb",
+          "en": "to cost",
+          "sentence": "Das Buch kostet bei mir 10 Euro, und bei dir kostet es 12 Euro.",
+          "perfekt": "hat gekostet",
+          "sentence_perfekt": "Das Ticket hat 50 Euro gekostet."
+        },
+        {
+          "de": "bezahlen",
+          "pos": "verb",
+          "en": "to pay",
+          "sentence": "Ich bezahle mit Karte, und du bezahlst bar.",
+          "perfekt": "hat bezahlt",
+          "sentence_perfekt": "Er hat die Rechnung bezahlt."
+        },
+        {
+          "de": "brauchen",
+          "pos": "verb",
+          "en": "to need",
+          "sentence": "Ich brauche Hilfe, und du brauchst Zeit.",
+          "perfekt": "hat gebraucht",
+          "sentence_perfekt": "Ich habe mehr Zeit gebraucht."
+        },
+        {
+          "de": "teuer",
+          "pos": "adjective",
+          "en": "expensive",
+          "sentence": "Das Fleisch ist teuer."
+        },
+        {
+          "de": "billig",
+          "pos": "adjective",
+          "en": "cheap",
+          "sentence": "Das T-Shirt ist billig."
+        },
+        {
+          "de": "geöffnet / geschlossen",
+          "pos": "adjective",
+          "en": "open / closed",
+          "sentence": "Der Laden ist sonntags geschlossen."
+        },
+        {
+          "de": "ein Kilo / ein Liter",
+          "pos": "phrase",
+          "en": "a kilo / a litre",
+          "sentence": "Ich möchte ein Kilo Äpfel."
+        },
+        {
+          "de": "sonst noch etwas?",
+          "pos": "phrase",
+          "en": "anything else?",
+          "sentence": "Sonst noch etwas? – Nein, danke."
+        },
+        {
+          "de": "der Markt",
+          "pos": "noun",
+          "en": "market",
+          "sentence": "Auf dem Markt kaufe ich Obst."
+        },
+        {
+          "de": "die Bäckerei",
+          "pos": "noun",
+          "en": "bakery",
+          "sentence": "Die Bäckerei öffnet um sechs Uhr."
+        },
+        {
+          "de": "die Einkaufsliste",
+          "pos": "noun",
+          "en": "shopping list",
+          "sentence": "Die Einkaufsliste liegt auf dem Tisch."
+        },
+        {
+          "de": "das Sonderangebot",
+          "pos": "noun",
+          "en": "special offer",
+          "sentence": "Heute gibt es Äpfel im Sonderangebot."
+        },
+        {
+          "de": "der Einkaufswagen",
+          "pos": "noun",
+          "en": "shopping cart",
+          "sentence": "Ich brauche einen Einkaufswagen."
+        },
+        {
+          "de": "suchen",
+          "pos": "verb",
+          "en": "to look for",
+          "sentence": "Ich suche eine Jacke, und du suchst Schuhe.",
+          "perfekt": "hat gesucht",
+          "sentence_perfekt": "Ich habe den Laden lange gesucht."
+        },
+        {
+          "de": "mitnehmen",
+          "pos": "verb",
+          "en": "to take along",
+          "sentence": "Ich nehme eine Tasche mit, und du nimmst einen Rucksack mit.",
+          "perfekt": "hat mitgenommen",
+          "sentence_perfekt": "Hast du den Regenschirm mitgenommen?"
+        },
+        {
+          "de": "voll / leer",
+          "pos": "adjective",
+          "en": "full / empty",
+          "sentence": "Der Einkaufswagen ist voll."
+        },
+        {
+          "de": "Was darf es sein?",
+          "pos": "phrase",
+          "en": "What can I get you?",
+          "sentence": "Guten Tag! Was darf es sein?"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "topic": "Restaurant",
+      "words": [
+        {
+          "de": "das Restaurant",
+          "pos": "noun",
+          "en": "restaurant",
+          "sentence": "Das Restaurant ist sehr gut."
+        },
+        {
+          "de": "die Speisekarte",
+          "pos": "noun",
+          "en": "menu",
+          "sentence": "Die Speisekarte, bitte."
+        },
+        {
+          "de": "die Rechnung",
+          "pos": "noun",
+          "en": "bill",
+          "sentence": "Die Rechnung, bitte!"
+        },
+        {
+          "de": "der Kellner / die Kellnerin",
+          "pos": "noun",
+          "en": "waiter / waitress",
+          "sentence": "Der Kellner bringt das Essen."
+        },
+        {
+          "de": "der Tisch",
+          "pos": "noun",
+          "en": "table",
+          "sentence": "Ich möchte einen Tisch für zwei Personen."
+        },
+        {
+          "de": "die Vorspeise",
+          "pos": "noun",
+          "en": "starter",
+          "sentence": "Als Vorspeise nehme ich eine Suppe."
+        },
+        {
+          "de": "das Hauptgericht",
+          "pos": "noun",
+          "en": "main course",
+          "sentence": "Das Hauptgericht ist Fisch."
+        },
+        {
+          "de": "das Trinkgeld",
+          "pos": "noun",
+          "en": "tip",
+          "sentence": "Ich gebe fünf Euro Trinkgeld."
+        },
+        {
+          "de": "bestellen",
+          "pos": "verb",
+          "en": "to order",
+          "sentence": "Ich bestelle eine Suppe, und du bestellst einen Salat.",
+          "perfekt": "hat bestellt",
+          "sentence_perfekt": "Wir haben zwei Kaffee bestellt."
+        },
+        {
+          "de": "reservieren",
+          "pos": "verb",
+          "en": "to reserve",
+          "sentence": "Ich reserviere einen Tisch, und du reservierst ein Zimmer.",
+          "perfekt": "hat reserviert",
+          "sentence_perfekt": "Wir haben einen Tisch reserviert."
+        },
+        {
+          "de": "empfehlen",
+          "pos": "verb",
+          "en": "to recommend",
+          "sentence": "Ich empfehle die Suppe, und du empfiehlst den Fisch.",
+          "perfekt": "hat empfohlen",
+          "sentence_perfekt": "Der Kellner hat das Menü empfohlen."
+        },
+        {
+          "de": "vegetarisch",
+          "pos": "adjective",
+          "en": "vegetarian",
+          "sentence": "Haben Sie vegetarische Gerichte?"
+        },
+        {
+          "de": "frisch",
+          "pos": "adjective",
+          "en": "fresh",
+          "sentence": "Der Fisch ist frisch."
+        },
+        {
+          "de": "scharf",
+          "pos": "adjective",
+          "en": "spicy",
+          "sentence": "Die Suppe ist zu scharf."
+        },
+        {
+          "de": "zusammen oder getrennt?",
+          "pos": "phrase",
+          "en": "together or separate?",
+          "sentence": "Zusammen oder getrennt? – Zusammen, bitte."
+        },
+        {
+          "de": "Guten Appetit!",
+          "pos": "phrase",
+          "en": "Enjoy your meal!",
+          "sentence": "Guten Appetit! – Danke, gleichfalls."
+        },
+        {
+          "de": "das Frühstücksbuffet",
+          "pos": "noun",
+          "en": "breakfast buffet",
+          "sentence": "Das Frühstücksbuffet ist sehr groß."
+        },
+        {
+          "de": "das Getränk",
+          "pos": "noun",
+          "en": "drink",
+          "sentence": "Welches Getränk möchten Sie?"
+        },
+        {
+          "de": "die Nachspeise",
+          "pos": "noun",
+          "en": "dessert",
+          "sentence": "Als Nachspeise nehme ich Eis."
+        },
+        {
+          "de": "das Messer / die Gabel / der Löffel",
+          "pos": "noun",
+          "en": "knife / fork / spoon",
+          "sentence": "Ich brauche noch einen Löffel."
+        },
+        {
+          "de": "das Glas",
+          "pos": "noun",
+          "en": "glass",
+          "sentence": "Ein Glas Wasser, bitte."
+        },
+        {
+          "de": "der Teller",
+          "pos": "noun",
+          "en": "plate",
+          "sentence": "Der Teller ist leer."
+        },
+        {
+          "de": "nehmen",
+          "pos": "verb",
+          "en": "to take",
+          "sentence": "Ich nehme die Suppe, und du nimmst den Salat.",
+          "perfekt": "hat genommen",
+          "sentence_perfekt": "Wir haben den Fisch genommen."
+        },
+        {
+          "de": "zahlen",
+          "pos": "verb",
+          "en": "to pay",
+          "sentence": "Ich zahle bar, und du zahlst mit Karte.",
+          "perfekt": "hat gezahlt",
+          "sentence_perfekt": "Er hat die Rechnung gezahlt."
+        },
+        {
+          "de": "mitbringen",
+          "pos": "verb",
+          "en": "to bring along",
+          "sentence": "Ich bringe Kuchen mit, und du bringst Getränke mit.",
+          "perfekt": "hat mitgebracht",
+          "sentence_perfekt": "Sie hat Blumen mitgebracht."
+        },
+        {
+          "de": "Die Rechnung, bitte!",
+          "pos": "phrase",
+          "en": "The bill, please!",
+          "sentence": "Entschuldigung, die Rechnung, bitte!"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "topic": "Wohnung",
+      "words": [
+        {
+          "de": "die Wohnung",
+          "pos": "noun",
+          "en": "apartment",
+          "sentence": "Meine Wohnung hat drei Zimmer."
+        },
+        {
+          "de": "das Haus",
+          "pos": "noun",
+          "en": "house",
+          "sentence": "Das Haus hat einen Garten."
+        },
+        {
+          "de": "das Zimmer",
+          "pos": "noun",
+          "en": "room",
+          "sentence": "Mein Zimmer ist klein."
+        },
+        {
+          "de": "die Küche",
+          "pos": "noun",
+          "en": "kitchen",
+          "sentence": "Die Küche ist modern."
+        },
+        {
+          "de": "das Bad",
+          "pos": "noun",
+          "en": "bathroom",
+          "sentence": "Das Bad ist neben dem Schlafzimmer."
+        },
+        {
+          "de": "das Schlafzimmer",
+          "pos": "noun",
+          "en": "bedroom",
+          "sentence": "Im Schlafzimmer steht ein Bett."
+        },
+        {
+          "de": "das Wohnzimmer",
+          "pos": "noun",
+          "en": "living room",
+          "sentence": "Wir sitzen im Wohnzimmer."
+        },
+        {
+          "de": "der Balkon",
+          "pos": "noun",
+          "en": "balcony",
+          "sentence": "Ich frühstücke auf dem Balkon."
+        },
+        {
+          "de": "die Miete",
+          "pos": "noun",
+          "en": "rent",
+          "sentence": "Die Miete beträgt 600 Euro."
+        },
+        {
+          "de": "der Vermieter",
+          "pos": "noun",
+          "en": "landlord",
+          "sentence": "Der Vermieter wohnt im Haus."
+        },
+        {
+          "de": "die Etage",
+          "pos": "noun",
+          "en": "floor",
+          "sentence": "Ich wohne in der dritten Etage."
+        },
+        {
+          "de": "mieten",
+          "pos": "verb",
+          "en": "to rent",
+          "sentence": "Ich miete eine Wohnung, und du mietest ein Auto.",
+          "perfekt": "hat gemietet",
+          "sentence_perfekt": "Wir haben ein Haus gemietet."
+        },
+        {
+          "de": "umziehen",
+          "pos": "verb",
+          "en": "to move (house)",
+          "sentence": "Ich ziehe nächste Woche um, und du ziehst im Mai um.",
+          "perfekt": "ist umgezogen",
+          "sentence_perfekt": "Wir sind letztes Jahr umgezogen."
+        },
+        {
+          "de": "hell",
+          "pos": "adjective",
+          "en": "bright",
+          "sentence": "Die Wohnung ist hell."
+        },
+        {
+          "de": "ruhig",
+          "pos": "adjective",
+          "en": "quiet",
+          "sentence": "Die Straße ist ruhig."
+        },
+        {
+          "de": "neben / über / unter",
+          "pos": "preposition",
+          "en": "next to / above / under",
+          "sentence": "Der Garten ist neben dem Haus."
+        },
+        {
+          "de": "der Flur",
+          "pos": "noun",
+          "en": "hallway",
+          "sentence": "Im Flur hängen viele Jacken."
+        },
+        {
+          "de": "der Keller",
+          "pos": "noun",
+          "en": "basement",
+          "sentence": "Das Fahrrad steht im Keller."
+        },
+        {
+          "de": "der Garten",
+          "pos": "noun",
+          "en": "garden",
+          "sentence": "Wir essen im Garten."
+        },
+        {
+          "de": "das Erdgeschoss",
+          "pos": "noun",
+          "en": "ground floor",
+          "sentence": "Die Wohnung liegt im Erdgeschoss."
+        },
+        {
+          "de": "der Aufzug",
+          "pos": "noun",
+          "en": "elevator",
+          "sentence": "Der Aufzug ist kaputt."
+        },
+        {
+          "de": "die Nebenkosten",
+          "pos": "noun",
+          "en": "utilities (extra costs)",
+          "sentence": "Die Nebenkosten sind nicht hoch."
+        },
+        {
+          "de": "die Tür / das Fenster",
+          "pos": "noun",
+          "en": "door / window",
+          "sentence": "Mach bitte das Fenster zu."
+        },
+        {
+          "de": "einziehen",
+          "pos": "verb",
+          "en": "to move in",
+          "sentence": "Ich ziehe im Mai ein, und du ziehst im Juni ein.",
+          "perfekt": "ist eingezogen",
+          "sentence_perfekt": "Wir sind gestern eingezogen."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "topic": "Möbel & Haushalt",
+      "words": [
+        {
+          "de": "das Bett",
+          "pos": "noun",
+          "en": "bed",
+          "sentence": "Das Bett ist sehr bequem."
+        },
+        {
+          "de": "der Stuhl",
+          "pos": "noun",
+          "en": "chair",
+          "sentence": "Ich brauche noch einen Stuhl."
+        },
+        {
+          "de": "das Sofa",
+          "pos": "noun",
+          "en": "sofa",
+          "sentence": "Das Sofa ist neu."
+        },
+        {
+          "de": "der Schrank",
+          "pos": "noun",
+          "en": "cupboard / wardrobe",
+          "sentence": "Meine Kleidung ist im Schrank."
+        },
+        {
+          "de": "das Regal",
+          "pos": "noun",
+          "en": "shelf",
+          "sentence": "Die Bücher stehen im Regal."
+        },
+        {
+          "de": "die Lampe",
+          "pos": "noun",
+          "en": "lamp",
+          "sentence": "Die Lampe steht auf dem Tisch."
+        },
+        {
+          "de": "der Kühlschrank",
+          "pos": "noun",
+          "en": "fridge",
+          "sentence": "Die Milch ist im Kühlschrank."
+        },
+        {
+          "de": "die Waschmaschine",
+          "pos": "noun",
+          "en": "washing machine",
+          "sentence": "Die Waschmaschine ist kaputt."
+        },
+        {
+          "de": "der Herd",
+          "pos": "noun",
+          "en": "stove",
+          "sentence": "Der Herd ist heiß."
+        },
+        {
+          "de": "putzen",
+          "pos": "verb",
+          "en": "to clean",
+          "sentence": "Ich putze das Bad, und du putzt die Küche.",
+          "perfekt": "hat geputzt",
+          "sentence_perfekt": "Ich habe gestern die Fenster geputzt."
+        },
+        {
+          "de": "aufräumen",
+          "pos": "verb",
+          "en": "to tidy up",
+          "sentence": "Ich räume die Küche auf, und du räumst dein Zimmer auf.",
+          "perfekt": "hat aufgeräumt",
+          "sentence_perfekt": "Wir haben die ganze Wohnung aufgeräumt."
+        },
+        {
+          "de": "waschen",
+          "pos": "verb",
+          "en": "to wash",
+          "sentence": "Ich wasche die Wäsche, und du wäschst das Auto.",
+          "perfekt": "hat gewaschen",
+          "sentence_perfekt": "Ich habe mir die Hände gewaschen."
+        },
+        {
+          "de": "kaputt",
+          "pos": "adjective",
+          "en": "broken",
+          "sentence": "Die Lampe ist kaputt."
+        },
+        {
+          "de": "sauber / schmutzig",
+          "pos": "adjective",
+          "en": "clean / dirty",
+          "sentence": "Die Küche ist sauber."
+        },
+        {
+          "de": "gemütlich",
+          "pos": "adjective",
+          "en": "cosy",
+          "sentence": "Mein Zimmer ist gemütlich."
+        },
+        {
+          "de": "der Teppich",
+          "pos": "noun",
+          "en": "carpet",
+          "sentence": "Der Teppich ist sehr weich."
+        },
+        {
+          "de": "der Spiegel",
+          "pos": "noun",
+          "en": "mirror",
+          "sentence": "Im Bad hängt ein Spiegel."
+        },
+        {
+          "de": "der Vorhang",
+          "pos": "noun",
+          "en": "curtain",
+          "sentence": "Der Vorhang ist blau."
+        },
+        {
+          "de": "die Dusche",
+          "pos": "noun",
+          "en": "shower",
+          "sentence": "Die Dusche ist neu."
+        },
+        {
+          "de": "das Geschirr",
+          "pos": "noun",
+          "en": "dishes",
+          "sentence": "Das Geschirr ist noch schmutzig."
+        },
+        {
+          "de": "der Staubsauger",
+          "pos": "noun",
+          "en": "vacuum cleaner",
+          "sentence": "Wo ist der Staubsauger?"
+        },
+        {
+          "de": "abwaschen",
+          "pos": "verb",
+          "en": "to wash up",
+          "sentence": "Ich wasche das Geschirr ab, und du wäschst die Gläser ab.",
+          "perfekt": "hat abgewaschen",
+          "sentence_perfekt": "Wir haben schon abgewaschen."
+        },
+        {
+          "de": "saugen",
+          "pos": "verb",
+          "en": "to vacuum",
+          "sentence": "Ich sauge das Wohnzimmer, und du saugst das Schlafzimmer.",
+          "perfekt": "hat gesaugt",
+          "sentence_perfekt": "Er hat den Teppich gesaugt."
+        },
+        {
+          "de": "aufhängen",
+          "pos": "verb",
+          "en": "to hang up",
+          "sentence": "Ich hänge das Bild auf, und du hängst die Lampe auf.",
+          "perfekt": "hat aufgehängt",
+          "sentence_perfekt": "Sie hat die Wäsche aufgehängt."
+        },
+        {
+          "de": "ordentlich",
+          "pos": "adjective",
+          "en": "tidy",
+          "sentence": "Ihr Zimmer ist immer ordentlich."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "topic": "Kleidung",
+      "words": [
+        {
+          "de": "die Kleidung",
+          "pos": "noun",
+          "en": "clothing",
+          "sentence": "Die Kleidung ist im Schrank."
+        },
+        {
+          "de": "die Hose",
+          "pos": "noun",
+          "en": "trousers",
+          "sentence": "Die Hose ist zu groß."
+        },
+        {
+          "de": "das Hemd",
+          "pos": "noun",
+          "en": "shirt",
+          "sentence": "Er trägt ein weißes Hemd."
+        },
+        {
+          "de": "das T-Shirt",
+          "pos": "noun",
+          "en": "T-shirt",
+          "sentence": "Im Sommer trage ich T-Shirts."
+        },
+        {
+          "de": "das Kleid",
+          "pos": "noun",
+          "en": "dress",
+          "sentence": "Das Kleid ist schön."
+        },
+        {
+          "de": "die Jacke",
+          "pos": "noun",
+          "en": "jacket",
+          "sentence": "Nimm eine Jacke mit!"
+        },
+        {
+          "de": "der Mantel",
+          "pos": "noun",
+          "en": "coat",
+          "sentence": "Im Winter trage ich einen Mantel."
+        },
+        {
+          "de": "die Schuhe",
+          "pos": "noun",
+          "en": "shoes",
+          "sentence": "Meine Schuhe sind neu."
+        },
+        {
+          "de": "die Größe",
+          "pos": "noun",
+          "en": "size",
+          "sentence": "Welche Größe haben Sie?"
+        },
+        {
+          "de": "anziehen",
+          "pos": "verb",
+          "en": "to put on",
+          "sentence": "Ich ziehe eine Jacke an, und du ziehst einen Mantel an.",
+          "perfekt": "hat angezogen",
+          "sentence_perfekt": "Sie hat sich warm angezogen."
+        },
+        {
+          "de": "tragen",
+          "pos": "verb",
+          "en": "to wear",
+          "sentence": "Ich trage eine Jacke, und du trägst einen Mantel.",
+          "perfekt": "hat getragen",
+          "sentence_perfekt": "Er hat gestern einen Anzug getragen."
+        },
+        {
+          "de": "anprobieren",
+          "pos": "verb",
+          "en": "to try on",
+          "sentence": "Ich probiere die Hose an, und du probierst die Jacke an.",
+          "perfekt": "hat anprobiert",
+          "sentence_perfekt": "Sie hat drei Kleider anprobiert."
+        },
+        {
+          "de": "passen",
+          "pos": "verb",
+          "en": "to fit",
+          "sentence": "Das Hemd passt mir, aber passt es dir?",
+          "perfekt": "hat gepasst",
+          "sentence_perfekt": "Die Schuhe haben nicht gepasst."
+        },
+        {
+          "de": "eng / weit",
+          "pos": "adjective",
+          "en": "tight / loose",
+          "sentence": "Der Pullover ist zu eng."
+        },
+        {
+          "de": "modern",
+          "pos": "adjective",
+          "en": "fashionable",
+          "sentence": "Die Jacke ist sehr modern."
+        },
+        {
+          "de": "warm / kalt",
+          "pos": "adjective",
+          "en": "warm / cold",
+          "sentence": "Der Schal ist schön warm."
+        },
+        {
+          "de": "die Socke",
+          "pos": "noun",
+          "en": "sock",
+          "sentence": "Ich suche meine Socken."
+        },
+        {
+          "de": "der Pullover",
+          "pos": "noun",
+          "en": "sweater",
+          "sentence": "Der Pullover ist zu groß."
+        },
+        {
+          "de": "der Schal / die Mütze",
+          "pos": "noun",
+          "en": "scarf / cap",
+          "sentence": "Im Winter trage ich eine Mütze."
+        },
+        {
+          "de": "der Rock",
+          "pos": "noun",
+          "en": "skirt",
+          "sentence": "Der Rock ist kurz."
+        },
+        {
+          "de": "der Gürtel",
+          "pos": "noun",
+          "en": "belt",
+          "sentence": "Ich brauche einen neuen Gürtel."
+        },
+        {
+          "de": "die Tasche",
+          "pos": "noun",
+          "en": "bag",
+          "sentence": "Meine Tasche ist schwer."
+        },
+        {
+          "de": "gefallen",
+          "pos": "verb",
+          "en": "to please / to like",
+          "sentence": "Das Kleid gefällt mir, und dir gefällt die Hose.",
+          "perfekt": "hat gefallen",
+          "sentence_perfekt": "Die Jacke hat mir gut gefallen."
+        },
+        {
+          "de": "ausziehen",
+          "pos": "verb",
+          "en": "to take off",
+          "sentence": "Ich ziehe die Schuhe aus, und du ziehst die Jacke aus.",
+          "perfekt": "hat ausgezogen",
+          "sentence_perfekt": "Er hat den Mantel ausgezogen."
+        },
+        {
+          "de": "bunt",
+          "pos": "adjective",
+          "en": "colourful",
+          "sentence": "Sie trägt gern bunte Kleider."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "topic": "Wetter & Jahreszeiten",
+      "words": [
+        {
+          "de": "das Wetter",
+          "pos": "noun",
+          "en": "weather",
+          "sentence": "Das Wetter ist heute schön."
+        },
+        {
+          "de": "die Sonne",
+          "pos": "noun",
+          "en": "sun",
+          "sentence": "Die Sonne scheint."
+        },
+        {
+          "de": "der Regen",
+          "pos": "noun",
+          "en": "rain",
+          "sentence": "Der Regen hört bald auf."
+        },
+        {
+          "de": "der Schnee",
+          "pos": "noun",
+          "en": "snow",
+          "sentence": "Im Winter gibt es Schnee."
+        },
+        {
+          "de": "der Wind",
+          "pos": "noun",
+          "en": "wind",
+          "sentence": "Heute ist viel Wind."
+        },
+        {
+          "de": "die Wolke",
+          "pos": "noun",
+          "en": "cloud",
+          "sentence": "Am Himmel sind viele Wolken."
+        },
+        {
+          "de": "die Temperatur",
+          "pos": "noun",
+          "en": "temperature",
+          "sentence": "Die Temperatur beträgt 20 Grad."
+        },
+        {
+          "de": "der Frühling / Sommer / Herbst / Winter",
+          "pos": "noun",
+          "en": "spring / summer / autumn / winter",
+          "sentence": "Im Sommer fahre ich ans Meer."
+        },
+        {
+          "de": "regnen",
+          "pos": "verb",
+          "en": "to rain",
+          "sentence": "Bei mir regnet es heute, und bei dir regnet es auch.",
+          "perfekt": "hat geregnet",
+          "sentence_perfekt": "Gestern hat es den ganzen Tag geregnet."
+        },
+        {
+          "de": "schneien",
+          "pos": "verb",
+          "en": "to snow",
+          "sentence": "Bei mir schneit es heute, und bei dir schneit es auch.",
+          "perfekt": "hat geschneit",
+          "sentence_perfekt": "Im Januar hat es viel geschneit."
+        },
+        {
+          "de": "scheinen",
+          "pos": "verb",
+          "en": "to shine",
+          "sentence": "Du scheinst müde zu sein, und ich scheine krank zu werden.",
+          "perfekt": "hat geschienen",
+          "sentence_perfekt": "Gestern hat die Sonne den ganzen Tag geschienen."
+        },
+        {
+          "de": "sonnig",
+          "pos": "adjective",
+          "en": "sunny",
+          "sentence": "Morgen wird es sonnig."
+        },
+        {
+          "de": "windig",
+          "pos": "adjective",
+          "en": "windy",
+          "sentence": "Der Herbst ist windig."
+        },
+        {
+          "de": "heiß",
+          "pos": "adjective",
+          "en": "hot",
+          "sentence": "Im Juli ist es sehr heiß."
+        },
+        {
+          "de": "kühl",
+          "pos": "adjective",
+          "en": "cool",
+          "sentence": "Am Abend wird es kühl."
+        },
+        {
+          "de": "bewölkt",
+          "pos": "adjective",
+          "en": "cloudy",
+          "sentence": "Heute ist es bewölkt."
+        },
+        {
+          "de": "das Gewitter",
+          "pos": "noun",
+          "en": "thunderstorm",
+          "sentence": "Am Abend gibt es ein Gewitter."
+        },
+        {
+          "de": "der Nebel",
+          "pos": "noun",
+          "en": "fog",
+          "sentence": "Im Herbst gibt es oft Nebel."
+        },
+        {
+          "de": "das Eis",
+          "pos": "noun",
+          "en": "ice",
+          "sentence": "Auf dem See ist Eis."
+        },
+        {
+          "de": "der Grad",
+          "pos": "noun",
+          "en": "degree",
+          "sentence": "Heute sind es 20 Grad."
+        },
+        {
+          "de": "der Regenschirm",
+          "pos": "noun",
+          "en": "umbrella",
+          "sentence": "Nimm einen Regenschirm mit!"
+        },
+        {
+          "de": "trocken",
+          "pos": "adjective",
+          "en": "dry",
+          "sentence": "Das Wetter ist heute trocken."
+        },
+        {
+          "de": "nass",
+          "pos": "adjective",
+          "en": "wet",
+          "sentence": "Die Straße ist nass."
+        },
+        {
+          "de": "kalt",
+          "pos": "adjective",
+          "en": "cold",
+          "sentence": "Im Januar ist es sehr kalt."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "topic": "Körper",
+      "words": [
+        {
+          "de": "der Kopf",
+          "pos": "noun",
+          "en": "head",
+          "sentence": "Mein Kopf tut weh."
+        },
+        {
+          "de": "das Gesicht",
+          "pos": "noun",
+          "en": "face",
+          "sentence": "Sie hat ein freundliches Gesicht."
+        },
+        {
+          "de": "das Auge",
+          "pos": "noun",
+          "en": "eye",
+          "sentence": "Er hat blaue Augen."
+        },
+        {
+          "de": "die Nase",
+          "pos": "noun",
+          "en": "nose",
+          "sentence": "Meine Nase läuft."
+        },
+        {
+          "de": "der Mund",
+          "pos": "noun",
+          "en": "mouth",
+          "sentence": "Mach bitte den Mund auf."
+        },
+        {
+          "de": "das Ohr",
+          "pos": "noun",
+          "en": "ear",
+          "sentence": "Mein Ohr tut weh."
+        },
+        {
+          "de": "der Arm",
+          "pos": "noun",
+          "en": "arm",
+          "sentence": "Ich habe mir den Arm gebrochen."
+        },
+        {
+          "de": "die Hand",
+          "pos": "noun",
+          "en": "hand",
+          "sentence": "Wasch dir die Hände!"
+        },
+        {
+          "de": "das Bein",
+          "pos": "noun",
+          "en": "leg",
+          "sentence": "Mein Bein ist müde."
+        },
+        {
+          "de": "der Fuß",
+          "pos": "noun",
+          "en": "foot",
+          "sentence": "Mein Fuß tut weh."
+        },
+        {
+          "de": "der Rücken",
+          "pos": "noun",
+          "en": "back",
+          "sentence": "Ich habe Schmerzen im Rücken."
+        },
+        {
+          "de": "der Bauch",
+          "pos": "noun",
+          "en": "stomach / belly",
+          "sentence": "Mein Bauch tut weh."
+        },
+        {
+          "de": "das Herz",
+          "pos": "noun",
+          "en": "heart",
+          "sentence": "Sein Herz ist gesund."
+        },
+        {
+          "de": "wehtun",
+          "pos": "verb",
+          "en": "to hurt",
+          "sentence": "Mir tut der Kopf weh, und dir tut der Rücken weh.",
+          "perfekt": "hat wehgetan",
+          "sentence_perfekt": "Mir hat gestern der Bauch wehgetan."
+        },
+        {
+          "de": "sich bewegen",
+          "pos": "verb",
+          "en": "to move",
+          "sentence": "Ich bewege mich viel, und du bewegst dich wenig.",
+          "perfekt": "hat sich bewegt",
+          "sentence_perfekt": "Ich habe mich heute nicht bewegt."
+        },
+        {
+          "de": "groß / klein",
+          "pos": "adjective",
+          "en": "tall / short",
+          "sentence": "Mein Bruder ist sehr groß."
+        },
+        {
+          "de": "der Hals",
+          "pos": "noun",
+          "en": "neck / throat",
+          "sentence": "Mein Hals tut weh."
+        },
+        {
+          "de": "der Finger",
+          "pos": "noun",
+          "en": "finger",
+          "sentence": "Ich habe mir den Finger verletzt."
+        },
+        {
+          "de": "das Knie",
+          "pos": "noun",
+          "en": "knee",
+          "sentence": "Mein Knie ist dick."
+        },
+        {
+          "de": "der Zahn",
+          "pos": "noun",
+          "en": "tooth",
+          "sentence": "Der Zahn tut weh."
+        },
+        {
+          "de": "die Haare",
+          "pos": "noun",
+          "en": "hair",
+          "sentence": "Sie hat lange Haare."
+        },
+        {
+          "de": "die Haut",
+          "pos": "noun",
+          "en": "skin",
+          "sentence": "Meine Haut ist trocken."
+        },
+        {
+          "de": "sehen",
+          "pos": "verb",
+          "en": "to see",
+          "sentence": "Ich sehe gut, und du siehst schlecht.",
+          "perfekt": "hat gesehen",
+          "sentence_perfekt": "Ich habe ihn gestern gesehen."
+        },
+        {
+          "de": "hören",
+          "pos": "verb",
+          "en": "to hear",
+          "sentence": "Ich höre Musik, und du hörst nichts.",
+          "perfekt": "hat gehört",
+          "sentence_perfekt": "Hast du das Geräusch gehört?"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "topic": "Arzt & Apotheke",
+      "words": [
+        {
+          "de": "der Arzt / die Ärztin",
+          "pos": "noun",
+          "en": "doctor",
+          "sentence": "Ich gehe zum Arzt."
+        },
+        {
+          "de": "die Apotheke",
+          "pos": "noun",
+          "en": "pharmacy",
+          "sentence": "Die Apotheke ist neben der Bank."
+        },
+        {
+          "de": "das Medikament",
+          "pos": "noun",
+          "en": "medicine",
+          "sentence": "Nehmen Sie das Medikament dreimal täglich."
+        },
+        {
+          "de": "das Rezept",
+          "pos": "noun",
+          "en": "prescription",
+          "sentence": "Der Arzt gibt mir ein Rezept."
+        },
+        {
+          "de": "die Tablette",
+          "pos": "noun",
+          "en": "tablet",
+          "sentence": "Ich nehme eine Tablette."
+        },
+        {
+          "de": "die Krankheit",
+          "pos": "noun",
+          "en": "illness",
+          "sentence": "Die Krankheit ist nicht schlimm."
+        },
+        {
+          "de": "das Fieber",
+          "pos": "noun",
+          "en": "fever",
+          "sentence": "Ich habe Fieber."
+        },
+        {
+          "de": "die Erkältung",
+          "pos": "noun",
+          "en": "cold",
+          "sentence": "Ich habe eine Erkältung."
+        },
+        {
+          "de": "die Schmerzen",
+          "pos": "noun",
+          "en": "pain",
+          "sentence": "Ich habe starke Schmerzen."
+        },
+        {
+          "de": "der Husten",
+          "pos": "noun",
+          "en": "cough",
+          "sentence": "Der Husten ist schlimm."
+        },
+        {
+          "de": "krank",
+          "pos": "adjective",
+          "en": "sick",
+          "sentence": "Mein Sohn ist krank."
+        },
+        {
+          "de": "gesund",
+          "pos": "adjective",
+          "en": "healthy",
+          "sentence": "Ich bin wieder gesund."
+        },
+        {
+          "de": "untersuchen",
+          "pos": "verb",
+          "en": "to examine",
+          "sentence": "Ich untersuche den Fall, und du untersuchst das Problem.",
+          "perfekt": "hat untersucht",
+          "sentence_perfekt": "Der Arzt hat mich untersucht."
+        },
+        {
+          "de": "sich ausruhen",
+          "pos": "verb",
+          "en": "to rest",
+          "sentence": "Ich ruhe mich aus, und du ruhst dich aus.",
+          "perfekt": "hat sich ausgeruht",
+          "sentence_perfekt": "Wir haben uns am Wochenende ausgeruht."
+        },
+        {
+          "de": "Gute Besserung!",
+          "pos": "phrase",
+          "en": "Get well soon!",
+          "sentence": "Gute Besserung und bis bald!"
+        },
+        {
+          "de": "einen Termin machen",
+          "pos": "phrase",
+          "en": "to make an appointment",
+          "sentence": "Ich möchte einen Termin machen."
+        },
+        {
+          "de": "die Praxis",
+          "pos": "noun",
+          "en": "doctor's office",
+          "sentence": "Die Praxis öffnet um acht Uhr."
+        },
+        {
+          "de": "das Wartezimmer",
+          "pos": "noun",
+          "en": "waiting room",
+          "sentence": "Im Wartezimmer sitzen viele Leute."
+        },
+        {
+          "de": "die Kopfschmerzen",
+          "pos": "noun",
+          "en": "headache",
+          "sentence": "Ich habe starke Kopfschmerzen."
+        },
+        {
+          "de": "die Grippe",
+          "pos": "noun",
+          "en": "flu",
+          "sentence": "Er hat die Grippe."
+        },
+        {
+          "de": "die Allergie",
+          "pos": "noun",
+          "en": "allergy",
+          "sentence": "Ich habe eine Allergie gegen Nüsse."
+        },
+        {
+          "de": "der Unfall",
+          "pos": "noun",
+          "en": "accident",
+          "sentence": "Es gab einen Unfall."
+        },
+        {
+          "de": "die Krankenkasse",
+          "pos": "noun",
+          "en": "health insurance",
+          "sentence": "Meine Krankenkasse zahlt das."
+        },
+        {
+          "de": "husten",
+          "pos": "verb",
+          "en": "to cough",
+          "sentence": "Ich huste viel, und du hustest nachts.",
+          "perfekt": "hat gehustet",
+          "sentence_perfekt": "Er hat die ganze Nacht gehustet."
+        },
+        {
+          "de": "einnehmen",
+          "pos": "verb",
+          "en": "to take (medicine)",
+          "sentence": "Ich nehme die Tablette ein, und du nimmst den Saft ein.",
+          "perfekt": "hat eingenommen",
+          "sentence_perfekt": "Sie hat das Medikament eingenommen."
+        },
+        {
+          "de": "verletzt",
+          "pos": "adjective",
+          "en": "injured",
+          "sentence": "Der Fahrer ist verletzt."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "topic": "Stadt & Wegbeschreibung",
+      "words": [
+        {
+          "de": "die Stadt",
+          "pos": "noun",
+          "en": "city",
+          "sentence": "Die Stadt ist groß."
+        },
+        {
+          "de": "die Straße",
+          "pos": "noun",
+          "en": "street",
+          "sentence": "Gehen Sie die Straße entlang."
+        },
+        {
+          "de": "die Ecke",
+          "pos": "noun",
+          "en": "corner",
+          "sentence": "An der Ecke ist eine Bank."
+        },
+        {
+          "de": "die Kreuzung",
+          "pos": "noun",
+          "en": "crossing",
+          "sentence": "An der Kreuzung gehen Sie links."
+        },
+        {
+          "de": "die Ampel",
+          "pos": "noun",
+          "en": "traffic light",
+          "sentence": "Bei der Ampel rechts."
+        },
+        {
+          "de": "die Brücke",
+          "pos": "noun",
+          "en": "bridge",
+          "sentence": "Gehen Sie über die Brücke."
+        },
+        {
+          "de": "der Bahnhof",
+          "pos": "noun",
+          "en": "train station",
+          "sentence": "Wo ist der Bahnhof?"
+        },
+        {
+          "de": "das Krankenhaus",
+          "pos": "noun",
+          "en": "hospital",
+          "sentence": "Das Krankenhaus ist weit weg."
+        },
+        {
+          "de": "der Weg",
+          "pos": "noun",
+          "en": "way",
+          "sentence": "Können Sie mir den Weg zeigen?"
+        },
+        {
+          "de": "geradeaus",
+          "pos": "adverb",
+          "en": "straight ahead",
+          "sentence": "Gehen Sie immer geradeaus."
+        },
+        {
+          "de": "links / rechts",
+          "pos": "adverb",
+          "en": "left / right",
+          "sentence": "Dann gehen Sie rechts."
+        },
+        {
+          "de": "abbiegen",
+          "pos": "verb",
+          "en": "to turn",
+          "sentence": "Ich biege links ab, und du biegst rechts ab.",
+          "perfekt": "ist abgebogen",
+          "sentence_perfekt": "Wir sind an der Ampel links abgebogen."
+        },
+        {
+          "de": "finden",
+          "pos": "verb",
+          "en": "to find",
+          "sentence": "Ich finde den Film gut, und du findest ihn langweilig.",
+          "perfekt": "hat gefunden",
+          "sentence_perfekt": "Ich habe meinen Schlüssel gefunden."
+        },
+        {
+          "de": "nah / weit",
+          "pos": "adjective",
+          "en": "near / far",
+          "sentence": "Die Schule ist nah."
+        },
+        {
+          "de": "gegenüber",
+          "pos": "preposition",
+          "en": "opposite",
+          "sentence": "Das Café ist gegenüber dem Park."
+        },
+        {
+          "de": "Entschuldigung, wie komme ich ...?",
+          "pos": "phrase",
+          "en": "Excuse me, how do I get to ...?",
+          "sentence": "Entschuldigung, wie komme ich zum Markt?"
+        },
+        {
+          "de": "das Rathaus",
+          "pos": "noun",
+          "en": "town hall",
+          "sentence": "Das Rathaus liegt am Marktplatz."
+        },
+        {
+          "de": "der Marktplatz",
+          "pos": "noun",
+          "en": "market square",
+          "sentence": "Auf dem Marktplatz steht ein Brunnen."
+        },
+        {
+          "de": "die Haltestelle",
+          "pos": "noun",
+          "en": "stop (bus/tram)",
+          "sentence": "Die Haltestelle ist um die Ecke."
+        },
+        {
+          "de": "das Kino",
+          "pos": "noun",
+          "en": "cinema",
+          "sentence": "Das Kino ist neben der Bank."
+        },
+        {
+          "de": "die Kirche",
+          "pos": "noun",
+          "en": "church",
+          "sentence": "Die Kirche ist sehr alt."
+        },
+        {
+          "de": "der Park",
+          "pos": "noun",
+          "en": "park",
+          "sentence": "Im Park spielen Kinder."
+        },
+        {
+          "de": "der Spielplatz",
+          "pos": "noun",
+          "en": "playground",
+          "sentence": "Der Spielplatz ist hinter dem Haus."
+        },
+        {
+          "de": "folgen",
+          "pos": "verb",
+          "en": "to follow",
+          "sentence": "Ich folge der Straße, und du folgst dem Weg.",
+          "perfekt": "ist gefolgt",
+          "sentence_perfekt": "Wir sind der Karte gefolgt."
+        },
+        {
+          "de": "überqueren",
+          "pos": "verb",
+          "en": "to cross",
+          "sentence": "Ich überquere die Straße, und du überquerst die Brücke.",
+          "perfekt": "hat überquert",
+          "sentence_perfekt": "Er hat die Kreuzung überquert."
+        },
+        {
+          "de": "hier / dort",
+          "pos": "adverb",
+          "en": "here / there",
+          "sentence": "Dort ist die Bushaltestelle."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "topic": "Bahn & Flug",
+      "words": [
+        {
+          "de": "der Zug",
+          "pos": "noun",
+          "en": "train",
+          "sentence": "Der Zug fährt um 9 Uhr ab."
+        },
+        {
+          "de": "der Bus",
+          "pos": "noun",
+          "en": "bus",
+          "sentence": "Der Bus kommt gleich."
+        },
+        {
+          "de": "das Flugzeug",
+          "pos": "noun",
+          "en": "airplane",
+          "sentence": "Das Flugzeug landet um 15 Uhr."
+        },
+        {
+          "de": "der Flughafen",
+          "pos": "noun",
+          "en": "airport",
+          "sentence": "Der Flughafen ist weit weg."
+        },
+        {
+          "de": "das Gleis",
+          "pos": "noun",
+          "en": "platform / track",
+          "sentence": "Der Zug fährt auf Gleis 5."
+        },
+        {
+          "de": "die Fahrkarte",
+          "pos": "noun",
+          "en": "ticket",
+          "sentence": "Eine Fahrkarte nach München, bitte."
+        },
+        {
+          "de": "der Koffer",
+          "pos": "noun",
+          "en": "suitcase",
+          "sentence": "Mein Koffer ist schwer."
+        },
+        {
+          "de": "der Reisepass",
+          "pos": "noun",
+          "en": "passport",
+          "sentence": "Haben Sie Ihren Reisepass?"
+        },
+        {
+          "de": "die Abfahrt / die Ankunft",
+          "pos": "noun",
+          "en": "departure / arrival",
+          "sentence": "Die Ankunft ist um 14 Uhr."
+        },
+        {
+          "de": "abfahren",
+          "pos": "verb",
+          "en": "to depart",
+          "sentence": "Ich fahre um 9 Uhr ab, und du fährst um 10 Uhr ab.",
+          "perfekt": "ist abgefahren",
+          "sentence_perfekt": "Der Zug ist schon abgefahren."
+        },
+        {
+          "de": "ankommen",
+          "pos": "verb",
+          "en": "to arrive",
+          "sentence": "Ich komme um 18 Uhr an, und du kommst um 19 Uhr an.",
+          "perfekt": "ist angekommen",
+          "sentence_perfekt": "Wir sind gestern in Berlin angekommen."
+        },
+        {
+          "de": "umsteigen",
+          "pos": "verb",
+          "en": "to change trains",
+          "sentence": "Ich steige in Köln um, und du steigst in Bonn um.",
+          "perfekt": "ist umgestiegen",
+          "sentence_perfekt": "Wir sind in Frankfurt umgestiegen."
+        },
+        {
+          "de": "einsteigen / aussteigen",
+          "pos": "verb",
+          "en": "to get on / to get off",
+          "sentence": "Ich steige hier ein, und du steigst am Bahnhof aus.",
+          "perfekt": "ist eingestiegen / ist ausgestiegen",
+          "sentence_perfekt": "Wir sind in Köln ausgestiegen."
+        },
+        {
+          "de": "direkt",
+          "pos": "adjective",
+          "en": "direct",
+          "sentence": "Gibt es einen direkten Zug?"
+        },
+        {
+          "de": "einfach / hin und zurück",
+          "pos": "phrase",
+          "en": "one-way / return",
+          "sentence": "Einmal hin und zurück, bitte."
+        },
+        {
+          "de": "das Ticket",
+          "pos": "noun",
+          "en": "ticket",
+          "sentence": "Ich habe mein Ticket online gekauft."
+        },
+        {
+          "de": "der Fahrplan",
+          "pos": "noun",
+          "en": "timetable",
+          "sentence": "Der Fahrplan hängt an der Haltestelle."
+        },
+        {
+          "de": "der Fahrer / die Fahrerin",
+          "pos": "noun",
+          "en": "driver",
+          "sentence": "Der Fahrer ist freundlich."
+        },
+        {
+          "de": "der Bahnsteig",
+          "pos": "noun",
+          "en": "platform",
+          "sentence": "Der Zug fährt von Bahnsteig 3 ab."
+        },
+        {
+          "de": "das Gepäck",
+          "pos": "noun",
+          "en": "luggage",
+          "sentence": "Mein Gepäck ist schwer."
+        },
+        {
+          "de": "der Sitzplatz",
+          "pos": "noun",
+          "en": "seat",
+          "sentence": "Ich habe einen Sitzplatz am Fenster."
+        },
+        {
+          "de": "fliegen",
+          "pos": "verb",
+          "en": "to fly",
+          "sentence": "Ich fliege nach Rom, und du fliegst nach Paris.",
+          "perfekt": "ist geflogen",
+          "sentence_perfekt": "Sie ist nach Spanien geflogen."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "topic": "Urlaub",
+      "words": [
+        {
+          "de": "der Urlaub",
+          "pos": "noun",
+          "en": "holiday / vacation",
+          "sentence": "Ich mache im August Urlaub."
+        },
+        {
+          "de": "das Hotel",
+          "pos": "noun",
+          "en": "hotel",
+          "sentence": "Das Hotel liegt am Strand."
+        },
+        {
+          "de": "der Strand",
+          "pos": "noun",
+          "en": "beach",
+          "sentence": "Wir liegen am Strand."
+        },
+        {
+          "de": "das Meer",
+          "pos": "noun",
+          "en": "sea",
+          "sentence": "Das Meer ist ruhig."
+        },
+        {
+          "de": "der Berg",
+          "pos": "noun",
+          "en": "mountain",
+          "sentence": "Wir wandern in den Bergen."
+        },
+        {
+          "de": "die Reise",
+          "pos": "noun",
+          "en": "trip",
+          "sentence": "Die Reise war toll."
+        },
+        {
+          "de": "das Zelt",
+          "pos": "noun",
+          "en": "tent",
+          "sentence": "Wir schlafen im Zelt."
+        },
+        {
+          "de": "die Sehenswürdigkeit",
+          "pos": "noun",
+          "en": "sight / attraction",
+          "sentence": "Wir besichtigen die Sehenswürdigkeiten."
+        },
+        {
+          "de": "das Foto",
+          "pos": "noun",
+          "en": "photo",
+          "sentence": "Ich mache viele Fotos."
+        },
+        {
+          "de": "reisen",
+          "pos": "verb",
+          "en": "to travel",
+          "sentence": "Ich reise gern, und du reist viel.",
+          "perfekt": "ist gereist",
+          "sentence_perfekt": "Wir sind durch Italien gereist."
+        },
+        {
+          "de": "buchen",
+          "pos": "verb",
+          "en": "to book",
+          "sentence": "Ich buche ein Hotel, und du buchst den Flug.",
+          "perfekt": "hat gebucht",
+          "sentence_perfekt": "Wir haben den Urlaub schon gebucht."
+        },
+        {
+          "de": "besichtigen",
+          "pos": "verb",
+          "en": "to visit (sights)",
+          "sentence": "Ich besichtige das Schloss, und du besichtigst das Museum.",
+          "perfekt": "hat besichtigt",
+          "sentence_perfekt": "Wir haben die Altstadt besichtigt."
+        },
+        {
+          "de": "sich erholen",
+          "pos": "verb",
+          "en": "to relax / recover",
+          "sentence": "Ich erhole mich im Urlaub, und du erholst dich zu Hause.",
+          "perfekt": "hat sich erholt",
+          "sentence_perfekt": "Sie hat sich schnell erholt."
+        },
+        {
+          "de": "schön",
+          "pos": "adjective",
+          "en": "beautiful",
+          "sentence": "Die Landschaft ist schön."
+        },
+        {
+          "de": "das Ausland",
+          "pos": "noun",
+          "en": "abroad / foreign country",
+          "sentence": "Ich fahre ins Ausland."
+        },
+        {
+          "de": "leider",
+          "pos": "adverb",
+          "en": "unfortunately",
+          "sentence": "Leider regnet es im Urlaub."
+        },
+        {
+          "de": "der Reiseführer",
+          "pos": "noun",
+          "en": "guidebook / tour guide",
+          "sentence": "Der Reiseführer ist sehr hilfreich."
+        },
+        {
+          "de": "die Unterkunft",
+          "pos": "noun",
+          "en": "accommodation",
+          "sentence": "Die Unterkunft ist direkt am Meer."
+        },
+        {
+          "de": "das Ferienhaus",
+          "pos": "noun",
+          "en": "holiday home",
+          "sentence": "Wir mieten ein Ferienhaus."
+        },
+        {
+          "de": "der Koffer packen",
+          "pos": "phrase",
+          "en": "to pack a suitcase",
+          "sentence": "Ich muss noch den Koffer packen."
+        },
+        {
+          "de": "die Sonnencreme",
+          "pos": "noun",
+          "en": "sunscreen",
+          "sentence": "Vergiss die Sonnencreme nicht!"
+        },
+        {
+          "de": "der See",
+          "pos": "noun",
+          "en": "lake",
+          "sentence": "Wir schwimmen im See."
+        },
+        {
+          "de": "übernachten",
+          "pos": "verb",
+          "en": "to stay overnight",
+          "sentence": "Ich übernachte im Hotel, und du übernachtest im Zelt.",
+          "perfekt": "hat übernachtet",
+          "sentence_perfekt": "Wir haben zwei Nächte dort übernachtet."
+        },
+        {
+          "de": "packen",
+          "pos": "verb",
+          "en": "to pack",
+          "sentence": "Ich packe meinen Koffer, und du packst deinen Rucksack.",
+          "perfekt": "hat gepackt",
+          "sentence_perfekt": "Hast du schon gepackt?"
+        },
+        {
+          "de": "Urlaub machen",
+          "pos": "verb",
+          "en": "to go on holiday",
+          "sentence": "Ich mache im August Urlaub, und du machst im Juli Urlaub.",
+          "perfekt": "hat Urlaub gemacht",
+          "sentence_perfekt": "Wir haben in Italien Urlaub gemacht."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "topic": "Hobbys & Freizeit",
+      "words": [
+        {
+          "de": "das Hobby",
+          "pos": "noun",
+          "en": "hobby",
+          "sentence": "Mein Hobby ist Fotografieren."
+        },
+        {
+          "de": "die Freizeit",
+          "pos": "noun",
+          "en": "free time",
+          "sentence": "In meiner Freizeit lese ich."
+        },
+        {
+          "de": "der Sport",
+          "pos": "noun",
+          "en": "sport",
+          "sentence": "Ich mache gern Sport."
+        },
+        {
+          "de": "die Musik",
+          "pos": "noun",
+          "en": "music",
+          "sentence": "Ich höre gern Musik."
+        },
+        {
+          "de": "der Film",
+          "pos": "noun",
+          "en": "film",
+          "sentence": "Wir sehen einen Film."
+        },
+        {
+          "de": "das Buch",
+          "pos": "noun",
+          "en": "book",
+          "sentence": "Das Buch ist spannend."
+        },
+        {
+          "de": "das Spiel",
+          "pos": "noun",
+          "en": "game",
+          "sentence": "Das Spiel macht Spaß."
+        },
+        {
+          "de": "der Verein",
+          "pos": "noun",
+          "en": "club",
+          "sentence": "Ich bin in einem Fußballverein."
+        },
+        {
+          "de": "schwimmen",
+          "pos": "verb",
+          "en": "to swim",
+          "sentence": "Ich schwimme am Dienstag, und du schwimmst am Freitag.",
+          "perfekt": "ist geschwommen",
+          "sentence_perfekt": "Wir sind im Meer geschwommen."
+        },
+        {
+          "de": "wandern",
+          "pos": "verb",
+          "en": "to hike",
+          "sentence": "Ich wandere am Wochenende, und du wanderst im Urlaub.",
+          "perfekt": "ist gewandert",
+          "sentence_perfekt": "Wir sind in den Alpen gewandert."
+        },
+        {
+          "de": "spielen",
+          "pos": "verb",
+          "en": "to play",
+          "sentence": "Ich spiele Gitarre, und du spielst Klavier.",
+          "perfekt": "hat gespielt",
+          "sentence_perfekt": "Wir haben gestern Fußball gespielt."
+        },
+        {
+          "de": "lesen",
+          "pos": "verb",
+          "en": "to read",
+          "sentence": "Ich lese ein Buch, und du liest die Zeitung.",
+          "perfekt": "hat gelesen",
+          "sentence_perfekt": "Er hat den Brief gelesen."
+        },
+        {
+          "de": "tanzen",
+          "pos": "verb",
+          "en": "to dance",
+          "sentence": "Ich tanze gern, und du tanzt gut.",
+          "perfekt": "hat getanzt",
+          "sentence_perfekt": "Wir haben auf der Party getanzt."
+        },
+        {
+          "de": "spannend",
+          "pos": "adjective",
+          "en": "exciting",
+          "sentence": "Der Krimi ist spannend."
+        },
+        {
+          "de": "langweilig",
+          "pos": "adjective",
+          "en": "boring",
+          "sentence": "Der Film war langweilig."
+        },
+        {
+          "de": "Spaß machen",
+          "pos": "phrase",
+          "en": "to be fun",
+          "sentence": "Tennis macht mir Spaß."
+        },
+        {
+          "de": "der Fußball",
+          "pos": "noun",
+          "en": "football",
+          "sentence": "Mein Bruder spielt Fußball."
+        },
+        {
+          "de": "die Gitarre",
+          "pos": "noun",
+          "en": "guitar",
+          "sentence": "Ich spiele Gitarre."
+        },
+        {
+          "de": "das Fahrrad",
+          "pos": "noun",
+          "en": "bicycle",
+          "sentence": "Ich fahre gern Fahrrad."
+        },
+        {
+          "de": "der Spaziergang",
+          "pos": "noun",
+          "en": "walk",
+          "sentence": "Nach dem Essen machen wir einen Spaziergang."
+        },
+        {
+          "de": "malen",
+          "pos": "verb",
+          "en": "to paint",
+          "sentence": "Ich male gern, und du malst Bilder.",
+          "perfekt": "hat gemalt",
+          "sentence_perfekt": "Sie hat ein Bild gemalt."
+        },
+        {
+          "de": "singen",
+          "pos": "verb",
+          "en": "to sing",
+          "sentence": "Ich singe im Chor, und du singst unter der Dusche.",
+          "perfekt": "hat gesungen",
+          "sentence_perfekt": "Wir haben zusammen gesungen."
+        },
+        {
+          "de": "fotografieren",
+          "pos": "verb",
+          "en": "to take photos",
+          "sentence": "Ich fotografiere Tiere, und du fotografierst Blumen.",
+          "perfekt": "hat fotografiert",
+          "sentence_perfekt": "Er hat die Berge fotografiert."
+        },
+        {
+          "de": "Rad fahren",
+          "pos": "verb",
+          "en": "to cycle",
+          "sentence": "Ich fahre Rad, und du fährst Rad.",
+          "perfekt": "ist Rad gefahren",
+          "sentence_perfekt": "Wir sind am Sonntag Rad gefahren."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "topic": "Arbeit",
+      "words": [
+        {
+          "de": "die Arbeit",
+          "pos": "noun",
+          "en": "work",
+          "sentence": "Die Arbeit beginnt um 8 Uhr."
+        },
+        {
+          "de": "der Job",
+          "pos": "noun",
+          "en": "job",
+          "sentence": "Ich suche einen neuen Job."
+        },
+        {
+          "de": "die Firma",
+          "pos": "noun",
+          "en": "company",
+          "sentence": "Die Firma ist in Frankfurt."
+        },
+        {
+          "de": "das Büro",
+          "pos": "noun",
+          "en": "office",
+          "sentence": "Ich bin im Büro."
+        },
+        {
+          "de": "der Kollege / die Kollegin",
+          "pos": "noun",
+          "en": "colleague",
+          "sentence": "Meine Kollegen sind nett."
+        },
+        {
+          "de": "der Chef / die Chefin",
+          "pos": "noun",
+          "en": "boss",
+          "sentence": "Mein Chef ist sehr freundlich."
+        },
+        {
+          "de": "das Gehalt",
+          "pos": "noun",
+          "en": "salary",
+          "sentence": "Das Gehalt ist gut."
+        },
+        {
+          "de": "die Pause",
+          "pos": "noun",
+          "en": "break",
+          "sentence": "Wir machen eine Pause."
+        },
+        {
+          "de": "der Feierabend",
+          "pos": "noun",
+          "en": "end of work day",
+          "sentence": "Um 17 Uhr habe ich Feierabend."
+        },
+        {
+          "de": "die Besprechung",
+          "pos": "noun",
+          "en": "meeting",
+          "sentence": "Die Besprechung ist um 10 Uhr."
+        },
+        {
+          "de": "verdienen",
+          "pos": "verb",
+          "en": "to earn",
+          "sentence": "Ich verdiene gut, und du verdienst auch gut.",
+          "perfekt": "hat verdient",
+          "sentence_perfekt": "Sie hat im Sommer viel verdient."
+        },
+        {
+          "de": "anrufen",
+          "pos": "verb",
+          "en": "to call",
+          "sentence": "Ich rufe dich an, und du rufst mich zurück.",
+          "perfekt": "hat angerufen",
+          "sentence_perfekt": "Er hat gestern den Chef angerufen."
+        },
+        {
+          "de": "Vollzeit / Teilzeit",
+          "pos": "noun",
+          "en": "full-time / part-time",
+          "sentence": "Ich arbeite in Teilzeit."
+        },
+        {
+          "de": "müde",
+          "pos": "adjective",
+          "en": "tired",
+          "sentence": "Nach der Arbeit bin ich müde."
+        },
+        {
+          "de": "beschäftigt",
+          "pos": "adjective",
+          "en": "busy",
+          "sentence": "Mein Chef ist heute beschäftigt."
+        },
+        {
+          "de": "der Arbeitsplatz",
+          "pos": "noun",
+          "en": "workplace",
+          "sentence": "Mein Arbeitsplatz ist im dritten Stock."
+        },
+        {
+          "de": "der Arbeitstag",
+          "pos": "noun",
+          "en": "working day",
+          "sentence": "Mein Arbeitstag beginnt um acht Uhr."
+        },
+        {
+          "de": "der Verkäufer / die Verkäuferin",
+          "pos": "noun",
+          "en": "salesperson",
+          "sentence": "Die Verkäuferin ist sehr nett."
+        },
+        {
+          "de": "der Fahrer",
+          "pos": "noun",
+          "en": "driver",
+          "sentence": "Mein Vater ist Busfahrer."
+        },
+        {
+          "de": "der Mitarbeiter / die Mitarbeiterin",
+          "pos": "noun",
+          "en": "employee",
+          "sentence": "Die Firma hat 50 Mitarbeiter."
+        },
+        {
+          "de": "die Stelle",
+          "pos": "noun",
+          "en": "job position",
+          "sentence": "Ich suche eine neue Stelle."
+        },
+        {
+          "de": "helfen",
+          "pos": "verb",
+          "en": "to help",
+          "sentence": "Ich helfe dem Kunden, und du hilfst dem Kollegen.",
+          "perfekt": "hat geholfen",
+          "sentence_perfekt": "Sie hat mir bei der Arbeit geholfen."
+        },
+        {
+          "de": "Arbeit suchen",
+          "pos": "verb",
+          "en": "to look for work",
+          "sentence": "Ich suche Arbeit, und du suchst auch Arbeit.",
+          "perfekt": "hat Arbeit gesucht",
+          "sentence_perfekt": "Er hat lange Arbeit gesucht."
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "topic": "Lernen & Prüfung",
+      "words": [
+        {
+          "de": "der Kurs",
+          "pos": "noun",
+          "en": "course",
+          "sentence": "Ich besuche einen Deutschkurs."
+        },
+        {
+          "de": "die Schule",
+          "pos": "noun",
+          "en": "school",
+          "sentence": "Die Schule beginnt um acht."
+        },
+        {
+          "de": "der Lehrer / die Lehrerin",
+          "pos": "noun",
+          "en": "teacher",
+          "sentence": "Die Lehrerin ist geduldig."
+        },
+        {
+          "de": "der Student / die Studentin",
+          "pos": "noun",
+          "en": "student",
+          "sentence": "Ich bin Student."
+        },
+        {
+          "de": "die Prüfung",
+          "pos": "noun",
+          "en": "exam",
+          "sentence": "Die Prüfung ist nächste Woche."
+        },
+        {
+          "de": "die Hausaufgabe",
+          "pos": "noun",
+          "en": "homework",
+          "sentence": "Ich mache meine Hausaufgaben."
+        },
+        {
+          "de": "die Note",
+          "pos": "noun",
+          "en": "grade",
+          "sentence": "Ich habe eine gute Note."
+        },
+        {
+          "de": "die Frage / die Antwort",
+          "pos": "noun",
+          "en": "question / answer",
+          "sentence": "Ich habe eine Frage."
+        },
+        {
+          "de": "das Wörterbuch",
+          "pos": "noun",
+          "en": "dictionary",
+          "sentence": "Ich suche das Wort im Wörterbuch."
+        },
+        {
+          "de": "lernen",
+          "pos": "verb",
+          "en": "to learn",
+          "sentence": "Ich lerne Deutsch, und du lernst Englisch.",
+          "perfekt": "hat gelernt",
+          "sentence_perfekt": "Ich habe gestern zwei Stunden gelernt."
+        },
+        {
+          "de": "wiederholen",
+          "pos": "verb",
+          "en": "to repeat / revise",
+          "sentence": "Ich wiederhole die Wörter, und du wiederholst die Grammatik.",
+          "perfekt": "hat wiederholt",
+          "sentence_perfekt": "Der Lehrer hat die Frage wiederholt."
+        },
+        {
+          "de": "verstehen",
+          "pos": "verb",
+          "en": "to understand",
+          "sentence": "Ich verstehe dich, und du verstehst mich.",
+          "perfekt": "hat verstanden",
+          "sentence_perfekt": "Ich habe die Frage nicht verstanden."
+        },
+        {
+          "de": "bestehen",
+          "pos": "verb",
+          "en": "to pass",
+          "sentence": "Ich bestehe die Prüfung, und du bestehst sie auch.",
+          "perfekt": "hat bestanden",
+          "sentence_perfekt": "Sie hat die Prüfung bestanden."
+        },
+        {
+          "de": "üben",
+          "pos": "verb",
+          "en": "to practise",
+          "sentence": "Ich übe jeden Tag, und du übst auch.",
+          "perfekt": "hat geübt",
+          "sentence_perfekt": "Ich habe das Sprechen geübt."
+        },
+        {
+          "de": "schwierig / leicht",
+          "pos": "adjective",
+          "en": "difficult / easy",
+          "sentence": "Der Test war leicht."
+        },
+        {
+          "de": "nervös",
+          "pos": "adjective",
+          "en": "nervous",
+          "sentence": "Vor der Prüfung bin ich nervös."
+        },
+        {
+          "de": "der Unterricht",
+          "pos": "noun",
+          "en": "class / lesson",
+          "sentence": "Der Unterricht beginnt um neun Uhr."
+        },
+        {
+          "de": "das Heft",
+          "pos": "noun",
+          "en": "notebook",
+          "sentence": "Schreib das bitte in dein Heft."
+        },
+        {
+          "de": "der Stift",
+          "pos": "noun",
+          "en": "pen",
+          "sentence": "Hast du einen Stift für mich?"
+        },
+        {
+          "de": "die Grammatik",
+          "pos": "noun",
+          "en": "grammar",
+          "sentence": "Die Grammatik ist manchmal schwer."
+        },
+        {
+          "de": "das Wort",
+          "pos": "noun",
+          "en": "word",
+          "sentence": "Dieses Wort kenne ich nicht."
+        },
+        {
+          "de": "schreiben",
+          "pos": "verb",
+          "en": "to write",
+          "sentence": "Ich schreibe einen Text, und du schreibst eine E-Mail.",
+          "perfekt": "hat geschrieben",
+          "sentence_perfekt": "Wir haben einen Test geschrieben."
+        },
+        {
+          "de": "fragen",
+          "pos": "verb",
+          "en": "to ask",
+          "sentence": "Ich frage die Lehrerin, und du fragst deinen Freund.",
+          "perfekt": "hat gefragt",
+          "sentence_perfekt": "Er hat nach dem Weg gefragt."
+        },
+        {
+          "de": "antworten",
+          "pos": "verb",
+          "en": "to answer",
+          "sentence": "Ich antworte auf die Frage, und du antwortest nicht.",
+          "perfekt": "hat geantwortet",
+          "sentence_perfekt": "Sie hat sofort geantwortet."
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "topic": "Handy & Internet",
+      "words": [
+        {
+          "de": "das Handy",
+          "pos": "noun",
+          "en": "mobile phone",
+          "sentence": "Mein Handy ist neu."
+        },
+        {
+          "de": "der Computer",
+          "pos": "noun",
+          "en": "computer",
+          "sentence": "Ich arbeite am Computer."
+        },
+        {
+          "de": "das Internet",
+          "pos": "noun",
+          "en": "internet",
+          "sentence": "Das Internet ist schnell."
+        },
+        {
+          "de": "die E-Mail",
+          "pos": "noun",
+          "en": "email",
+          "sentence": "Ich schreibe eine E-Mail."
+        },
+        {
+          "de": "die Nachricht",
+          "pos": "noun",
+          "en": "message",
+          "sentence": "Ich schicke dir eine Nachricht."
+        },
+        {
+          "de": "das Passwort",
+          "pos": "noun",
+          "en": "password",
+          "sentence": "Ich habe mein Passwort vergessen."
+        },
+        {
+          "de": "der Akku",
+          "pos": "noun",
+          "en": "battery",
+          "sentence": "Der Akku ist leer."
+        },
+        {
+          "de": "die App",
+          "pos": "noun",
+          "en": "app",
+          "sentence": "Ich lade eine neue App herunter."
+        },
+        {
+          "de": "das WLAN",
+          "pos": "noun",
+          "en": "Wi-Fi",
+          "sentence": "Gibt es hier WLAN?"
+        },
+        {
+          "de": "schicken",
+          "pos": "verb",
+          "en": "to send",
+          "sentence": "Ich schicke dir ein Foto, und du schickst mir eine Nachricht.",
+          "perfekt": "hat geschickt",
+          "sentence_perfekt": "Sie hat mir eine E-Mail geschickt."
+        },
+        {
+          "de": "herunterladen",
+          "pos": "verb",
+          "en": "to download",
+          "sentence": "Ich lade die Datei herunter, und du lädst die App herunter.",
+          "perfekt": "hat heruntergeladen",
+          "sentence_perfekt": "Ich habe das Foto heruntergeladen."
+        },
+        {
+          "de": "surfen",
+          "pos": "verb",
+          "en": "to surf",
+          "sentence": "Ich surfe im Internet, und du surfst auf dem Handy.",
+          "perfekt": "hat gesurft",
+          "sentence_perfekt": "Ich habe lange im Internet gesurft."
+        },
+        {
+          "de": "online",
+          "pos": "adverb",
+          "en": "online",
+          "sentence": "Ich bestelle online."
+        },
+        {
+          "de": "langsam / schnell",
+          "pos": "adjective",
+          "en": "slow / fast",
+          "sentence": "Das Internet ist heute langsam."
+        },
+        {
+          "de": "erreichbar",
+          "pos": "adjective",
+          "en": "reachable",
+          "sentence": "Bist du heute erreichbar?"
+        },
+        {
+          "de": "der Bildschirm",
+          "pos": "noun",
+          "en": "screen",
+          "sentence": "Der Bildschirm ist kaputt."
+        },
+        {
+          "de": "die Tastatur",
+          "pos": "noun",
+          "en": "keyboard",
+          "sentence": "Die Tastatur ist neu."
+        },
+        {
+          "de": "das Ladekabel",
+          "pos": "noun",
+          "en": "charging cable",
+          "sentence": "Ich habe mein Ladekabel vergessen."
+        },
+        {
+          "de": "die Webseite",
+          "pos": "noun",
+          "en": "website",
+          "sentence": "Die Webseite ist sehr gut."
+        },
+        {
+          "de": "speichern",
+          "pos": "verb",
+          "en": "to save",
+          "sentence": "Ich speichere die Datei, und du speicherst das Foto.",
+          "perfekt": "hat gespeichert",
+          "sentence_perfekt": "Hast du das Dokument gespeichert?"
+        },
+        {
+          "de": "aufladen",
+          "pos": "verb",
+          "en": "to charge",
+          "sentence": "Ich lade das Handy auf, und du lädst den Akku auf.",
+          "perfekt": "hat aufgeladen",
+          "sentence_perfekt": "Ich habe mein Handy aufgeladen."
+        },
+        {
+          "de": "eingeben",
+          "pos": "verb",
+          "en": "to enter",
+          "sentence": "Ich gebe das Passwort ein, und du gibst die Nummer ein.",
+          "perfekt": "hat eingegeben",
+          "sentence_perfekt": "Er hat die Adresse falsch eingegeben."
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "topic": "Behörde & Post",
+      "words": [
+        {
+          "de": "das Amt / die Behörde",
+          "pos": "noun",
+          "en": "office / authority",
+          "sentence": "Ich gehe zum Amt."
+        },
+        {
+          "de": "das Formular",
+          "pos": "noun",
+          "en": "form",
+          "sentence": "Bitte füllen Sie das Formular aus."
+        },
+        {
+          "de": "der Ausweis",
+          "pos": "noun",
+          "en": "ID card",
+          "sentence": "Haben Sie Ihren Ausweis dabei?"
+        },
+        {
+          "de": "die Unterschrift",
+          "pos": "noun",
+          "en": "signature",
+          "sentence": "Hier fehlt Ihre Unterschrift."
+        },
+        {
+          "de": "die Anmeldung",
+          "pos": "noun",
+          "en": "registration",
+          "sentence": "Die Anmeldung dauert eine Woche."
+        },
+        {
+          "de": "die Adresse",
+          "pos": "noun",
+          "en": "address",
+          "sentence": "Wie ist Ihre Adresse?"
+        },
+        {
+          "de": "die Post",
+          "pos": "noun",
+          "en": "post office / mail",
+          "sentence": "Ich gehe zur Post."
+        },
+        {
+          "de": "der Brief",
+          "pos": "noun",
+          "en": "letter",
+          "sentence": "Ich schreibe einen Brief."
+        },
+        {
+          "de": "das Paket",
+          "pos": "noun",
+          "en": "parcel",
+          "sentence": "Das Paket kommt morgen."
+        },
+        {
+          "de": "die Briefmarke",
+          "pos": "noun",
+          "en": "stamp",
+          "sentence": "Ich brauche eine Briefmarke."
+        },
+        {
+          "de": "ausfüllen",
+          "pos": "verb",
+          "en": "to fill in",
+          "sentence": "Ich fülle das Formular aus, und du füllst es auch aus.",
+          "perfekt": "hat ausgefüllt",
+          "sentence_perfekt": "Ich habe das Formular schon ausgefüllt."
+        },
+        {
+          "de": "anmelden",
+          "pos": "verb",
+          "en": "to register",
+          "sentence": "Ich melde meine Wohnung an, und du meldest dein Auto an.",
+          "perfekt": "hat angemeldet",
+          "sentence_perfekt": "Ich habe meine Wohnung angemeldet."
+        },
+        {
+          "de": "abholen",
+          "pos": "verb",
+          "en": "to pick up",
+          "sentence": "Ich hole dich ab, und du holst das Paket ab.",
+          "perfekt": "hat abgeholt",
+          "sentence_perfekt": "Ich habe das Paket gestern abgeholt."
+        },
+        {
+          "de": "unterschreiben",
+          "pos": "verb",
+          "en": "to sign",
+          "sentence": "Ich unterschreibe den Vertrag, und du unterschreibst das Formular.",
+          "perfekt": "hat unterschrieben",
+          "sentence_perfekt": "Sie hat den Brief unterschrieben."
+        },
+        {
+          "de": "wichtig",
+          "pos": "adjective",
+          "en": "important",
+          "sentence": "Der Brief ist wichtig."
+        },
+        {
+          "de": "gültig",
+          "pos": "adjective",
+          "en": "valid",
+          "sentence": "Der Pass ist noch gültig."
+        },
+        {
+          "de": "der Antrag",
+          "pos": "noun",
+          "en": "application",
+          "sentence": "Ich stelle einen Antrag."
+        },
+        {
+          "de": "der Termin beim Amt",
+          "pos": "phrase",
+          "en": "appointment at the office",
+          "sentence": "Ich habe morgen einen Termin beim Amt."
+        },
+        {
+          "de": "die Postleitzahl",
+          "pos": "noun",
+          "en": "postcode",
+          "sentence": "Wie ist deine Postleitzahl?"
+        },
+        {
+          "de": "der Absender / der Empfänger",
+          "pos": "noun",
+          "en": "sender / recipient",
+          "sentence": "Der Absender steht links oben."
+        },
+        {
+          "de": "das Dokument",
+          "pos": "noun",
+          "en": "document",
+          "sentence": "Ich brauche noch ein Dokument."
+        },
+        {
+          "de": "verlängern",
+          "pos": "verb",
+          "en": "to extend / renew",
+          "sentence": "Ich verlängere den Ausweis, und du verlängerst das Visum.",
+          "perfekt": "hat verlängert",
+          "sentence_perfekt": "Sie hat ihren Pass verlängert."
+        },
+        {
+          "de": "abgeben",
+          "pos": "verb",
+          "en": "to hand in",
+          "sentence": "Ich gebe das Formular ab, und du gibst den Antrag ab.",
+          "perfekt": "hat abgegeben",
+          "sentence_perfekt": "Er hat die Unterlagen abgegeben."
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "topic": "Gefühle",
+      "words": [
+        {
+          "de": "das Gefühl",
+          "pos": "noun",
+          "en": "feeling",
+          "sentence": "Ich habe ein gutes Gefühl."
+        },
+        {
+          "de": "die Freude",
+          "pos": "noun",
+          "en": "joy",
+          "sentence": "Das Geschenk macht mir Freude."
+        },
+        {
+          "de": "die Angst",
+          "pos": "noun",
+          "en": "fear",
+          "sentence": "Ich habe Angst vor Hunden."
+        },
+        {
+          "de": "die Sorge",
+          "pos": "noun",
+          "en": "worry",
+          "sentence": "Ich mache mir Sorgen."
+        },
+        {
+          "de": "der Stress",
+          "pos": "noun",
+          "en": "stress",
+          "sentence": "Ich habe viel Stress."
+        },
+        {
+          "de": "glücklich",
+          "pos": "adjective",
+          "en": "happy",
+          "sentence": "Ich bin sehr glücklich."
+        },
+        {
+          "de": "traurig",
+          "pos": "adjective",
+          "en": "sad",
+          "sentence": "Sie ist heute traurig."
+        },
+        {
+          "de": "wütend",
+          "pos": "adjective",
+          "en": "angry",
+          "sentence": "Er ist wütend auf mich."
+        },
+        {
+          "de": "aufgeregt",
+          "pos": "adjective",
+          "en": "excited",
+          "sentence": "Ich bin vor der Reise aufgeregt."
+        },
+        {
+          "de": "enttäuscht",
+          "pos": "adjective",
+          "en": "disappointed",
+          "sentence": "Ich bin vom Ergebnis enttäuscht."
+        },
+        {
+          "de": "stolz",
+          "pos": "adjective",
+          "en": "proud",
+          "sentence": "Meine Eltern sind stolz auf mich."
+        },
+        {
+          "de": "einsam",
+          "pos": "adjective",
+          "en": "lonely",
+          "sentence": "Ohne Freunde fühle ich mich einsam."
+        },
+        {
+          "de": "sich freuen",
+          "pos": "verb",
+          "en": "to be glad",
+          "sentence": "Ich freue mich auf den Urlaub, und du freust dich auf das Wochenende.",
+          "perfekt": "hat sich gefreut",
+          "sentence_perfekt": "Wir haben uns über das Geschenk gefreut."
+        },
+        {
+          "de": "sich fühlen",
+          "pos": "verb",
+          "en": "to feel",
+          "sentence": "Ich fühle mich gut, und du fühlst dich müde.",
+          "perfekt": "hat sich gefühlt",
+          "sentence_perfekt": "Ich habe mich gestern krank gefühlt."
+        },
+        {
+          "de": "weinen / lachen",
+          "pos": "verb",
+          "en": "to cry / to laugh",
+          "sentence": "Ich weine selten, und du lachst viel.",
+          "perfekt": "hat geweint / hat gelacht",
+          "sentence_perfekt": "Wir haben viel gelacht."
+        },
+        {
+          "de": "sich ärgern",
+          "pos": "verb",
+          "en": "to be annoyed",
+          "sentence": "Ich ärgere mich über den Lärm, und du ärgerst dich über den Stau.",
+          "perfekt": "hat sich geärgert",
+          "sentence_perfekt": "Ich habe mich über den Fehler geärgert."
+        },
+        {
+          "de": "die Liebe",
+          "pos": "noun",
+          "en": "love",
+          "sentence": "Die Liebe ist wichtig."
+        },
+        {
+          "de": "die Überraschung",
+          "pos": "noun",
+          "en": "surprise",
+          "sentence": "Das ist eine schöne Überraschung!"
+        },
+        {
+          "de": "die Müdigkeit",
+          "pos": "noun",
+          "en": "tiredness",
+          "sentence": "Die Müdigkeit macht mich fertig."
+        },
+        {
+          "de": "lustig",
+          "pos": "adjective",
+          "en": "funny",
+          "sentence": "Der Film war sehr lustig."
+        },
+        {
+          "de": "zufrieden",
+          "pos": "adjective",
+          "en": "satisfied",
+          "sentence": "Ich bin mit dem Ergebnis zufrieden."
+        },
+        {
+          "de": "lachen",
+          "pos": "verb",
+          "en": "to laugh",
+          "sentence": "Ich lache viel, und du lachst auch gern.",
+          "perfekt": "hat gelacht",
+          "sentence_perfekt": "Wir haben alle laut gelacht."
+        },
+        {
+          "de": "sich langweilen",
+          "pos": "verb",
+          "en": "to be bored",
+          "sentence": "Ich langweile mich, und du langweilst dich nie.",
+          "perfekt": "hat sich gelangweilt",
+          "sentence_perfekt": "Er hat sich im Kino gelangweilt."
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "topic": "Letztes Wochenende",
+      "words": [
+        {
+          "de": "das Wochenende",
+          "pos": "noun",
+          "en": "weekend",
+          "sentence": "Am Wochenende war ich im Park."
+        },
+        {
+          "de": "der Ausflug",
+          "pos": "noun",
+          "en": "trip / excursion",
+          "sentence": "Wir haben einen Ausflug gemacht."
+        },
+        {
+          "de": "das Konzert",
+          "pos": "noun",
+          "en": "concert",
+          "sentence": "Wir waren im Konzert."
+        },
+        {
+          "de": "der Besuch",
+          "pos": "noun",
+          "en": "visit",
+          "sentence": "Gestern hatte ich Besuch."
+        },
+        {
+          "de": "besuchen",
+          "pos": "verb",
+          "en": "to visit",
+          "sentence": "Ich besuche meine Oma, und du besuchst deine Eltern.",
+          "perfekt": "hat besucht",
+          "sentence_perfekt": "Ich habe am Sonntag meine Oma besucht."
+        },
+        {
+          "de": "ausschlafen",
+          "pos": "verb",
+          "en": "to sleep in",
+          "sentence": "Ich schlafe am Sonntag aus, und du schläfst auch aus.",
+          "perfekt": "hat ausgeschlafen",
+          "sentence_perfekt": "Ich habe heute lange ausgeschlafen."
+        },
+        {
+          "de": "treffen",
+          "pos": "verb",
+          "en": "to meet",
+          "sentence": "Ich treffe Freunde, und du triffst deine Kollegen.",
+          "perfekt": "hat getroffen",
+          "sentence_perfekt": "Ich habe gestern meinen Lehrer getroffen."
+        },
+        {
+          "de": "einkaufen",
+          "pos": "verb",
+          "en": "to shop",
+          "sentence": "Ich kaufe Brot ein, und du kaufst Obst ein.",
+          "perfekt": "hat eingekauft",
+          "sentence_perfekt": "Wir haben gestern im Supermarkt eingekauft."
+        },
+        {
+          "de": "fahren",
+          "pos": "verb",
+          "en": "to go (by vehicle)",
+          "sentence": "Ich fahre mit dem Bus, und du fährst mit dem Rad.",
+          "perfekt": "ist gefahren",
+          "sentence_perfekt": "Wir sind nach Hamburg gefahren."
+        },
+        {
+          "de": "machen",
+          "pos": "verb",
+          "en": "to do / make",
+          "sentence": "Ich mache Sport, und du machst Hausaufgaben.",
+          "perfekt": "hat gemacht",
+          "sentence_perfekt": "Was hast du gestern gemacht?"
+        },
+        {
+          "de": "gestern",
+          "pos": "adverb",
+          "en": "yesterday",
+          "sentence": "Gestern war ich zu Hause."
+        },
+        {
+          "de": "letzte Woche",
+          "pos": "adverb",
+          "en": "last week",
+          "sentence": "Letzte Woche war ich krank."
+        },
+        {
+          "de": "zuerst",
+          "pos": "connector",
+          "en": "first",
+          "sentence": "Zuerst habe ich gefrühstückt."
+        },
+        {
+          "de": "danach",
+          "pos": "connector",
+          "en": "afterwards",
+          "sentence": "Danach bin ich spazieren gegangen."
+        },
+        {
+          "de": "am Ende",
+          "pos": "connector",
+          "en": "in the end",
+          "sentence": "Am Ende waren wir müde."
+        },
+        {
+          "de": "toll",
+          "pos": "adjective",
+          "en": "great",
+          "sentence": "Das Wochenende war toll."
+        },
+        {
+          "de": "der Samstag / der Sonntag",
+          "pos": "noun",
+          "en": "Saturday / Sunday",
+          "sentence": "Am Samstag war ich im Kino."
+        },
+        {
+          "de": "der Spaziergang am Fluss",
+          "pos": "phrase",
+          "en": "walk by the river",
+          "sentence": "Wir haben einen Spaziergang am Fluss gemacht."
+        },
+        {
+          "de": "der Kuchen",
+          "pos": "noun",
+          "en": "cake",
+          "sentence": "Wir haben Kuchen gegessen."
+        },
+        {
+          "de": "bleiben",
+          "pos": "verb",
+          "en": "to stay",
+          "sentence": "Ich bleibe zu Hause, und du bleibst im Bett.",
+          "perfekt": "ist geblieben",
+          "sentence_perfekt": "Am Sonntag bin ich zu Hause geblieben."
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "topic": "Pläne & Zukunft",
+      "words": [
+        {
+          "de": "der Plan",
+          "pos": "noun",
+          "en": "plan",
+          "sentence": "Ich habe einen Plan für morgen."
+        },
+        {
+          "de": "die Zukunft",
+          "pos": "noun",
+          "en": "future",
+          "sentence": "In der Zukunft möchte ich reisen."
+        },
+        {
+          "de": "das Ziel",
+          "pos": "noun",
+          "en": "goal",
+          "sentence": "Mein Ziel ist B1."
+        },
+        {
+          "de": "der Traum",
+          "pos": "noun",
+          "en": "dream",
+          "sentence": "Mein Traum ist ein eigenes Haus."
+        },
+        {
+          "de": "die Idee",
+          "pos": "noun",
+          "en": "idea",
+          "sentence": "Das ist eine gute Idee."
+        },
+        {
+          "de": "vorhaben",
+          "pos": "verb",
+          "en": "to plan / intend",
+          "sentence": "Ich habe am Samstag viel vor, und du hast nichts vor.",
+          "perfekt": "hat vorgehabt",
+          "sentence_perfekt": "Wir haben das schon lange vorgehabt."
+        },
+        {
+          "de": "planen",
+          "pos": "verb",
+          "en": "to plan",
+          "sentence": "Ich plane die Reise, und du planst das Essen.",
+          "perfekt": "hat geplant",
+          "sentence_perfekt": "Wir haben den Urlaub geplant."
+        },
+        {
+          "de": "wollen",
+          "pos": "verb",
+          "en": "to want",
+          "sentence": "Ich will Arzt werden, und du willst Lehrer werden.",
+          "perfekt": "hat gewollt",
+          "sentence_perfekt": "Ich habe das nie gewollt."
+        },
+        {
+          "de": "werden",
+          "pos": "verb",
+          "en": "to become / will",
+          "sentence": "Ich werde Arzt, und du wirst Lehrer.",
+          "perfekt": "ist geworden",
+          "sentence_perfekt": "Er ist krank geworden."
+        },
+        {
+          "de": "hoffen",
+          "pos": "verb",
+          "en": "to hope",
+          "sentence": "Ich hoffe auf gutes Wetter, und du hoffst auf Sonne.",
+          "perfekt": "hat gehofft",
+          "sentence_perfekt": "Wir haben gehofft, dass du kommst."
+        },
+        {
+          "de": "vielleicht",
+          "pos": "adverb",
+          "en": "maybe",
+          "sentence": "Vielleicht komme ich mit."
+        },
+        {
+          "de": "bald",
+          "pos": "adverb",
+          "en": "soon",
+          "sentence": "Wir sehen uns bald."
+        },
+        {
+          "de": "nächste Woche / nächstes Jahr",
+          "pos": "adverb",
+          "en": "next week / next year",
+          "sentence": "Nächstes Jahr fahre ich nach Wien."
+        },
+        {
+          "de": "später",
+          "pos": "adverb",
+          "en": "later",
+          "sentence": "Später möchte ich studieren."
+        },
+        {
+          "de": "sicher",
+          "pos": "adjective",
+          "en": "sure / certain",
+          "sentence": "Ich bin mir sicher."
+        },
+        {
+          "de": "wenn",
+          "pos": "connector",
+          "en": "if / when",
+          "sentence": "Wenn ich Zeit habe, rufe ich dich an."
+        },
+        {
+          "de": "der Urlaubsplan",
+          "pos": "noun",
+          "en": "holiday plan",
+          "sentence": "Wir haben schon einen Urlaubsplan."
+        },
+        {
+          "de": "das Studium",
+          "pos": "noun",
+          "en": "studies",
+          "sentence": "Nach der Schule beginne ich das Studium."
+        },
+        {
+          "de": "beginnen",
+          "pos": "verb",
+          "en": "to begin",
+          "sentence": "Ich beginne im Herbst, und du beginnst im Frühling.",
+          "perfekt": "hat begonnen",
+          "sentence_perfekt": "Der Kurs hat gestern begonnen."
+        },
+        {
+          "de": "nächste",
+          "pos": "adjective",
+          "en": "next",
+          "sentence": "Nächste Woche habe ich frei."
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "topic": "Geld & Bank",
+      "words": [
+        {
+          "de": "das Geld",
+          "pos": "noun",
+          "en": "money",
+          "sentence": "Ich habe kein Geld dabei."
+        },
+        {
+          "de": "die Bank",
+          "pos": "noun",
+          "en": "bank",
+          "sentence": "Die Bank öffnet um 9 Uhr."
+        },
+        {
+          "de": "das Konto",
+          "pos": "noun",
+          "en": "account",
+          "sentence": "Ich möchte ein Konto eröffnen."
+        },
+        {
+          "de": "die Karte",
+          "pos": "noun",
+          "en": "card",
+          "sentence": "Kann ich mit Karte zahlen?"
+        },
+        {
+          "de": "das Bargeld",
+          "pos": "noun",
+          "en": "cash",
+          "sentence": "Ich zahle mit Bargeld."
+        },
+        {
+          "de": "der Geldautomat",
+          "pos": "noun",
+          "en": "ATM",
+          "sentence": "Wo ist der Geldautomat?"
+        },
+        {
+          "de": "die Überweisung",
+          "pos": "noun",
+          "en": "bank transfer",
+          "sentence": "Ich mache eine Überweisung."
+        },
+        {
+          "de": "die Gebühr",
+          "pos": "noun",
+          "en": "fee",
+          "sentence": "Die Gebühr beträgt fünf Euro."
+        },
+        {
+          "de": "das Kleingeld",
+          "pos": "noun",
+          "en": "small change",
+          "sentence": "Haben Sie Kleingeld?"
+        },
+        {
+          "de": "sparen",
+          "pos": "verb",
+          "en": "to save",
+          "sentence": "Ich spare für ein Auto, und du sparst für eine Reise.",
+          "perfekt": "hat gespart",
+          "sentence_perfekt": "Wir haben viel Geld gespart."
+        },
+        {
+          "de": "abheben",
+          "pos": "verb",
+          "en": "to withdraw",
+          "sentence": "Ich hebe Geld ab, und du hebst auch Geld ab.",
+          "perfekt": "hat abgehoben",
+          "sentence_perfekt": "Gestern habe ich 100 Euro abgehoben."
+        },
+        {
+          "de": "ausgeben",
+          "pos": "verb",
+          "en": "to spend",
+          "sentence": "Ich gebe wenig Geld aus, und du gibst viel Geld aus.",
+          "perfekt": "hat ausgegeben",
+          "sentence_perfekt": "Wir haben zu viel Geld ausgegeben."
+        },
+        {
+          "de": "wechseln",
+          "pos": "verb",
+          "en": "to exchange",
+          "sentence": "Ich wechsle Geld, und du wechselst den Job.",
+          "perfekt": "hat gewechselt",
+          "sentence_perfekt": "Er hat die Firma gewechselt."
+        },
+        {
+          "de": "leihen",
+          "pos": "verb",
+          "en": "to lend / borrow",
+          "sentence": "Ich leihe dir Geld, und du leihst mir ein Buch.",
+          "perfekt": "hat geliehen",
+          "sentence_perfekt": "Sie hat mir ihr Fahrrad geliehen."
+        },
+        {
+          "de": "arm / reich",
+          "pos": "adjective",
+          "en": "poor / rich",
+          "sentence": "Er ist nicht reich."
+        },
+        {
+          "de": "kostenlos",
+          "pos": "adjective",
+          "en": "free of charge",
+          "sentence": "Der Eintritt ist kostenlos."
+        },
+        {
+          "de": "der Euro / der Cent",
+          "pos": "noun",
+          "en": "euro / cent",
+          "sentence": "Das kostet zwei Euro."
+        },
+        {
+          "de": "die Münze",
+          "pos": "noun",
+          "en": "coin",
+          "sentence": "Ich habe nur eine Münze."
+        },
+        {
+          "de": "der Schein",
+          "pos": "noun",
+          "en": "banknote",
+          "sentence": "Hast du einen Fünfzig-Euro-Schein?"
+        },
+        {
+          "de": "die Kreditkarte",
+          "pos": "noun",
+          "en": "credit card",
+          "sentence": "Ich zahle mit Kreditkarte."
+        },
+        {
+          "de": "die PIN",
+          "pos": "noun",
+          "en": "PIN",
+          "sentence": "Ich habe meine PIN vergessen."
+        },
+        {
+          "de": "überweisen",
+          "pos": "verb",
+          "en": "to transfer money",
+          "sentence": "Ich überweise die Miete, und du überweist das Geld.",
+          "perfekt": "hat überwiesen",
+          "sentence_perfekt": "Er hat 100 Euro überwiesen."
+        },
+        {
+          "de": "einzahlen",
+          "pos": "verb",
+          "en": "to deposit",
+          "sentence": "Ich zahle Geld ein, und du zahlst Bargeld ein.",
+          "perfekt": "hat eingezahlt",
+          "sentence_perfekt": "Sie hat 200 Euro eingezahlt."
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "topic": "Feste & Einladungen",
+      "words": [
+        {
+          "de": "das Fest / die Feier",
+          "pos": "noun",
+          "en": "celebration",
+          "sentence": "Wir machen eine Feier."
+        },
+        {
+          "de": "die Party",
+          "pos": "noun",
+          "en": "party",
+          "sentence": "Die Party beginnt um 20 Uhr."
+        },
+        {
+          "de": "der Geburtstag",
+          "pos": "noun",
+          "en": "birthday",
+          "sentence": "Morgen habe ich Geburtstag."
+        },
+        {
+          "de": "die Hochzeit",
+          "pos": "noun",
+          "en": "wedding",
+          "sentence": "Die Hochzeit ist im Mai."
+        },
+        {
+          "de": "Weihnachten / Ostern",
+          "pos": "noun",
+          "en": "Christmas / Easter",
+          "sentence": "Zu Weihnachten besuche ich meine Familie."
+        },
+        {
+          "de": "das Geschenk",
+          "pos": "noun",
+          "en": "present",
+          "sentence": "Ich kaufe ein Geschenk."
+        },
+        {
+          "de": "die Einladung",
+          "pos": "noun",
+          "en": "invitation",
+          "sentence": "Danke für die Einladung!"
+        },
+        {
+          "de": "der Gast",
+          "pos": "noun",
+          "en": "guest",
+          "sentence": "Wir haben zehn Gäste."
+        },
+        {
+          "de": "einladen",
+          "pos": "verb",
+          "en": "to invite",
+          "sentence": "Ich lade dich ein, und du lädst mich auch ein.",
+          "perfekt": "hat eingeladen",
+          "sentence_perfekt": "Sie hat uns zur Party eingeladen."
+        },
+        {
+          "de": "feiern",
+          "pos": "verb",
+          "en": "to celebrate",
+          "sentence": "Ich feiere im Mai, und du feierst im Juni.",
+          "perfekt": "hat gefeiert",
+          "sentence_perfekt": "Wir haben bis spät gefeiert."
+        },
+        {
+          "de": "schenken",
+          "pos": "verb",
+          "en": "to give (a present)",
+          "sentence": "Ich schenke dir Blumen, und du schenkst mir ein Buch.",
+          "perfekt": "hat geschenkt",
+          "sentence_perfekt": "Er hat ihr eine Uhr geschenkt."
+        },
+        {
+          "de": "zusagen / absagen",
+          "pos": "verb",
+          "en": "to accept / decline",
+          "sentence": "Ich sage zu, und du sagst ab.",
+          "perfekt": "hat zugesagt / hat abgesagt",
+          "sentence_perfekt": "Ich habe zugesagt, aber er hat abgesagt."
+        },
+        {
+          "de": "gratulieren",
+          "pos": "verb",
+          "en": "to congratulate",
+          "sentence": "Ich gratuliere dir, und du gratulierst mir.",
+          "perfekt": "hat gratuliert",
+          "sentence_perfekt": "Wir haben ihr zum Geburtstag gratuliert."
+        },
+        {
+          "de": "herzlich",
+          "pos": "adjective",
+          "en": "heartfelt / warm",
+          "sentence": "Herzlichen Glückwunsch!"
+        },
+        {
+          "de": "Alles Gute!",
+          "pos": "phrase",
+          "en": "All the best!",
+          "sentence": "Alles Gute zum Geburtstag!"
+        },
+        {
+          "de": "die Torte",
+          "pos": "noun",
+          "en": "layer cake",
+          "sentence": "Die Torte ist lecker."
+        },
+        {
+          "de": "die Kerze",
+          "pos": "noun",
+          "en": "candle",
+          "sentence": "Auf dem Kuchen brennen zehn Kerzen."
+        },
+        {
+          "de": "die Blume",
+          "pos": "noun",
+          "en": "flower",
+          "sentence": "Ich bringe Blumen mit."
+        },
+        {
+          "de": "die Überraschungsparty",
+          "pos": "noun",
+          "en": "surprise party",
+          "sentence": "Wir planen eine Überraschungsparty."
+        },
+        {
+          "de": "vorbereiten",
+          "pos": "verb",
+          "en": "to prepare",
+          "sentence": "Ich bereite das Essen vor, und du bereitest den Salat vor.",
+          "perfekt": "hat vorbereitet",
+          "sentence_perfekt": "Wir haben das Fest vorbereitet."
+        },
+        {
+          "de": "mitfeiern",
+          "pos": "verb",
+          "en": "to celebrate along",
+          "sentence": "Ich feiere mit, und du feierst auch mit.",
+          "perfekt": "hat mitgefeiert",
+          "sentence_perfekt": "Alle haben mitgefeiert."
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "topic": "Meinung",
+      "words": [
+        {
+          "de": "die Meinung",
+          "pos": "noun",
+          "en": "opinion",
+          "sentence": "Was ist deine Meinung?"
+        },
+        {
+          "de": "der Vorschlag",
+          "pos": "noun",
+          "en": "suggestion",
+          "sentence": "Ich habe einen Vorschlag."
+        },
+        {
+          "de": "der Grund",
+          "pos": "noun",
+          "en": "reason",
+          "sentence": "Das ist ein guter Grund."
+        },
+        {
+          "de": "denken / meinen",
+          "pos": "verb",
+          "en": "to think / to mean",
+          "sentence": "Ich denke oft an dich, und du meinst das ernst.",
+          "perfekt": "hat gedacht / hat gemeint",
+          "sentence_perfekt": "Ich habe das nicht so gemeint."
+        },
+        {
+          "de": "glauben",
+          "pos": "verb",
+          "en": "to believe",
+          "sentence": "Ich glaube dir, und du glaubst mir.",
+          "perfekt": "hat geglaubt",
+          "sentence_perfekt": "Ich habe ihm nicht geglaubt."
+        },
+        {
+          "de": "zustimmen",
+          "pos": "verb",
+          "en": "to agree",
+          "sentence": "Ich stimme dir zu, und du stimmst mir zu.",
+          "perfekt": "hat zugestimmt",
+          "sentence_perfekt": "Alle haben dem Plan zugestimmt."
+        },
+        {
+          "de": "einverstanden",
+          "pos": "adjective",
+          "en": "in agreement",
+          "sentence": "Ich bin damit einverstanden."
+        },
+        {
+          "de": "richtig / falsch",
+          "pos": "adjective",
+          "en": "right / wrong",
+          "sentence": "Das ist falsch."
+        },
+        {
+          "de": "meiner Meinung nach",
+          "pos": "phrase",
+          "en": "in my opinion",
+          "sentence": "Meiner Meinung nach ist das zu teuer."
+        },
+        {
+          "de": "ich finde, dass ...",
+          "pos": "phrase",
+          "en": "I think that ...",
+          "sentence": "Ich finde, dass Deutsch schön ist."
+        },
+        {
+          "de": "weil",
+          "pos": "connector",
+          "en": "because",
+          "sentence": "Ich lerne Deutsch, weil ich hier arbeite."
+        },
+        {
+          "de": "denn",
+          "pos": "connector",
+          "en": "because (main clause)",
+          "sentence": "Ich bleibe zu Hause, denn ich bin krank."
+        },
+        {
+          "de": "aber",
+          "pos": "connector",
+          "en": "but",
+          "sentence": "Ich mag Fisch, aber ich esse kein Fleisch."
+        },
+        {
+          "de": "deshalb",
+          "pos": "connector",
+          "en": "therefore",
+          "sentence": "Es regnet, deshalb bleibe ich zu Hause."
+        },
+        {
+          "de": "der Unterschied",
+          "pos": "noun",
+          "en": "difference",
+          "sentence": "Es gibt einen großen Unterschied."
+        },
+        {
+          "de": "auch",
+          "pos": "adverb",
+          "en": "also",
+          "sentence": "Ich finde das auch gut."
+        },
+        {
+          "de": "interessant",
+          "pos": "adjective",
+          "en": "interesting",
+          "sentence": "Das Thema ist interessant."
+        },
+        {
+          "de": "nicht einverstanden",
+          "pos": "phrase",
+          "en": "not in agreement",
+          "sentence": "Da bin ich nicht einverstanden."
+        },
+        {
+          "de": "Das stimmt!",
+          "pos": "phrase",
+          "en": "That's right!",
+          "sentence": "Das stimmt, du hast recht."
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "topic": "Problem & Beschwerde",
+      "words": [
+        {
+          "de": "das Problem",
+          "pos": "noun",
+          "en": "problem",
+          "sentence": "Ich habe ein Problem."
+        },
+        {
+          "de": "die Beschwerde",
+          "pos": "noun",
+          "en": "complaint",
+          "sentence": "Ich möchte eine Beschwerde machen."
+        },
+        {
+          "de": "der Fehler",
+          "pos": "noun",
+          "en": "mistake / defect",
+          "sentence": "Auf der Rechnung ist ein Fehler."
+        },
+        {
+          "de": "der Lärm",
+          "pos": "noun",
+          "en": "noise",
+          "sentence": "Der Lärm stört mich."
+        },
+        {
+          "de": "die Lösung",
+          "pos": "noun",
+          "en": "solution",
+          "sentence": "Wir finden eine Lösung."
+        },
+        {
+          "de": "der Ersatz",
+          "pos": "noun",
+          "en": "replacement",
+          "sentence": "Ich möchte Ersatz für das Gerät."
+        },
+        {
+          "de": "das Geld zurück",
+          "pos": "phrase",
+          "en": "money back",
+          "sentence": "Ich möchte mein Geld zurück."
+        },
+        {
+          "de": "sich beschweren",
+          "pos": "verb",
+          "en": "to complain",
+          "sentence": "Ich beschwere mich nicht, und du beschwerst dich oft.",
+          "perfekt": "hat sich beschwert",
+          "sentence_perfekt": "Er hat sich über den Lärm beschwert."
+        },
+        {
+          "de": "stören",
+          "pos": "verb",
+          "en": "to disturb",
+          "sentence": "Ich störe dich nicht, und du störst mich nicht.",
+          "perfekt": "hat gestört",
+          "sentence_perfekt": "Der Lärm hat mich gestört."
+        },
+        {
+          "de": "reparieren",
+          "pos": "verb",
+          "en": "to repair",
+          "sentence": "Ich repariere das Fahrrad, und du reparierst das Handy.",
+          "perfekt": "hat repariert",
+          "sentence_perfekt": "Er hat die Heizung repariert."
+        },
+        {
+          "de": "umtauschen",
+          "pos": "verb",
+          "en": "to exchange",
+          "sentence": "Ich tausche die Hose um, und du tauschst das Hemd um.",
+          "perfekt": "hat umgetauscht",
+          "sentence_perfekt": "Ich habe die Schuhe umgetauscht."
+        },
+        {
+          "de": "sich entschuldigen",
+          "pos": "verb",
+          "en": "to apologise",
+          "sentence": "Ich entschuldige mich, und du entschuldigst dich auch.",
+          "perfekt": "hat sich entschuldigt",
+          "sentence_perfekt": "Er hat sich für den Fehler entschuldigt."
+        },
+        {
+          "de": "funktionieren",
+          "pos": "verb",
+          "en": "to work (function)",
+          "sentence": "Bei mir funktioniert das WLAN, aber funktioniert es bei dir?",
+          "perfekt": "hat funktioniert",
+          "sentence_perfekt": "Der Fernseher hat nicht funktioniert."
+        },
+        {
+          "de": "defekt",
+          "pos": "adjective",
+          "en": "defective",
+          "sentence": "Das Gerät ist defekt."
+        },
+        {
+          "de": "Das ist inakzeptabel!",
+          "pos": "phrase",
+          "en": "That is unacceptable!",
+          "sentence": "Zwei Stunden warten – das ist inakzeptabel!"
+        },
+        {
+          "de": "die Panne",
+          "pos": "noun",
+          "en": "breakdown",
+          "sentence": "Wir hatten eine Panne auf der Autobahn."
+        },
+        {
+          "de": "die Störung",
+          "pos": "noun",
+          "en": "disturbance / fault",
+          "sentence": "Es gibt eine Störung im Netz."
+        },
+        {
+          "de": "die Reklamation",
+          "pos": "noun",
+          "en": "complaint (about goods)",
+          "sentence": "Ich möchte eine Reklamation machen."
+        },
+        {
+          "de": "der Kundendienst",
+          "pos": "noun",
+          "en": "customer service",
+          "sentence": "Der Kundendienst hilft Ihnen gern."
+        },
+        {
+          "de": "zerbrechen",
+          "pos": "verb",
+          "en": "to break",
+          "sentence": "Ich zerbreche nichts, und du zerbrichst das Glas.",
+          "perfekt": "ist zerbrochen",
+          "sentence_perfekt": "Die Tasse ist zerbrochen."
+        },
+        {
+          "de": "verlieren",
+          "pos": "verb",
+          "en": "to lose",
+          "sentence": "Ich verliere oft meinen Schlüssel, und du verlierst dein Handy.",
+          "perfekt": "hat verloren",
+          "sentence_perfekt": "Er hat seine Tasche verloren."
+        },
+        {
+          "de": "funktionieren nicht",
+          "pos": "phrase",
+          "en": "does not work",
+          "sentence": "Die Heizung funktioniert nicht."
+        },
+        {
+          "de": "Es tut mir leid.",
+          "pos": "phrase",
+          "en": "I'm sorry.",
+          "sentence": "Es tut mir leid, das war mein Fehler."
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "topic": "Zahlen & Mengen",
+      "words": [
+        {
+          "de": "die Zahl",
+          "pos": "noun",
+          "en": "number",
+          "sentence": "Die Zahl ist zu groß."
+        },
+        {
+          "de": "die Hälfte",
+          "pos": "noun",
+          "en": "half",
+          "sentence": "Ich esse nur die Hälfte."
+        },
+        {
+          "de": "das Paar",
+          "pos": "noun",
+          "en": "pair / couple",
+          "sentence": "Ich brauche ein Paar Schuhe."
+        },
+        {
+          "de": "die Packung",
+          "pos": "noun",
+          "en": "package",
+          "sentence": "Eine Packung Nudeln, bitte."
+        },
+        {
+          "de": "die Flasche",
+          "pos": "noun",
+          "en": "bottle",
+          "sentence": "Ich kaufe eine Flasche Wasser."
+        },
+        {
+          "de": "die Dose",
+          "pos": "noun",
+          "en": "can",
+          "sentence": "Die Dose ist leer."
+        },
+        {
+          "de": "das Stück",
+          "pos": "noun",
+          "en": "piece",
+          "sentence": "Ein Stück Kuchen, bitte."
+        },
+        {
+          "de": "das Gramm",
+          "pos": "noun",
+          "en": "gram",
+          "sentence": "Ich nehme 200 Gramm Käse."
+        },
+        {
+          "de": "das Prozent",
+          "pos": "noun",
+          "en": "percent",
+          "sentence": "Es gibt zehn Prozent Rabatt."
+        },
+        {
+          "de": "erste / zweite / dritte",
+          "pos": "adjective",
+          "en": "first / second / third",
+          "sentence": "Das ist mein erster Tag."
+        },
+        {
+          "de": "einmal / zweimal",
+          "pos": "adverb",
+          "en": "once / twice",
+          "sentence": "Ich gehe zweimal pro Woche schwimmen."
+        },
+        {
+          "de": "viel / wenig",
+          "pos": "adverb",
+          "en": "much / little",
+          "sentence": "Ich trinke viel Wasser."
+        },
+        {
+          "de": "viele / wenige",
+          "pos": "adjective",
+          "en": "many / few",
+          "sentence": "Ich habe viele Freunde."
+        },
+        {
+          "de": "mehr / weniger",
+          "pos": "adverb",
+          "en": "more / less",
+          "sentence": "Ich möchte weniger Zucker."
+        },
+        {
+          "de": "genug",
+          "pos": "adverb",
+          "en": "enough",
+          "sentence": "Ich habe genug gegessen."
+        },
+        {
+          "de": "zählen",
+          "pos": "verb",
+          "en": "to count",
+          "sentence": "Ich zähle bis zehn, und du zählst bis zwanzig.",
+          "perfekt": "hat gezählt",
+          "sentence_perfekt": "Sie hat das Geld gezählt."
+        },
+        {
+          "de": "rechnen",
+          "pos": "verb",
+          "en": "to calculate",
+          "sentence": "Ich rechne schnell, und du rechnest langsam.",
+          "perfekt": "hat gerechnet",
+          "sentence_perfekt": "Er hat falsch gerechnet."
+        },
+        {
+          "de": "wiegen",
+          "pos": "verb",
+          "en": "to weigh",
+          "sentence": "Das Paket wiegt zwei Kilo, und du wiegst 70 Kilo.",
+          "perfekt": "hat gewogen",
+          "sentence_perfekt": "Die Verkäuferin hat den Käse gewogen."
+        },
+        {
+          "de": "alle",
+          "pos": "adjective",
+          "en": "all",
+          "sentence": "Alle Kinder sind da."
+        },
+        {
+          "de": "ganz",
+          "pos": "adjective",
+          "en": "whole / entire",
+          "sentence": "Ich habe den ganzen Tag gearbeitet."
+        },
+        {
+          "de": "etwas / nichts",
+          "pos": "adverb",
+          "en": "something / nothing",
+          "sentence": "Ich möchte etwas trinken."
+        },
+        {
+          "de": "zu viel",
+          "pos": "phrase",
+          "en": "too much",
+          "sentence": "Das ist zu viel für mich."
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "topic": "Farben & Formen",
+      "words": [
+        {
+          "de": "die Farbe",
+          "pos": "noun",
+          "en": "colour",
+          "sentence": "Meine Lieblingsfarbe ist Blau."
+        },
+        {
+          "de": "rot",
+          "pos": "adjective",
+          "en": "red",
+          "sentence": "Das Auto ist rot."
+        },
+        {
+          "de": "blau",
+          "pos": "adjective",
+          "en": "blue",
+          "sentence": "Der Himmel ist blau."
+        },
+        {
+          "de": "grün",
+          "pos": "adjective",
+          "en": "green",
+          "sentence": "Das Gras ist grün."
+        },
+        {
+          "de": "gelb",
+          "pos": "adjective",
+          "en": "yellow",
+          "sentence": "Die Sonne ist gelb."
+        },
+        {
+          "de": "schwarz / weiß",
+          "pos": "adjective",
+          "en": "black / white",
+          "sentence": "Er trägt ein schwarzes Hemd."
+        },
+        {
+          "de": "grau",
+          "pos": "adjective",
+          "en": "grey",
+          "sentence": "Der Himmel ist heute grau."
+        },
+        {
+          "de": "braun",
+          "pos": "adjective",
+          "en": "brown",
+          "sentence": "Sie hat braune Augen."
+        },
+        {
+          "de": "rosa",
+          "pos": "adjective",
+          "en": "pink",
+          "sentence": "Das Kleid ist rosa."
+        },
+        {
+          "de": "orange",
+          "pos": "adjective",
+          "en": "orange",
+          "sentence": "Die Tasche ist orange."
+        },
+        {
+          "de": "hell / dunkel",
+          "pos": "adjective",
+          "en": "light / dark",
+          "sentence": "Das Zimmer ist hell."
+        },
+        {
+          "de": "der Kreis",
+          "pos": "noun",
+          "en": "circle",
+          "sentence": "Zeichne bitte einen Kreis."
+        },
+        {
+          "de": "das Viereck",
+          "pos": "noun",
+          "en": "rectangle / square",
+          "sentence": "Das Bild hat die Form eines Vierecks."
+        },
+        {
+          "de": "das Dreieck",
+          "pos": "noun",
+          "en": "triangle",
+          "sentence": "Das Schild hat ein Dreieck."
+        },
+        {
+          "de": "die Form",
+          "pos": "noun",
+          "en": "shape",
+          "sentence": "Welche Form hat der Tisch?"
+        },
+        {
+          "de": "rund / eckig",
+          "pos": "adjective",
+          "en": "round / angular",
+          "sentence": "Der Tisch ist rund."
+        },
+        {
+          "de": "lang / kurz",
+          "pos": "adjective",
+          "en": "long / short",
+          "sentence": "Sie hat lange Haare."
+        },
+        {
+          "de": "dick / dünn",
+          "pos": "adjective",
+          "en": "thick / thin",
+          "sentence": "Das Buch ist sehr dick."
+        },
+        {
+          "de": "breit / schmal",
+          "pos": "adjective",
+          "en": "wide / narrow",
+          "sentence": "Die Straße ist schmal."
+        },
+        {
+          "de": "hoch / niedrig",
+          "pos": "adjective",
+          "en": "high / low",
+          "sentence": "Der Berg ist hoch."
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "topic": "Begrüßung & Höflichkeit",
+      "words": [
+        {
+          "de": "die Begrüßung",
+          "pos": "noun",
+          "en": "greeting",
+          "sentence": "Die Begrüßung war sehr herzlich."
+        },
+        {
+          "de": "die Bitte",
+          "pos": "noun",
+          "en": "request",
+          "sentence": "Ich habe eine Bitte an dich."
+        },
+        {
+          "de": "der Dank",
+          "pos": "noun",
+          "en": "thanks",
+          "sentence": "Vielen Dank für deine Hilfe."
+        },
+        {
+          "de": "Guten Morgen!",
+          "pos": "phrase",
+          "en": "Good morning!",
+          "sentence": "Guten Morgen, Herr Schmidt!"
+        },
+        {
+          "de": "Guten Abend!",
+          "pos": "phrase",
+          "en": "Good evening!",
+          "sentence": "Guten Abend, meine Damen und Herren!"
+        },
+        {
+          "de": "Gute Nacht!",
+          "pos": "phrase",
+          "en": "Good night!",
+          "sentence": "Gute Nacht, schlaf gut!"
+        },
+        {
+          "de": "Tschüss!",
+          "pos": "phrase",
+          "en": "Bye!",
+          "sentence": "Tschüss, bis bald!"
+        },
+        {
+          "de": "Bis später!",
+          "pos": "phrase",
+          "en": "See you later!",
+          "sentence": "Ich muss los. Bis später!"
+        },
+        {
+          "de": "Bitte schön!",
+          "pos": "phrase",
+          "en": "You're welcome!",
+          "sentence": "Danke! – Bitte schön!"
+        },
+        {
+          "de": "Danke schön!",
+          "pos": "phrase",
+          "en": "Thank you!",
+          "sentence": "Danke schön für das Geschenk."
+        },
+        {
+          "de": "Entschuldigung!",
+          "pos": "phrase",
+          "en": "Excuse me! / Sorry!",
+          "sentence": "Entschuldigung, wo ist die Toilette?"
+        },
+        {
+          "de": "Kein Problem!",
+          "pos": "phrase",
+          "en": "No problem!",
+          "sentence": "Danke für die Hilfe! – Kein Problem!"
+        },
+        {
+          "de": "Wie bitte?",
+          "pos": "phrase",
+          "en": "Pardon?",
+          "sentence": "Wie bitte? Ich habe Sie nicht verstanden."
+        },
+        {
+          "de": "Noch einmal, bitte.",
+          "pos": "phrase",
+          "en": "Once more, please.",
+          "sentence": "Noch einmal, bitte, langsamer."
+        },
+        {
+          "de": "Herzlich willkommen!",
+          "pos": "phrase",
+          "en": "Welcome!",
+          "sentence": "Herzlich willkommen in unserer Stadt!"
+        },
+        {
+          "de": "Viel Erfolg!",
+          "pos": "phrase",
+          "en": "Good luck!",
+          "sentence": "Viel Erfolg bei der Prüfung!"
+        },
+        {
+          "de": "Gute Reise!",
+          "pos": "phrase",
+          "en": "Have a good trip!",
+          "sentence": "Gute Reise und viel Spaß!"
+        },
+        {
+          "de": "Prost!",
+          "pos": "phrase",
+          "en": "Cheers!",
+          "sentence": "Prost! Auf deine Gesundheit!"
+        },
+        {
+          "de": "Mahlzeit!",
+          "pos": "phrase",
+          "en": "Enjoy your meal!",
+          "sentence": "Mahlzeit! Wir gehen jetzt essen."
+        },
+        {
+          "de": "bitte",
+          "pos": "adverb",
+          "en": "please",
+          "sentence": "Kannst du mir bitte helfen?"
+        },
+        {
+          "de": "danken",
+          "pos": "verb",
+          "en": "to thank",
+          "sentence": "Ich danke dir, und du dankst mir.",
+          "perfekt": "hat gedankt",
+          "sentence_perfekt": "Er hat mir herzlich gedankt."
+        },
+        {
+          "de": "begrüßen",
+          "pos": "verb",
+          "en": "to greet",
+          "sentence": "Ich begrüße die Gäste, und du begrüßt die Nachbarn.",
+          "perfekt": "hat begrüßt",
+          "sentence_perfekt": "Der Chef hat alle begrüßt."
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "topic": "Tiere & Natur",
+      "words": [
+        {
+          "de": "das Tier",
+          "pos": "noun",
+          "en": "animal",
+          "sentence": "Mein Lieblingstier ist der Hund."
+        },
+        {
+          "de": "der Hund",
+          "pos": "noun",
+          "en": "dog",
+          "sentence": "Der Hund bellt laut."
+        },
+        {
+          "de": "die Katze",
+          "pos": "noun",
+          "en": "cat",
+          "sentence": "Die Katze schläft auf dem Sofa."
+        },
+        {
+          "de": "der Vogel",
+          "pos": "noun",
+          "en": "bird",
+          "sentence": "Der Vogel singt am Morgen."
+        },
+        {
+          "de": "das Pferd",
+          "pos": "noun",
+          "en": "horse",
+          "sentence": "Das Pferd läuft schnell."
+        },
+        {
+          "de": "die Kuh",
+          "pos": "noun",
+          "en": "cow",
+          "sentence": "Die Kuh steht auf der Wiese."
+        },
+        {
+          "de": "das Schwein",
+          "pos": "noun",
+          "en": "pig",
+          "sentence": "Das Schwein ist rosa."
+        },
+        {
+          "de": "das Huhn",
+          "pos": "noun",
+          "en": "chicken",
+          "sentence": "Das Huhn legt ein Ei."
+        },
+        {
+          "de": "der Fisch",
+          "pos": "noun",
+          "en": "fish",
+          "sentence": "Der Fisch schwimmt im Teich."
+        },
+        {
+          "de": "die Maus",
+          "pos": "noun",
+          "en": "mouse",
+          "sentence": "Die Maus ist sehr klein."
+        },
+        {
+          "de": "der Baum",
+          "pos": "noun",
+          "en": "tree",
+          "sentence": "Der Baum ist hundert Jahre alt."
+        },
+        {
+          "de": "das Gras",
+          "pos": "noun",
+          "en": "grass",
+          "sentence": "Das Gras ist nass."
+        },
+        {
+          "de": "die Wiese",
+          "pos": "noun",
+          "en": "meadow",
+          "sentence": "Die Kinder spielen auf der Wiese."
+        },
+        {
+          "de": "der Wald",
+          "pos": "noun",
+          "en": "forest",
+          "sentence": "Wir gehen im Wald spazieren."
+        },
+        {
+          "de": "der Fluss",
+          "pos": "noun",
+          "en": "river",
+          "sentence": "Der Fluss ist breit."
+        },
+        {
+          "de": "die Natur",
+          "pos": "noun",
+          "en": "nature",
+          "sentence": "Ich liebe die Natur."
+        },
+        {
+          "de": "das Haustier",
+          "pos": "noun",
+          "en": "pet",
+          "sentence": "Wir haben kein Haustier."
+        },
+        {
+          "de": "füttern",
+          "pos": "verb",
+          "en": "to feed",
+          "sentence": "Ich füttere die Katze, und du fütterst den Hund.",
+          "perfekt": "hat gefüttert",
+          "sentence_perfekt": "Er hat die Vögel gefüttert."
+        },
+        {
+          "de": "streicheln",
+          "pos": "verb",
+          "en": "to pet / to stroke",
+          "sentence": "Ich streichle die Katze, und du streichelst den Hund.",
+          "perfekt": "hat gestreichelt",
+          "sentence_perfekt": "Das Kind hat das Pferd gestreichelt."
+        },
+        {
+          "de": "gefährlich",
+          "pos": "adjective",
+          "en": "dangerous",
+          "sentence": "Der Hund ist nicht gefährlich."
+        },
+        {
+          "de": "süß",
+          "pos": "adjective",
+          "en": "cute / sweet",
+          "sentence": "Das Baby ist süß."
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "topic": "Obst & Gemüse",
+      "words": [
+        {
+          "de": "der Apfel",
+          "pos": "noun",
+          "en": "apple",
+          "sentence": "Der Apfel ist rot."
+        },
+        {
+          "de": "die Banane",
+          "pos": "noun",
+          "en": "banana",
+          "sentence": "Ich esse eine Banane."
+        },
+        {
+          "de": "die Orange",
+          "pos": "noun",
+          "en": "orange",
+          "sentence": "Die Orange ist sehr süß."
+        },
+        {
+          "de": "die Birne",
+          "pos": "noun",
+          "en": "pear",
+          "sentence": "Die Birne ist reif."
+        },
+        {
+          "de": "die Erdbeere",
+          "pos": "noun",
+          "en": "strawberry",
+          "sentence": "Die Erdbeeren sind lecker."
+        },
+        {
+          "de": "die Traube",
+          "pos": "noun",
+          "en": "grape",
+          "sentence": "Ich kaufe ein Kilo Trauben."
+        },
+        {
+          "de": "die Zitrone",
+          "pos": "noun",
+          "en": "lemon",
+          "sentence": "Die Zitrone ist sauer."
+        },
+        {
+          "de": "die Tomate",
+          "pos": "noun",
+          "en": "tomato",
+          "sentence": "Die Tomaten sind frisch."
+        },
+        {
+          "de": "die Kartoffel",
+          "pos": "noun",
+          "en": "potato",
+          "sentence": "Ich koche Kartoffeln."
+        },
+        {
+          "de": "die Zwiebel",
+          "pos": "noun",
+          "en": "onion",
+          "sentence": "Die Zwiebel brennt in den Augen."
+        },
+        {
+          "de": "die Karotte",
+          "pos": "noun",
+          "en": "carrot",
+          "sentence": "Die Karotte ist orange."
+        },
+        {
+          "de": "die Gurke",
+          "pos": "noun",
+          "en": "cucumber",
+          "sentence": "Ich schneide eine Gurke."
+        },
+        {
+          "de": "der Salat",
+          "pos": "noun",
+          "en": "salad / lettuce",
+          "sentence": "Der Salat ist frisch."
+        },
+        {
+          "de": "die Paprika",
+          "pos": "noun",
+          "en": "bell pepper",
+          "sentence": "Die Paprika ist rot."
+        },
+        {
+          "de": "der Pilz",
+          "pos": "noun",
+          "en": "mushroom",
+          "sentence": "Ich mag Pilze nicht."
+        },
+        {
+          "de": "die Nuss",
+          "pos": "noun",
+          "en": "nut",
+          "sentence": "Ich esse gern Nüsse."
+        },
+        {
+          "de": "schneiden",
+          "pos": "verb",
+          "en": "to cut",
+          "sentence": "Ich schneide das Obst, und du schneidest das Gemüse.",
+          "perfekt": "hat geschnitten",
+          "sentence_perfekt": "Sie hat die Zwiebel geschnitten."
+        },
+        {
+          "de": "schälen",
+          "pos": "verb",
+          "en": "to peel",
+          "sentence": "Ich schäle den Apfel, und du schälst die Kartoffeln.",
+          "perfekt": "hat geschält",
+          "sentence_perfekt": "Er hat die Karotten geschält."
+        },
+        {
+          "de": "reif",
+          "pos": "adjective",
+          "en": "ripe",
+          "sentence": "Die Banane ist noch nicht reif."
+        },
+        {
+          "de": "sauer / süß",
+          "pos": "adjective",
+          "en": "sour / sweet",
+          "sentence": "Die Zitrone ist sauer."
+        },
+        {
+          "de": "roh",
+          "pos": "adjective",
+          "en": "raw",
+          "sentence": "Ich esse Karotten roh."
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "topic": "Schule & Klassenzimmer",
+      "words": [
+        {
+          "de": "das Klassenzimmer",
+          "pos": "noun",
+          "en": "classroom",
+          "sentence": "Das Klassenzimmer ist groß."
+        },
+        {
+          "de": "die Klasse",
+          "pos": "noun",
+          "en": "class",
+          "sentence": "Meine Klasse hat 25 Schüler."
+        },
+        {
+          "de": "der Schüler / die Schülerin",
+          "pos": "noun",
+          "en": "pupil",
+          "sentence": "Die Schüler sind leise."
+        },
+        {
+          "de": "die Tafel",
+          "pos": "noun",
+          "en": "board",
+          "sentence": "Der Lehrer schreibt an die Tafel."
+        },
+        {
+          "de": "die Seite",
+          "pos": "noun",
+          "en": "page",
+          "sentence": "Wir lesen Seite zehn."
+        },
+        {
+          "de": "der Radiergummi",
+          "pos": "noun",
+          "en": "eraser",
+          "sentence": "Ich brauche einen Radiergummi."
+        },
+        {
+          "de": "das Lineal",
+          "pos": "noun",
+          "en": "ruler",
+          "sentence": "Das Lineal liegt auf dem Tisch."
+        },
+        {
+          "de": "der Stundenplan",
+          "pos": "noun",
+          "en": "timetable",
+          "sentence": "Wo ist mein Stundenplan?"
+        },
+        {
+          "de": "das Fach",
+          "pos": "noun",
+          "en": "subject",
+          "sentence": "Mein Lieblingsfach ist Mathe."
+        },
+        {
+          "de": "die Mathematik",
+          "pos": "noun",
+          "en": "maths",
+          "sentence": "Mathematik ist nicht schwer."
+        },
+        {
+          "de": "die Geschichte",
+          "pos": "noun",
+          "en": "history / story",
+          "sentence": "Geschichte finde ich spannend."
+        },
+        {
+          "de": "das Zeugnis",
+          "pos": "noun",
+          "en": "report card",
+          "sentence": "Mein Zeugnis ist gut."
+        },
+        {
+          "de": "die Ferien",
+          "pos": "noun",
+          "en": "school holidays",
+          "sentence": "Die Ferien beginnen morgen."
+        },
+        {
+          "de": "vorlesen",
+          "pos": "verb",
+          "en": "to read aloud",
+          "sentence": "Ich lese die Geschichte vor, und du liest den Text vor.",
+          "perfekt": "hat vorgelesen",
+          "sentence_perfekt": "Die Lehrerin hat uns vorgelesen."
+        },
+        {
+          "de": "abschreiben",
+          "pos": "verb",
+          "en": "to copy",
+          "sentence": "Ich schreibe den Satz ab, und du schreibst den Text ab.",
+          "perfekt": "hat abgeschrieben",
+          "sentence_perfekt": "Er hat die Aufgabe abgeschrieben."
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "topic": "Verkehrsmittel & Auto",
+      "words": [
+        {
+          "de": "das Verkehrsmittel",
+          "pos": "noun",
+          "en": "means of transport",
+          "sentence": "Das Fahrrad ist mein Verkehrsmittel."
+        },
+        {
+          "de": "die U-Bahn",
+          "pos": "noun",
+          "en": "underground",
+          "sentence": "Die U-Bahn kommt gleich."
+        },
+        {
+          "de": "die Straßenbahn",
+          "pos": "noun",
+          "en": "tram",
+          "sentence": "Ich fahre mit der Straßenbahn."
+        },
+        {
+          "de": "das Taxi",
+          "pos": "noun",
+          "en": "taxi",
+          "sentence": "Wir nehmen ein Taxi."
+        },
+        {
+          "de": "das Motorrad",
+          "pos": "noun",
+          "en": "motorbike",
+          "sentence": "Er hat ein Motorrad."
+        },
+        {
+          "de": "das Schiff",
+          "pos": "noun",
+          "en": "ship",
+          "sentence": "Das Schiff fährt nach Dänemark."
+        },
+        {
+          "de": "die Fähre",
+          "pos": "noun",
+          "en": "ferry",
+          "sentence": "Die Fähre fährt jede Stunde."
+        },
+        {
+          "de": "die Autobahn",
+          "pos": "noun",
+          "en": "motorway",
+          "sentence": "Auf der Autobahn gibt es oft Stau."
+        },
+        {
+          "de": "die Tankstelle",
+          "pos": "noun",
+          "en": "petrol station",
+          "sentence": "Die Tankstelle ist an der Ecke."
+        },
+        {
+          "de": "das Benzin",
+          "pos": "noun",
+          "en": "petrol",
+          "sentence": "Das Benzin ist teuer."
+        },
+        {
+          "de": "das Verkehrsschild",
+          "pos": "noun",
+          "en": "traffic sign",
+          "sentence": "Das Verkehrsschild zeigt nach rechts."
+        },
+        {
+          "de": "der Fußgänger",
+          "pos": "noun",
+          "en": "pedestrian",
+          "sentence": "Fußgänger müssen bei Rot warten."
+        },
+        {
+          "de": "der Radweg",
+          "pos": "noun",
+          "en": "cycle path",
+          "sentence": "Der Radweg ist sicher."
+        },
+        {
+          "de": "die Geschwindigkeit",
+          "pos": "noun",
+          "en": "speed",
+          "sentence": "Die Geschwindigkeit ist hier 30."
+        },
+        {
+          "de": "der Führerschein",
+          "pos": "noun",
+          "en": "driving licence",
+          "sentence": "Ich mache nächstes Jahr den Führerschein."
+        },
+        {
+          "de": "tanken",
+          "pos": "verb",
+          "en": "to fill up",
+          "sentence": "Ich tanke das Auto, und du tankst das Motorrad.",
+          "perfekt": "hat getankt",
+          "sentence_perfekt": "Wir haben vor der Fahrt getankt."
+        },
+        {
+          "de": "parken",
+          "pos": "verb",
+          "en": "to park",
+          "sentence": "Ich parke vor dem Haus, und du parkst in der Garage.",
+          "perfekt": "hat geparkt",
+          "sentence_perfekt": "Er hat falsch geparkt."
+        },
+        {
+          "de": "laufen",
+          "pos": "verb",
+          "en": "to walk / to run",
+          "sentence": "Ich laufe zur Arbeit, und du läufst zur Schule.",
+          "perfekt": "ist gelaufen",
+          "sentence_perfekt": "Ich bin nach Hause gelaufen."
+        },
+        {
+          "de": "bremsen",
+          "pos": "verb",
+          "en": "to brake",
+          "sentence": "Ich bremse schnell, und du bremst langsam.",
+          "perfekt": "hat gebremst",
+          "sentence_perfekt": "Der Fahrer hat stark gebremst."
+        },
+        {
+          "de": "zu Fuß",
+          "pos": "phrase",
+          "en": "on foot",
+          "sentence": "Ich gehe zu Fuß zur Schule."
+        },
+        {
+          "de": "mit dem Auto",
+          "pos": "phrase",
+          "en": "by car",
+          "sentence": "Wir fahren mit dem Auto."
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "topic": "Sport & Fitness",
+      "words": [
+        {
+          "de": "der Sportler / die Sportlerin",
+          "pos": "noun",
+          "en": "athlete",
+          "sentence": "Der Sportler trainiert jeden Tag."
+        },
+        {
+          "de": "das Training",
+          "pos": "noun",
+          "en": "training",
+          "sentence": "Das Training beginnt um 18 Uhr."
+        },
+        {
+          "de": "der Trainer / die Trainerin",
+          "pos": "noun",
+          "en": "coach",
+          "sentence": "Die Trainerin ist streng."
+        },
+        {
+          "de": "die Mannschaft",
+          "pos": "noun",
+          "en": "team",
+          "sentence": "Unsere Mannschaft hat gewonnen."
+        },
+        {
+          "de": "das Tor",
+          "pos": "noun",
+          "en": "goal",
+          "sentence": "Er schießt ein Tor."
+        },
+        {
+          "de": "der Ball",
+          "pos": "noun",
+          "en": "ball",
+          "sentence": "Wirf mir den Ball!"
+        },
+        {
+          "de": "das Schwimmbad",
+          "pos": "noun",
+          "en": "swimming pool",
+          "sentence": "Im Schwimmbad ist es voll."
+        },
+        {
+          "de": "das Fitnessstudio",
+          "pos": "noun",
+          "en": "gym",
+          "sentence": "Ich gehe zweimal pro Woche ins Fitnessstudio."
+        },
+        {
+          "de": "das Tennis",
+          "pos": "noun",
+          "en": "tennis",
+          "sentence": "Mein Vater spielt Tennis."
+        },
+        {
+          "de": "der Sieg",
+          "pos": "noun",
+          "en": "victory",
+          "sentence": "Das war ein großer Sieg."
+        },
+        {
+          "de": "die Gesundheit",
+          "pos": "noun",
+          "en": "health",
+          "sentence": "Sport ist gut für die Gesundheit."
+        },
+        {
+          "de": "trainieren",
+          "pos": "verb",
+          "en": "to train",
+          "sentence": "Ich trainiere dreimal pro Woche, und du trainierst täglich.",
+          "perfekt": "hat trainiert",
+          "sentence_perfekt": "Wir haben gestern trainiert."
+        },
+        {
+          "de": "gewinnen",
+          "pos": "verb",
+          "en": "to win",
+          "sentence": "Ich gewinne oft, und du gewinnst selten.",
+          "perfekt": "hat gewonnen",
+          "sentence_perfekt": "Unsere Mannschaft hat gewonnen."
+        },
+        {
+          "de": "springen",
+          "pos": "verb",
+          "en": "to jump",
+          "sentence": "Ich springe ins Wasser, und du springst vom Brett.",
+          "perfekt": "ist gesprungen",
+          "sentence_perfekt": "Die Kinder sind ins Wasser gesprungen."
+        },
+        {
+          "de": "werfen",
+          "pos": "verb",
+          "en": "to throw",
+          "sentence": "Ich werfe den Ball, und du wirfst ihn zurück.",
+          "perfekt": "hat geworfen",
+          "sentence_perfekt": "Er hat den Ball weit geworfen."
+        },
+        {
+          "de": "klettern",
+          "pos": "verb",
+          "en": "to climb",
+          "sentence": "Ich klettere gern, und du kletterst auch gern.",
+          "perfekt": "ist geklettert",
+          "sentence_perfekt": "Wir sind auf den Berg geklettert."
+        },
+        {
+          "de": "stark / schwach",
+          "pos": "adjective",
+          "en": "strong / weak",
+          "sentence": "Er ist sehr stark."
+        },
+        {
+          "de": "fit",
+          "pos": "adjective",
+          "en": "fit",
+          "sentence": "Ich bin heute fit."
+        },
+        {
+          "de": "sportlich",
+          "pos": "adjective",
+          "en": "sporty",
+          "sentence": "Meine Schwester ist sehr sportlich."
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "topic": "Orte & Gebäude",
+      "words": [
+        {
+          "de": "das Gebäude",
+          "pos": "noun",
+          "en": "building",
+          "sentence": "Das Gebäude ist sehr alt."
+        },
+        {
+          "de": "die Bibliothek",
+          "pos": "noun",
+          "en": "library",
+          "sentence": "Die Bibliothek ist heute geöffnet."
+        },
+        {
+          "de": "das Museum",
+          "pos": "noun",
+          "en": "museum",
+          "sentence": "Im Museum gibt es viele Bilder."
+        },
+        {
+          "de": "das Theater",
+          "pos": "noun",
+          "en": "theatre",
+          "sentence": "Wir gehen ins Theater."
+        },
+        {
+          "de": "die Universität",
+          "pos": "noun",
+          "en": "university",
+          "sentence": "Sie studiert an der Universität."
+        },
+        {
+          "de": "die Polizei",
+          "pos": "noun",
+          "en": "police",
+          "sentence": "Die Polizei hilft sofort."
+        },
+        {
+          "de": "die Feuerwehr",
+          "pos": "noun",
+          "en": "fire brigade",
+          "sentence": "Die Feuerwehr kommt schnell."
+        },
+        {
+          "de": "die Toilette",
+          "pos": "noun",
+          "en": "toilet",
+          "sentence": "Wo ist die Toilette?"
+        },
+        {
+          "de": "der Friseur",
+          "pos": "noun",
+          "en": "hairdresser",
+          "sentence": "Ich gehe zum Friseur."
+        },
+        {
+          "de": "das Zentrum",
+          "pos": "noun",
+          "en": "centre",
+          "sentence": "Das Zentrum ist nicht weit."
+        },
+        {
+          "de": "der Platz",
+          "pos": "noun",
+          "en": "square / place",
+          "sentence": "Der Platz ist sehr groß."
+        },
+        {
+          "de": "das Café",
+          "pos": "noun",
+          "en": "café",
+          "sentence": "Wir treffen uns im Café."
+        },
+        {
+          "de": "die Metzgerei",
+          "pos": "noun",
+          "en": "butcher's",
+          "sentence": "Die Metzgerei hat gutes Fleisch."
+        },
+        {
+          "de": "die Drogerie",
+          "pos": "noun",
+          "en": "drugstore",
+          "sentence": "In der Drogerie kaufe ich Seife."
+        },
+        {
+          "de": "die Bushaltestelle",
+          "pos": "noun",
+          "en": "bus stop",
+          "sentence": "Die Bushaltestelle ist um die Ecke."
+        },
+        {
+          "de": "das Reisebüro",
+          "pos": "noun",
+          "en": "travel agency",
+          "sentence": "Im Reisebüro buche ich meine Reise."
+        },
+        {
+          "de": "der Zoo",
+          "pos": "noun",
+          "en": "zoo",
+          "sentence": "Im Zoo gibt es Elefanten."
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "topic": "Gegensätze",
+      "words": [
+        {
+          "de": "gut / schlecht",
+          "pos": "adjective",
+          "en": "good / bad",
+          "sentence": "Das Essen ist gut."
+        },
+        {
+          "de": "neu / alt",
+          "pos": "adjective",
+          "en": "new / old",
+          "sentence": "Mein Handy ist neu."
+        },
+        {
+          "de": "schnell / langsam",
+          "pos": "adjective",
+          "en": "fast / slow",
+          "sentence": "Der Zug ist sehr schnell."
+        },
+        {
+          "de": "leicht / schwer",
+          "pos": "adjective",
+          "en": "light / heavy",
+          "sentence": "Mein Koffer ist schwer."
+        },
+        {
+          "de": "billig / teuer",
+          "pos": "adjective",
+          "en": "cheap / expensive",
+          "sentence": "Das Hotel ist zu teuer."
+        },
+        {
+          "de": "offen / geschlossen",
+          "pos": "adjective",
+          "en": "open / closed",
+          "sentence": "Das Geschäft ist offen."
+        },
+        {
+          "de": "laut / leise",
+          "pos": "adjective",
+          "en": "loud / quiet",
+          "sentence": "Die Musik ist zu laut."
+        },
+        {
+          "de": "frisch / alt",
+          "pos": "adjective",
+          "en": "fresh / stale",
+          "sentence": "Das Brot ist nicht mehr frisch."
+        },
+        {
+          "de": "fleißig / faul",
+          "pos": "adjective",
+          "en": "hard-working / lazy",
+          "sentence": "Er ist sehr fleißig."
+        },
+        {
+          "de": "freundlich / unfreundlich",
+          "pos": "adjective",
+          "en": "friendly / unfriendly",
+          "sentence": "Der Kellner ist unfreundlich."
+        },
+        {
+          "de": "glücklich / traurig",
+          "pos": "adjective",
+          "en": "happy / sad",
+          "sentence": "Sie ist heute glücklich."
+        },
+        {
+          "de": "gesund / krank",
+          "pos": "adjective",
+          "en": "healthy / sick",
+          "sentence": "Ich bin seit Montag krank."
+        },
+        {
+          "de": "nah / fern",
+          "pos": "adjective",
+          "en": "near / far",
+          "sentence": "Die Schule ist nah."
+        },
+        {
+          "de": "früh / spät",
+          "pos": "adjective",
+          "en": "early / late",
+          "sentence": "Es ist schon spät."
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "topic": "Wichtige Verben im Alltag",
+      "words": [
+        {
+          "de": "sein",
+          "pos": "verb",
+          "en": "to be",
+          "sentence": "Ich bin müde, und du bist hungrig.",
+          "perfekt": "ist gewesen",
+          "sentence_perfekt": "Ich bin gestern krank gewesen."
+        },
+        {
+          "de": "haben",
+          "pos": "verb",
+          "en": "to have",
+          "sentence": "Ich habe Hunger, und du hast Durst.",
+          "perfekt": "hat gehabt",
+          "sentence_perfekt": "Wir haben viel Spaß gehabt."
+        },
+        {
+          "de": "gehen",
+          "pos": "verb",
+          "en": "to go",
+          "sentence": "Ich gehe nach Hause, und du gehst ins Kino.",
+          "perfekt": "ist gegangen",
+          "sentence_perfekt": "Wir sind spazieren gegangen."
+        },
+        {
+          "de": "kommen",
+          "pos": "verb",
+          "en": "to come",
+          "sentence": "Ich komme gleich, und du kommst später.",
+          "perfekt": "ist gekommen",
+          "sentence_perfekt": "Sie ist gestern gekommen."
+        },
+        {
+          "de": "geben",
+          "pos": "verb",
+          "en": "to give",
+          "sentence": "Ich gebe dir das Buch, und du gibst mir den Stift.",
+          "perfekt": "hat gegeben",
+          "sentence_perfekt": "Er hat mir seine Nummer gegeben."
+        },
+        {
+          "de": "sagen",
+          "pos": "verb",
+          "en": "to say",
+          "sentence": "Ich sage Hallo, und du sagst Tschüss.",
+          "perfekt": "hat gesagt",
+          "sentence_perfekt": "Was hat er gesagt?"
+        },
+        {
+          "de": "wissen",
+          "pos": "verb",
+          "en": "to know (a fact)",
+          "sentence": "Ich weiß das nicht, und du weißt es auch nicht.",
+          "perfekt": "hat gewusst",
+          "sentence_perfekt": "Das habe ich nicht gewusst."
+        },
+        {
+          "de": "kennen",
+          "pos": "verb",
+          "en": "to know (a person)",
+          "sentence": "Ich kenne ihn, und du kennst sie.",
+          "perfekt": "hat gekannt",
+          "sentence_perfekt": "Ich habe ihn schon lange gekannt."
+        },
+        {
+          "de": "können",
+          "pos": "verb",
+          "en": "can / to be able to",
+          "sentence": "Ich kann schwimmen, und du kannst tanzen.",
+          "perfekt": "hat gekonnt",
+          "sentence_perfekt": "Ich habe das nicht gekonnt."
+        },
+        {
+          "de": "müssen",
+          "pos": "verb",
+          "en": "must / to have to",
+          "sentence": "Ich muss arbeiten, und du musst lernen.",
+          "perfekt": "hat gemusst",
+          "sentence_perfekt": "Wir haben früh aufstehen müssen."
+        },
+        {
+          "de": "dürfen",
+          "pos": "verb",
+          "en": "to be allowed to",
+          "sentence": "Ich darf hier parken, und du darfst nicht rauchen.",
+          "perfekt": "hat gedurft",
+          "sentence_perfekt": "Ich habe nicht mitgehen dürfen."
+        },
+        {
+          "de": "sollen",
+          "pos": "verb",
+          "en": "should / to be supposed to",
+          "sentence": "Ich soll Brot kaufen, und du sollst Milch holen.",
+          "perfekt": "hat gesollt",
+          "sentence_perfekt": "Ich habe das nicht gesollt."
+        },
+        {
+          "de": "legen",
+          "pos": "verb",
+          "en": "to lay",
+          "sentence": "Ich lege das Buch auf den Tisch, und du legst den Schlüssel dazu.",
+          "perfekt": "hat gelegt",
+          "sentence_perfekt": "Er hat das Handy aufs Sofa gelegt."
+        },
+        {
+          "de": "stellen",
+          "pos": "verb",
+          "en": "to put (upright)",
+          "sentence": "Ich stelle die Flasche auf den Tisch, und du stellst das Glas daneben.",
+          "perfekt": "hat gestellt",
+          "sentence_perfekt": "Sie hat die Vase ins Fenster gestellt."
+        },
+        {
+          "de": "sich setzen",
+          "pos": "verb",
+          "en": "to set / to seat",
+          "sentence": "Ich setze mich auf den Stuhl, und du setzt dich aufs Sofa.",
+          "perfekt": "hat sich gesetzt",
+          "sentence_perfekt": "Wir haben uns an den Tisch gesetzt."
+        },
+        {
+          "de": "sitzen",
+          "pos": "verb",
+          "en": "to sit",
+          "sentence": "Ich sitze im Büro, und du sitzt im Auto.",
+          "perfekt": "hat gesessen",
+          "sentence_perfekt": "Wir haben lange gesessen."
+        },
+        {
+          "de": "stehen",
+          "pos": "verb",
+          "en": "to stand",
+          "sentence": "Ich stehe an der Haltestelle, und du stehst vor der Tür.",
+          "perfekt": "hat gestanden",
+          "sentence_perfekt": "Wir haben im Stau gestanden."
+        },
+        {
+          "de": "liegen",
+          "pos": "verb",
+          "en": "to lie",
+          "sentence": "Ich liege auf dem Sofa, und du liegst im Bett.",
+          "perfekt": "hat gelegen",
+          "sentence_perfekt": "Das Buch hat auf dem Tisch gelegen."
+        },
+        {
+          "de": "holen",
+          "pos": "verb",
+          "en": "to fetch",
+          "sentence": "Ich hole Brot, und du holst Milch.",
+          "perfekt": "hat geholt",
+          "sentence_perfekt": "Er hat die Kinder geholt."
+        },
+        {
+          "de": "öffnen",
+          "pos": "verb",
+          "en": "to open",
+          "sentence": "Ich öffne die Tür, und du öffnest das Fenster.",
+          "perfekt": "hat geöffnet",
+          "sentence_perfekt": "Sie hat das Paket geöffnet."
+        },
+        {
+          "de": "schließen",
+          "pos": "verb",
+          "en": "to close",
+          "sentence": "Ich schließe das Fenster, und du schließt die Tür.",
+          "perfekt": "hat geschlossen",
+          "sentence_perfekt": "Er hat den Laden geschlossen."
+        },
+        {
+          "de": "bringen",
+          "pos": "verb",
+          "en": "to bring",
+          "sentence": "Ich bringe das Essen, und du bringst die Getränke.",
+          "perfekt": "hat gebracht",
+          "sentence_perfekt": "Sie hat mir einen Kaffee gebracht."
+        },
+        {
+          "de": "zeigen",
+          "pos": "verb",
+          "en": "to show",
+          "sentence": "Ich zeige dir das Foto, und du zeigst mir deine Wohnung.",
+          "perfekt": "hat gezeigt",
+          "sentence_perfekt": "Er hat mir den Weg gezeigt."
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "topic": "Fragewörter & kleine Wörter",
+      "words": [
+        {
+          "de": "wer",
+          "pos": "pronoun",
+          "en": "who",
+          "sentence": "Wer ist das?"
+        },
+        {
+          "de": "was",
+          "pos": "pronoun",
+          "en": "what",
+          "sentence": "Was machst du?"
+        },
+        {
+          "de": "wo",
+          "pos": "adverb",
+          "en": "where",
+          "sentence": "Wo wohnst du?"
+        },
+        {
+          "de": "woher",
+          "pos": "adverb",
+          "en": "where from",
+          "sentence": "Woher kommst du?"
+        },
+        {
+          "de": "wohin",
+          "pos": "adverb",
+          "en": "where to",
+          "sentence": "Wohin gehst du?"
+        },
+        {
+          "de": "wann",
+          "pos": "adverb",
+          "en": "when",
+          "sentence": "Wann beginnt der Kurs?"
+        },
+        {
+          "de": "warum",
+          "pos": "adverb",
+          "en": "why",
+          "sentence": "Warum lernst du Deutsch?"
+        },
+        {
+          "de": "wie",
+          "pos": "adverb",
+          "en": "how",
+          "sentence": "Wie geht es dir?"
+        },
+        {
+          "de": "wie viel",
+          "pos": "adverb",
+          "en": "how much",
+          "sentence": "Wie viel kostet das?"
+        },
+        {
+          "de": "wie viele",
+          "pos": "adverb",
+          "en": "how many",
+          "sentence": "Wie viele Kinder hast du?"
+        },
+        {
+          "de": "welcher",
+          "pos": "pronoun",
+          "en": "which",
+          "sentence": "Welcher Bus fährt zum Bahnhof?"
+        },
+        {
+          "de": "wie lange",
+          "pos": "adverb",
+          "en": "how long",
+          "sentence": "Wie lange dauert der Film?"
+        },
+        {
+          "de": "wie oft",
+          "pos": "adverb",
+          "en": "how often",
+          "sentence": "Wie oft gehst du schwimmen?"
+        },
+        {
+          "de": "und / oder",
+          "pos": "connector",
+          "en": "and / or",
+          "sentence": "Möchtest du Tee oder Kaffee?"
+        },
+        {
+          "de": "dass",
+          "pos": "connector",
+          "en": "that",
+          "sentence": "Ich glaube, dass es regnet."
+        },
+        {
+          "de": "ob",
+          "pos": "connector",
+          "en": "whether",
+          "sentence": "Ich weiß nicht, ob er kommt."
+        },
+        {
+          "de": "nicht",
+          "pos": "adverb",
+          "en": "not",
+          "sentence": "Ich bin nicht müde."
+        },
+        {
+          "de": "sehr",
+          "pos": "adverb",
+          "en": "very",
+          "sentence": "Der Kaffee ist sehr heiß."
+        },
+        {
+          "de": "nur",
+          "pos": "adverb",
+          "en": "only",
+          "sentence": "Ich habe nur fünf Euro."
+        },
+        {
+          "de": "schon",
+          "pos": "adverb",
+          "en": "already",
+          "sentence": "Ich bin schon fertig."
+        },
+        {
+          "de": "noch",
+          "pos": "adverb",
+          "en": "still / yet",
+          "sentence": "Ich habe noch Hunger."
+        },
+        {
+          "de": "jetzt",
+          "pos": "adverb",
+          "en": "now",
+          "sentence": "Ich muss jetzt gehen."
+        },
+        {
+          "de": "heute",
+          "pos": "adverb",
+          "en": "today",
+          "sentence": "Heute habe ich frei."
+        },
+        {
+          "de": "hier",
+          "pos": "adverb",
+          "en": "here",
+          "sentence": "Ich bin hier."
+        },
+        {
+          "de": "da",
+          "pos": "adverb",
+          "en": "there",
+          "sentence": "Da ist mein Bus."
+        },
+        {
+          "de": "mit",
+          "pos": "preposition",
+          "en": "with",
+          "sentence": "Ich fahre mit dem Bus."
+        },
+        {
+          "de": "ohne",
+          "pos": "preposition",
+          "en": "without",
+          "sentence": "Ich trinke Kaffee ohne Zucker."
+        },
+        {
+          "de": "für",
+          "pos": "preposition",
+          "en": "for",
+          "sentence": "Das Geschenk ist für dich."
+        },
+        {
+          "de": "von",
+          "pos": "preposition",
+          "en": "from / of",
+          "sentence": "Das Buch ist von meiner Schwester."
+        },
+        {
+          "de": "zu",
+          "pos": "preposition",
+          "en": "to",
+          "sentence": "Ich gehe zu meiner Freundin."
+        },
+        {
+          "de": "bei",
+          "pos": "preposition",
+          "en": "at / near",
+          "sentence": "Ich wohne bei meinen Eltern."
+        },
+        {
+          "de": "nach",
+          "pos": "preposition",
+          "en": "after / to",
+          "sentence": "Nach dem Kurs gehe ich nach Hause."
+        },
+        {
+          "de": "in",
+          "pos": "preposition",
+          "en": "in",
+          "sentence": "Ich wohne in Köln."
+        },
+        {
+          "de": "an",
+          "pos": "preposition",
+          "en": "at / on",
+          "sentence": "Das Bild hängt an der Wand."
+        },
+        {
+          "de": "auf",
+          "pos": "preposition",
+          "en": "on",
+          "sentence": "Das Buch liegt auf dem Tisch."
+        },
+        {
+          "de": "aus",
+          "pos": "preposition",
+          "en": "out of / from",
+          "sentence": "Ich komme aus Italien."
+        },
+        {
+          "de": "seit",
+          "pos": "preposition",
+          "en": "since",
+          "sentence": "Ich lerne seit einem Jahr Deutsch."
+        }
+      ]
+    }
+  ]
+}

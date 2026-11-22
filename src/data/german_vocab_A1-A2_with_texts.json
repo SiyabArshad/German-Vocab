@@ -8,10 +8,16 @@
     "perfekt": "verbs only: Perfekt form (auxiliary + participle)",
     "sentence_perfekt": "verbs only: example sentence in Perfekt"
   },
+  "topic_fields": {
+    "text_type": "kind of practice text: dialog, paragraph or email",
+    "text": "short German practice text that uses the words of the topic in context (line breaks \\n separate speakers/parts)"
+  },
   "topics": [
     {
       "id": 1,
       "topic": "Sich vorstellen",
+      "text_type": "dialog",
+      "text": "Anna: Guten Tag! Ich möchte mich vorstellen. Mein Vorname ist Anna, mein Nachname ist Müller. Wie ist Ihr Name?\nAli: Hallo! Ich heiße Ali Yilmaz. Freut mich!\nAnna: Freut mich auch. Wie geht's?\nAli: Danke, gut. Sie sind sehr freundlich.\nAnna: Woher kommen Sie, Ali? Aus welchem Land?\nAli: Ich komme aus der Türkei. Meine Staatsangehörigkeit ist türkisch. Ich bin in Izmir geboren, aber jetzt wohne ich in Berlin.\nAnna: Welche Sprache sprechen Sie?\nAli: Ich spreche Türkisch, Englisch und ein bisschen Deutsch. Mein Alter? Ich bin 28 Jahre alt. Ich bin ledig. Und Sie?\nAnna: Ich bin verheiratet. Mein Beruf ist Lehrerin. Können Sie Ihren Nachnamen bitte buchstabieren?\nAli: Ja: Y-I-L-M-A-Z. Und das ist meine Telefonnummer: 0176 5551234.\nAnna: Danke, Ali. Auf Wiedersehen!\nAli: Auf Wiedersehen!",
       "words": [
         {
           "de": "der Name",
@@ -170,6 +176,8 @@
     {
       "id": 2,
       "topic": "Familie & Freunde",
+      "text_type": "paragraph",
+      "text": "Das ist meine Familie. Meine Eltern heißen Peter und Julia. Mein Vater ist 52 Jahre alt, meine Mutter ist auch noch jung. Ich habe einen Bruder und eine Schwester. Meine Schwester Mia hat ein Baby: Es ist ihr Sohn und heißt Leo. Mein Bruder Tom will bald heiraten. Seine Freundin Lisa wird dann seine Ehefrau, und Tom ist ihr Ehemann. Mein Onkel Karl und meine Tante Eva haben eine Tochter und einen Sohn. Das sind meine Cousine Sophie und mein Cousin Max. Meine Großeltern sind schon alt. Mein Opa und meine Oma lieben die Kinder sehr. Am Sonntag treffen wir uns alle bei den Großeltern und essen zusammen. Manchmal kommt auch unser Nachbar, Herr Braun. Meine Verwandten wohnen in vielen Städten, aber meine beste Freundin Clara wohnt in meiner Straße. Eine Familie mit Freunden ist schön!",
       "words": [
         {
           "de": "die Familie",
@@ -332,6 +340,8 @@
     {
       "id": 3,
       "topic": "Tagesablauf",
+      "text_type": "paragraph",
+      "text": "Mein Tag beginnt früh. Am Morgen klingelt um 6 Uhr mein Wecker. Ich wache langsam auf, aber ich stehe sofort auf. Zuerst dusche ich, dann wasche ich mich, ziehe mich an und putze mir die Zähne. Das Frühstück ist wichtig: Normalerweise frühstücke ich um 7 Uhr, und ich trinke immer Kaffee. Am Vormittag arbeite ich im Büro. Am Mittag esse ich oft in der Kantine. Am Nachmittag habe ich manchmal eine Besprechung. Um 17 Uhr komme ich nach Hause. Am Abend koche ich und sehe oft fern, aber nie lange. Die Nacht ist zum Schlafen: Ich gehe um 22 Uhr ins Bett und schlafe sofort. So ist mein Tag.",
       "words": [
         {
           "de": "der Tag",
@@ -518,6 +528,8 @@
     {
       "id": 4,
       "topic": "Uhrzeit & Termine",
+      "text_type": "dialog",
+      "text": "Lena: Max, wie spät ist es? Meine Uhr ist kaputt.\nMax: Es ist halb acht. Hast du heute einen Termin?\nLena: Ja, um Viertel vor neun beim Zahnarzt. Ich will pünktlich sein. Ich komme nicht gern spät.\nMax: Wie lange dauert die Fahrt?\nLena: Zwanzig Minuten. Aber gestern habe ich eine Stunde auf den Bus gewartet. Eine Verspätung ist furchtbar!\nMax: Dann geh früh los! Warte, eine Sekunde: Ich schaue in den Kalender. Welches Datum haben wir heute?\nLena: Montag, der 3. Juni. Diese Woche ist voll, und im nächsten Monat auch.\nMax: Am Montag um Viertel nach drei fängt dein Kurs an, oder?\nLena: Ja, von drei bis fünf. Den Termin morgen muss ich verschieben. Ich kann ihn nicht absagen, er ist wichtig.",
       "words": [
         {
           "de": "die Uhr",
@@ -678,6 +690,8 @@
     {
       "id": 5,
       "topic": "Essen & Trinken",
+      "text_type": "paragraph",
+      "text": "Ich bin morgens nie hungrig, aber ich trinke gern Kaffee mit Milch, ohne Zucker. Mein Mann trinkt lieber Tee. Zum Frühstück essen wir Brot mit Butter und Käse, und ich esse auch ein Ei. Mittags kochen wir oft zusammen. Heute gibt es Reis mit Gemüse und Fleisch. Das Mittagessen schmeckt lecker, aber ich nehme noch ein bisschen Salz. Am Nachmittag bin ich durstig, dann trinke ich Wasser oder Saft. Zum Abendessen gibt es oft eine Suppe und Obst. Am Wochenende backe ich einen Kuchen. Ich mag Kuchen sehr! Danach bin ich immer satt.",
       "words": [
         {
           "de": "das Brot",
@@ -864,6 +878,8 @@
     {
       "id": 6,
       "topic": "Einkaufen",
+      "text_type": "dialog",
+      "text": "Tim: Wir brauchen eine Einkaufsliste. Der Kühlschrank ist leer.\nMia: Gehen wir zum Supermarkt? Er ist bis 22 Uhr geöffnet. Das Geschäft nebenan ist schon geschlossen.\nTim: Gut. Nimm einen Einkaufswagen. Ich suche die Milch. Hier ist ein Angebot: Ein Liter kostet nur 99 Cent.\nMia: Das ist billig! Und die Äpfel sind ein Sonderangebot: ein Kilo für zwei Euro. Aber der Preis für den Käse ist teuer. Den kaufen wir lieber auf dem Markt.\nTim: Der Einkaufswagen ist schon voll! Gehen wir zur Kasse.\nMia: Moment, das Brot holen wir noch in der Bäckerei.\nVerkäuferin: Guten Tag! Was darf es sein?\nMia: Ein Brot und zwei Brötchen, bitte.\nVerkäuferin: Sonst noch etwas?\nMia: Nein, danke. Ich bezahle mit Karte. Ich nehme eine Tüte mit und brauche die Quittung, bitte.",
       "words": [
         {
           "de": "der Supermarkt",
@@ -1032,6 +1048,8 @@
     {
       "id": 7,
       "topic": "Restaurant",
+      "text_type": "dialog",
+      "text": "Kellner: Guten Abend, willkommen im Restaurant! Haben Sie einen Tisch reserviert?\nSara: Ja, auf den Namen Schmidt. Wir möchten morgen auch frühstücken. Gibt es hier ein Frühstücksbuffet?\nKellner: Ja, von 7 bis 10 Uhr. Hier ist Ihr Tisch. Die Speisekarte bringe ich sofort. Möchten Sie schon etwas bestellen, ein Getränk vielleicht?\nSara: Ein Glas Wasser, bitte.\nJonas: Ich nehme ein Bier. Was können Sie als Hauptgericht empfehlen?\nKellner: Der Fisch ist heute frisch. Und die Gemüsepfanne ist vegetarisch, aber sie ist ein bisschen scharf.\nSara: Das ist kein Problem. Als Vorspeise nehme ich eine Suppe, aber ich habe keinen Löffel.\nKellner: Entschuldigung! Hier sind Löffel, Messer und Gabel, und ein sauberer Teller. Guten Appetit!\nJonas: Danke! Wir nehmen noch eine Nachspeise: zweimal Eis.\nSara: Die Rechnung, bitte!\nKellner: Zusammen oder getrennt?\nJonas: Zusammen. Wir zahlen mit Karte und geben auch Trinkgeld. Dürfen wir morgen unsere Freunde mitbringen?",
       "words": [
         {
           "de": "das Restaurant",
@@ -1206,6 +1224,8 @@
     {
       "id": 8,
       "topic": "Wohnung",
+      "text_type": "dialog",
+      "text": "Frau Klein: Guten Tag, Herr Brandt. Ich möchte die Wohnung mieten.\nHerr Brandt: Kommen Sie herein. Ich bin der Vermieter. Das Haus hat vier Etagen, und die Wohnung hat drei Zimmer. Wir sind im dritten Stock, aber es gibt einen Aufzug. Das hier ist der Flur. Links ist die Küche, rechts das Bad.\nFrau Klein: Das Wohnzimmer ist schön hell. Die Fenster sind groß.\nHerr Brandt: Das Schlafzimmer ist ruhig. Der Balkon ist neben dem Wohnzimmer. Über Ihnen wohnt eine nette Familie, unter Ihnen ein Student.\nFrau Klein: Wie hoch ist die Miete?\nHerr Brandt: 700 Euro plus Nebenkosten.\nFrau Klein: Gibt es einen Keller?\nHerr Brandt: Ja, im Keller ist Platz für Fahrräder. Im Erdgeschoss ist die Tür zum Garten.\nFrau Klein: Wir ziehen gern um. Wann kann ich einziehen?\nHerr Brandt: Schon am 1. Mai.",
       "words": [
         {
           "de": "die Wohnung",
@@ -1362,6 +1382,8 @@
     {
       "id": 9,
       "topic": "Möbel & Haushalt",
+      "text_type": "paragraph",
+      "text": "Meine neue Wohnung ist klein, aber gemütlich. Im Schlafzimmer stehen ein Bett und ein großer Schrank. Im Wohnzimmer habe ich ein Sofa, einen Teppich, ein Regal für meine Bücher und eine Lampe. Am Fenster hängt ein Vorhang. Neben der Tür habe ich einen Spiegel aufgehängt. In der Küche gibt es einen Herd, einen Kühlschrank und einen Tisch mit vier Stühlen. Die Waschmaschine ist leider kaputt, aber ich wasche die Wäsche bei meiner Mutter. Am Samstag putze ich die Wohnung. Zuerst räume ich auf, denn ich mag es ordentlich. Dann sauge ich mit dem Staubsauger den Teppich, er ist schmutzig. Danach wasche ich das Geschirr ab. Zum Schluss ist die Dusche sauber. Jetzt ist alles sauber!",
       "words": [
         {
           "de": "das Bett",
@@ -1530,6 +1552,8 @@
     {
       "id": 10,
       "topic": "Kleidung",
+      "text_type": "dialog",
+      "text": "Eva: Schau mal, das bunte Kleid! Gefällt es dir?\nLisa: Es ist schön, aber im Winter ist es zu kalt. Ich suche warme Kleidung: einen Mantel, einen Pullover, einen Schal und eine Mütze.\nEva: Dieser Mantel ist modern. Zieh ihn an!\nLisa: Moment, ich ziehe die Jacke aus und probiere den Mantel an. Er passt! Die Größe ist richtig. Und er ist nicht zu eng.\nEva: Und diese Hose mit dem Gürtel?\nLisa: Die ist zu weit. Aber der Rock hier gefällt mir. Ich brauche auch neue Schuhe, meine alten sind nass.\nEva: Was trägst du heute Abend?\nLisa: Ein Hemd und die Hose von gestern. Für Peter kaufe ich ein T-Shirt und Socken. Und diese Tasche ist toll!",
       "words": [
         {
           "de": "die Kleidung",
@@ -1698,6 +1722,8 @@
     {
       "id": 11,
       "topic": "Wetter & Jahreszeiten",
+      "text_type": "paragraph",
+      "text": "Das Wetter in Deutschland ist sehr verschieden. Im Frühling ist es oft kühl und windig, und manchmal regnet es. Dann nehme ich immer einen Regenschirm mit, sonst werde ich nass. Im Sommer scheint die Sonne, es ist sonnig und heiß. Die Temperatur steigt auf 30 Grad, und abends kommt manchmal ein Gewitter. Im Herbst ist es bewölkt, es gibt viele Wolken, und am Morgen liegt oft Nebel über der Stadt. Im Winter ist es kalt. Es schneit, und auf dem See liegt Eis. Dann ist der Boden nicht mehr trocken, sondern nass und glatt. Heute ist es nur fünf Grad, aber ich mag den Winter.",
       "words": [
         {
           "de": "das Wetter",
@@ -1854,6 +1880,8 @@
     {
       "id": 12,
       "topic": "Körper",
+      "text_type": "paragraph",
+      "text": "Gestern war ich zum ersten Mal beim Sport, und heute tut alles weh. Mein Kopf tut weh, mein Hals tut weh, und mein Rücken auch. Der Bauch, die Beine, der rechte Arm, das Knie und der Fuß: Alles tut weh! Sogar meine Finger und meine Hand sind müde. Ich kann mich kaum bewegen. Im Spiegel sehe ich mein Gesicht: Die Augen sind klein, die Haare sind nass, die Haut ist rot und der Mund ist trocken. Mein Herz schlägt noch schnell. Ich höre die Musik von meinem Nachbarn, aber ich bin so müde. Ein Zahn tut auch weh, aber das ist ein anderes Problem. Meine Nase läuft, und mein Ohr tut weh. Ich bin nicht groß und stark, ich bin heute klein und schwach.",
       "words": [
         {
           "de": "der Kopf",
@@ -2012,6 +2040,8 @@
     {
       "id": 13,
       "topic": "Arzt & Apotheke",
+      "text_type": "dialog",
+      "text": "Herr Berger (am Telefon): Guten Tag, ich möchte einen Termin machen. Ich bin krank.\nPraxis: Können Sie heute um 10 Uhr kommen?\nHerr Berger: Ja, gern.\n(Im Wartezimmer. Später in der Praxis.)\nÄrztin: Guten Tag, Herr Berger. Was fehlt Ihnen?\nHerr Berger: Ich habe Fieber und Kopfschmerzen. Ich huste schon seit drei Tagen, und der Hals tut weh.\nÄrztin: Ich untersuche Sie. Sie haben eine Erkältung, vielleicht die Grippe. Haben Sie eine Allergie oder eine andere Krankheit?\nHerr Berger: Nein. Aber vor einer Woche hatte ich einen Unfall mit dem Fahrrad. Mein Knie ist noch verletzt. Ich habe starke Schmerzen.\nÄrztin: Hier ist das Rezept. Gehen Sie in die Apotheke. Sie müssen das Medikament nehmen: Sie nehmen die Tablette dreimal am Tag ein. Und Sie müssen sich ausruhen, bis Sie wieder gesund sind.\nHerr Berger: Bezahlt die Krankenkasse das?\nÄrztin: Ja. Gute Besserung!",
       "words": [
         {
           "de": "der Arzt / die Ärztin",
@@ -2182,6 +2212,8 @@
     {
       "id": 14,
       "topic": "Stadt & Wegbeschreibung",
+      "text_type": "dialog",
+      "text": "Touristin: Entschuldigung, wie komme ich zum Bahnhof? Ich bin neu in der Stadt und finde den Weg nicht.\nPassant: Der Bahnhof ist nicht weit. Gehen Sie hier geradeaus bis zur Kreuzung. An der Ampel biegen Sie links ab. Dann überqueren Sie die Brücke und folgen der Straße.\nTouristin: Und was sehe ich dort?\nPassant: Dort sehen Sie das Rathaus. Gegenüber ist der Marktplatz, und an der Ecke steht die Kirche. Rechts ist der Park mit einem Spielplatz. Da ist auch das Krankenhaus.\nTouristin: Ist es zu Fuß weit?\nPassant: Nein, es ist nah, nur fünf Minuten. Oder Sie nehmen den Bus. Die Haltestelle ist hier. Und am Kino gehen Sie rechts.\nTouristin: Vielen Dank!",
       "words": [
         {
           "de": "die Stadt",
@@ -2352,6 +2384,8 @@
     {
       "id": 15,
       "topic": "Bahn & Flug",
+      "text_type": "dialog",
+      "text": "Reisender: Guten Tag, ich möchte eine Fahrkarte nach München, hin und zurück, bitte.\nBeamter: Wann möchten Sie abfahren?\nReisender: Morgen früh. Gibt es einen direkten Zug?\nBeamter: Nein, Sie müssen in Nürnberg umsteigen. Der Zug fährt um 9:12 Uhr ab, Gleis 5. Die Ankunft in München ist um 14:30 Uhr. Hier ist Ihr Ticket mit Sitzplatz.\nReisender: Danke. Ich habe viel Gepäck, einen Koffer und eine Tasche. Wo finde ich den Bahnsteig?\nBeamter: Dort links. Den Fahrplan sehen Sie an der Wand.\nReisender: Und wie komme ich zum Flughafen? Ich fliege nächste Woche mit dem Flugzeug nach Rom.\nBeamter: Der Bus fährt direkt zum Flughafen. Der Fahrer wartet vor dem Bahnhof. Nehmen Sie Ihren Reisepass mit. Sie müssen einsteigen, bevor die Tür zugeht. Und in Rom steigen Sie aus.",
       "words": [
         {
           "de": "der Zug",
@@ -2500,6 +2534,8 @@
     {
       "id": 16,
       "topic": "Urlaub",
+      "text_type": "paragraph",
+      "text": "Im Sommer mache ich zwei Wochen Urlaub. Ich reise gern ins Ausland. Dieses Jahr haben wir ein Ferienhaus am Meer gebucht, leider gab es kein Hotel mehr. Die Unterkunft ist schön und liegt direkt am Strand. Wir wollen uns erholen und viele Fotos machen. Am Tag besichtigen wir eine Sehenswürdigkeit, und ein Reiseführer hilft uns dabei. Abends übernachten wir im Ferienhaus. Heute packe ich meinen Koffer: Sonnencreme, Badesachen, Bücher. Nächstes Jahr fahren wir in die Berge und schlafen im Zelt an einem See. Ich freue mich so auf den Urlaub!",
       "words": [
         {
           "de": "der Urlaub",
@@ -2670,6 +2706,8 @@
     {
       "id": 17,
       "topic": "Hobbys & Freizeit",
+      "text_type": "dialog",
+      "text": "Paul: Hallo Nina! Was machst du in deiner Freizeit? Hast du ein Hobby?\nNina: Ja, viele! Ich höre Musik, spiele Gitarre und singe gern. Mein Lieblingshobby ist aber Sport: Ich schwimme zweimal die Woche.\nPaul: Spielst du auch Fußball?\nNina: Ja, ich bin im Verein. Wir haben jeden Samstag ein Spiel. Und du?\nPaul: Ich lese viel. Ein Buch ist für mich manchmal spannender als ein Film. Aber Rad fahren macht mir auch Spaß. Mein Fahrrad ist neu.\nNina: Wandern wir morgen? Das ist ein schöner Spaziergang im Wald.\nPaul: Gern! Ich male und fotografiere auch gern, vielleicht mache ich dort Fotos. Tanzen ist nicht mein Ding, es ist langweilig für mich.\nNina: Schade, Tanzen ist toll! Aber dann tanze ich eben allein.",
       "words": [
         {
           "de": "das Hobby",
@@ -2838,6 +2876,8 @@
     {
       "id": 18,
       "topic": "Arbeit",
+      "text_type": "dialog",
+      "text": "Jan: Wie läuft deine Arbeit, Lara?\nLara: Gut, aber ich bin sehr müde und beschäftigt. Ich arbeite in einer Firma, im Büro. Mein Chef ist nett, und die Kollegen helfen mir viel. Die Pause ist um 12 Uhr, und ich habe um 17 Uhr Feierabend. Mein Arbeitstag ist lang. Der Arbeitsplatz ist schön.\nJan: Verdienst du gut?\nLara: Das Gehalt ist okay. Ich arbeite Vollzeit. Und du? Du hast ja deinen Job verloren.\nJan: Ja, ich suche Arbeit. Ich möchte als Verkäufer arbeiten, oder als Fahrer. Ich rufe jeden Tag Firmen an. Die Stelle bei der Bäckerei ist noch frei.\nLara: Meine Mitarbeiterin sucht auch jemanden. Ich frage meine Chefin morgen nach der Besprechung. Teilzeit ist auch möglich.",
       "words": [
         {
           "de": "die Arbeit",
@@ -2990,6 +3030,8 @@
     {
       "id": 19,
       "topic": "Lernen & Prüfung",
+      "text_type": "dialog",
+      "text": "Lehrerin: Guten Morgen! Willkommen in unserer Schule und in unserem Kurs. Ich möchte heute die Grammatik wiederholen. Habt ihr die Hausaufgabe gemacht?\nStudent: Ja, aber ich habe eine Frage. Ich verstehe das Wort nicht. Ich habe im Wörterbuch gesucht, aber ich finde es nicht.\nLehrerin: Gut, dass du fragst. Ich schreibe es an die Tafel. Schreibt alle ins Heft. Hier ist die Antwort.\nStudentin: Wann ist die Prüfung?\nLehrerin: Nächste Woche. Der Kurs endet dann. Wir üben jetzt viel. Ich weiß, die Prüfung ist schwierig, aber sie ist auch leicht, wenn ihr lernt.\nStudent: Ich bin so nervös! Ich habe Angst, dass ich nicht bestehe.\nLehrerin: Du schaffst das. Jede Note ist wichtig, aber der Unterricht hilft euch. Nehmt einen Stift mit und antwortet ruhig.",
       "words": [
         {
           "de": "der Kurs",
@@ -3156,6 +3198,8 @@
     {
       "id": 20,
       "topic": "Handy & Internet",
+      "text_type": "dialog",
+      "text": "Tom: Mein Handy ist fast leer. Hast du ein Ladekabel? Ich muss den Akku aufladen.\nMia: Ja, hier. Das WLAN hier ist heute sehr langsam. Surfst du im Internet?\nTom: Ja, ich muss eine E-Mail schicken und eine App herunterladen. Mein Passwort muss ich noch eingeben. Wo ist das Passwort? Ich habe es nicht gespeichert.\nMia: Der Bildschirm von deinem Handy ist schmutzig. Und auf der Webseite steht eine neue Nachricht für dich.\nTom: Ich bin online und schreibe sofort zurück. Ich bin immer erreichbar, auch am Wochenende.\nMia: Das ist nicht gut. Du brauchst auch Pausen. Am Computer arbeite ich lieber mit der Tastatur, das geht schneller. Aber heute ist das Internet leider nicht schnell.",
       "words": [
         {
           "de": "das Handy",
@@ -3306,6 +3350,8 @@
     {
       "id": 21,
       "topic": "Behörde & Post",
+      "text_type": "dialog",
+      "text": "Beamtin: Guten Tag. Haben Sie einen Termin beim Amt?\nHerr Ivanov: Ja, um 9 Uhr. Ich möchte mich anmelden. Hier ist meine Anmeldung und mein Antrag.\nBeamtin: Dann müssen Sie noch dieses Formular ausfüllen: Name, Adresse und Postleitzahl. Bitte unterschreiben Sie hier. Ohne Unterschrift ist das Dokument nicht gültig. Haben Sie Ihren Ausweis dabei?\nHerr Ivanov: Ja, aber er ist nur noch zwei Monate gültig. Kann ich ihn verlängern?\nBeamtin: Dafür brauchen Sie einen anderen Antrag. Das ist wichtig. Sie können ihn in Zimmer 12 abgeben.\nHerr Ivanov: Danke. Noch eine Frage: Wo ist die Behörde für die Post? Ich muss ein Paket abholen und einen Brief schicken.\nBeamtin: Das ist nebenan, bei der Post. Für den Brief brauchen Sie eine Briefmarke. Schreiben Sie oben links den Absender und rechts den Empfänger.",
       "words": [
         {
           "de": "das Amt / die Behörde",
@@ -3462,6 +3508,8 @@
     {
       "id": 22,
       "topic": "Gefühle",
+      "text_type": "paragraph",
+      "text": "Heute habe ich viele Gefühle. Am Morgen war ich glücklich, denn die Sonne hat geschienen, und ich habe mich auf den Tag gefreut. Dann kam eine Überraschung: Meine Freundin hat angerufen, sie besucht mich am Wochenende. Die Freude war groß! Aber im Büro hatte ich Stress. Ich habe einen Fehler gemacht und mich sehr geärgert. Mein Chef war wütend, und ich war enttäuscht von mir. Ich hatte Angst und Sorge um meine Arbeit. Am Nachmittag habe ich mit einem Kollegen gelacht, das war lustig. Jetzt am Abend fühle ich mich zufrieden, aber ein bisschen einsam, denn meine Familie ist weit weg. Ich bin stolz auf mich, weil ich nicht geweint habe. Ich bin schon aufgeregt wegen des Wochenendes. Nur die Müdigkeit bleibt. Ich langweile mich nie, und die Liebe zu meinen Freunden gibt mir ein gutes Gefühl. Manchmal bin ich auch traurig.",
       "words": [
         {
           "de": "das Gefühl",
@@ -3618,6 +3666,8 @@
     {
       "id": 23,
       "topic": "Letztes Wochenende",
+      "text_type": "paragraph",
+      "text": "Letztes Wochenende war toll! Am Samstag habe ich zuerst ausgeschlafen. Danach bin ich einkaufen gegangen und habe einen Kuchen gebacken. Am Nachmittag hatte ich Besuch: Meine Freundin Anna ist gekommen, und wir haben einen Ausflug gemacht. Wir sind mit dem Zug aufs Land gefahren. Abends waren wir im Konzert. Die Musik war wirklich toll! Am Sonntag haben wir einen Spaziergang am Fluss gemacht und Kuchen gegessen. Danach habe ich meine Oma besucht. Am Ende bin ich zu Hause geblieben und habe ein Buch gelesen. Gestern habe ich noch mit Anna telefoniert. Wir wollen uns bald wieder treffen. Letzte Woche war es nicht so schön, aber dieses Wochenende war perfekt.",
       "words": [
         {
           "de": "das Wochenende",
@@ -3758,6 +3808,8 @@
     {
       "id": 24,
       "topic": "Pläne & Zukunft",
+      "text_type": "dialog",
+      "text": "Ben: Hast du schon Pläne für die Zukunft, Lea?\nLea: Ja, ich habe viele Ideen. Mein großer Traum ist ein eigenes Café. Mein Ziel ist, in zwei Jahren damit anzufangen. Aber zuerst will ich mein Studium beginnen.\nBen: Und was hast du nächste Woche vor?\nLea: Ich plane einen Urlaub. Der Urlaubsplan ist noch nicht fertig, aber vielleicht fahre ich ans Meer. Ich muss bald buchen.\nBen: Und nächstes Jahr?\nLea: Ich hoffe, dass ich dann mehr Geld habe. Später möchte ich ein Haus kaufen. Ich werde sicher viel arbeiten. Wenn alles gut geht, werde ich in fünf Jahren Chefin.\nBen: Und was hast du bei der nächsten Prüfung vor?\nLea: Ich will sie bestehen! Und du, Ben?\nBen: Ich weiß es noch nicht. Vielleicht ändere ich meine Pläne.",
       "words": [
         {
           "de": "der Plan",
@@ -3896,6 +3948,8 @@
     {
       "id": 25,
       "topic": "Geld & Bank",
+      "text_type": "dialog",
+      "text": "Kunde: Guten Tag, ich möchte bei Ihrer Bank ein Konto eröffnen. Ich brauche auch eine Karte.\nAngestellte: Gern. Die Karte ist kostenlos. Eine Kreditkarte kostet aber eine Gebühr. Sie bekommen eine PIN per Post.\nKunde: Und wie viel Geld kann ich pro Tag abheben?\nAngestellte: Am Geldautomaten bis zu 500 Euro. Sie können dort auch Bargeld einzahlen. Eine Überweisung machen Sie online. Sie können auch von zu Hause überweisen.\nKunde: Kann ich hier Geld wechseln? Ich habe noch Dollar, und ich brauche Kleingeld, Münzen und kleine Scheine.\nAngestellte: Ja, das ist möglich. Ein Euro hat hundert Cent. Möchten Sie auch sparen?\nKunde: Ja, ich will weniger ausgeben. Ich bin nicht reich, aber ich bin auch nicht arm. Früher habe ich oft Geld geliehen, jetzt nicht mehr.",
       "words": [
         {
           "de": "das Geld",
@@ -4054,6 +4108,8 @@
     {
       "id": 26,
       "topic": "Feste & Einladungen",
+      "text_type": "dialog",
+      "text": "Mia: Hallo Tom! Ich möchte dich zu einer Party einladen. Meine Mutter hat am Samstag Geburtstag, und wir machen eine Überraschungsparty.\nTom: Danke für die Einladung! Ich sage gern zu. Was soll ich mitbringen?\nMia: Nichts, ich bereite alles vor. Es gibt eine große Torte mit Kerzen. Meine Schwester schenkt ihr Blumen. Und was schenkst du?\nTom: Das ist eine Überraschung, das Geschenk ist aber schon gekauft! Wann kommen die Gäste?\nMia: Um 17 Uhr. Es kommen viele Freunde, die Familie und die Nachbarn. Wir feiern bis spät. Zu Weihnachten, zu Ostern und bei der Hochzeit meiner Cousine feiern wir auch immer groß, aber das hier ist ein besonderes Fest.\nTom: Dann gratuliere ich ihr herzlich! Alles Gute! Ich sage nicht ab, ich komme und feiere mit. Hoffentlich ist deine Mutter nicht zu früh zu Hause, sonst ist die Überraschung weg!",
       "words": [
         {
           "de": "das Fest / die Feier",
@@ -4200,6 +4256,8 @@
     {
       "id": 27,
       "topic": "Meinung",
+      "text_type": "dialog",
+      "text": "Eva: Wohin fahren wir im Urlaub? Mein Vorschlag: Spanien.\nJan: Ich glaube, dort ist es zu heiß. Meiner Meinung nach ist Italien besser. Ich finde, dass das Essen dort besser schmeckt.\nEva: Das stimmt! Aber Spanien ist billiger, und das ist ein guter Grund.\nJan: Da bin ich nicht einverstanden. Billig ist nicht immer gut. Was denkst du?\nEva: Ich meine, der Unterschied beim Preis ist wichtig. Aber vielleicht hast du recht, denn das Wetter in Italien ist auch schön.\nJan: Genau! Außerdem ist Italien auch interessant, weil es dort viele alte Städte gibt. Ich denke, deshalb ist es besser. Spanien ist natürlich auch nicht falsch.\nEva: Gut, ich stimme zu. Wir fahren nach Italien. Ich bin einverstanden. Es ist die richtige Wahl.",
       "words": [
         {
           "de": "die Meinung",
@@ -4326,6 +4384,8 @@
     {
       "id": 28,
       "topic": "Problem & Beschwerde",
+      "text_type": "dialog",
+      "text": "Kundin: Guten Tag, ich habe ein Problem. Ich möchte mich beschweren. Ich habe diesen Fernseher gestern gekauft, aber er funktioniert nicht. Er ist defekt.\nMitarbeiter: Das tut mir leid. Haben Sie die Quittung?\nKundin: Ja, hier. Das ist inakzeptabel! Der Fehler war schon beim Kauf da. Außerdem stört der Lärm vom Gerät auch meine Nachbarn.\nMitarbeiter: Es tut mir leid. Wir haben vielleicht eine Panne in der Lieferung gehabt. Ich kann den Fernseher reparieren oder umtauschen. Sie bekommen Ersatz.\nKundin: Ich möchte das Geld zurück. Außerdem ist heute auch noch das Glas vom Tisch zerbrochen. Und ich habe mein Handy verloren, was für ein Tag!\nMitarbeiter: Das ist eine schlimme Störung, ich entschuldige mich. Ich rufe den Kundendienst an. Bitte füllen Sie das Formular für die Reklamation aus, dann finden wir eine Lösung.",
       "words": [
         {
           "de": "das Problem",
@@ -4486,6 +4546,8 @@
     {
       "id": 29,
       "topic": "Zahlen & Mengen",
+      "text_type": "dialog",
+      "text": "Verkäufer: Guten Tag! Was möchten Sie?\nFrau Roth: Ich brauche zwei Kilo Kartoffeln und fünfhundert Gramm Käse. Ist das zu viel?\nVerkäufer: Nein, das ist genug für eine Familie. Ich wiege es. Sonst noch etwas?\nFrau Roth: Ja, ein Stück Butter, eine Packung Reis, eine Flasche Wasser und eine Dose Tomaten. Ich zähle noch einmal: Das sind alle Dinge auf meiner Liste, die ganze Liste. Ich habe nichts vergessen.\nVerkäufer: Das macht 15 Euro. Der Käse ist heute zwanzig Prozent billiger, deshalb zahlen Sie weniger als gestern.\nFrau Roth: Wunderbar! Ich rechne: Viel mehr Geld darf es nicht sein. Dann nehme ich nur noch ein Paar Würstchen.\nVerkäufer: Das ist die Hälfte vom Preis für ein Kilo. Möchten Sie noch etwas?\nFrau Roth: Nein, das sind wenige Sachen, aber es reicht. Ich bin zum ersten Mal hier. Ich komme sicher noch einmal wieder, vielleicht sogar zweimal pro Woche. Ihr Laden ist toll. Ich kaufe hier auch ein drittes Mal!",
       "words": [
         {
           "de": "die Zahl",
@@ -4630,6 +4692,8 @@
     {
       "id": 30,
       "topic": "Farben & Formen",
+      "text_type": "paragraph",
+      "text": "Das ist mein Zimmer, und ich liebe Farben. Die Wand ist hell, fast weiß, aber der Teppich ist dunkel, grau und schwarz. Mein Bett ist blau, die Lampe ist gelb, und die Vorhänge sind grün. Das Regal ist braun, die Kissen auf dem Sofa sind rosa und orange. Rot ist meine Lieblingsfarbe, deshalb ist die Tasse auf dem Tisch rot. Der Tisch hat die Form eines Kreises, und das Fenster ist ein Viereck. An der Wand hängt ein Bild mit einem Dreieck. Das Bild ist breit und niedrig, der Spiegel daneben ist schmal und hoch. Die Stifte auf dem Tisch sind lang, dick und dünn, kurz und eckig, aber der Ball ist rund. Die Form macht den Raum interessant.",
       "words": [
         {
           "de": "die Farbe",
@@ -4756,6 +4820,8 @@
     {
       "id": 31,
       "topic": "Begrüßung & Höflichkeit",
+      "text_type": "dialog",
+      "text": "Herr Kaya: Guten Morgen, Frau Weber!\nFrau Weber: Guten Morgen, Herr Kaya! Ich begrüße Sie im Namen aller Kollegen. Herzlich willkommen im Team!\nHerr Kaya: Danke schön! Das ist eine nette Begrüßung. Ich habe eine Bitte: Zeigen Sie mir noch meinen Platz?\nFrau Weber: Bitte schön! Möchten Sie auch einen Kaffee?\nHerr Kaya: Ja, bitte. Wo ist die Küche? Wie bitte? Noch einmal, bitte.\nFrau Weber: Links, am Ende vom Flur. Entschuldigung, ich habe zu leise gesprochen.\nHerr Kaya: Kein Problem!\n(Mittags in der Kantine.)\nFrau Weber: Mahlzeit! Prost, auf den neuen Kollegen!\nHerr Kaya: Prost! Ich danke Ihnen für alles. Jetzt muss ich noch telefonieren. Bis später!\nFrau Weber: Viel Erfolg! Ich fahre morgen in den Urlaub.\nHerr Kaya: Gute Reise! Tschüss, bis nächste Woche!\n(Am Abend.)\nHerr Kaya: Guten Abend, Frau Weber, ich gehe jetzt. Gute Nacht!",
       "words": [
         {
           "de": "die Begrüßung",
@@ -4898,6 +4964,8 @@
     {
       "id": 32,
       "topic": "Tiere & Natur",
+      "text_type": "paragraph",
+      "text": "Ich liebe die Natur und Tiere. Zu Hause habe ich zwei Haustiere: einen Hund und eine Katze. Ich füttere sie jeden Morgen, und abends streichle ich sie. Die Katze ist süß, aber sie jagt Mäuse und Vögel. Am Wochenende fahren wir aufs Land zum Bauernhof meines Onkels. Dort gibt es eine Kuh, viele Schweine, Hühner und ein Pferd. Auf der Wiese wächst viel Gras, und die Kühe fressen es. Hinter dem Hof ist ein großer Wald mit hohen Bäumen. Dort wohnen wilde Tiere. Das kann gefährlich sein, aber ich habe keine Angst. Neben dem Wald fließt ein Fluss. Im Fluss schwimmen viele Fische. Die Natur ist für mich der schönste Ort.",
       "words": [
         {
           "de": "das Tier",
@@ -5034,6 +5102,8 @@
     {
       "id": 33,
       "topic": "Obst & Gemüse",
+      "text_type": "dialog",
+      "text": "Verkäuferin: Guten Morgen! Heute sind die Erdbeeren ganz frisch.\nKunde: Ich nehme ein Kilo. Sind die Äpfel süß oder sauer?\nVerkäuferin: Die roten sind süß, die grünen sauer. Die Birnen und die Bananen sind reif, und die Orangen und Zitronen sind sehr saftig. Auch die Trauben sind lecker.\nKunde: Dann nehme ich zwei Orangen und eine Zitrone. Und Gemüse brauche ich auch: Tomaten, Kartoffeln, Zwiebeln, Karotten und eine Gurke.\nVerkäuferin: Brauchen Sie auch Paprika und Salat?\nKunde: Ja, einen Salat und zwei Paprika. Heute koche ich eine Suppe. Ich schäle die Kartoffeln und schneide die Zwiebeln. Die Pilze brate ich. Die Tomaten esse ich roh, mit etwas Salz. Die Nüsse sind für den Kuchen.\nVerkäuferin: Das klingt gut!",
       "words": [
         {
           "de": "der Apfel",
@@ -5170,6 +5240,8 @@
     {
       "id": 34,
       "topic": "Schule & Klassenzimmer",
+      "text_type": "paragraph",
+      "text": "Ich bin Schülerin und gehe in die fünfte Klasse. Mein Klassenzimmer ist groß und hell. An der Wand hängt die Tafel, und an der Tür hängt unser Stundenplan. Wir haben viele Fächer: Mathematik, Geschichte, Deutsch und Sport. Meine Lieblingsstunde ist Mathematik. In meiner Tasche habe ich ein Lineal, einen Radiergummi und ein Heft. Die Lehrerin sagt: Schlagt Seite 20 auf! Dann muss ein Schüler vorlesen, und wir anderen schreiben Wörter von der Tafel ab. Beim Abschreiben mache ich manchmal Fehler. Zweimal im Jahr bekommen wir ein Zeugnis. Danach sind Ferien, und ich freue mich schon sehr darauf.",
       "words": [
         {
           "de": "das Klassenzimmer",
@@ -5270,6 +5342,8 @@
     {
       "id": 35,
       "topic": "Verkehrsmittel & Auto",
+      "text_type": "paragraph",
+      "text": "In unserer Stadt gibt es viele Verkehrsmittel. Ich fahre mit der U-Bahn oder mit der Straßenbahn zur Arbeit. Mein Bruder nimmt ein Taxi, wenn er spät ist. Mein Onkel hat ein Motorrad, und sein Freund hat ein Boot. Im Urlaub nehmen wir manchmal eine Fähre oder ein großes Schiff. Mit dem Auto fahre ich nur am Wochenende. Ich habe den Führerschein seit zwei Jahren. Auf der Autobahn ist die Geschwindigkeit hoch, deshalb muss ich gut bremsen und auf die Verkehrsschilder achten. An der Tankstelle muss ich tanken, denn Benzin ist teuer. Dann muss ich noch parken. Ein Fußgänger geht zu Fuß, ein Radfahrer nutzt den Radweg. In der Stadt laufe ich gern, das ist gesund.",
       "words": [
         {
           "de": "das Verkehrsmittel",
@@ -5410,6 +5484,8 @@
     {
       "id": 36,
       "topic": "Sport & Fitness",
+      "text_type": "dialog",
+      "text": "Trainer: Guten Tag, Leon! Heute trainieren wir im Fitnessstudio und später im Schwimmbad.\nLeon: Gern. Ich will fit werden. Ich bin nicht sehr sportlich, und mein Körper ist noch schwach. Ich möchte stark sein wie ein richtiger Sportler.\nTrainer: Das macht nichts. Zuerst klettern wir an der Wand, dann springen wir und werfen den Ball. Regelmäßiges Training ist gut für die Gesundheit.\nLeon: Spielen wir am Samstag Tennis?\nTrainer: Ja. Aber am Sonntag hat unsere Mannschaft ein Spiel. Wir wollen gewinnen. Letztes Mal gab es leider keinen Sieg. Der Gegner hat ein Tor geschossen, und wir keins.\nLeon: Dann trainiere ich noch mehr! Ich möchte bald so gut sein wie die beste Sportlerin im Team.",
       "words": [
         {
           "de": "der Sportler / die Sportlerin",
@@ -5540,6 +5616,8 @@
     {
       "id": 37,
       "topic": "Orte & Gebäude",
+      "text_type": "paragraph",
+      "text": "Das Zentrum meiner Stadt ist schön. Auf dem großen Platz steht ein altes Gebäude: die Bibliothek. Daneben ist das Museum, und gegenüber ist das Theater. Die Universität ist nicht weit. Dort gibt es auch ein Café, das ich sehr mag. Am Platz steht die Bushaltestelle, und ein Reisebüro ist um die Ecke. Die Polizei und die Feuerwehr sind in der nächsten Straße. In der Metzgerei kaufe ich Fleisch, in der Drogerie Shampoo, und beim Friseur lasse ich meine Haare schneiden. Eine Toilette finde ich im Café oder in der Bibliothek. Am Wochenende gehe ich mit meinen Kindern in den Zoo am Stadtrand.",
       "words": [
         {
           "de": "das Gebäude",
@@ -5648,6 +5726,8 @@
     {
       "id": 38,
       "topic": "Gegensätze",
+      "text_type": "paragraph",
+      "text": "Mein Bruder und ich sind ganz verschieden. Er ist fleißig, ich bin faul. Er steht früh auf, ich gehe spät ins Bett. Er ist immer freundlich, und ich bin manchmal unfreundlich. Er ist gesund, ich bin oft krank. Seine Wohnung ist neu, meine ist alt. Seine Musik ist laut, meine ist leise. Er lernt schnell, ich lerne langsam. Für ihn ist Mathematik leicht, für mich ist sie schwer. Sein Auto ist teuer, mein Fahrrad war billig. Bei ihm ist das Essen immer frisch, bei mir ist das Brot meistens alt. Das Geschäft ist bei ihm nah, bei mir fern. Am Sonntag ist die Bäckerei offen, am Montag geschlossen. Das Leben ist gut, aber manchmal ist es schlecht. Manchmal bin ich glücklich, manchmal traurig. Aber wir mögen uns.",
       "words": [
         {
           "de": "gut / schlecht",
@@ -5738,6 +5818,8 @@
     {
       "id": 39,
       "topic": "Wichtige Verben im Alltag",
+      "text_type": "dialog",
+      "text": "Mutter: Wo bist du, Tim? Kommst du bitte? Du kannst mir helfen.\nTim: Ich komme gleich. Ich gehe nur kurz ins Bad. Was soll ich tun?\nMutter: Du musst den Tisch decken. Hol bitte die Teller und die Gläser und stell sie auf den Tisch.\nTim: Gut. Darf ich danach fernsehen?\nMutter: Nein, du sollst noch lernen. Weißt du, wo dein Heft ist?\nTim: Ja, ich kenne den Platz. Es liegt auf dem Regal. Ich hole es.\nMutter: Bring es mir und zeig mir deine Hausaufgabe. Setz dich hierher und leg das Heft auf den Tisch. Öffne es auf Seite zehn.\nTim: Ich sitze schon. Hier, ich gebe dir das Heft. Soll ich noch die Tür schließen?\nMutter: Ja, bitte. Dann sagst du mir, was du machst. Dein Vater steht noch in der Küche, aber wir haben Zeit.\nTim: Ich bin müde und habe keine Lust, aber ich habe das Heft und ich mache es jetzt.",
       "words": [
         {
           "de": "sein",
@@ -5928,6 +6010,8 @@
     {
       "id": 40,
       "topic": "Fragewörter & kleine Wörter",
+      "text_type": "dialog",
+      "text": "Reporterin: Guten Tag! Wer sind Sie, und woher kommen Sie?\nHerr Tan: Ich bin Tan Wei und komme aus China, aus Shanghai. Ich wohne seit drei Jahren hier.\nReporterin: Wohin gehen Sie gerade?\nHerr Tan: Zur Arbeit, mit dem Bus. Ich arbeite bei einer Firma in der Stadt.\nReporterin: Wo genau, und was machen Sie dort?\nHerr Tan: Im Büro am Marktplatz. Ich kümmere mich um die Aufträge.\nReporterin: Wann fangen Sie an? Und wie lange arbeiten Sie?\nHerr Tan: Ich fange um acht an und arbeite bis fünf. Heute habe ich nur wenig Zeit.\nReporterin: Wie viele Kollegen haben Sie? Wie viel verdienen Sie? Und wie oft fahren Sie mit dem Bus?\nHerr Tan: Wir sind zwanzig, und ich fahre jeden Tag. Aber ich weiß nicht, ob der Bus schon da ist. Welcher Bus fährt zum Marktplatz?\nReporterin: Die Linie 5. Warum fahren Sie nicht mit dem Fahrrad?\nHerr Tan: Es ist kaputt. Ich möchte ohne Auto leben, und ich sehe, dass viele Leute das auch machen. Das ist gut für die Umwelt. Jetzt muss ich gehen.\nReporterin: Nur noch eine Frage: Trinken Sie lieber Kaffee oder Tee?\nHerr Tan: Tee, ohne Zucker. Danke für das Gespräch! Nach der Arbeit bekomme ich einen Anruf von meiner Familie. Heute ist hier und da viel zu tun. Auf Wiedersehen!",
       "words": [
         {
           "de": "wer",

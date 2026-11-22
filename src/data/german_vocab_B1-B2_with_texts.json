@@ -8,10 +8,16 @@
     "perfekt": "verbs only: Perfekt form (auxiliary + participle)",
     "sentence_perfekt": "verbs only: example sentence in Perfekt"
   },
+  "topic_fields": {
+    "text_type": "kind of practice text: dialog, paragraph or email",
+    "text": "short German practice text that uses the words of the topic in context (line breaks \\n separate speakers/parts)"
+  },
   "topics": [
     {
       "id": 41,
       "topic": "Meinung & Diskussion",
+      "text_type": "paragraph",
+      "text": "Gestern gab es in unserem Team eine hitzige Diskussion über die Vier-Tage-Woche. Das Thema ist umstritten, und jeder hat seinen Standpunkt vertreten. Die Geschäftsführerin behauptete, dass die Produktivität steigt. Diese Behauptung stützte sie mit einer Studie als Beweis. Ein Kollege widersprach: Die Studie sei einseitig und fragwürdig. Sein Einwand war berechtigt, das musste sie zugeben. Meines Erachtens gibt es einerseits klare Vorteile, andererseits aber auch Nachteile, die man berücksichtigen muss. Ich habe versucht, sachlich zu argumentieren und zu betonen, dass die Ansicht aller Mitarbeiter zählt. Ein anderer Kollege lehnte die Idee ab und begründete seine Ablehnung mit den Kosten. Seine Begründung klang plausibel. Er bezweifelt, dass sich das Modell rechnet, und seine Einstellung war eindeutig. Ich konnte ihn nicht überzeugen. Zwar waren wir nicht in allem einer Meinung, aber unsere Argumente stimmten in einem Punkt überein: Wir brauchen mehr Daten. Nach der scharfen Kritik und dem Widerspruch gegen den ersten Plan kam mein Gegenvorschlag: eine Testphase von drei Monaten. Er fand breite Zustimmung, und dagegen konnte niemand etwas einwenden. Tatsächlich haben wir uns auf einen Kompromiss geeinigt. Ich bin überzeugt, dass uns diese Debatte weiterbringt. Allerdings muss man die Schlussfolgerung erst prüfen, und dennoch bin ich optimistisch.",
       "words": [
         {
           "de": "die Diskussion",
@@ -316,6 +322,8 @@
     {
       "id": 42,
       "topic": "Bewerbung & Arbeitswelt",
+      "text_type": "paragraph",
+      "text": "Nach drei Monaten als Arbeitsloser habe ich eine passende Stellenanzeige gefunden und mich beworben. Meine Bewerbungsmappe bestand aus einem Anschreiben, meinem Lebenslauf und den Zeugnissen. Die Frist war knapp, aber ich habe mich gründlich auf das Vorstellungsgespräch vorbereitet. Als Bewerber habe ich meine Qualifikation und meine Berufserfahrung betont, denn Erfahrung zählt in dieser Branche viel: Ich bin zuverlässig, flexibel, belastbar und teamfähig, und ich arbeite gern selbstständig. Die Personalleiterin fragte mich nach meiner Gehaltsvorstellung, und ich habe selbstbewusst verhandelt. Mein künftiger Vorgesetzter erklärte, das Betriebsklima sei gut. Es gebe Gleitzeit und Homeoffice, nur gelegentlich Überstunden. Der Arbeitgeber bezahlt auch eine Weiterbildung, und bei guter Leistung ist eine Beförderung möglich. Eine Woche später hat man mich eingestellt: zuerst befristet, mit einer Probezeit von sechs Monaten. Im Arbeitsvertrag steht auch die Kündigungsfrist. Wenn der Arbeitnehmer kündigt, muss er sie einhalten, und bei einer Kündigung durch die Firma gilt das Gleiche. Ich bin jetzt wieder berufstätig und zuständig für ein kleines Team, das ich leite. Die Teamarbeit macht mir Spaß. Meine Chefin bewertet meine Arbeit gut und will mich sogar befördern. Wir vereinbaren bald einen Termin. Ich fühle mich kompetent und hoffe, dass meine Stelle bald unbefristet wird.",
       "words": [
         {
           "de": "die Bewerbung",
@@ -612,6 +620,8 @@
     {
       "id": 43,
       "topic": "Studium & Ausbildung",
+      "text_type": "dialog",
+      "text": "Hannah: Hallo Felix! Wie läuft deine Ausbildung?\nFelix: Gut! Als Auszubildender in der Tischlerei lerne ich viel. Zwei Tage pro Woche gehe ich in die Berufsschule, den Rest der Zeit arbeite ich im Betrieb. Mein Meister betreut mich gut. Später mache ich eine Fortbildung. Und dein Studium?\nHannah: Es ist anspruchsvoll. Ich studiere Biologie, ein beliebter Studiengang, und habe mich nach dem Abitur an der Universität immatrikuliert. Ich hatte Glück mit dem Studienplatz, und die Zulassung kam sofort. Das erste Semester war schwer. Es gab Vorlesungen, ein Seminar, und ich habe ein Referat gehalten. Die Klausur war schlimm: Ich habe Prüfungsangst, und ich bin einmal durchgefallen. Ich musste die Prüfung nachholen.\nFelix: Hast du nicht überlegt, das Studium abzubrechen?\nHannah: Doch, aber ich bin begabt und fleißig. Ich will mich auf Genetik spezialisieren. Der Dozent forscht selbst dazu und betreut meine Hausarbeit. Mein Wahlfach ist sehr praxisnah. Nach dem Abschluss schreibe ich die Abschlussarbeit.\nFelix: Hast du ein Stipendium? Studiengebühren sind teuer.\nHannah: Ja, und im Sommer mache ich ein Praktikum. Ich möchte erfolgreich abschließen. Treffen wir uns in der Mensa? Theoretisch ist das Essen dort besser als praktisch!\nFelix: Und mein Abschluss wird hoffentlich anerkannt, auch im Ausland.",
       "words": [
         {
           "de": "das Studium",
@@ -892,6 +902,8 @@
     {
       "id": 44,
       "topic": "Umwelt & Klima",
+      "text_type": "paragraph",
+      "text": "Der Klimawandel ist eine der größten Herausforderungen unserer Zeit. Die Erderwärmung entsteht vor allem durch den Ausstoß von Treibhausgasen: Kohlekraftwerke und Autos stoßen große Mengen CO2 aus und verschmutzen die Luft. Die Luftverschmutzung schadet der Umwelt und unserer Gesundheit. Die Folgen sind schon heute sichtbar: Der Meeresspiegel steigt, es gibt Dürren und schwere Überschwemmungen, und durch die Abholzung der Wälder sind viele Tiere bedroht. Das Artensterben nimmt zu, und der Artenschutz wird immer wichtiger. Auch der hohe Ressourcenverbrauch und der Müll sind ein Problem, denn Plastikverpackungen sind oft giftig für die Natur. Was können wir tun? Jeder kann zum Umweltschutz beitragen: Wir sollten Müll vermeiden, recyceln und Dinge wiederverwerten. Wer Pfand zurückgibt, spart Rohstoffe. Mit Verzicht auf unnötige Verpackungen können wir viel einsparen. Statt Energie zu verbrauchen, sollten wir Strom sparen und auf erneuerbare Energien wie Solarenergie und Windkraft setzen. Dadurch wird unser Leben nachhaltiger, umweltfreundlicher und langfristig klimaneutral. Wenn wir nichts tun, sterben viele Arten aus, und die Zukunft ist bedroht. Wenn wir aber handeln, können wir die Erde schützen.",
       "words": [
         {
           "de": "die Umwelt",
@@ -1186,6 +1198,8 @@
     {
       "id": 45,
       "topic": "Medien & Social Media",
+      "text_type": "dialog",
+      "text": "Lena: Hast du die Schlagzeile in der Zeitung gelesen? Schon wieder Fake News auf den sozialen Netzwerken!\nMurat: Ja, das ist ein Problem. Viele Medien verbreiten falsche Meldungen, weil Beiträge mit Hass im Netz oder reißerischen Titeln mehr Reichweite haben. Der Algorithmus bevorzugt solche Posts.\nLena: Als Journalistin recherchiere ich jeden Beitrag gründlich. Eine seriöse Berichterstattung braucht gute Quellen. Man muss jede Information überprüfen, bevor man sie veröffentlicht. Ein objektiver Kommentar ist wichtig, und man darf nicht übertreiben.\nMurat: Die Pressefreiheit ist dabei entscheidend. Die Meinungsfreiheit auch. Aber kein Staat darf Medien zensieren oder manipulieren.\nLena: Stimmt. Auch Influencer beeinflussen viele Menschen, und die Werbung in den Netzwerken verstärkt das. Manche Follower sind richtig süchtig nach dem Handy, ständig posten sie und teilen Fotos. Das Thema Privatsphäre wird oft vergessen, und Cybermobbing ist leider häufig.\nMurat: Ich nutze das Fernsehen kaum noch. Meine Mediennutzung findet fast nur noch online statt, und ich habe ein Abonnement für eine glaubwürdige Zeitung. Folgst du eigentlich vielen Leuten?\nLena: Nur wenigen. Ich folge nur Accounts, die ich für glaubwürdig halte.",
       "words": [
         {
           "de": "die Medien",
@@ -1460,6 +1474,8 @@
     {
       "id": 46,
       "topic": "Gesundheit & Lebensstil",
+      "text_type": "paragraph",
+      "text": "Gesundheit ist nicht selbstverständlich, deshalb achte ich auf meinen Lebensstil. Früher hatte ich Übergewicht und habe mich ungesund ernährt: viel Zucker, viel Fastfood, wenig Bewegung. Heute achte ich auf meine Ernährung: Ich ernähre mich ausgewogen und nehme genug Vitamine und Mineralien zu mir. Die Diät hat mir geholfen, ich habe abgenommen, aber mein Hausarzt sagte, dass regelmäßige Bewegung wichtiger ist. Ich verzichte auf Zigaretten, ich bin Nichtraucher, und ich rauche nie mehr. Auch beim Alkohol bin ich vorsichtig, denn eine Sucht kann den ganzen Kreislauf schädigen. Das Immunsystem profitiert von gutem Schlaf: Wer unter Schlafmangel leidet, wird leichter krank. Stress ist oft die Ursache für Rückenschmerzen, Verspannungen und Erschöpfung. Mein Kollege hatte ein Burnout und war seelisch und körperlich erschöpft. Er musste eine Therapie machen, um sich zu erholen. Zum Ausgleich gehe ich joggen und entspanne mich beim Yoga. Eine gute Entspannung hilft, vorzubeugen. Ich gehe regelmäßig zur Vorsorgeuntersuchung, und ich habe mich impfen lassen. Die Impfung gegen Grippe ist für mich selbstverständlich. Eine chronische Krankheit, ansteckende Viren und Verletzungen kann man nicht immer vermeiden, aber man kann sich gesundheitsbewusst verhalten. Bei Beschwerden lasse ich mich sofort behandeln, damit alles heilen kann. Das ist Vorsorge für ein langes Leben, und ich möchte lange fit bleiben.",
       "words": [
         {
           "de": "die Gesundheit",
@@ -1758,6 +1774,8 @@
     {
       "id": 47,
       "topic": "Wohnen: Stadt vs. Land",
+      "text_type": "dialog",
+      "text": "Sophie: Ich überlege, aus der Großstadt wegzuziehen. Die Miete ist hier viel zu hoch, und der Verkehr ist laut.\nDaniel: Ich bin vor zwei Jahren aufs Dorf gezogen und habe es nicht bereut. Die Lebensqualität ist besser. Die Landschaft ist idyllisch, die Nachbarschaft ist freundlich, und wir haben ein Einfamilienhaus mit Garten.\nSophie: Was ist mit der Infrastruktur? Auf dem Land ist doch alles abgelegen, und das Angebot an Geschäften ist klein.\nDaniel: Das stimmt. Die Anbindung an die Stadt ist nicht ideal. Ich muss pendeln, und die Einwohner brauchen meist ein Auto. In der Großstadt ist dagegen alles lebendig, aber auch überlaufen. Im Stadtzentrum ist die Wohnlage zwar verkehrsgünstig, aber die Kaltmiete und die Warmmiete sind hoch. Dazu kommt die Kaution.\nSophie: Ich habe eine Wohnungssuche hinter mir. Bei der Besichtigung sagte der Vermieter, im Mehrfamilienhaus gebe es keine Ruhe. Ich lebe jetzt in einer Wohngemeinschaft, einer WG, aber der Mietvertrag läuft aus.\nDaniel: Dann zieh doch in die Vorstadt! Dort kann man sich niederlassen, ohne gleich ländlich zu leben. Man kann ein Haus renovieren, eine Wohnung sanieren oder ein freies Grundstück bebauen. Die Wahl des Wohnorts ist eben eine Lebensentscheidung. Den Bauernhof meines Nachbarn will bald jemand vermieten. Die Natur und die Landwirtschaft ringsum sind wirklich schön.",
       "words": [
         {
           "de": "das Land",
@@ -2030,6 +2048,8 @@
     {
       "id": 48,
       "topic": "Kultur & Interkulturelles",
+      "text_type": "paragraph",
+      "text": "Als ich nach Deutschland kam, hatte ich einen Kulturschock. Alles war fremd: die Sprache, die Mentalität und die Gewohnheiten. Ich vermisste meine Heimat sehr. Zuerst gab es viele Missverständnisse, weil ich die Sitten und Bräuche nicht kannte. In meinem Land begrüßt man sich herzlich und mit viel Nähe, hier ist man zurückhaltender. Das Klischee, Deutsche seien immer pünktlich und unfreundlich, stimmt nur teilweise. Es gibt zwar typische Unterschiede, aber auch viele Gemeinsamkeiten. Man muss sich anpassen, ohne die eigene Herkunft zu verleugnen. Ich bin offen geblieben und habe versucht, mich zu öffnen und mich mit den Menschen zu verständigen. Vorurteile und Stereotype sind gefährlich, weil sie Minderheiten ausgrenzen. Diskriminierung darf es nicht geben. Ich wünsche mir eine Willkommenskultur, in der man Toleranz und Höflichkeit pflegt und die Religion eines anderen respektiert. Deutschland ist heute multikulturell: Die Vielfalt macht das Zusammenleben spannend. Wer weltoffen und vorurteilsfrei ist, akzeptiert die Integration der anderen. Meine Traditionen pflege ich weiter, aber ich sehe auch, wie traditionell andere leben. Wir unterscheiden uns zwar in vielem, aber mit der Zeit habe ich mich angepasst.",
       "words": [
         {
           "de": "die Kultur",
@@ -2294,6 +2314,8 @@
     {
       "id": 49,
       "topic": "Leben in Deutschland",
+      "text_type": "paragraph",
+      "text": "Wer neu in Deutschland ist, muss sich zuerst einleben und viel Bürokratie meistern. Das ist gewöhnungsbedürftig, aber nicht unmöglich. Zuerst muss man sich im Einwohnermeldeamt oder im Bürgeramt anmelden und eine Meldebescheinigung bekommen. Für den Aufenthalt braucht man ein Visum oder eine Aufenthaltserlaubnis, die man rechtzeitig beantragen und verlängern muss. Die Unterlagen muss man einreichen und nachweisen, dass man finanziell abgesichert ist. Eine Behörde bearbeitet den Antrag und muss ihn genehmigen. Außerdem ist die Krankenversicherung Pflicht: Jeder ist verpflichtet, sich zu versichern. Dazu kommen Rentenversicherung und Sozialversicherung. Man bekommt eine Steuernummer und muss später die Steuererklärung abgeben. Auch der Rundfunkbeitrag ist vorgeschrieben. Im Alltag gibt es viele Regeln: Die Mülltrennung ist üblich, die Ruhezeit ist wichtig, und auch Pünktlichkeit zählt. Wer sich nicht auskennt, sollte sich an die Regeln halten. An Feiertagen sind die Geschäfte geschlossen. Der Mindestlohn schützt Arbeitnehmer, Familien bekommen Kindergeld. Wer lange hier lebt, kann einen Integrationskurs besuchen und später die Staatsbürgerschaft beantragen. Wenn man umzieht, muss man sich abmelden und anmelden. Mein Rat: Fragen Sie nach, wenn etwas erforderlich ist!",
       "words": [
         {
           "de": "die Aufenthaltserlaubnis",
@@ -2556,6 +2578,8 @@
     {
       "id": 50,
       "topic": "Technik & KI",
+      "text_type": "dialog",
+      "text": "Jonas: Hast du gelesen, dass die künstliche Intelligenz bald viele Berufe ersetzt? Die Digitalisierung und Automatisierung verändern alles.\nMara: Ja, die Entwicklung ist rasant. Ein Roboter kann schon heute Autos montieren, und eine KI kann Texte schreiben und programmieren. Die Technologie ist praktisch und nützlich, aber ich sehe auch die Gefahr, dass wir davon abhängig werden.\nJonas: Und der Datenschutz? Unsere Daten liegen in der Cloud, und Hacker greifen immer wieder Netzwerke an. Ein Virus kann ein ganzes Gerät lahmlegen. Deshalb sollte man Software regelmäßig updaten und wichtige Dateien verschlüsseln. Sicherheit ist entscheidend.\nMara: Das Smartphone ist inzwischen ein Hilfsmittel für alles. Man kann sich einloggen, Anwendungen installieren, Geräte zu Hause steuern. Alles ist vernetzt. Aber wenn eine Fehlermeldung kommt, wirkt alles plötzlich kompliziert.\nJonas: Manche wollen sogar überwachen, was wir tun, und fortschrittliche Systeme nutzen unsere Daten. Ich lösche oft Apps, die ich nicht brauche. Die Programmierung selbst finde ich spannend. Ich möchte eine neue Erfindung entwickeln, die den Alltag erleichtert.\nMara: Wenn die KI einmal alles automatisiert, was bleibt dann für uns?",
       "words": [
         {
           "de": "die Technik / die Technologie",
@@ -2824,6 +2848,8 @@
     {
       "id": 51,
       "topic": "Beziehungen & Freundschaft",
+      "text_type": "paragraph",
+      "text": "Eine gute Beziehung braucht Vertrauen, Respekt und Verständnis. Meine Freundschaft mit Clara hält seit zwanzig Jahren, weil wir ehrlich zueinander sind und uns aufeinander verlassen können. Wenn wir uns streiten, vertragen wir uns schnell wieder, denn wir können einander verzeihen. Es gab auch Enttäuschungen: Einmal hat sie mich enttäuscht, als sie eine Verabredung vergessen hat. Aber nach einer Entschuldigung kam die Versöhnung. Sie ist rücksichtsvoll, großzügig und verständnisvoll, und ich kümmere mich um sie, wenn es ihr schlecht geht. Zwischen uns gibt es Nähe, aber auch genug Distanz. In der Liebe ist das schwieriger. Mein Bruder hat sich in eine Kollegin verliebt; sie haben sich verlobt. Die Verlobung hielt aber nicht lange, denn dann kam die Eifersucht. Er war eifersüchtig, weil sie viel Kontakt mit einem Ex-Freund hatte. Dann gab es einen Seitensprung, und die Trennung war schmerzlich. Heute weiß er, dass ein treuer Partner Rücksicht nimmt und die Eigenschaften des anderen akzeptiert. Er will sich bei ihr entschuldigen, aber ob sie ihm vertraut? Nach einer Scheidung in unserer Familie weiß ich, wie wichtig Zuneigung und Verbundenheit sind. Wir sollten uns verabreden, bevor es zu spät ist, und die Beziehung pflegen.",
       "words": [
         {
           "de": "die Beziehung",
@@ -3096,6 +3122,8 @@
     {
       "id": 52,
       "topic": "Konsum & Werbung",
+      "text_type": "paragraph",
+      "text": "Der Konsum hat sich in den letzten Jahren stark verändert. Der Onlinehandel boomt, und als Verbraucher kann man heute bequem vom Sofa aus bestellen. Die Lieferung kommt oft schon am nächsten Tag. Gerade bei Schnäppchen oder einem Ausverkauf kauft man schnell impulsiv, auch Dinge, die überflüssig sind. Die Werbung verführt uns mit verlockenden Werbeversprechen, und viele Menschen sind markentreu. Doch eine bekannte Marke garantiert nicht immer Qualität. Es gibt hochwertige Produkte, aber auch minderwertige. Ein Gütesiegel hilft bei der Kaufentscheidung, und die Bewertungen anderer Käufer sind nützlich. Wer vergleicht, findet oft preiswerte, günstige Angebote und kann Rabatte nutzen. Trotzdem sollte man sich nicht alles leisten, nur weil der Trend es verlangt. Die Wegwerfgesellschaft produziert unnötige Verpackung und viel Müll. Wenn ein Gerät nicht gefällt, kann man es zurückschicken. Das Widerrufsrecht erlaubt es, einen Kauf zu widerrufen, und die Rückerstattung folgt nach der Rücksendung. Bei Mängeln darf man reklamieren, denn es gilt eine Garantie. Der Verbraucherschutz berät, wenn eine Firma etwas anbietet, das nicht stimmt. Die Kaufkraft der Menschen sinkt, wenn die Preise steigen, und manche müssen etwas anschaffen, das sie sich kaum leisten können. Dafür werben Firmen oft mit Angeboten, um die Konkurrenz zu schlagen.",
       "words": [
         {
           "de": "der Konsum",
@@ -3362,6 +3390,8 @@
     {
       "id": 53,
       "topic": "Verkehr & Mobilität",
+      "text_type": "paragraph",
+      "text": "Jeden Morgen stecke ich im Berufsverkehr fest. Das Verkehrsaufkommen in unserer Stadt ist enorm, viele Straßen sind stark befahren, und der Stau ist normal. Heute gab es zusätzlich eine Baustelle, und wegen einer Vollsperrung musste ich eine lange Umleitung nehmen. Ich habe mich verspätet, und einen Parkplatz habe ich auch nicht gefunden. Am Straßenrand zu parken kostet ein Bußgeld. Deshalb möchte ich vom Auto auf öffentliche Verkehrsmittel umsteigen. Aber auch dort gibt es Probleme: Die Bahn ist oft verspätet und überfüllt, und manchmal gibt es einen Streik. Trotzdem kaufe ich bald eine Monatskarte, auch wenn die Fahrkartenkontrolle nervt. Die Stadt will umweltschonende Mobilität fördern, mit Verkehrsberuhigung, einer Umweltzone und mehr Ladestationen für die Elektromobilität. Viele Leute überlegen, ein Elektroauto zu kaufen, oder nutzen Carsharing. Eine Fahrgemeinschaft mit Kollegen spart Geld. Für Radfahrer baut man den Fahrradweg aus, damit die Stadt fahrradfreundlicher wird, und auch barrierefreie Haltestellen sollen entstehen. Als Verkehrsteilnehmer muss man sich anschnallen, die Geschwindigkeit beachten und darf nur überholen, wenn es erlaubt ist. Ich versuche, dem Stau auszuweichen, indem ich mich mit dem Rad fortbewege. Meinen Führerschein behalte ich natürlich.",
       "words": [
         {
           "de": "der Stau",
@@ -3626,6 +3656,8 @@
     {
       "id": 54,
       "topic": "Ehrenamt & Gesellschaft",
+      "text_type": "dialog",
+      "text": "Lukas: Du engagierst dich doch ehrenamtlich, Emma? Erzähl mal!\nEmma: Ja, ich bin Mitglied in einer gemeinnützigen Organisation. Das Ehrenamt ist für mich ein wichtiger Teil der Gesellschaft. Wir unterstützen bedürftige Menschen: Wir sammeln Spenden, verteilen Essen an Obdachlose und helfen älteren Menschen im Altenheim. Das machen wir freiwillig und unentgeltlich.\nLukas: Das klingt toll. Haben die Freiwilligen auch Verantwortung?\nEmma: Ja, jeder organisiert etwas. Ich leite zum Beispiel die Nachbarschaftshilfe. Wir setzen uns für Solidarität, Zusammenhalt und Gleichberechtigung ein. Gegen Armut und Benachteiligung wollen wir gemeinsam etwas tun. Manche beteiligen sich an der Flüchtlingshilfe, andere helfen bei einer Initiative gegen Einsamkeit mit. Wer nicht viel Zeit hat, kann eine Zeitspende leisten oder einen kleinen Mitgliedsbeitrag zahlen.\nLukas: Und was gibt dir das?\nEmma: Die Gemeinschaft! Nächstenliebe ist keine Last. Ich finde, ein engagierter Mensch bekommt viel zurück. Das Engagement macht mich zufrieden, und alle sozial Benachteiligten brauchen unsere Hilfe. Willst du mitwirken?\nLukas: Gern! Ich möchte mich einsetzen und etwas spenden.",
       "words": [
         {
           "de": "das Ehrenamt",
@@ -3900,6 +3932,8 @@
     {
       "id": 55,
       "topic": "Kindheit & Erinnerungen",
+      "text_type": "paragraph",
+      "text": "Wenn ich an meine Kindheit denke, werde ich ein bisschen nostalgisch. Ich bin auf dem Land aufgewachsen, behütet und unbeschwert. Damals hatte ich viele Freunde, und wir haben den ganzen Tag draußen gespielt. Mein Schulweg führte durch einen kleinen Wald, und auf dem Schulhof haben wir Streiche gespielt. In der Grundschule war mein Klassenkamerad Jonas mein bester Freund. Früher gab es kaum Spielzeug aus Plastik; mein Lieblingsspielzeug war ein alter Teddy. Im Kindergarten hat uns die Erzieherin Märchen erzählt. Meine Geschwister und ich haben sie nie vergessen. Meine Eltern waren streng, aber sie haben mir Geborgenheit gegeben, und ihre Erziehung hat mich geprägt. Diese Prägung spüre ich bis heute. Als ich zehn war, hatte ich im Ferienlager Heimweh und habe geweint, doch die tröstende Stimme meiner Mutter am Telefon hat mir geholfen. Heute schwärme ich noch von dieser Zeit. Im Fotoalbum sehe ich mich als kleines Kind auf dem Spielplatz. Ich erinnere mich an so vieles, und ich kann mich auch an die Strenge meines Opas erinnern. Die Kindheit prägt jeden Menschen, und ich bin dankbar dafür. Als Jugendlicher war ich dann ein wenig verspielter als heute. So war meine Jugend: voller Erinnerungen.",
       "words": [
         {
           "de": "die Kindheit",
@@ -4130,6 +4164,8 @@
     {
       "id": 56,
       "topic": "Nachrichten & Politik",
+      "text_type": "paragraph",
+      "text": "Die Nachrichten berichten heute über die Politik der neuen Regierung. Der Bundeskanzler hat auf einer Pressekonferenz angekündigt, den Haushalt für das nächste Jahr vorzulegen. Der Bundestag soll über das Gesetz abstimmen, und danach muss auch der Bundesrat zustimmen. Die Koalition hat beschlossen, neue Regeln einzuführen und alte abzuschaffen, wie sie es im Wahlkampf versprochen hatte. Laut einer aktuellen Umfrage ist die Mehrheit unzufrieden, und die Opposition fordert dagegen mehr Transparenz und kritisiert das Wahlprogramm der Regierung. Viele Abgeordnete diskutieren leidenschaftlich. Eine Ministerin ist zurückgetreten, weil sie Fehler gemacht hat. Aktuell findet vor dem Parlament eine Demonstration für Frieden statt, denn der Krieg in der Nachbarregion beschäftigt alle. Die Sanktionen gegen das Land wurden verschärft. In einer Demokratie darf man frei wählen, und die Wahlbeteiligung zeigt, wie politisch interessiert die Wähler sind. Wer kandidieren will, braucht eine Partei oder genug Unterstützer. Die Mehrheit im Parlament entscheidet, wer regiert. Das Grundgesetz und die Verfassung schützen Rechte, auch von Minderheiten. Es gibt konservative und liberale Parteien, die unterschiedliche Positionen vertreten. Die Regierung will ein Gesetz verabschieden, das die Opposition ablehnt. Wähler und Wählerinnen müssen sich informieren, denn eine demokratische Gesellschaft lebt davon, dass man sich beteiligt.",
       "words": [
         {
           "de": "die Nachrichten",
@@ -4430,6 +4466,8 @@
     {
       "id": 57,
       "topic": "Finanzen & Versicherung",
+      "text_type": "dialog",
+      "text": "Berater: Guten Tag, Frau Weiß. Wie kann ich Ihnen helfen?\nFrau Weiß: Ich möchte meine Finanzen ordnen. Mein Einkommen ist stabil, aber die Ausgaben steigen, und ich habe Schulden durch einen Kredit. Die Zinsen sind hoch.\nBerater: Dann prüfen wir den Zinssatz. Haben Sie einen Haushaltsplan? Gut kalkulieren ist wichtig. Was zahlen Sie monatlich?\nFrau Weiß: 400 Euro. Es wird per Dauerauftrag abgebucht, und eine Lastschrift gibt es für die Miete. Ich war bisher sparsam, aber nach der Mahnung wegen einer vergessenen Rechnung will ich mehr aufpassen. Mein Kontostand ist am Monatsende oft niedrig. Ich habe ein Girokonto und ein Sparbuch.\nBerater: Sie sollten Ihre Schulden zurückzahlen, bevor Sie Geld in Aktien anlegen oder investieren. Die Inflation macht Anlagen riskanter. Wichtig ist auch die Altersvorsorge, denn die Rente reicht oft nicht. Ich empfehle außerdem eine Haftpflichtversicherung und eine Hausratversicherung. Wenn ein Schaden entsteht, haften Sie sonst selbst. Die Versicherung erstattet dann die Kosten. Ein Zuschuss vom Arbeitgeber ist auch möglich.\nFrau Weiß: Ich will bargeldlos zahlen und mich nicht weiter verschulden. Ich möchte alles begleichen und vorsorgen. Unterschreibe ich jetzt den Vertrag?\nBerater: Gern. Sie sind finanziell auf einem guten Weg. Wir prüfen Ihre Planung monatlich und jährlich. Wer vorsorgt, bleibt nicht lange verschuldet.",
       "words": [
         {
           "de": "die Versicherung",
@@ -4698,6 +4736,8 @@
     {
       "id": 58,
       "topic": "Träume & Wünsche",
+      "text_type": "paragraph",
+      "text": "Jeder Mensch hat Wünsche und Träume. Mein größter Lebenstraum ist, eines Tages ein eigenes Unternehmen zu gründen. Ich habe Ehrgeiz und bin zielstrebig, aber ich weiß, dass der Erfolg nicht garantiert ist. Es braucht Mut, etwas zu wagen, und man muss das Risiko akzeptieren. Man kann scheitern, aber wer aufgibt, erreicht nichts. Deshalb nehme ich mir vor, durchzuhalten, auch wenn die Herausforderung groß ist. Ich träume davon, mich zu entfalten und unabhängig zu sein. Selbstständigkeit und Unabhängigkeit sind mir wichtiger als Sicherheit. Natürlich muss man realistisch bleiben: Manche Ziele sind unrealistisch. Wenn ich reich wäre, würde ich viel reisen, aber das Glück liegt auch in der Zufriedenheit mit dem, was man hat. Ich wünsche mir, dass ich eine Chance bekomme und die Möglichkeit nutze. Ich hätte gern ein Vorbild, das mir zeigt, wie man seine Ziele verwirklicht. Meine Sehnsucht nach einem Neuanfang ist groß. Wer nach etwas strebt, muss auch an seine Zielsetzung glauben. Meine Hoffnung ist, meine Karriere so zu gestalten, wie ich es will. Ich bin ehrgeizig, mutig und zielstrebig. Wenn alles klappt, ist die Verwirklichung meines Traums nur eine Frage der Zeit.",
       "words": [
         {
           "de": "der Wunsch",
@@ -4960,6 +5000,8 @@
     {
       "id": 59,
       "topic": "Formelles Gespräch & Telefon",
+      "text_type": "dialog",
+      "text": "Sekretariat: Firma Brandt, Sekretariat, Meier, guten Tag.\nAnruferin: Guten Tag, hier spricht Anna Koch. Ich beziehe mich auf meine Anfrage von letzter Woche und möchte mich nach dem Stand erkundigen. Können Sie mich bitte mit Herrn Brandt verbinden?\nSekretariat: Einen Moment. Die Vermittlung hat Sie richtig zu uns durchgestellt, aber leider ist die Leitung besetzt. Soll ich Sie weiterleiten, oder möchten Sie einen Rückruf?\nAnruferin: Einen Rückruf, bitte. Mein Anliegen ist eine Terminvereinbarung. Ich möchte mitteilen, dass ich die Zusage für das Treffen am Donnerstag bestätigen kann.\nSekretariat: Könnten Sie Ihren Nachnamen bitte buchstabieren?\nAnruferin: K-O-C-H. Meine Nummer ist 0151 23 45 67 89.\nSekretariat: Könnten Sie das bitte wiederholen? Die Verbindung ist schlecht.\nAnruferin: Gern: 0151 23 45 67 89.\nSekretariat: Danke. Ich richte Herrn Brandt aus, dass Sie angerufen haben. Er ist vorübergehend nicht erreichbar, denn seine Erreichbarkeit ist heute eingeschränkt. Er ist bis 14 Uhr in einer Sitzung. Sie können auch eine Nachricht auf dem Anrufbeantworter hinterlassen.\nAnruferin: Das ist nicht nötig. Ich möchte nur nachfragen, ob die Absage vom Mittwoch noch gilt. Ein Missverständnis wäre unangenehm. Ich brauche auch noch eine Auskunft zur Adresse.\nSekretariat: Das klärt Herr Brandt. Sobald er Zeit hat, ruft er Sie zurück und meldet sich bei Ihnen. Soll ich ihm mitteilen, dass Sie Rückfragen haben?\nAnruferin: Ja, bitte. Zur Sicherheit schicke ich noch eine E-Mail: Sehr geehrte Damen und Herren, ... Mit freundlichen Grüßen, Anna Koch. Vielen Dank für dieses freundliche Telefonat. Auch als Gesprächspartner sind Sie sehr höflich.\nSekretariat: Gern geschehen. Auf Wiederhören!",
       "words": [
         {
           "de": "das Telefonat",
@@ -5214,6 +5256,8 @@
     {
       "id": 60,
       "topic": "Freie Präsentation",
+      "text_type": "paragraph",
+      "text": "Guten Morgen, liebes Publikum, und herzlich willkommen zu meiner Präsentation! Mein Thema heute ist die Mediennutzung Jugendlicher. In der Einleitung gebe ich Ihnen einen kurzen Überblick: Mein Vortrag ist in drei Teile gegliedert. Die Gliederung sehen Sie auf der ersten Folie. Die Reihenfolge der Punkte habe ich bewusst gewählt. Zunächst stelle ich die Zielgruppe vor. Danach folgt der Hauptteil, in dem ich die Ergebnisse darstelle. Die Überschrift dieser Folie lautet: Wie viel Zeit verbringen Jugendliche online? Die Grafik zeigt die Entwicklung der letzten fünf Jahre, das Diagramm veranschaulicht den Vergleich, und die Tabelle daneben nennt die Details. Eine aktuelle Statistik belegt meine Aussage, dass die Nutzung stark steigt. Ich möchte besonders hervorheben, dass die Zahlen bei Mädchen und Jungen sehr ähnlich sind. Außerdem möchte ich auf ein konkretes Beispiel hinweisen: In einer Schule hat man das Handy für eine Woche verboten, mit überraschendem Ergebnis. Damit leite ich zum nächsten Punkt über, und ich gehe auf die Folgen für die Schule ein. Abschließend, zum Schluss meines Vortrags, fasse ich die wichtigsten Punkte zusammen. Die Zusammenfassung sehen Sie auch auf der letzten Folie. Mein Fazit: Medien sind nicht per se schlecht, es kommt auf den Umgang an. Und das ist auch die Pointe meines Vortrags. Als Redner versuche ich, verständlich, prägnant und überzeugend zu sein, und die Folien sollen übersichtlich und anschaulich bleiben. Vielen Dank für Ihre Aufmerksamkeit! In der Fragerunde erkläre ich gern noch mehr. Ich freue mich auf Ihre Fragen.",
       "words": [
         {
           "de": "die Präsentation",
@@ -5494,6 +5538,8 @@
     {
       "id": 61,
       "topic": "Reisen & Tourismus",
+      "text_type": "paragraph",
+      "text": "Der Tourismus ist für viele Regionen eine wichtige Einnahmequelle. Als Tourist habe ich schon viele Reiseziele gesehen. Meine erste Pauschalreise ging nach Spanien: Die Anreise war bequem, der Aufenthalt im Hotel entspannt. Später habe ich lieber individuell verreist. Bei einer Rundreise durch Italien hat uns ein Reiseleiter die Sehenswürdigkeiten gezeigt, und wir haben die Städte erkundet. Wir haben eine Ferienwohnung gemietet, manchmal auch eine Jugendherberge, wenn es billig sein sollte. Die beste Reisezeit ist übrigens das Frühjahr oder der Herbst, wenn es weniger voll und weniger touristisch ist. Bei der Einreise gab es manchmal eine Zollkontrolle. Vor jeder Reise schließe ich eine Reiseversicherung ab, denn bei einer Stornierung bekommt man sonst das Geld nicht zurück. Einmal musste ich einen Flug stornieren, ein anderes Mal umbuchen, weil ich meinen Zug verpasst hatte. Am Reiseziel kann man dann einchecken und am Abreisetag wieder auschecken. Für Ausflüge nehmen wir oft einen Mietwagen. Es war eine unvergessliche Reise, auch wenn bei der Abreise alles hektisch war.",
       "words": [
         {
           "de": "der Tourismus",
@@ -5670,6 +5716,8 @@
     {
       "id": 62,
       "topic": "Mietrecht & Wohnungssuche",
+      "text_type": "dialog",
+      "text": "Mieterin: Guten Tag, Frau Berger. Ich habe die Nebenkostenabrechnung bekommen, und die Heizkosten sind viel zu hoch. Außerdem kündigen Sie eine Mieterhöhung an. Das ist nicht in Ordnung.\nEigentümerin: Guten Tag, Frau Yilmaz. Die Mieterhöhung ist rechtlich möglich. Die Nebenkosten prüfe ich noch einmal. Was ist mit der Wohnung selbst?\nMieterin: In der Wohnung gibt es einen Mangel: Im Bad ist Schimmel. Ich möchte das beanstanden. Bei der Wohnungsübergabe stand davon nichts im Übergabeprotokoll. Das berechtigt mich zu einer Mietminderung, oder?\nEigentümerin: Das lasse ich prüfen. Nach der Hausordnung sind Schönheitsreparaturen Sache der Mieter, aber Schimmel ist ein Mangel. Ich schicke einen Handwerker.\nMieterin: Danke. Ich frage auch, weil ich einen Untermieter suche. Ab Herbst bin ich für sechs Monate im Ausland, und es wäre eine Zwischenmiete. Die Wohnung ist möbliert.\nEigentümerin: Dafür brauche ich eine Erlaubnis. Und denken Sie an die Eigenbedarfskündigung, die ich in der Zukunft nicht ausschließe, wenn meine Tochter einzieht.\nMieterin: Verstehe. Ich suche ohnehin eine eigene Immobilie. Ein Makler hat mir einen Grundriss geschickt: 85 Quadratmeter Wohnfläche und ein Stellplatz. Aber die Provision ist hoch.",
       "words": [
         {
           "de": "die Nebenkostenabrechnung",
@@ -5822,6 +5870,8 @@
     {
       "id": 63,
       "topic": "Recht & Gesetz",
+      "text_type": "paragraph",
+      "text": "Gestern fand vor dem Gericht ein spektakulärer Prozess statt. Der Täter, ein 35-jähriger Mann, wurde wegen Betrugs und Diebstahls angeklagt. Die Anzeige war von einer Firma erstattet worden, die Opfer der Straftat geworden war. Der Anwalt des Angeklagten behauptete, sein Mandant sei unschuldig, und bat die Richterin, ihn freizusprechen. Die Anklage dagegen sagte, der Mann sei schuldig. Mehrere Zeugen haben ausgesagt, und ein Zeuge beschuldigte den Angeklagten, falsche Dokumente benutzt zu haben. Der Angeklagte hatte mit einer gefälschten Vollmacht Geld abgehoben, das ist illegal. Das Gericht sah darin einen schweren Verstoß gegen das Gesetz. Rechtlich gilt: Wer gegen Gesetze verstößt, muss mit einer Strafe rechnen. Das Urteil: Die Richterin verurteilte den Mann zu einer Geldstrafe und zu einem Jahr Gefängnis auf Bewährung. Die Firma kann auch klagen, um Schadenersatz zu bekommen, denn die Haftung liegt beim Täter. Ein ähnlicher Fall betraf das Urheberrecht: Wer ein Foto ohne Erlaubnis nutzt, kann angezeigt und bestraft werden. Man sollte sein Recht kennen, denn das schützt vor Fehlern. Das Opfer hat ein Recht darauf, dass der Fall aufgeklärt wird.",
       "words": [
         {
           "de": "das Recht",
@@ -6028,6 +6078,8 @@
     {
       "id": 64,
       "topic": "Wirtschaft & Unternehmen",
+      "text_type": "paragraph",
+      "text": "Die Wirtschaft in Deutschland wächst langsamer als in den Jahren zuvor. Die Konjunktur ist schwach, und viele Branchen stecken in der Krise. Ein Unternehmen muss sich im Wettbewerb gegen die Konkurrenz behaupten. Wenn die Nachfrage sinkt, geht auch der Umsatz zurück, und es entsteht ein Verlust statt eines Gewinns. Manche Firmen müssen dann Mitarbeiter entlassen, und die Arbeitslosigkeit steigt. Gleichzeitig gibt es einen Fachkräftemangel: Auf dem Arbeitsmarkt fehlen Ingenieure und Handwerker. Unternehmer wie die Gründerin eines Startups müssen mutig investieren. Ihre Gründung war riskant, aber heute produziert die Firma erfolgreich Software und kann expandieren. Sie ist rentabel und wirtschaftlich stabil. Auch Aktionäre profitieren, wenn das Unternehmen wächst. Ein guter Standort ist wichtig, damit man günstig herstellen und produzieren kann. Deutschland exportiert viele Maschinen und Autos und importiert Rohstoffe. International ist die Konkurrenz groß. Wer erfolgreich sein will, muss sich im globalen Markt behaupten. Die Produktion in Deutschland ist teuer, deshalb verlagern manche Firmen ihren Standort ins Ausland, was die Investition in neue Arbeitsplätze hier erschwert. Ein Unternehmen, das wachsen will, braucht Mut, Kapital und gute Mitarbeiter.",
       "words": [
         {
           "de": "die Wirtschaft",
@@ -6246,6 +6298,8 @@
     {
       "id": 65,
       "topic": "Wissenschaft & Forschung",
+      "text_type": "paragraph",
+      "text": "Wissenschaft lebt von Neugier. Eine Wissenschaftlerin im Labor beginnt ihre Forschung meist mit einer Hypothese. Mit einer geeigneten Methode führt sie ein Experiment durch, beobachtet ein Phänomen und misst die Werte genau. Danach wertet sie die Ergebnisse aus. Manchmal bestätigt das Resultat die Theorie, manchmal widerlegt es sie. Dann muss man neu denken. Eine gründliche Analyse ist wichtig, um die Ursache und die Wirkung zu verstehen und einen Zusammenhang nachzuweisen. Nur was nachweisbar ist, gilt als wissenschaftlich bewiesen. Die Forscher können nicht alles beweisen, aber sie können viel erforschen. Eine Studie mit einer Umfrage unter tausend Menschen liefert Daten, und eine genaue Untersuchung zeigt Trends. Manche Entdeckungen sind ein echter Durchbruch: Eine neuartige Therapie gegen eine Krankheit ist ein Fortschritt für die ganze Welt. Wer etwas entdeckt, muss sein Ergebnis veröffentlichen, damit andere es prüfen und beobachten können. So bleibt die Wissenschaft ehrlich, und jede neue Erkenntnis bringt uns weiter. Auch Fehler gehören zur Forschung, denn man lernt aus ihnen.",
       "words": [
         {
           "de": "die Wissenschaft",
@@ -6446,6 +6500,8 @@
     {
       "id": 66,
       "topic": "Literatur & Kunst",
+      "text_type": "dialog",
+      "text": "Clara: Warst du schon in der Ausstellung in der neuen Galerie? Ein berühmter Künstler zeigt dort seine Gemälde und Skulpturen.\nMarc: Noch nicht. Ich lese gerade einen Roman, einen echten Bestseller. Die Handlung ist spannend, und die Figuren sind sehr lebendig. Im letzten Kapitel passiert etwas Unerwartetes. Die Autorin hat auch Gedichte verfasst.\nClara: Als Schriftstellerin ist sie sehr kreativ. Ich finde, Literatur und Kunst inspirieren uns. Ein gutes Buch kann man auf viele Arten interpretieren, genau wie ein Kunstwerk.\nMarc: Stimmt. Ich war letzte Woche bei einer Aufführung eines Theaterstücks, ein klassisches Stück aus einer anderen Epoche. Der Stil der Inszenierung war modern und beeindruckend.\nClara: Die Kunst der Gegenwart stellt heute überall aus, auch in kleinen Städten. Der Künstler in der Galerie hat einen ganz eigenen Stil. Man muss ihn nicht mögen, aber seine Werke sind beeindruckend.\nMarc: Dann gehen wir zusammen hin! Ich möchte sehen, was er ausstellt.",
       "words": [
         {
           "de": "die Literatur",
@@ -6622,6 +6678,8 @@
     {
       "id": 67,
       "topic": "Musik & Film",
+      "text_type": "dialog",
+      "text": "Ben: Gestern war ich auf einem Konzert. Die Band ist ein Geheimtipp: Der Sänger hat eine tolle Stimme, und die Melodie des ersten Liedes war mitreißend. Sie haben ihr neues Album vorgestellt.\nLisa: Spielen sie selbst alle Instrumente? Ich liebe Musik, die berührend ist. Ich begeistere mich auch für Orchester und für Soundtracks. Neulich habe ich im Kino einen Film gesehen, bei dem der Soundtrack genial war.\nBen: Welcher Film war das?\nLisa: Ein Dokumentarfilm über einen Komponisten. Der Regisseur hat das Drehbuch selbst geschrieben, und der Schauspieler in der Hauptrolle war sehr überzeugend. Die Besetzung war gut. Ich sehe sonst lieber Serien oder eine Komödie, aber diesmal war es berührend.\nBen: Ich mag Krimis. Auf dem Filmfestival in Berlin laufen viele neue Filme. Einige Vorstellungen werden sogar live online übertragen. Und eine Band tritt dort auch auf.\nLisa: Wirklich? Dann komme ich mit! Hat die Band ihr Album selbst aufgenommen?\nBen: Ja, im eigenen Studio. Der Sänger hat die Lieder selbst komponiert, und der Text ist wirklich sehr schön.",
       "words": [
         {
           "de": "die Band",
@@ -6808,6 +6866,8 @@
     {
       "id": 68,
       "topic": "Ernährung & Kochen",
+      "text_type": "paragraph",
+      "text": "Gesunde Ernährung beginnt beim Einkauf. Ich achte auf die Zutaten und kaufe gern Bio-Produkte, wenn sie frisch sind. Ein Fertiggericht gibt es bei mir nur selten, weil ich lieber selbst Mahlzeiten zubereite. Wichtig sind Nährstoffe wie Eiweiß und Ballaststoffe, und auch auf die Kalorien achte ich. Mein Mann ist Vegetarier, meine Tochter sogar Veganerin, deshalb muss ich oft kreativ sein. Mein Sohn hat eine Unverträglichkeit gegen Laktose, daher sind manche Lebensmittel für ihn nicht bekömmlich. Heute gibt es ein herzhaftes Gericht: Ich brate das Gemüse an, lasse die Soße köcheln und würze sie mit Salz, Pfeffer und frischen Kräutern. Zum Schluss schmecke ich alles ab und verfeinere die Soße mit etwas Sahne oder Hafermilch. Als Beilage gibt es Reis. Ein gutes Gewürz macht den Unterschied. Alles, was übrig bleibt, bewahre ich im Kühlschrank auf. Ich achte auf das Haltbarkeitsdatum, denn Lebensmittelverschwendung möchte ich vermeiden. Wer sich bewusst ernährt, von frischen Zutaten und von regionalen Produkten, lebt gesünder. Das vegane Rezept probiere ich morgen aus.",
       "words": [
         {
           "de": "die Zutat",
@@ -7004,6 +7064,8 @@
     {
       "id": 69,
       "topic": "Charakter & Persönlichkeit",
+      "text_type": "paragraph",
+      "text": "Jeder Mensch hat einen eigenen Charakter und eine besondere Persönlichkeit. Mein Bruder wirkt auf den ersten Blick schüchtern, aber er ist sehr neugierig und hat viel Humor. Seine größte Stärke ist die Geduld: Er bleibt auch in schwierigen Situationen ruhig und geduldig. Seine Schwäche ist, dass er manchmal stur ist und nicht nachgibt. Meine Schwester ist das Gegenteil. Sie ist selbstbewusst, aber auch ein bisschen ungeduldig und launisch. Wenn sie schlechte Laune hat, redet sie kaum. Dafür ist sie ein echter Optimist und sieht in jeder Krise eine Chance, während mein Vater eher Pessimist ist. Er sieht zuerst die Probleme. Meine Mutter ist verantwortungsbewusst und tolerant. Ihre Hilfsbereitschaft ist bekannt, und ihre Ehrlichkeit schätzen alle. Sie ist bescheiden und redet nie über ihre Erfolge. Diese Bescheidenheit imponiert mir. Ihre Zuverlässigkeit ist legendär. Ein Nachbar von uns ist dagegen egoistisch und denkt nur an sich. Trotzdem ist er auf seine Art sympathisch und humorvoll. Jeder hat Angewohnheiten, die andere nerven. Wer seine Persönlichkeit kennt, versteht auch sein Selbstbewusstsein besser, und genau das macht uns einzigartig.",
       "words": [
         {
           "de": "der Charakter",
@@ -7192,6 +7254,8 @@
     {
       "id": 70,
       "topic": "Emotionen & Stimmung",
+      "text_type": "paragraph",
+      "text": "Liebes Tagebuch, heute war ein Tag voller Gefühle. Am Morgen war meine Stimmung schlecht, denn ich habe mich schon beim Frühstück über meinen Bruder aufgeregt. Die Wut war groß, der Ärger noch größer, und ich war gereizt. Dann klingelte das Telefon, und ich bin erschrocken. Es war der Anruf: Ich habe die Prüfung bestanden! Die Erleichterung war riesig, ich war so erleichtert, dass ich fast geweint hätte. Meine Mutter war gerührt, und ihre Rührung hat auch mich überwältigt. Ich habe mich geschämt, denn die Scham über meinen Ausbruch war groß. Am Nachmittag war ich verzweifelt, und meine Verzweiflung wuchs, weil mein Handy weg war. Panik! Ich habe mich davor gefürchtet, dass alle Fotos verloren sind, und die Anspannung stieg. Dann habe ich mich beruhigt, und es hat sich gefunden. Eine Freundin war neidisch, dass ich ein Stipendium bekommen habe. Ich habe sie getröstet, denn sie sorgt sich um ihre Zukunft. Neid ist ein schlechtes Gefühl. Ihre Einsamkeit tat mir leid, und ich habe Mitgefühl gezeigt. Jetzt bin ich gelassen. Auf das Wochenende freue ich mich schon sehr, meine Vorfreude ist riesig. Wenn ich an die Trauer vom letzten Jahr denke, an die Hoffnungslosigkeit damals, bin ich froh, dass dieser Tag so gut ausgegangen ist. Meine Begeisterung für die Zukunft ist zurück.",
       "words": [
         {
           "de": "die Stimmung",
@@ -7402,6 +7466,8 @@
     {
       "id": 71,
       "topic": "Konflikte & Lösungen",
+      "text_type": "dialog",
+      "text": "Vermittlerin: Danke, dass Sie beide gekommen sind. Wir wollen heute den Konflikt klären. Was ist der Streitpunkt?\nHerr Maier: Die Hecke. Meine Nachbarin hat sie ohne Absprache abgeschnitten. Es war eine regelrechte Konfrontation, und sie hat mich sogar beleidigt! Eine solche Beleidigung muss ich mir nicht gefallen lassen.\nFrau Kranz: Das stimmt nicht. Sie haben mir vorgeworfen, ich sei egoistisch. Das hat mich verletzt. Die Hecke war auf meinem Grundstück. Ich habe das Recht, mich durchzusetzen.\nVermittlerin: Bitte lassen Sie den Streit nicht eskalieren, sonst droht eine Eskalation. Ich möchte vermitteln. Wer trägt die Schuld, ist im Moment nicht wichtig. Ein Vorwurf löst das Problem nicht. Wichtig ist ein faires Gespräch.\nHerr Maier: Gut. Ich gebe zu, ich habe zu laut gesprochen. Eine Entschuldigung ist angebracht.\nFrau Kranz: Dann entschuldige ich mich auch. Ich wollte nicht, dass ein Streit entsteht. Ich mische mich sonst nie in fremde Dinge ein.\nVermittlerin: Sehr gut. Der Konflikt ist nicht unlösbar. Wollen wir über eine Einigung verhandeln? Ich schlage vor, dass beide ein Stück nachgeben, damit wir den Streit beilegen können.\nHerr Maier: Einverstanden, wenn die Verhandlung fair bleibt.\nFrau Kranz: Ja. Die Hecke bleibt jetzt, wie sie ist.",
       "words": [
         {
           "de": "der Konflikt",
@@ -7572,6 +7638,8 @@
     {
       "id": 72,
       "topic": "Familie & Generationen",
+      "text_type": "paragraph",
+      "text": "In meiner Familie leben mehrere Generationen eng zusammen. Das Familienleben ist manchmal turbulent, aber wir halten zusammen. Meine Schwester ist alleinerziehend und zieht ihren kleinen Sohn allein groß. Sie hat Elternzeit genommen, aber die Vereinbarkeit von Familie und Beruf ist schwer, deshalb brauchen wir eine gute Kinderbetreuung. Mein Bruder lebt in einer Patchworkfamilie: Seine Frau hat Kinder aus erster Ehe, und gemeinsam haben sie noch Nachwuchs bekommen. Meine Cousins sind Zwillinge, ich bin dagegen ein Einzelkind. Unsere Schwiegereltern wohnen gleich nebenan und lieben ihre Enkel sehr, ein Enkel und eine Enkelin. Meine Großeltern haben ihre Kinder streng erzogen, heute sind sie im Ruhestand und liebevoll mit ihren Urenkeln. Mein Opa braucht inzwischen Pflege. Ein Pflegedienst kommt täglich, und wir überlegen, ob ein Pflegeheim besser wäre. Das ist eine schwierige Entscheidung. Es gab auch Streit in der Verwandtschaft, wenn es ums Erben ging: Wer soll das Haus erben, wenn Oma etwas vererbt? Ein Generationenkonflikt entsteht schnell. Ein Onkel hat sich scheiden lassen und dann ein Kind adoptiert. Wir sind eine große Familie, und wir halten trotzdem fest zusammen.",
       "words": [
         {
           "de": "die Generation",
@@ -7760,6 +7828,8 @@
     {
       "id": 73,
       "topic": "Migration & Integration",
+      "text_type": "dialog",
+      "text": "Amira: Ich bin vor zwei Jahren aus meinem Heimatland geflohen. Als Flüchtling kam ich zuerst in ein Ankunftszentrum und habe dort meinen Asylantrag gestellt. Die ersten Monate waren schwer.\nTarek: Ich bin als Migrant eingewandert. Migration gehört in meiner Familie schon lange dazu. Die Einwanderung war legal: Ich hatte eine Arbeitserlaubnis, und meine Aufenthaltsgenehmigung wurde verlängert. Viele meiner Freunde wollten auswandern, aber nicht alle durften. Manche Leute wurden sogar abgeschoben.\nAmira: Die größte Herausforderung war die Sprachbarriere. Ohne Sprache kann man sich nicht integrieren. Mein Abschluss als Ärztin wurde zuerst nicht anerkannt, und die Anerkennung hat lange gedauert. Heute fordern wir Chancengleichheit für alle, auch für Ausländer.\nTarek: Manche Menschen sind sogar staatenlos und haben keine Papiere. Für sie ist alles noch schwerer. Wer sich einbürgern lassen will, muss viele Voraussetzungen erfüllen, und die Einbürgerung dauert Jahre. Man hört ständig von ausländischen Fachkräften, die gebraucht werden, aber der Weg ist lang.\nAmira: Ich möchte mich weiter integrieren und eines Tages die deutsche Staatsbürgerschaft haben. Die Auswanderung aus meinem Land war schmerzhaft, aber ich bin hier angekommen. Und du, Tarek, wirst du bleiben?\nTarek: Ja, hier ist meine zweite Heimat geworden.",
       "words": [
         {
           "de": "die Migration",
@@ -7922,6 +7992,8 @@
     {
       "id": 74,
       "topic": "Bildungssystem & Schule",
+      "text_type": "paragraph",
+      "text": "In Deutschland gilt die Schulpflicht, und der Schulbesuch ist verpflichtend. Nach der Grundschule trennt sich das Bildungssystem: Es gibt die Hauptschule, die Realschule, das Gymnasium und die Gesamtschule. Wer das Gymnasium besucht, macht nach zwölf oder dreizehn Jahren das Abitur. Nach der Realschule bekommt man die Mittlere Reife. Viele Kinder gehen heute auch in eine Ganztagsschule, wo sie bis zum Nachmittag bleiben. Der Lehrplan legt fest, was in jedem Schuljahr unterrichtet wird. Eine Lehrkraft muss die Schüler benoten, und der Notendurchschnitt entscheidet oft über den weiteren Weg. Wer schlechte Noten hat, kann nicht versetzt werden und muss sitzenbleiben. Manche Schüler brauchen Nachhilfe, um sich besser auf den Stoff zu konzentrieren. Wer schwänzt, bekommt Ärger. Wer pflichtbewusst ist, hat es leichter. Einmal im Jahr gibt es eine Klassenfahrt, und am Elternabend informieren die Lehrer die Eltern über den Stand der Klasse. Der Schulabschluss ist wichtig für die Berufswahl, auch wenn nicht alle Wege über die Uni führen.",
       "words": [
         {
           "de": "das Bildungssystem",
@@ -8090,6 +8162,8 @@
     {
       "id": 75,
       "topic": "Energie & Ressourcen",
+      "text_type": "paragraph",
+      "text": "Die Energiewende ist eines der wichtigsten Themen unserer Zeit. Bisher haben wir viel Strom aus fossilen Quellen erzeugt: Erdöl, Erdgas und Kohle. Das ist umweltschädlich und macht uns vom Ausland abhängig. Auch die Atomkraft war lange umstritten. Man hat die Kernkraftwerke abgeschaltet, weil man das Risiko für zu hoch hielt. Heute setzt man auf Wasserkraft, Windräder und Solaranlagen, die Strom erzeugen, ohne die Umwelt zu belasten. Ein Problem ist die Speicherung: Ohne gute Speicher ist die Stromversorgung nicht sicher. Auch die Versorgungssicherheit ist entscheidend, damit im Winter niemand friert. Viele Haushalte stellen auf eine Wärmepumpe um und dämmen ihre Häuser, denn eine gute Dämmung spart Energie, damit die Heizung weniger braucht. Wer sein Haus gut dämmt, muss weniger heizen, und die Stromrechnung sinkt. Der Energieverbrauch muss insgesamt sinken. Energiesparende Geräte helfen dabei. Wer Energie verschwendet, belastet das Klima, und Ressourcen wie Rohstoffe werden knapp. Die Abhängigkeit von anderen Ländern soll kleiner werden. Jeder kann mitmachen: Man kann die Heizung herunterdrehen, das Licht ausmachen und auf Ökostrom umstellen.",
       "words": [
         {
           "de": "der Strom",
@@ -8294,6 +8368,8 @@
     {
       "id": 76,
       "topic": "Natur & Tiere",
+      "text_type": "paragraph",
+      "text": "Die Tierwelt in Europa ist vielfältig, doch viele Lebensräume sind bedroht. Im Nationalpark und im Naturschutzgebiet kann man noch ein Ökosystem erleben, das unberührt und artenreich ist. Die Artenvielfalt zeigt sich an Pflanzen, die im Frühling aufblühen, und an Bienen, die sie bestäuben. Ohne Bienen können viele Pflanzen nicht überleben. In den Wäldern kehren Wölfe zurück, und in den Bergen lebt noch ein Bär. Ein Raubtier muss jagen, um zu überleben, und manche Bauern fürchten um ihre Tiere. Deshalb ist der Tierschutz auch ein politisches Thema. Wildtiere brauchen Platz, denn sie sind wild und lassen sich nicht züchten. Der Tierarzt hilft verletzten Tieren, und die Jagd ist streng geregelt. Wer wandert, entdeckt Gipfel im Gebirge, Moore, Ufer an stillen Seen oder die Küste mit ihren Inseln. Sogar die Wüste hat ihre eigene Tierwelt. Weltweit ist es wichtig, dass Menschen Bäume pflanzen und Lebensräume schützen. Wenn der Lebensraum verschwindet, verschwinden auch die Tiere. Die Natur braucht unseren Schutz, damit auch künftige Generationen sie erleben können.",
       "words": [
         {
           "de": "die Tierwelt",
@@ -8490,6 +8566,8 @@
     {
       "id": 77,
       "topic": "Katastrophen & Unfälle",
+      "text_type": "paragraph",
+      "text": "Gestern hat eine verheerende Katastrophe die Region getroffen. Ein starker Sturm hat zusammen mit tagelangem Regen ein Hochwasser ausgelöst. Viele Straßen wurden überflutet, und Häuser wurden zerstört. Die Behörden mussten ganze Dörfer evakuieren. Das Warnsystem hatte rechtzeitig vor dem Wasser gewarnt, und die Evakuierung verlief ruhig. Der Rettungsdienst war im Dauereinsatz: Ein Krankenwagen nach dem anderen fuhr in die betroffenen Gebiete. Die Feuerwehr konnte Menschen vom Dach retten und Verletzte bergen. Zum Glück gab es nur wenige Verletzte, und der Notfall verlief insgesamt glimpflich. Im Süden des Landes dagegen tobt seit Tagen ein Waldbrand. Die Hitzewelle macht die Lage schlimmer. Ein Brand in der Nähe eines Vulkans gefährdet ebenfalls die Region, und Experten warnen vor einem Erdbeben. In den Bergen löste sich eine Lawine, und auf der Autobahn gab es einen schweren Zusammenstoß. Die Menschen in den betroffenen Orten sind erschöpft. Experten warnen vor weiteren Unwettern und fordern ein besseres Warnsystem. Die Regierung hat Hilfe versprochen, damit die Betroffenen schnell Unterstützung bekommen.",
       "words": [
         {
           "de": "die Katastrophe",
@@ -8650,6 +8728,8 @@
     {
       "id": 78,
       "topic": "Geschichte & Gesellschaft",
+      "text_type": "paragraph",
+      "text": "Das zwanzigste Jahrhundert war in Deutschland von Brüchen geprägt. Nach dem Ende des Kaiserreichs entwickelte sich die erste Demokratie, die jedoch bald durch eine Diktatur gestürzt wurde. Die Verfolgung von Minderheiten und der Zweite Weltkrieg haben unvorstellbares Leid gebracht. Einige Menschen leisteten Widerstand, doch viele schwiegen. Nach dem Krieg kam die Teilung: Deutschland wurde geteilt. Die Mauer in Berlin stand fast drei Jahrzehnte, bis 1989 die Menschen sich erhoben und die Grenze öffneten. Die Wiedervereinigung 1990 war eine Zeitenwende. Zeitzeugen erzählen noch heute, wie es war, und überliefern ihre Erinnerungen an die nächste Generation. Die Erinnerungskultur ist wichtig: Denkmäler helfen uns, der Opfer zu gedenken. Das historische Erbe verpflichtet uns zu Freiheit, Gleichheit und Gerechtigkeit. In früheren Jahrhunderten herrschten Könige und Kaiser über ganze Königreiche, und Herrscher haben im Mittelalter Gebiete erobert. Mittelalterliche Städte zeugen davon. Revolutionen haben später viel verändert, und Gesellschaften haben sich weiterentwickelt. Wer geschichtlich denkt, versteht die Gegenwart besser. Jedes Jahrzehnt hat seine eigenen Fragen, aber die Lehren aus der Geschichte bleiben.",
       "words": [
         {
           "de": "das Jahrhundert",
@@ -8850,6 +8930,8 @@
     {
       "id": 79,
       "topic": "Sprache & Kommunikation",
+      "text_type": "paragraph",
+      "text": "Sprache ist mehr als Wörter. Meine Muttersprache ist Türkisch, aber ich spreche auch Deutsch und Englisch als Fremdsprache. Die Mehrsprachigkeit ist ein Vorteil, weil man dadurch den Austausch zwischen Kulturen erleichtert. Am Anfang war mein Wortschatz klein, und ich konnte mich nur schwer ausdrücken. Wenn mir ein Wort fehlte, habe ich es umschrieben oder mit Gesten angedeutet. Die Aussprache und die Rechtschreibung bereiteten mir Probleme, und mein Akzent war stark. Deutsche Dialekte waren für mich fast unverständlich, vor allem, wenn jemand umgangssprachlich sprach. Redewendungen und Sprichwörter sind oft mehrdeutig, und man kann sie leicht missverstehen. Das führt zu Missverständnissen. Die Wortwahl und der Tonfall sind ebenfalls wichtig. Auch die Körpersprache spielt eine große Rolle in der Kommunikation: Ein Lächeln ersetzt manchmal viele Worte. Bei Behördengängen brauchte ich manchmal einen Dolmetscher, der für mich dolmetschte und Dokumente übersetzte. Heute kann ich fließend sprechen und mich gut verständigen. Eine gute Übersetzung ist schwierig, denn eine wörtliche Übersetzung drückt oft nicht dasselbe aus. Wer eine Sprache lernt, lernt auch eine Denkweise kennen.",
       "words": [
         {
           "de": "die Muttersprache",
@@ -9052,6 +9134,8 @@
     {
       "id": 80,
       "topic": "Reparatur & Handwerk",
+      "text_type": "dialog",
+      "text": "Kunde: Guten Tag, ich habe ein Problem mit meinem Badezimmer. Der Wasserhahn ist undicht, und ein Rohr unter dem Waschbecken tropft auch.\nKlempner: Das ist eine einfache Reparatur. Ich muss das Rohr austauschen und den Hahn neu montieren. Dazu brauche ich Werkzeug und ein Ersatzteil. Ich mache Ihnen einen Kostenvoranschlag.\nKunde: Gut. In der Küche ist außerdem eine Steckdose kaputt, und die Sicherung fliegt ständig heraus. Ein Kabel ist wohl locker.\nKlempner: Da brauchen Sie einen Elektriker. Er muss das Kabel richtig anschließen. Ein Handwerker darf nur an seinem Fach arbeiten. Ich kann Ihnen einen Kollegen empfehlen. Meine Werkstatt ist gleich um die Ecke.\nKunde: Und die Wand? Ich möchte sie streichen. Ein Maler hat mir zu viel berechnet. Ich möchte es selbst machen, und ich habe auch Nägel, einen Hammer und einen Schraubenzieher. Muss ich bohren, um das Regal zu befestigen?\nKlempner: Ja, mit einer Schraube hält es besser als mit einem Nagel. Lesen Sie die Anleitung genau, dann klappt es. Wenn Sie Hilfe brauchen, rufen Sie an.",
       "words": [
         {
           "de": "der Handwerker",
@@ -9232,6 +9316,8 @@
     {
       "id": 81,
       "topic": "Briefe & E-Mails",
+      "text_type": "email",
+      "text": "Betreff: Bewerbung als Projektleiterin (Ihre Stellenanzeige vom 12. Mai)\n\nSehr geehrter Herr Dr. Schneider,\n\nin Bezug auf Ihre Stellenanzeige möchte ich mich um die ausgeschriebene Stelle bewerben. Bezüglich meiner Qualifikation füge ich meinen Lebenslauf und meine Zeugnisse bei. Sie finden beides im Anhang. Ich würde mich freuen, wenn ich mich persönlich vorstellen dürfte.\n\nIch möchte auch erwähnen, dass ich bereits fünf Jahre Erfahrung im Projektmanagement habe. Ich bitte um eine kurze Bestätigung des Eingangs. Vielen Dank im Voraus.\n\nMit freundlichen Grüßen\nLaura Kaiser\n\n---\n\nBetreff: AW: Bewerbung als Projektleiterin\n\nSehr geehrte Frau Kaiser,\n\nich bedanke mich für Ihr Schreiben und bestätige hiermit den Eingang Ihrer Unterlagen. Ich habe es an den Verteiler der Personalabteilung weitergeleitet. Ich antworte auf Ihre Mail gern mit einem Terminvorschlag. Für die späte Antwort möchte ich mich entschuldigen. Als Empfänger Ihrer Nachricht war ich im Urlaub. Eine Vorlage für den Gesprächsablauf hänge ich an.\n\nMit freundlichen Grüßen\nDr. Max Schneider\n\n---\n\nAufbau einer formellen E-Mail: Der Absender nennt im Betreff das Thema, wählt eine höfliche Anrede und schließt mit einer passenden Grußformel.",
       "words": [
         {
           "de": "der Betreff",
@@ -9390,6 +9476,8 @@
     {
       "id": 82,
       "topic": "Konnektoren & Redemittel",
+      "text_type": "dialog",
+      "text": "Mia: Ich bin davon überzeugt, dass Homeoffice die Zukunft ist. Meiner Ansicht nach arbeiten die meisten Menschen zu Hause konzentrierter, weil sie nicht pendeln müssen. Außerdem sparen sie Geld.\nJan: Da bin ich anderer Meinung. Obwohl die Fahrtzeit wegfällt, leidet die Teamarbeit. Deswegen sind wir weniger kreativ. Folglich sollte man nicht alles verlagern.\nMia: Darf ich kurz unterbrechen? Ich möchte betonen, dass es nicht um alle Tage geht. Man arbeitet entweder drei oder zwei Tage zu Hause. Je flexibler die Regeln sind, desto zufriedener sind die Mitarbeiter.\nJan: Das kommt darauf an. Ich bin mir nicht sicher, ob das für alle gilt. Im Gegensatz zu Büroangestellten können Handwerker nicht zu Hause arbeiten. Es ist wichtig, dass wir alle Berufe berücksichtigen. Zum Beispiel arbeiten Pfleger vor Ort, ebenso Köche. Aufgrund dieser Unterschiede ist eine Lösung für alle schwierig.\nChef: Wie sehen Sie das, Frau Lang?\nMia: Dank moderner Technik ist es möglich. Sowohl die Firma als auch die Mitarbeiter profitieren, sofern es klare Regeln gibt. Sobald man sich daran hält, funktioniert es. Ich arbeite so, seitdem unser Büro umgebaut wurde. Währenddessen hat sich die Produktivität verbessert.\nJan: Immerhin gibt es dazu Zahlen. Einer Studie zufolge sind die Beschäftigten im Vergleich zu früher zufriedener. Hinsichtlich der Produktivität gibt es aber keine eindeutigen Beweise. Anhand der Daten kann man das nicht sagen. Weder die Firma noch ich haben bisher klare Zahlen. Ich stimme dir aber zu, Mia: Im Allgemeinen ist Homeoffice beliebt.\nChef: Gemäß unserer Betriebsvereinbarung gilt Homeoffice zugunsten der Mitarbeiter, solange der Betrieb nicht leidet. Wir können es innerhalb der nächsten sechs Monate testen. Anstatt dass wir weiter streiten, probieren wir es aus. Bevor wir entscheiden, sammeln wir Daten. Nachdem wir sie ausgewertet haben, sprechen wir erneut. Außerhalb der Kernzeit ist alles flexibel, trotz mancher Bedenken.\nMia: Ganz meiner Meinung! Schließlich wollen wir alle dasselbe. Wir sind uns plötzlich einig.\nJan: Übrigens, ich bleibe vermutlich bei zwei Tagen, jedenfalls bis der Test fertig ist. Das heißt, wahrscheinlich ändert sich bei mir wenig. Natürlich bin ich offen. Endlich gibt es eine Lösung, ohne dass jemand verliert. Anscheinend ist der Chef offenbar zufrieden. Anstelle von Streit gibt es jetzt einen Plan, und allmählich werden wir uns an die neue Regelung gewöhnen. Während wir testen, bleiben wir im Gespräch.\nMia: Somit sind wir uns im Wesentlichen einig. Demnach starten wir im Januar. Falls es Probleme gibt, melden wir uns.\nJan: Sicherlich. Die Abteilungen, die viel kommunizieren müssen, sind hingegen skeptisch. Damit alle zufrieden sind, müssen wir die Regeln gemeinsam festlegen, indem wir alle Beteiligten fragen. Inzwischen haben wir ohnehin die nötige Technik, und wegen der Kosten muss sich niemand sorgen. Wir brauchen nämlich nur ein paar neue Laptops. Trotzdem bleibe ich vorsichtig.",
       "words": [
         {
           "de": "obwohl",
@@ -9822,6 +9910,8 @@
     {
       "id": 83,
       "topic": "Verben mit festen Präpositionen",
+      "text_type": "paragraph",
+      "text": "Als Lena nach Hamburg zog, wartete sie nicht lange auf eine neue Wohnung, denn sie hatte sich schon vorher darüber informiert. Sie suchte nach einer Stelle und bewarb sich um mehrere Jobs. Zuerst zweifelte sie daran, ob sie in einer Großstadt zurechtkommt, und sie rechnete mit großen Schwierigkeiten. Doch sie gewöhnte sich schnell an die neue Umgebung. Ihr Erfolg hing von vielen Dingen ab: von ihrer Erfahrung, von ihrer Sprache und von etwas Glück. Sie entschied sich für eine kleine Firma, weil sie sich für Design interessiert. Im ersten Monat nahm sie an einem Workshop teil, und später berichtete sie ihrer Familie über ihre Fortschritte. Ihre Freundin gratulierte ihr zum neuen Job und lud sie zu einer Party ein. Dort unterhielt sie sich mit vielen Leuten über Kunst und diskutierte über Politik. Sie sprach auch über ihre Zukunft. Lena glaubt an sich und träumt von einem eigenen Studio. Sie ärgert sich manchmal über den Stress im Büro, beschwert sich aber nie, und sie bedankt sich bei ihren Kollegen für die Hilfe. Manchmal denkt sie an ihre Heimat und freut sich über jede Nachricht von dort. Sie verliebte sich sogar in einen Kollegen, doch das Thema Liebe will sie erst einmal aus ihrem Kopf verdrängen. Sie leidet nicht mehr an Heimweh, aber sie leidet unter dem Wetter. Nachdem sie lange darüber nachgedacht hatte, bestand sie darauf, ihre Freunde regelmäßig zu sehen, und niemand konnte sie daran hindern. Am Ende des Abends verabschiedete sie sich von allen und fragte nach dem Weg nach Hause.",
       "words": [
         {
           "de": "warten auf",

@@ -1,11 +1,12 @@
-import a1Json from './german_vocab_A1-A2.json';
-import b1Json from './german_vocab_B1-B2.json';
+import a1Json from './german_vocab_A1-A2_with_texts.json';
+import b1Json from './german_vocab_B1-B2_with_texts.json';
 import type {
   LevelKey,
   LevelInfo,
   TopicData,
   VocabularyWord,
-  VocabCategory
+  VocabCategory,
+  TopicTextType
 } from './types';
 
 interface RawWord {
@@ -20,6 +21,8 @@ interface RawWord {
 interface RawTopic {
   id: number;
   topic: string;
+  text_type?: TopicTextType;
+  text?: string;
   words: RawWord[];
 }
 
@@ -62,6 +65,8 @@ function processLevel(raw: RawLevelData, levelKey: LevelKey): { topics: TopicDat
       id: rawTopic.id,
       topic: rawTopic.topic,
       level: levelKey,
+      textType: rawTopic.text_type,
+      text: rawTopic.text,
       words: topicWords,
       nouns: topicWords.filter(w => w.pos === 'noun'),
       verbs: topicWords.filter(w => w.pos === 'verb'),

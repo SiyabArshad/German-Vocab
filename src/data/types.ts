@@ -24,10 +24,14 @@ export interface VocabularyWord {
   sentence_perfekt?: string;
 }
 
+export type TopicTextType = 'dialog' | 'paragraph' | 'email';
+
 export interface TopicData {
   id: number;
   topic: string;
   level: LevelKey;
+  textType?: TopicTextType;
+  text?: string;
   words: VocabularyWord[];
   nouns: VocabularyWord[];
   verbs: VocabularyWord[];

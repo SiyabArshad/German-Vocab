@@ -7,19 +7,47 @@ import {
 import { db } from './firebase';
 import type { WordReviewData } from '../data/types';
 
-const LOCAL_STORAGE_KEY = 'german_mastered_word_ids_v2';
-const LOCAL_STORAGE_REVIEWS_KEY = 'german_word_reviews_v2';
+// Storage keys isolated per user (or guest)
+export function getUserMasteredStorageKey(userId: string | null): string {
+  return userId ? `german_mastered_${userId}` : 'german_mastered_guest';
+}
+
+export function getUserReviewsStorageKey(userId: string | null): string {
+  return userId ? `german_reviews_${userId}` : 'german_reviews_guest';
+}
 
 /**
- * Get locally stored mastered word IDs
+ * Get locally stored mastered word IDs for a specific user (or guest)
  */
-export function getLocalMasteredIds(): Set<string> {
+export function getLocalMasteredIds(userId: string | null = null): Set<string> {
   try {
-    const raw = localStorage.getItem(LOCAL_STORAGE_KEY);
+    const key = getUserMasteredStorageKey(userId);
+    const raw = localStorage.getItem(key);
     if (raw) {
       const arr = JSON.parse(raw);
       if (Array.isArray(arr)) {
         return new Set(arr);
+      }
+    }
+
+    // One-time fallback for existing data under legacy keys
+    if (userId) {
+      const legacyV2 = localStorage.getItem('german_mastered_word_ids_v2');
+      if (legacyV2) {
+        const arr = JSON.parse(legacyV2);
+        if (Array.isArray(arr) && arr.length > 0) {
+          const s = new Set<string>(arr);
+          saveLocalMasteredIds(s, userId);
+          return s;
+        }
+      }
+    } else {
+      const legacyGuest = localStorage.getItem('german_mastered_word_ids_v2') || localStorage.getItem('german_mastered_ids');
+      if (legacyGuest) {
+        const arr = JSON.parse(legacyGuest);
+        if (Array.isArray(arr) && arr.length > 0) {
+          return new Set<string>(arr);
+        }
       }
     }
   } catch (err) {
@@ -29,23 +57,29 @@ export function getLocalMasteredIds(): Set<string> {
 }
 
 /**
- * Save mastered word IDs locally
+ * Save mastered word IDs locally for a specific user (or guest)
  */
-export function saveLocalMasteredIds(ids: Set<string>): void {
+export function saveLocalMasteredIds(ids: Set<string>, userId: string | null = null): void {
   try {
-    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(Array.from(ids)));
+    const key = getUserMasteredStorageKey(userId);
+    localStorage.setItem(key, JSON.stringify(Array.from(ids)));
   } catch (err) {
     console.error('Error saving local mastered IDs:', err);
   }
 }
 
 /**
- * Get locally stored review history
+ * Get locally stored review history for a specific user (or guest)
  */
-export function getLocalReviews(): Record<string, WordReviewData> {
+export function getLocalReviews(userId: string | null = null): Record<string, WordReviewData> {
   try {
-    const raw = localStorage.getItem(LOCAL_STORAGE_REVIEWS_KEY);
+    const key = getUserReviewsStorageKey(userId);
+    const raw = localStorage.getItem(key);
     if (raw) return JSON.parse(raw);
+
+    // Legacy fallback
+    const legacy = localStorage.getItem('german_word_reviews_v2');
+    if (legacy) return JSON.parse(legacy);
   } catch (err) {
     console.error('Error loading local reviews:', err);
   }
@@ -53,18 +87,20 @@ export function getLocalReviews(): Record<string, WordReviewData> {
 }
 
 /**
- * Save review history locally
+ * Save review history locally for a specific user (or guest)
  */
-export function saveLocalReviews(reviews: Record<string, WordReviewData>): void {
+export function saveLocalReviews(reviews: Record<string, WordReviewData>, userId: string | null = null): void {
   try {
-    localStorage.setItem(LOCAL_STORAGE_REVIEWS_KEY, JSON.stringify(reviews));
+    const key = getUserReviewsStorageKey(userId);
+    localStorage.setItem(key, JSON.stringify(reviews));
   } catch (err) {
     console.error('Error saving local reviews:', err);
   }
 }
 
 /**
- * Subscribe to cloud progress updates from Firestore
+ * Subscribe to cloud progress updates from Firestore for a specific user.
+ * Each user's data is stored under /users/{userId} document.
  */
 export function subscribeToCloudProgress(
   userId: string,
@@ -78,11 +114,13 @@ export function subscribeToCloudProgress(
       if (snapshot.exists()) {
         const data = snapshot.data();
         const rawMastered = data.masteredIds || [];
-        const cloudSet = new Set<string>(Array.isArray(rawMastered) ? rawMastered : Object.keys(data.mastered || {}));
-        const cloudReviews = data.reviews || {};
+        const cloudSet = new Set<string>(
+          Array.isArray(rawMastered) ? rawMastered : Object.keys(data.mastered || {})
+        );
+        const cloudReviews = (data.reviews as Record<string, WordReviewData>) || {};
 
-        // Merge with local storage
-        const localSet = getLocalMasteredIds();
+        // Merge any offline additions from this device for this user
+        const localSet = getLocalMasteredIds(userId);
         let changed = false;
         localSet.forEach(id => {
           if (!cloudSet.has(id)) {
@@ -91,11 +129,11 @@ export function subscribeToCloudProgress(
           }
         });
 
-        // Save merged set back to local storage
-        saveLocalMasteredIds(cloudSet);
-        saveLocalReviews({ ...getLocalReviews(), ...cloudReviews });
+        // Save isolated to this user's storage
+        saveLocalMasteredIds(cloudSet, userId);
+        const mergedReviews = { ...getLocalReviews(userId), ...cloudReviews };
+        saveLocalReviews(mergedReviews, userId);
 
-        // If local had unsynced items, sync up to Firestore
         if (changed) {
           setDoc(
             userRef,
@@ -104,14 +142,18 @@ export function subscribeToCloudProgress(
               updatedAt: serverTimestamp(),
             },
             { merge: true }
-          ).catch(e => console.warn('Sync merge failed:', e));
+          ).catch(e => {
+            console.warn('Firestore write failed (check Security Rules):', e);
+          });
         }
 
-        onUpdate(cloudSet, cloudReviews);
+        onUpdate(cloudSet, mergedReviews);
       } else {
-        // Document doesn't exist yet, push local progress to Firestore
-        const localSet = getLocalMasteredIds();
-        const localReviews = getLocalReviews();
+        // Document doesn't exist yet for this user in Firestore
+        // Initial setup for this user: use any existing offline progress for this user
+        const localSet = getLocalMasteredIds(userId);
+        const localReviews = getLocalReviews(userId);
+
         setDoc(
           userRef,
           {
@@ -121,21 +163,24 @@ export function subscribeToCloudProgress(
             updatedAt: serverTimestamp(),
           },
           { merge: true }
-        ).catch(e => console.warn('Initial cloud creation failed:', e));
+        ).catch(e => {
+          console.warn('Firestore initial document creation failed (check Security Rules):', e);
+        });
 
+        saveLocalMasteredIds(localSet, userId);
         onUpdate(localSet, localReviews);
       }
     },
     (error) => {
-      console.warn('Firestore subscription warning (offline or permissions):', error);
-      // Fallback to local
-      onUpdate(getLocalMasteredIds(), getLocalReviews());
+      console.warn('Firestore subscription error (check Firestore Security Rules):', error);
+      // Fallback to this user's local cache
+      onUpdate(getLocalMasteredIds(userId), getLocalReviews(userId));
     }
   );
 }
 
 /**
- * Toggle or set a word as remembered in Cloud & Local
+ * Toggle or set a word as remembered in Cloud & Local for a specific user
  */
 export async function syncWordRemembered(
   userId: string | null,
@@ -150,10 +195,10 @@ export async function syncWordRemembered(
     nextSet.delete(wordId);
   }
 
-  // Save to local storage immediately
-  saveLocalMasteredIds(nextSet);
+  // Save to this user's local storage immediately
+  saveLocalMasteredIds(nextSet, userId);
 
-  // If user is logged in, sync to Firestore
+  // If user is logged in, sync to Firestore collection 'users'
   if (userId) {
     try {
       const userRef = doc(db, 'users', userId);
@@ -166,7 +211,7 @@ export async function syncWordRemembered(
         { merge: true }
       );
     } catch (err) {
-      console.warn('Failed to sync word status to Firestore:', err);
+      console.warn('Failed to sync word status to Firestore (check Security Rules):', err);
     }
   }
 
@@ -174,14 +219,14 @@ export async function syncWordRemembered(
 }
 
 /**
- * Record a test / quiz result for retention tracking
+ * Record a test / quiz result for retention tracking for a specific user
  */
 export async function recordQuizResult(
   userId: string | null,
   wordId: string,
   passed: boolean
 ): Promise<void> {
-  const localReviews = getLocalReviews();
+  const localReviews = getLocalReviews(userId);
   const current = localReviews[wordId] || {
     remembered: true,
     reviewCount: 0,
@@ -200,7 +245,7 @@ export async function recordQuizResult(
   }
 
   localReviews[wordId] = current;
-  saveLocalReviews(localReviews);
+  saveLocalReviews(localReviews, userId);
 
   if (userId) {
     try {
@@ -214,17 +259,17 @@ export async function recordQuizResult(
         { merge: true }
       );
     } catch (err) {
-      console.warn('Failed to sync quiz result to Firestore:', err);
+      console.warn('Failed to sync quiz result to Firestore (check Security Rules):', err);
     }
   }
 }
 
 /**
- * Reset all progress for a user
+ * Reset all progress for a specific user
  */
 export async function resetAllUserProgress(userId: string | null): Promise<void> {
-  saveLocalMasteredIds(new Set());
-  saveLocalReviews({});
+  saveLocalMasteredIds(new Set(), userId);
+  saveLocalReviews({}, userId);
 
   if (userId) {
     try {
@@ -239,7 +284,7 @@ export async function resetAllUserProgress(userId: string | null): Promise<void>
         { merge: true }
       );
     } catch (err) {
-      console.warn('Failed to reset Firestore user progress:', err);
+      console.warn('Failed to reset Firestore user progress (check Security Rules):', err);
     }
   }
 }

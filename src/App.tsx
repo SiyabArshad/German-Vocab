@@ -14,6 +14,7 @@ import type { LevelKey, StudyMode, TopicData, VocabularyWord } from './data/type
 import { useAuth } from './services/useAuth';
 import {
   getLocalMasteredIds,
+  saveLocalMasteredIds,
   subscribeToCloudProgress,
   syncWordRemembered,
   recordQuizResult,
@@ -51,8 +52,8 @@ function App() {
     return localStorage.getItem('german_vocab_reverse') === 'true';
   });
 
-  // Mastered words set
-  const [masteredIds, setMasteredIds] = useState<Set<string>>(() => getLocalMasteredIds());
+  // Mastered words set (isolated per user)
+  const [masteredIds, setMasteredIds] = useState<Set<string>>(() => getLocalMasteredIds(user?.uid || null));
 
   // Save level and reverse direction preferences
   useEffect(() => {
@@ -65,8 +66,16 @@ function App() {
 
   // Subscribe to Firebase Firestore progress when user is logged in
   useEffect(() => {
-    if (!user) return;
+    if (!user) {
+      // When logged out, reset in-memory state to guest local storage
+      setMasteredIds(getLocalMasteredIds(null));
+      return;
+    }
 
+    // Immediately load this user's local cache
+    setMasteredIds(getLocalMasteredIds(user.uid));
+
+    // Subscribe to cloud updates for this specific user
     const unsubscribe = subscribeToCloudProgress(user.uid, (cloudMastered) => {
       setMasteredIds(new Set(cloudMastered));
     });
@@ -74,25 +83,19 @@ function App() {
     return () => unsubscribe();
   }, [user]);
 
-  // Toggle master status (requires auth)
+  // Toggle master status (works both offline/guest and logged in)
   const handleToggleMaster = useCallback(async (wordId: string, e?: React.MouseEvent) => {
     if (e) e.stopPropagation();
 
-    // If user is not signed in, prompt authentication first
-    if (!user) {
-      openAuthModal('Sign in to mark and sync remembered vocabulary!', wordId);
-      return;
-    }
-
     const isCurrentlyRemembered = masteredIds.has(wordId);
     const updated = await syncWordRemembered(
-      user.uid,
+      user ? user.uid : null,
       wordId,
       !isCurrentlyRemembered,
       masteredIds
     );
     setMasteredIds(updated);
-  }, [user, masteredIds, openAuthModal]);
+  }, [user, masteredIds]);
 
   // Handle pending action after authentication
   useEffect(() => {
@@ -131,12 +134,8 @@ function App() {
 
   // Mark a word as remembered (e.g. from Quiz or Flashcards)
   const handleRememberWord = async (wordId: string) => {
-    if (!user) {
-      openAuthModal('Sign in to save your learning progress!', wordId);
-      return;
-    }
     if (!masteredIds.has(wordId)) {
-      const updated = await syncWordRemembered(user.uid, wordId, true, masteredIds);
+      const updated = await syncWordRemembered(user ? user.uid : null, wordId, true, masteredIds);
       setMasteredIds(updated);
     }
   };
@@ -163,8 +162,11 @@ function App() {
   };
 
   const handleLogout = async () => {
+    if (user) {
+      saveLocalMasteredIds(masteredIds, user.uid);
+    }
     await logout();
-    setMasteredIds(getLocalMasteredIds());
+    setMasteredIds(getLocalMasteredIds(null));
   };
 
   return (
@@ -339,6 +341,7 @@ function App() {
             <>
               {activeTopic ? (
                 <TopicView
+                  key={`topic_${levelKey}_${selectedTopicId}`}
                   topic={activeTopic}
                   masteredIds={masteredIds}
                   onToggleMaster={handleToggleMaster}
@@ -359,6 +362,7 @@ function App() {
 
           {mode === 'flashcards' && (
             <FlashcardDeck
+              key={`deck_${levelKey}_${selectedTopicId}`}
               vocabList={activeVocabList}
               masteredIds={masteredIds}
               onToggleMaster={handleToggleMaster}
@@ -368,6 +372,7 @@ function App() {
 
           {mode === 'quiz' && (
             <QuizMode
+              key={`quiz_${levelKey}_${selectedTopicId}`}
               vocabList={activeVocabList}
               masteredIds={masteredIds}
               isReverse={isReverse}

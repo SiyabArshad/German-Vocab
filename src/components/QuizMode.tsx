@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState, useEffect, useRef } from 'react';
 import {
   Award,
   Zap,
@@ -64,7 +64,17 @@ export const QuizMode: React.FC<QuizModeProps> = ({
   const [streak, setStreak] = useState(0);
   const [bestStreak, setBestStreak] = useState(0);
 
-  // Initialize questions based on testMode filter & sessionSeed
+  // When direction switches mid-quiz (DE ➔ EN / EN ➔ DE), reset the current question answer state
+  const prevIsReverseRef = useRef(isReverse);
+  useEffect(() => {
+    if (prevIsReverseRef.current !== isReverse) {
+      prevIsReverseRef.current = isReverse;
+      setIsAnswered(false);
+      setSelectedOption(null);
+    }
+  }, [isReverse]);
+
+  // Build the list of words to test based on active filter
   const quizQueue = useMemo(() => {
     let list = vocabList;
     if (testMode === 'remembered') {
@@ -75,9 +85,11 @@ export const QuizMode: React.FC<QuizModeProps> = ({
     return pureShuffle(list, sessionSeed);
   }, [vocabList, testMode, sessionSeed, masteredIds]);
 
-  const currentWord = quizQueue[currentIndex];
+  // Safely clamp index so it never points past the end
+  const safeIndex = Math.max(0, Math.min(currentIndex, Math.max(0, quizQueue.length - 1)));
+  const currentWord: VocabularyWord | undefined = quizQueue[safeIndex];
 
-  // Generate options for current question
+  // Options for the current question
   const options = useMemo(() => {
     if (!currentWord) return [];
     const correctAnswer = isReverse ? currentWord.de : currentWord.en;
@@ -85,7 +97,7 @@ export const QuizMode: React.FC<QuizModeProps> = ({
       ? getGermanDistractors(currentWord, 3)
       : getDistractors(currentWord, 3);
 
-    return pureShuffle([correctAnswer, ...distractors], wordSeed(currentWord.id));
+    return pureShuffle([correctAnswer, ...distractors], wordSeed(currentWord.id) + (isReverse ? 777 : 0));
   }, [currentWord, isReverse]);
 
   const handleModeChange = (mode: TestFilterMode) => {
@@ -142,29 +154,46 @@ export const QuizMode: React.FC<QuizModeProps> = ({
 
   const rememberedCount = vocabList.filter(w => masteredIds.has(w.id)).length;
 
+  // Empty state (e.g. retention test when no words remembered yet)
   if (quizQueue.length === 0) {
     return (
       <div className="quiz-empty-state">
         <AlertTriangle size={44} />
         {testMode === 'remembered' ? (
           <>
-            <h3>No remembered words to test yet!</h3>
+            <h3>No remembered words in this topic yet!</h3>
             <p>
-              Retention tests help you remember previously learned words so you never forget them.
-              Mark some words as remembered first in Learn Topic or Flashcards!
+              Retention tests help you remember previously learned words.
+              Mark words as remembered in "Learn by Topic" or "Flashcards", or choose an option below:
             </p>
+            <div style={{ display: 'flex', gap: '10px', marginTop: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
+              <button
+                type="button"
+                className="mode-btn active"
+                onClick={() => handleModeChange('all')}
+              >
+                Test All Words in Topic ({vocabList.length})
+              </button>
+              <button
+                type="button"
+                className="mode-btn"
+                onClick={() => handleModeChange('unlearned')}
+              >
+                Test Unlearned ({vocabList.length - rememberedCount})
+              </button>
+            </div>
+          </>
+        ) : (
+          <>
+            <h3>No words available for this test</h3>
+            <p>Select another topic or switch filter mode to begin.</p>
             <button
               type="button"
               className="mode-btn active"
               onClick={() => handleModeChange('all')}
             >
-              Test All Words in Topic ({vocabList.length})
+              Test All Words ({vocabList.length})
             </button>
-          </>
-        ) : (
-          <>
-            <h3>No words available for this test</h3>
-            <p>Select another topic or change test filter to begin.</p>
           </>
         )}
       </div>
@@ -174,7 +203,7 @@ export const QuizMode: React.FC<QuizModeProps> = ({
   // Quiz completed summary screen
   const isFinished = currentIndex >= quizQueue.length;
   if (isFinished) {
-    const percentage = Math.round((score / totalAnswered) * 100) || 0;
+    const percentage = Math.round((score / Math.max(1, totalAnswered)) * 100) || 0;
     return (
       <div className="quiz-result-container">
         <div className="quiz-result-card">
@@ -219,8 +248,12 @@ export const QuizMode: React.FC<QuizModeProps> = ({
     );
   }
 
+  if (!currentWord) {
+    return null;
+  }
+
   const correctAnswer = isReverse ? currentWord.de : currentWord.en;
-  const { article, rest, gender } = parseGermanWord(currentWord.de);
+  const { article, rest, gender } = parseGermanWord(currentWord.de, currentWord.pos);
 
   return (
     <div className="quiz-container">
@@ -254,7 +287,7 @@ export const QuizMode: React.FC<QuizModeProps> = ({
       {/* Progress & Streak Bar */}
       <div className="quiz-header-bar">
         <div className="quiz-counter">
-          Question {currentIndex + 1} of {quizQueue.length}
+          Question {safeIndex + 1} of {quizQueue.length}
         </div>
         <div className="quiz-streak-badge">
           <Zap size={16} /> Streak: <strong>{streak}</strong>
@@ -267,7 +300,7 @@ export const QuizMode: React.FC<QuizModeProps> = ({
       <div className="quiz-progress-track">
         <div
           className="quiz-progress-fill"
-          style={{ width: `${((currentIndex) / quizQueue.length) * 100}%` }}
+          style={{ width: `${((safeIndex) / quizQueue.length) * 100}%` }}
         />
       </div>
 
@@ -325,7 +358,7 @@ export const QuizMode: React.FC<QuizModeProps> = ({
 
             return (
               <button
-                key={idx}
+                key={`${opt}_${idx}`}
                 type="button"
                 className={optClass}
                 onClick={() => handleSelectOption(opt)}

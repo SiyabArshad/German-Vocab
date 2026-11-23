@@ -117,17 +117,39 @@ export const topicById = new Map<number, TopicData>();
   topicById.set(t.id, t);
 });
 
+function seededRandom(seed: number): () => number {
+  let s = seed % 2147483647;
+  if (s <= 0) s += 2147483646;
+  return () => {
+    s = (s * 16807) % 2147483647;
+    return (s - 1) / 2147483646;
+  };
+}
+
+function wordSeed(id: string): number {
+  let h = 0;
+  for (let i = 0; i < id.length; i++) {
+    h = Math.imul(h, 31) + id.charCodeAt(i);
+  }
+  return Math.abs(h);
+}
+
 /**
- * Generate 3 smart distractors of similar category for a quiz question
+ * Generate 3 smart distractors of similar category for a quiz question (English answers)
  */
 export function getDistractors(word: VocabularyWord, count = 3): string[] {
-  const currentLevelWords = levels[word.level].words;
+  const currentLevelWords = levels[word.level]?.words || [];
   // Prefer same pos first
-  const sameCategory = currentLevelWords.filter(w => w.id !== word.id && w.pos === word.pos && w.en !== word.en);
-  const fallback = currentLevelWords.filter(w => w.id !== word.id && w.en !== word.en);
+  const sameCategory = currentLevelWords.filter(
+    w => w.id !== word.id && w.pos === word.pos && w.en.trim().toLowerCase() !== word.en.trim().toLowerCase()
+  );
+  const fallback = currentLevelWords.filter(
+    w => w.id !== word.id && w.en.trim().toLowerCase() !== word.en.trim().toLowerCase()
+  );
 
   const candidates = sameCategory.length >= count ? sameCategory : fallback;
-  const shuffled = [...candidates].sort(() => 0.5 - Math.random());
+  const rand = seededRandom(wordSeed(word.id));
+  const shuffled = [...candidates].sort(() => 0.5 - rand());
   const selected: string[] = [];
   const seen = new Set<string>([word.en.toLowerCase().trim()]);
 
@@ -147,12 +169,17 @@ export function getDistractors(word: VocabularyWord, count = 3): string[] {
  * Generate 3 smart German distractors when testing in reverse (EN -> DE)
  */
 export function getGermanDistractors(word: VocabularyWord, count = 3): string[] {
-  const currentLevelWords = levels[word.level].words;
-  const sameCategory = currentLevelWords.filter(w => w.id !== word.id && w.pos === word.pos && w.de !== word.de);
-  const fallback = currentLevelWords.filter(w => w.id !== word.id && w.de !== word.de);
+  const currentLevelWords = levels[word.level]?.words || [];
+  const sameCategory = currentLevelWords.filter(
+    w => w.id !== word.id && w.pos === word.pos && w.de.trim().toLowerCase() !== word.de.trim().toLowerCase()
+  );
+  const fallback = currentLevelWords.filter(
+    w => w.id !== word.id && w.de.trim().toLowerCase() !== word.de.trim().toLowerCase()
+  );
 
   const candidates = sameCategory.length >= count ? sameCategory : fallback;
-  const shuffled = [...candidates].sort(() => 0.5 - Math.random());
+  const rand = seededRandom(wordSeed(word.id) + 999);
+  const shuffled = [...candidates].sort(() => 0.5 - rand());
   const selected: string[] = [];
   const seen = new Set<string>([word.de.toLowerCase().trim()]);
 
